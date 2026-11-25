@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-11-25T23:25:00Z",
+  "updated_at": "2026-11-25T23:59:00Z",
   "prospects": [
     {
       "prospect_id": "roofing_austin_austin-roofing-company",
@@ -166,7 +166,12 @@
       ],
       "last_sent_at": "2026-11-25T15:08:18Z",
       "last_sent_step": 2,
-      "telemetry_enabled": true
+      "telemetry_enabled": true,
+      "demo_views": 1,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-25T17:01:16.999Z"
     },
     {
       "prospect_id": "roofing_dallas_honestroof",
@@ -211,7 +216,12 @@
       ],
       "last_sent_at": "2026-11-23T00:16:21Z",
       "last_sent_step": 1,
-      "telemetry_enabled": true
+      "telemetry_enabled": true,
+      "demo_views": 1,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-25T21:23:17.135Z"
     },
     {
       "prospect_id": "roofing_dallas_davis-roofing-solutions",
@@ -256,7 +266,12 @@
       ],
       "last_sent_at": "2026-11-23T00:16:23Z",
       "last_sent_step": 1,
-      "telemetry_enabled": true
+      "telemetry_enabled": true,
+      "demo_views": 1,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-25T19:53:38.769Z"
     },
     {
       "prospect_id": "roofing_houston_advantage-roofing",
@@ -301,7 +316,12 @@
       ],
       "last_sent_at": "2026-11-23T00:16:25Z",
       "last_sent_step": 1,
-      "telemetry_enabled": true
+      "telemetry_enabled": true,
+      "demo_views": 1,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-25T20:55:20.211Z"
     },
     {
       "prospect_id": "roofing_orlando_drs-roofing",
@@ -408,7 +428,12 @@
       ],
       "last_sent_at": "2026-11-23T00:16:28Z",
       "last_sent_step": 1,
-      "telemetry_enabled": true
+      "telemetry_enabled": true,
+      "demo_views": 1,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-25T20:10:12.405Z"
     },
     {
       "prospect_id": "roofing_phoenix_allstate-roofing",
@@ -1031,7 +1056,12 @@
         }
       ],
       "last_sent_at": "2026-11-25T23:20:18Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "demo_views": 5,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-25T20:25:51.533Z"
     },
     {
       "prospect_id": "roofing_san-antonio_jm-melton-roofing",
@@ -1078,7 +1108,12 @@
         }
       ],
       "last_sent_at": "2026-11-25T23:20:20Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "demo_views": 4,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-25T17:27:31.407Z"
     },
     {
       "prospect_id": "roofing_san-antonio_twin-hammers-roofing",
@@ -1125,7 +1160,12 @@
         }
       ],
       "last_sent_at": "2026-11-25T23:20:21Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "demo_views": 6,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-25T18:11:42.291Z"
     },
     {
       "prospect_id": "roofing_jacksonville_first-light-roofing",
@@ -1172,7 +1212,12 @@
         }
       ],
       "last_sent_at": "2026-11-25T23:20:23Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "demo_views": 5,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-25T18:25:53.115Z"
     },
     {
       "prospect_id": "roofing_jacksonville_townsend-roofing",
@@ -1219,7 +1264,12 @@
         }
       ],
       "last_sent_at": "2026-11-25T23:20:25Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "demo_views": 5,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-25T19:35:53.612Z"
     },
     {
       "prospect_id": "roofing_jacksonville_allegiance-roofing",
@@ -1266,7 +1316,12 @@
         }
       ],
       "last_sent_at": "2026-11-25T23:20:27Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "demo_views": 4,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-25T18:44:41.124Z"
     },
     {
       "prospect_id": "roofing_raleigh_raleigh-residential-exteriors",
@@ -1313,7 +1368,12 @@
         }
       ],
       "last_sent_at": "2026-11-25T23:20:30Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "demo_views": 4,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-25T18:44:53.662Z"
     },
     {
       "prospect_id": "roofing_raleigh_rex-construction",
@@ -1360,7 +1420,12 @@
         }
       ],
       "last_sent_at": "2026-11-25T23:20:32Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "demo_views": 3,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-25T18:44:58.224Z"
     },
     {
       "prospect_id": "roofing_raleigh_aceline-roofing",
@@ -1377,7 +1442,7 @@
       "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
       "proposed_setup_fee_usd": 750,
       "proposed_retainer_usd": 149,
-      "status": "SENT",
+      "status": "BOUNCED_MX",
       "wave": "Wave 1D",
       "dossier_path": "pipeline/roofing_raleigh_aceline-roofing/01_dossier.json",
       "spec_path": "pipeline/roofing_raleigh_aceline-roofing/02_spec.json",
@@ -1407,7 +1472,14 @@
         }
       ],
       "last_sent_at": "2026-11-25T23:20:35Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "demo_views": 5,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-25T18:44:29.088Z",
+      "bounce_reason": "AutoPilot IMAP DSN detected: Delivery Status Notification (Failure)",
+      "bounce_checked_at": "2026-11-25T23:59:00Z"
     },
     {
       "prospect_id": "roofing_nashville_quality-rrc",
@@ -1454,7 +1526,12 @@
         }
       ],
       "last_sent_at": "2026-11-25T23:20:38Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "demo_views": 5,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-25T20:02:44.394Z"
     },
     {
       "prospect_id": "roofing_nashville_mr-goodroof",
@@ -1501,7 +1578,12 @@
         }
       ],
       "last_sent_at": "2026-11-25T23:20:40Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "demo_views": 8,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-25T22:50:55.522Z"
     },
     {
       "prospect_id": "roofing_nashville_he-parmer",
@@ -1548,7 +1630,12 @@
         }
       ],
       "last_sent_at": "2026-11-25T23:20:42Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "demo_views": 4,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-25T18:44:16.370Z"
     }
   ],
   "last_updated": "2026-11-25T15:29:04Z"

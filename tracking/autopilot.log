@@ -109,3 +109,35 @@
 [2026-11-25T23:33:40Z] [UPCOMING] Scheduled 2026-11-28 (12 prospects): Aceline Roofing (Step 2), Allegiance Roofing Services (Step 2), Decker Roofing Company LLC (Step 2), First Light Home Services LLC (Step 2), H.E. Parmer Company (Step 2), JM Melton Roofing (Step 2), Mr. GoodRoof (Step 2), Quality Roofing & Restoration (Step 2), Raleigh Residential Exteriors (Step 2), Rex Construction LLC (Step 2), Townsend Roofing & Construction Services, Inc. (Step 2), Twin Hammers Roofing & Contracting (Step 2)
 [2026-11-25T23:33:40Z] [UPCOMING] Scheduled 2026-11-29 (3 prospects): Buddy's Roofing & Repairs, Inc. (Step 3), DRS Roofing (Step 3), Roof Royale (Step 3)
 [2026-11-25T23:33:40Z] [DONE   ] AutoPilot complete | Mode=DRY-RUN (as-of 2026-11-26) | Dispatched=4 | Deferred=0 | Quota=4/15
+[2026-11-25T23:58:58Z] [START  ] ================ FORGE LEAD STUDIO AUTOPILOT — LIVE AUTOPILOT ================
+[2026-11-25T23:58:58Z] [AUTH   ] Loaded sender credentials via env:SENDER_CREDENTIALS_JSON.
+[2026-11-25T23:58:58Z] [TELEMETRY] Buddy's Roofing & Repairs, Inc. (roofing_tampa_buddys-roofing): views=1 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:58:58Z] [TELEMETRY] HonestRoof.com (roofing_dallas_honestroof): views=1 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:58:58Z] [TELEMETRY] Davis Roofing Solutions (roofing_dallas_davis-roofing-solutions): views=1 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:58:58Z] [TELEMETRY] Advantage Roofing (roofing_houston_advantage-roofing): views=1 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:58:58Z] [TELEMETRY] Atlantic Roofing & Construction (roofing_orlando_atlantic-roofing): views=1 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:58:58Z] [TELEMETRY] Decker Roofing Company LLC (roofing_san-antonio_decker-roofing): views=5 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:58:58Z] [TELEMETRY] JM Melton Roofing (roofing_san-antonio_jm-melton-roofing): views=4 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:58:58Z] [TELEMETRY] Twin Hammers Roofing & Contracting (roofing_san-antonio_twin-hammers-roofing): views=6 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:58:58Z] [TELEMETRY] First Light Home Services LLC (roofing_jacksonville_first-light-roofing): views=5 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:58:58Z] [TELEMETRY] Townsend Roofing & Construction Services, Inc. (roofing_jacksonville_townsend-roofing): views=5 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:58:58Z] [TELEMETRY] Allegiance Roofing Services (roofing_jacksonville_allegiance-roofing): views=4 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:58:58Z] [TELEMETRY] Raleigh Residential Exteriors (roofing_raleigh_raleigh-residential-exteriors): views=4 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:58:58Z] [TELEMETRY] Rex Construction LLC (roofing_raleigh_rex-construction): views=3 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:58:58Z] [TELEMETRY] Aceline Roofing (roofing_raleigh_aceline-roofing): views=5 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:58:58Z] [TELEMETRY] Quality Roofing & Restoration (roofing_nashville_quality-rrc): views=5 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:58:58Z] [TELEMETRY] Mr. GoodRoof (roofing_nashville_mr-goodroof): views=8 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:58:58Z] [TELEMETRY] H.E. Parmer Company (roofing_nashville_he-parmer): views=4 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:58:58Z] [CRM    ] Merged KV telemetry updates for 17 prospect(s) into /home/runner/work/forge-lead-studio/forge-lead-studio/tracking/crm_pipeline.json.
+[2026-11-25T23:58:58Z] [TEL-OK ] Worker KV stats pulled: 18 active keys | CRM updated: 17 | Hot demo views: 0
+[2026-11-25T23:58:58Z] [IMAP   ] Connecting to imap.gmail.com:993 as forgeleadstudio@gmail.com (lookback 14d since 11-Nov-2026)...
+[2026-11-25T23:58:59Z] [IMAP   ] Login OK. Found 11 inbox messages since 11-Nov-2026; inspecting 11 recent messages.
+[2026-11-25T23:59:00Z] [BOUNCE ] Detected DSN bounce for Aceline Roofing (info@acelineroofing.com) — Subject: Delivery Status Notification (Failure)
+[2026-11-25T23:59:00Z] [CRM    ] Saved reply/bounce updates to /home/runner/work/forge-lead-studio/forge-lead-studio/tracking/crm_pipeline.json (safety brake engaged).
+[2026-11-25T23:59:00Z] [IMAP-OK] Scanned 11 messages | New Replies: 0 | Unsubscribes: 0 | Bounces: 1
+[2026-11-25T23:59:00Z] [QUEUE  ] Reference UTC Date: 2026-11-25 | Quota used: 15/15 | Due now: 0 | Upcoming: 30 | Skipped/Halted: 2
+[2026-11-25T23:59:00Z] [UPCOMING] Scheduled 2026-11-26 (4 prospects): Advantage Roofing (Step 2), Atlantic Roofing & Construction (Step 2), Davis Roofing Solutions (Step 2), HonestRoof.com (Step 2)
+[2026-11-25T23:59:00Z] [UPCOMING] Scheduled 2026-11-27 (12 prospects): Academy Roofing Inc. (Step 2), Advanced Roofing Solutions (Step 2), Allstate Roofing Inc. (Step 2), Ameristar Roofing & Restoration (Step 2), Atlanta Roofing & Restoration (Step 2), Evergreen Roofing Solutions (Step 2), Family Roofing (Step 2), Gryphon Roofing & Construction (Step 2), Horizon Roof Restoration (Step 2), Reset Roofing (Step 2), Right Way Roofing Inc. (Step 2), Wilson Brothers Roofing, Inc. (Step 2)
+[2026-11-25T23:59:00Z] [UPCOMING] Scheduled 2026-11-28 (11 prospects): Allegiance Roofing Services (Step 2), Decker Roofing Company LLC (Step 2), First Light Home Services LLC (Step 2), H.E. Parmer Company (Step 2), JM Melton Roofing (Step 2), Mr. GoodRoof (Step 2), Quality Roofing & Restoration (Step 2), Raleigh Residential Exteriors (Step 2), Rex Construction LLC (Step 2), Townsend Roofing & Construction Services, Inc. (Step 2), Twin Hammers Roofing & Contracting (Step 2)
+[2026-11-25T23:59:00Z] [UPCOMING] Scheduled 2026-11-29 (3 prospects): Buddy's Roofing & Repairs, Inc. (Step 3), DRS Roofing (Step 3), Roof Royale (Step 3)
+[2026-11-25T23:59:00Z] [DONE   ] AutoPilot complete | Mode=LIVE AUTOPILOT | Dispatched=0 | Deferred=0 | Quota=15/15
