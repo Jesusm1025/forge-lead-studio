@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_san-antonio_twin-hammers-roofing",
+  "scouted_at": "2026-11-25T15:18:43Z",
+  "niche": "roofing",
+  "business_name": "Twin Hammers Roofing & Contracting",
+  "location": {
+    "city": "San Antonio",
+    "state": "TX",
+    "country": "US"
+  },
+  "website_url": "https://www.twinhammersroofing.com/",
+  "contact_info": {
+    "decision_maker": "Christian Sanchez",
+    "role": "Founder & CEO",
+    "email": "roof@twinhammersroofing.com",
+    "phone": "(210) 650-2090",
+    "contact_page_url": "https://www.twinhammersroofing.com/contact"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#9B1C1C",
+    "secondary_color_hex": "#FFC834",
+    "brand_vibe": "Modern family-owned San Antonio roofer (40+ yrs combined exp)"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage uses a static 5-field callback form and estimate page forces a 7-field form with zero instant San Antonio roof replacement or monthly financing preview",
+      "No interactive South-Central Texas hail urgency triage or Class-4 shingle vs. metal price comparison before submitting contact info"
+    ],
+    "seo_or_speed_leaks": [
+      "1,132 ms initial server response on homepage before interactive controls become usable on mobile",
+      "Estimate page splits visitor intent across multiple static forms instead of one guided 30-second mobile estimator"
+    ],
+    "current_lead_capture_method": "Static 5-field homepage form, 7-field estimate form, and phone links"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Twin Hammers' 40+ years of San Antonio experience stands out, yet mobile homeowners still hit a static 5-to-7-field form with no instant ballpark range first.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

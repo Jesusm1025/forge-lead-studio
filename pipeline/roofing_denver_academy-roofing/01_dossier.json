@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_denver_academy-roofing",
+  "scouted_at": "2026-11-24T18:10:58Z",
+  "niche": "roofing",
+  "business_name": "Academy Roofing Inc.",
+  "location": {
+    "city": "Denver",
+    "state": "CO",
+    "country": "US"
+  },
+  "website_url": "https://www.academyroofinginc.com/",
+  "contact_info": {
+    "decision_maker": "Curt Boyd",
+    "role": "Founder & President",
+    "email": "estimates@academyroofinginc.com",
+    "phone": "(303) 360-0708",
+    "contact_page_url": "https://www.academyroofinginc.com/contact-us/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#702224",
+    "secondary_color_hex": "#2D3748",
+    "brand_vibe": "Iconic 45-year Denver roofer since 1980"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage pushes mobile homeowners into a static 8-field form with zero instant Front Range Class-4 hail shingle ballpark or financing preview",
+      "No interactive hail-claim triage or Class-4 impact shingle vs. standing seam metal comparison before collecting full personal details"
+    ],
+    "seo_or_speed_leaks": [
+      "All 18 of 18 homepage images load eagerly without native loading='lazy' attributes",
+      "7 of 18 homepage images are missing descriptive alt text and 3 render-blocking scripts sit in <head>"
+    ],
+    "current_lead_capture_method": "Static 8-field homepage estimate form and click-to-call phone line (303) 360-0708"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Academy Roofing has 45 years of Denver trust since 1980, yet mobile homeowners still hit a static 8-field form with no interactive way to preview a Class-4 hail roof ballpark.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

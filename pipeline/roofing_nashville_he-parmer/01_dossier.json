@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_nashville_he-parmer",
+  "scouted_at": "2026-11-25T15:18:43Z",
+  "niche": "roofing",
+  "business_name": "H.E. Parmer Company",
+  "location": {
+    "city": "Nashville",
+    "state": "TN",
+    "country": "US"
+  },
+  "website_url": "https://www.heparmer.com/",
+  "contact_info": {
+    "decision_maker": "Robert Roden",
+    "role": "President & CEO",
+    "email": "roofing@heparmer.com",
+    "phone": "(615) 255-2513",
+    "contact_page_url": "https://www.heparmer.com/contact/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#1C1F26",
+    "secondary_color_hex": "#CF2E2E",
+    "brand_vibe": "Historic 4th-generation Nashville roofer since 1889"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage contains zero embedded quote form or interactive estimator — forcing mobile Nashville homeowners to call during office hours without any rough price guidance",
+      "No interactive Middle Tennessee storm restoration or architectural shingle vs. standing seam metal comparison tool"
+    ],
+    "seo_or_speed_leaks": [
+      "No interactive above-the-fold digital lead capture on heparmer.com to convert after-hours mobile traffic",
+      "Relies entirely on phone calls and email links without pre-qualifying roof size, slope, or metal/shingle interest"
+    ],
+    "current_lead_capture_method": "Direct office phone line (615) 255-2513 and email links with zero homepage form"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "H.E. Parmer's 135-year Nashville legacy since 1889 is unmatched, yet your homepage has zero interactive quote estimator to capture modern mobile homeowners after hours.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agencia.local/schemas/02_solution_spec.schema.json",
+  "title": "Agent 02 Solution Specification",
+  "description": "Strict technical and conversion architecture contract produced by Agent 02 (Solution Architect) for Agent 03 (Full-Stack Builder) and Agent 04 (B2B Closer).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "prospect_id",
+    "architected_at",
+    "template_base",
+    "brand_config",
+    "pricing_engine",
+    "ux_steps",
+    "preview_wrapper_spec",
+    "commercial_offer"
+  ],
+  "properties": {
+    "prospect_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+_[a-z0-9-]+_[a-z0-9-]+$",
+      "description": "Matching prospect slug from Agent 01's 01_dossier.json."
+    },
+    "architected_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 timestamp indicating when the solution spec was finalized."
+    },
+    "template_base": {
+      "type": "string",
+      "minLength": 3,
+      "description": "Reusable template folder name under c:/agencia/templates/ (Wave 1: 'roofing-quote-calc').",
+      "examples": ["roofing-quote-calc"]
+    },
+    "telemetry_endpoint": {
+      "type": "string",
+      "pattern": "^https://[a-zA-Z0-9.-]+/[a-zA-Z0-9_/-]+$",
+      "description": "Optional first-party Cloudflare Worker event/lead ingestion endpoint."
+    },
+    "delivery_mode": {
+      "type": "string",
+      "enum": ["demo", "production"],
+      "default": "demo",
+      "description": "Widget routing mode: 'demo' records preview telemetry/test leads; 'production' forwards real homeowner leads to client webhook."
+    },
+    "brand_config": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "business_name",
+        "tagline",
+        "primary_hex",
+        "secondary_hex",
+        "surface_hex",
+        "text_hex",
+        "cta_label",
+        "phone_display"
+      ],
+      "properties": {
+        "business_name": { "type": "string", "minLength": 2 },
+        "tagline": { "type": "string", "minLength": 5 },
+        "primary_hex": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+        "secondary_hex": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+        "surface_hex": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+        "text_hex": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+        "cta_label": { "type": "string", "minLength": 3 },
+        "phone_display": { "type": "string", "minLength": 7 }
+      }
+    },
+    "pricing_engine": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "currency",
+        "base_rates_per_sqft",
+        "story_multipliers",
+        "pitch_multipliers",
+        "financing_apr_percent",
+        "financing_term_months"
+      ],
+      "properties": {
+        "currency": {
+          "type": "string",
+          "enum": ["USD", "CAD", "GBP", "AUD"],
+          "default": "USD"
+        },
+        "base_rates_per_sqft": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "architectural_shingle",
+            "standing_seam_metal",
+            "designer_tile"
+          ],
+          "properties": {
+            "architectural_shingle": { "$ref": "#/$defs/material_rate" },
+            "standing_seam_metal": { "$ref": "#/$defs/material_rate" },
+            "designer_tile": { "$ref": "#/$defs/material_rate" }
+          }
+        },
+        "story_multipliers": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["one_story", "two_story", "three_plus"],
+          "properties": {
+            "one_story": { "type": "number", "exclusiveMinimum": 0 },
+            "two_story": { "type": "number", "exclusiveMinimum": 0 },
+            "three_plus": { "type": "number", "exclusiveMinimum": 0 }
+          }
+        },
+        "pitch_multipliers": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["low", "standard", "steep"],
+          "properties": {
+            "low": { "type": "number", "exclusiveMinimum": 0 },
+            "standard": { "type": "number", "exclusiveMinimum": 0 },
+            "steep": { "type": "number", "exclusiveMinimum": 0 }
+          }
+        },
+        "financing_apr_percent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 35
+        },
+        "financing_term_months": {
+          "type": "integer",
+          "minimum": 12,
+          "maximum": 360
+        }
+      }
+    },
+    "ux_steps": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "step_number",
+          "title",
+          "inputs",
+          "conversion_psychology_note"
+        ],
+        "properties": {
+          "step_number": { "type": "integer", "minimum": 1, "maximum": 4 },
+          "title": { "type": "string", "minLength": 3 },
+          "inputs": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "minLength": 3 }
+          },
+          "conversion_psychology_note": { "type": "string", "minLength": 15 }
+        }
+      }
+    },
+    "preview_wrapper_spec": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "hero_headline",
+        "hero_subheadline",
+        "pain_points_solved_callouts"
+      ],
+      "properties": {
+        "hero_headline": { "type": "string", "minLength": 10 },
+        "hero_subheadline": { "type": "string", "minLength": 20 },
+        "pain_points_solved_callouts": {
+          "type": "array",
+          "minItems": 2,
+          "items": { "type": "string", "minLength": 10 }
+        }
+      }
+    },
+    "commercial_offer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "setup_fee_usd",
+        "monthly_retainer_usd",
+        "retainer_deliverables"
+      ],
+      "properties": {
+        "setup_fee_usd": { "type": "integer", "minimum": 500 },
+        "monthly_retainer_usd": { "type": "integer", "minimum": 99 },
+        "retainer_deliverables": {
+          "type": "array",
+          "minItems": 3,
+          "items": { "type": "string", "minLength": 8 }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "material_rate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["min", "max", "label"],
+      "properties": {
+        "min": { "type": "number", "exclusiveMinimum": 0 },
+        "max": { "type": "number", "exclusiveMinimum": 0 },
+        "label": { "type": "string", "minLength": 3 }
+      }
+    }
+  }
+}

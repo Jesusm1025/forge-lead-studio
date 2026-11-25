@@ -1,0 +1,103 @@
+{
+  "prospect_id": "roofing_austin_austin-roofing-company",
+  "architected_at": "2026-11-22T21:33:00Z",
+  "template_base": "roofing-quote-calc",
+  "brand_config": {
+    "business_name": "Austin Roofing Company LLC",
+    "tagline": "Family-Owned in Austin Since 2007 · 1,478+ Roofs Serviced",
+    "primary_hex": "#08295B",
+    "secondary_hex": "#FFCC16",
+    "surface_hex": "#F4F7F9",
+    "text_hex": "#151A20",
+    "cta_label": "Book My Free Austin Inspection",
+    "phone_display": "(512) 952-7454"
+  },
+  "pricing_engine": {
+    "currency": "USD",
+    "base_rates_per_sqft": {
+      "architectural_shingle": {
+        "min": 5.5,
+        "max": 7.25,
+        "label": "Class 4 Impact-Resistant Shingle"
+      },
+      "standing_seam_metal": {
+        "min": 11.25,
+        "max": 14.75,
+        "label": "Standing Seam Metal Roof"
+      },
+      "designer_tile": {
+        "min": 13.5,
+        "max": 18.0,
+        "label": "Clay & Concrete Tile Roof"
+      }
+    },
+    "story_multipliers": {
+      "one_story": 1.0,
+      "two_story": 1.12,
+      "three_plus": 1.25
+    },
+    "pitch_multipliers": {
+      "low": 0.95,
+      "standard": 1.0,
+      "steep": 1.18
+    },
+    "financing_apr_percent": 9.99,
+    "financing_term_months": 120
+  },
+  "ux_steps": [
+    {
+      "step_number": 1,
+      "title": "Property Profile",
+      "inputs": [
+        "Approximate home / roof size slider (1,200 – 4,500+ sq. ft., default 2,400 sq. ft.) paired with one-tap Austin home presets (1,600 / 2,400 / 3,200 / 4,200+ sq ft)",
+        "Number of stories card selector (1-Story, 2-Story, 3+ Stories)"
+      ],
+      "conversion_psychology_note": "Replaces austinroofingcompany.us's JS-hidden blind 3-field address modal with instant zero-typing engagement that works immediately on slow mobile connections."
+    },
+    {
+      "step_number": 2,
+      "title": "Roof Pitch & Storm Urgency",
+      "inputs": [
+        "Visual slope selector (Low 2/12–4/12, Standard 5/12–7/12, Steep 8/12+)",
+        "Urgency & condition selector (Routine Replacement, Storm / Hail Damage, Active Leak)"
+      ],
+      "conversion_psychology_note": "Separates urgent Central Texas hail/insurance restoration jobs from routine replacements before Abraham's team schedules an on-site visit."
+    },
+    {
+      "step_number": 3,
+      "title": "Select Roofing Material",
+      "inputs": [
+        "Three Austin material cards mirroring Austin Roofing Company's core systems: Class 4 Impact-Resistant Shingle, Standing Seam Metal Roof, and Clay & Concrete Tile Roof"
+      ],
+      "conversion_psychology_note": "Educates homeowners on Central Texas hail resistance and lifespan upgrades, priming higher average ticket values before revealing the ballpark range."
+    },
+    {
+      "step_number": 4,
+      "title": "Instant Austin Ballpark & Inspection Lock-In",
+      "inputs": [
+        "Ungated installed range (e.g., $13,200 – $17,400) + amortized monthly payment preview (from $174/mo) + live Shingle/Metal/Tile comparison switcher",
+        "Low-friction 2-field booking form (Full Name, Mobile Phone or Email) + 1-tap Preferred Inspection Window replacing the cold street-address demand"
+      ],
+      "conversion_psychology_note": "Giving homeowners transparent Austin ballpark numbers BEFORE asking for their phone number removes blind-form drop-off and pre-qualifies serious replacement buyers."
+    }
+  ],
+  "preview_wrapper_spec": {
+    "hero_headline": "Instant Austin Roof Replacement & Hail-Upgrade Estimate in 30 Seconds",
+    "hero_subheadline": "Engineered in Austin Roofing Company's navy-and-gold identity: replaces your blind 3-field Forminator modal with a 28 KB Shadow DOM estimator that pre-qualifies homeowners instantly.",
+    "pain_points_solved_callouts": [
+      "Eliminates the blind 3-field Forminator address modal (which ships display:none until heavy WordPress JS boots) with an instant 4-step ballpark & monthly financing reveal",
+      "Captures roof size, stories, slope, material preference, and Austin hail/leak urgency automatically before your crew books an inspection slot",
+      "Weighs under 30 KB with zero external dependencies — loads instantaneously alongside your 419 KB WordPress homepage via one drop-in <script> tag"
+    ]
+  },
+  "commercial_offer": {
+    "setup_fee_usd": 750,
+    "monthly_retainer_usd": 149,
+    "retainer_deliverables": [
+      "Global edge CDN hosting and 99.9% uptime SLA for the lightweight drop-in widget script",
+      "Instant Email, SMS, and CRM webhook routing delivering every homeowner's roof specs and ballpark estimate",
+      "Quarterly Austin & Central Texas shingle, metal, and tile material pricing calibration",
+      "Monthly conversion funnel performance report (widget starts, reveals, and booked inspections)"
+    ]
+  }
+}

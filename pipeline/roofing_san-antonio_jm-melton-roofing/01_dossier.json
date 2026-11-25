@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_san-antonio_jm-melton-roofing",
+  "scouted_at": "2026-11-25T15:18:43Z",
+  "niche": "roofing",
+  "business_name": "JM Melton Roofing",
+  "location": {
+    "city": "San Antonio",
+    "state": "TX",
+    "country": "US"
+  },
+  "website_url": "https://www.jmmeltonroofing.com/",
+  "contact_info": {
+    "decision_maker": "Mason Melton",
+    "role": "Owner & President",
+    "email": "mason@jmmelton.com",
+    "phone": "(210) 289-5962",
+    "contact_page_url": "https://www.jmmeltonroofing.com/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#254086",
+    "secondary_color_hex": "#58C82D",
+    "brand_vibe": "Family-owned San Antonio multi-material roofer"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Estimate page pushes mobile homeowners through an intimidating 16-field static form with zero instant San Antonio replacement range or monthly payment preview",
+      "Homepage only offers a blind 5-field callback form without letting shoppers compare Class-4 shingle, metal, and Spanish tile ballparks first"
+    ],
+    "seo_or_speed_leaks": [
+      "Extremely heavy 1,017.8 KB homepage HTML payload with 3,041 ms server TTFB delaying mobile first paint",
+      "14 of 20 homepage images omit loading='lazy' and 19 remain in legacy JPG/PNG formats"
+    ],
+    "current_lead_capture_method": "Static 5-field homepage form, 16-field estimate page form, and phone links"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Your San Antonio estimate page asks homeowners to fill out a 16-field static form blind without showing any rough shingle, metal, or tile ballpark first.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

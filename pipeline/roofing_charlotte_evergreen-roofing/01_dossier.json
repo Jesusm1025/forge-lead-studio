@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_charlotte_evergreen-roofing",
+  "scouted_at": "2026-11-24T18:10:58Z",
+  "niche": "roofing",
+  "business_name": "Evergreen Roofing Solutions",
+  "location": {
+    "city": "Charlotte",
+    "state": "NC",
+    "country": "US"
+  },
+  "website_url": "https://evergreenroofingcharlotte.com/",
+  "contact_info": {
+    "decision_maker": "Matt Hopkins",
+    "role": "Co-Owner",
+    "email": "matt@evergreenroofingcharlotte.com",
+    "phone": "(704) 609-3561",
+    "contact_page_url": "https://evergreenroofingcharlotte.com/contact/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#192437",
+    "secondary_color_hex": "#759E3F",
+    "brand_vibe": "Owner-operated local Charlotte roofer"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "/contact/#quote forces mobile homeowners through a static 6-field form with zero instant Charlotte roof replacement ballpark or steep-slope multiplier preview",
+      "No interactive Carolinas wind/storm triage or architectural shingle vs. metal price comparison before submitting contact info"
+    ],
+    "seo_or_speed_leaks": [
+      "Very slow 11,751 ms initial server TTFB severely hurts mobile visitor retention",
+      "All 11 of 11 homepage images remain in legacy JPG/PNG formats, with 7 missing loading='lazy' and 7 missing alt tags"
+    ],
+    "current_lead_capture_method": "Static 3-field homepage form, 6-field /contact/ form, and phone links"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Evergreen's Charlotte site takes 11+ seconds to respond and funnels homeowners into a static 6-field quote form with zero instant Carolinas ballpark range.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

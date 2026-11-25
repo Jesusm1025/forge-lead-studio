@@ -1,0 +1,698 @@
+[
+  {
+    "slug": "decker-roofing",
+    "url": "https://decker-roofing-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Decker Roofing Company LLC — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://decker-roofing-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\decker-roofing_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$13,200 – $17,400",
+      "revealedMonthly": "$174/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\decker-roofing_mobile.png"
+    },
+    "widget_live_bytes": 29591,
+    "passed": true
+  },
+  {
+    "slug": "jm-melton-roofing",
+    "url": "https://jm-melton-roofing-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "JM Melton Roofing — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://jm-melton-roofing-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\jm-melton-roofing_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$13,200 – $17,400",
+      "revealedMonthly": "$174/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\jm-melton-roofing_mobile.png"
+    },
+    "widget_live_bytes": 29588,
+    "passed": true
+  },
+  {
+    "slug": "twin-hammers-roofing",
+    "url": "https://twin-hammers-roofing-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Twin Hammers Roofing & Contracting — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://twin-hammers-roofing-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\twin-hammers-roofing_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$13,200 – $17,400",
+      "revealedMonthly": "$174/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\twin-hammers-roofing_mobile.png"
+    },
+    "widget_live_bytes": 29617,
+    "passed": true
+  },
+  {
+    "slug": "first-light-roofing",
+    "url": "https://first-light-roofing-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "First Light Home Services LLC — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://first-light-roofing-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\first-light-roofing_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$15,000 – $19,800",
+      "revealedMonthly": "$198/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\first-light-roofing_mobile.png"
+    },
+    "widget_live_bytes": 29611,
+    "passed": true
+  },
+  {
+    "slug": "townsend-roofing",
+    "url": "https://townsend-roofing-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Townsend Roofing & Construction Services, Inc. — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://townsend-roofing-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\townsend-roofing_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$15,000 – $19,800",
+      "revealedMonthly": "$198/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\townsend-roofing_mobile.png"
+    },
+    "widget_live_bytes": 29618,
+    "passed": true
+  },
+  {
+    "slug": "allegiance-roofing",
+    "url": "https://allegiance-roofing-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Allegiance Roofing Services — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://allegiance-roofing-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\allegiance-roofing_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$15,000 – $19,800",
+      "revealedMonthly": "$198/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\allegiance-roofing_mobile.png"
+    },
+    "widget_live_bytes": 29606,
+    "passed": true
+  },
+  {
+    "slug": "raleigh-residential-exteriors",
+    "url": "https://raleigh-residential-exteriors-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Raleigh Residential Exteriors — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://raleigh-residential-exteriors-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\raleigh-residential-exteriors_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$12,600 – $17,400",
+      "revealedMonthly": "$166/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\raleigh-residential-exteriors_mobile.png"
+    },
+    "widget_live_bytes": 29613,
+    "passed": true
+  },
+  {
+    "slug": "rex-construction",
+    "url": "https://rex-construction-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Rex Construction LLC — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://rex-construction-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\rex-construction_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$12,600 – $17,400",
+      "revealedMonthly": "$166/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\rex-construction_mobile.png"
+    },
+    "widget_live_bytes": 29592,
+    "passed": true
+  },
+  {
+    "slug": "aceline-roofing",
+    "url": "https://aceline-roofing-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Aceline Roofing — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://aceline-roofing-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\aceline-roofing_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$12,600 – $17,400",
+      "revealedMonthly": "$166/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\aceline-roofing_mobile.png"
+    },
+    "widget_live_bytes": 29571,
+    "passed": true
+  },
+  {
+    "slug": "quality-rrc",
+    "url": "https://quality-rrc-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Quality Roofing & Restoration — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://quality-rrc-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\quality-rrc_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$13,200 – $18,000",
+      "revealedMonthly": "$174/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\quality-rrc_mobile.png"
+    },
+    "widget_live_bytes": 29592,
+    "passed": true
+  },
+  {
+    "slug": "mr-goodroof",
+    "url": "https://mr-goodroof-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Mr. GoodRoof — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://mr-goodroof-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\mr-goodroof_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$13,200 – $18,000",
+      "revealedMonthly": "$174/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\mr-goodroof_mobile.png"
+    },
+    "widget_live_bytes": 29584,
+    "passed": true
+  },
+  {
+    "slug": "he-parmer",
+    "url": "https://he-parmer-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "H.E. Parmer Company — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://he-parmer-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\he-parmer_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$13,200 – $18,000",
+      "revealedMonthly": "$174/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\he-parmer_mobile.png"
+    },
+    "widget_live_bytes": 29583,
+    "passed": true
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "prospect_id": "roofing_austin_austin-roofing-company",
+  "scouted_at": "2026-11-22T05:59:00Z",
+  "niche": "roofing",
+  "business_name": "Austin Roofing Company LLC",
+  "location": {
+    "city": "Austin",
+    "state": "TX",
+    "country": "US"
+  },
+  "website_url": "https://austinroofingcompany.us/",
+  "contact_info": {
+    "decision_maker": "Abraham Ron",
+    "role": "Owner",
+    "email": "info@austinroofingcompany.us",
+    "phone": "(512) 952-7454",
+    "contact_page_url": "https://austinroofingcompany.us/contact/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#08295B",
+    "secondary_color_hex": "#FFCC16",
+    "brand_vibe": "Family-owned trustworthy"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage 'Free Estimate' modal forces mobile visitors into a blind 3-field Forminator callback form (Name, Phone, Street Address) with zero instant price range or roof scope selection",
+      "Both homepage and /contact/ Forminator forms ship with inline style='display: none;' until client-side JS initializes, compounding perceived lag on mobile",
+      "Contact page asks visitors to pick an inspection date and time slot without first providing a ballpark replacement budget or material comparison"
+    ],
+    "seo_or_speed_leaks": [
+      "Slow 1,935 ms initial server TTFB and bloated 419 KB homepage HTML payload carrying overlapping WordPress builder footprints (Elementor and Divi remnants)",
+      "33 of 58 homepage images remain in legacy JPG/PNG formats instead of modern WebP/AVIF",
+      "18 of 58 homepage images have missing or empty alt attributes, and 1 render-blocking script loads in <head>"
+    ],
+    "current_lead_capture_method": "Static Forminator 3-field modal form (Name, Phone, Street Address) on homepage and 5-field scheduling form on /contact/, plus click-to-call phone CTA"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Your Austin site already pulls in local roof replacement traffic, but homeowners clicking 'Free Estimate' hit a blind 3-field address form with no instant ballpark range before handing over their phone number.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "prospect_id": "roofing_dallas_honestroof",
+  "generated_at": "2026-11-22T23:46:00Z",
+  "target_recipients": [
+    "Dennis B. Harrison (President & CEO)",
+    "info@honestroof.com"
+  ],
+  "primary_channel": "cold_email",
+  "emails": [
+    {
+      "step": 1,
+      "delay_days": 0,
+      "subject_line_a": "Quick build for HonestRoof.com",
+      "subject_line_b": "Upfront DFW roof calculator for Dennis",
+      "body_text": "Hey Dennis,\n\nI was looking through honestroof.com and really respected your upfront pricing-by-the-square message — not many DFW roofers lead with straight talk.\n\nOne leak caught my eye: mobile visitors still hit a 9-field address form with no instant ballpark range before submitting.\n\nSo I built a working 30-second DFW Roof Estimator in your crimson-and-slate HonestRoof.com branding. Homeowners tap their size, slope, and Class 4 shingle or metal choice and see an honest local ballpark before entering their name and phone.\n\nMind if I send over the live preview link?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Brand Alignment & Value-First Reciprocity (ties directly to their 'upfront pricing by the square' ethos; link-free Step 1 protects deliverability)",
+      "word_count": 95
+    },
+    {
+      "step": 2,
+      "delay_days": 3,
+      "subject_line_a": "Your crimson-and-slate DFW roof estimator",
+      "subject_line_b": "60-sec walkthrough for Dennis Harrison",
+      "body_text": "Hey Dennis,\n\nHere is the live prototype I built for HonestRoof.com plus a quick 60-second walkthrough:\n\nLive demo: {{preview_url}}\n60-sec video: {{loom_url}}\n\nTap through all 4 steps on your phone. A 2,400 sq ft DFW home shows a calibrated ballpark ($13,200–$17,400, from $174/mo) and lets homeowners compare Class 4 Impact-Resistant Shingle, Standing Seam Metal, and Stone-Coated Steel live.\n\nWhen they lock in a same-day inspection, your team automatically gets their size, slope, material, and hail/leak priority.\n\nWorth a quick 5-min look?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Tangible Proof & Local DFW Specificity (shows exact calibrated numbers + instant mobile hands-on test)",
+      "word_count": 86
+    },
+    {
+      "step": 3,
+      "delay_days": 7,
+      "subject_line_a": "5-min install + quick speed note on honestroof.com",
+      "subject_line_b": "Two free website catches for HonestRoof.com",
+      "body_text": "Hey Dennis,\n\nQuick note — putting this estimator live takes 5 minutes and zero site redesign. It drops in with one line of code, runs in Shadow DOM isolation, and weighs just 28 KB.\n\nAlso spotted two quick fixes for your web team free of charge: honestroof.com currently loads a 317 KB homepage HTML file with a render-blocking script in the header, plus 3 images missing lazy-loading.\n\nWant me to show you how DFW hail-damage leads get flagged straight to your priority slot?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Friction Removal & Unprompted Value Gift (gives verified speed fixes for free while highlighting 5-min install)",
+      "word_count": 88
+    },
+    {
+      "step": 4,
+      "delay_days": 12,
+      "subject_line_a": "Keep HonestRoof.com preview live?",
+      "subject_line_b": "Closing the loop, Dennis",
+      "body_text": "Hey Dennis,\n\nI know running a busy DFW roofing crew keeps your week packed, so I won't keep crowding your inbox.\n\nShould I leave your HonestRoof.com estimator preview live for another week so you can test it on your phone, or archive it Friday?\n\nEither way, huge respect for keeping honest, multi-generational roofing alive in North Texas.\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Respectful Loss Aversion / Polite Breakup (respects contractor's time and prompts fast yes/no response)",
+      "word_count": 62
+    }
+  ],
+  "linkedin_dm_touch": {
+    "connection_note": "Hi Dennis — love the upfront pricing-by-the-square stand on honestroof.com. I noticed mobile visitors still hit a 9-field form with no ballpark price, so I mocked up a quick crimson-and-slate DFW roof estimator for you. Open to connecting?",
+    "follow_up_dm": "Thanks for connecting, Dennis. Here's that working 30-second DFW Roof Estimator I built in HonestRoof.com colors: {{preview_url}}\n\nTry tapping through Class 4 Shingle, Metal, and Stone-Coated Steel on your phone — it shows homeowners an honest ballpark range before asking for their name and phone, and installs on honestroof.com with one line of code. Zero pressure, happy to chat 5 mins if useful."
+  },
+  "loom_60s_script": {
+    "hook_0_15s": "[SCREEN: honestroof.com homepage & /about-us] \"Hey Dennis — quick 60-second video just for you. I was checking out honestroof.com and loved that you actually talk about honest upfront pricing by the square in DFW.\"",
+    "pain_comparison_15_35s": "[SCREEN: Scroll to 9-field estimate form on honestroof.com] \"Here's the one spot leaking mobile leads: before homeowners see any rough number, they hit a 9-field form asking for street address, city, ZIP, and referral source. Most folks on their phone back out instead of typing all that blind.\"",
+    "live_demo_walkthrough_35_50s": "[SCREEN: Switch tab to live HonestRoof.com MVP & tap Steps 1–4] \"So I built a 28-kilobyte fix in your crimson-and-slate branding. Four taps — size, stories, slope, hail or routine — and it immediately shows a calibrated DFW range, $13,200 to $17,400, from $174 a month, BEFORE asking for a name and phone. Toggle Metal or Stone-Coated Steel live, book a test, and your team gets every roof detail automatically.\"",
+    "zero_pressure_cta_50_60s": "[SCREEN: Point to 1-line embed bar at top] \"Drops onto your site in five minutes with zero redesign. Reply if you'd like to put it live — either way, hope it helps.\""
+  },
+  "objection_handlers": [
+    {
+      "objection": "We already publish honest upfront pricing by the square — why add a calculator?",
+      "reframe_response": "Most DFW homeowners don't know what a roofing 'square' is or how 2-story steep pitch affects their total. This translates your honest per-square philosophy into an instant 30-second total and monthly range on their phone, so they book with full trust instead of bouncing off a 9-field form."
+    },
+    {
+      "objection": "Online roof estimates can't replace seeing the decking and flashing in person.",
+      "reframe_response": "100% agree — this never gives a binding bid. It gives an honest DFW ballpark range with an on-site inspection disclaimer so $6,000 tire-kickers filter themselves out while qualified homeowners book knowing a real North Texas replacement runs $13k–$40k+."
+    },
+    {
+      "objection": "Why pay $750 setup + $149/mo when we already have a contact form?",
+      "reframe_response": "Your 9-field address form leaks mobile visitors who want a ballpark first. This widget lifts conversions right on your homepage, tags North Texas hail/leak urgency automatically, gets quarterly DFW pricing updates, and a single extra closed roof covers 3+ years."
+    },
+    {
+      "objection": "I don't want anyone breaking honestroof.com or slowing it down.",
+      "reframe_response": "Zero redesign required. It's a 28 KB vanilla JS script inside Shadow DOM isolation, so it cannot touch a single style on your site or slow down your page — and we'll hand your web person the fix for your render-blocking header script for free."
+    },
+    {
+      "objection": "Send me the numbers and I'll look it over with my team.",
+      "reframe_response": "Happy to — I'll send a short 3-bullet recap ($750 one-time DFW calibration & setup, $149/mo hosting, instant SMS/email routing, and quarterly pricing updates, cancel anytime) plus the live link to tap through on your phone. Good to check back Thursday morning?"
+    }
+  ]
+}

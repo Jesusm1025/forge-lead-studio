@@ -1,0 +1,16 @@
+# Agency Secrets & Local Credentials (NEVER COMMIT)
+config/sender_credentials.json
+.env
+.env.*
+*.bak
+
+# Build, Python & Tooling Caches
+__pycache__/
+*.py[cod]
+.wrangler/
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Heavy Visual Audit Screenshots (keep JSON audit reports & CRM tracked)
+tracking/screenshots/*.png

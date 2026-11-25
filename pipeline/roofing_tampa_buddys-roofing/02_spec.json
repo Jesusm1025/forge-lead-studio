@@ -1,0 +1,105 @@
+{
+  "prospect_id": "roofing_tampa_buddys-roofing",
+  "architected_at": "2026-11-22T21:33:00Z",
+  "template_base": "roofing-quote-calc",
+  "brand_config": {
+    "business_name": "Buddy's Roofing & Repairs, Inc.",
+    "tagline": "37+ Years of Family-Owned Tampa Bay Roofing · Direct-Hire Crews",
+    "primary_hex": "#B20000",
+    "secondary_hex": "#102B35",
+    "surface_hex": "#F6F6F6",
+    "text_hex": "#090C0B",
+    "cta_label": "Schedule Free Tampa Inspection",
+    "phone_display": "(813) 690-3296"
+  },
+  "pricing_engine": {
+    "currency": "USD",
+    "base_rates_per_sqft": {
+      "architectural_shingle": {
+        "min": 6.25,
+        "max": 8.25,
+        "label": "Hurricane-Rated Architectural Shingle"
+      },
+      "standing_seam_metal": {
+        "min": 12.5,
+        "max": 16.5,
+        "label": "Coastal Standing Seam Metal"
+      },
+      "designer_tile": {
+        "min": 14.5,
+        "max": 19.5,
+        "label": "Florida Clay & Concrete Tile"
+      }
+    },
+    "story_multipliers": {
+      "one_story": 1.0,
+      "two_story": 1.14,
+      "three_plus": 1.28
+    },
+    "pitch_multipliers": {
+      "low": 0.96,
+      "standard": 1.0,
+      "steep": 1.18
+    },
+    "financing_apr_percent": 9.99,
+    "financing_term_months": 120
+  },
+  "ux_steps": [
+    {
+      "step_number": 1,
+      "title": "Property Profile",
+      "inputs": [
+        "Approximate Tampa home / roof area slider (1,200 – 4,500+ sq. ft., default 2,400 sq. ft.) paired with one-tap size presets (1,600 / 2,400 / 3,200 / 4,200+ sq ft)",
+        "Number of stories visual selector (1-Story, 2-Story, 3+ Stories)"
+      ],
+      "conversion_psychology_note": "Solves buddysroofing.com's zero-homepage-form leak immediately — engaging Tampa homeowners right on the landing page instead of forcing an off-page redirect to /contact.html."
+    },
+    {
+      "step_number": 2,
+      "title": "Roof Pitch & Storm Urgency",
+      "inputs": [
+        "Visual pitch selector (Low 2/12–4/12, Standard 5/12–7/12, Steep 8/12+)",
+        "Condition & hurricane/storm urgency selector (Routine Replacement, Storm / Hail Damage, Active Leak)"
+      ],
+      "conversion_psychology_note": "Instantly flags urgent Tampa Bay hurricane/storm leaks for Buddy's 24/7 direct-hire crew dispatch while qualifying standard replacements separately."
+    },
+    {
+      "step_number": 3,
+      "title": "Select Hurricane-Ready System",
+      "inputs": [
+        "Three Tampa Bay Florida Building Code material cards: Hurricane-Rated Architectural Shingle, Coastal Standing Seam Metal, and Florida Clay & Concrete Tile"
+      ],
+      "conversion_psychology_note": "Calibrated to real Florida wind-mitigation and secondary water barrier installed economics so homeowners appreciate quality direct-hire workmanship over cut-rate subcontractors."
+    },
+    {
+      "step_number": 4,
+      "title": "Instant Tampa Ballpark & Inspection Booking",
+      "inputs": [
+        "Ungated Florida-code installed range (e.g., $15,000 – $19,800) + estimated monthly financing preview (from $198/mo) + live Shingle/Metal/Tile switcher",
+        "Simple 2-field booking form (Full Name, Mobile Phone or Email) + Preferred Inspection Window + unified (813) 690-3296 click-to-call"
+      ],
+      "conversion_psychology_note": "Replaces the cold 7-field off-page /contact.html form with transparent Tampa Bay pricing upfront, doubling qualified bookings while unifying click-to-call on one clear 813 line."
+    }
+  ],
+  "preview_wrapper_spec": {
+    "hero_headline": "Get Your Tampa Bay Roof Replacement & Hurricane-Code Estimate in 30 Seconds",
+    "hero_subheadline": "Built in Buddy's Roofing & Repairs' exact crimson-and-slate identity: puts an interactive 4-step Tampa roof estimator right on your homepage so visitors stop bouncing before reaching /contact.html.",
+    "pain_points_solved_callouts": [
+      "Fixes buddysroofing.com's zero-homepage-form conversion gap by embedding a live 4-step roof estimator directly above the fold without redesigning your site",
+      "Calibrated specifically for Tampa Bay Florida Building Code hurricane-rated shingle, coastal metal, and clay tile pricing — plus priority storm/leak triage for your 24/7 direct-hire crews",
+      "Zero-bloat <30 KB Shadow DOM script with unified (813) 690-3296 click-to-call, replacing the high-friction off-page 7-field /contact.html form"
+    ]
+  },
+  "commercial_offer": {
+    "setup_fee_usd": 750,
+    "monthly_retainer_usd": 149,
+    "retainer_deliverables": [
+      "Global edge CDN hosting and 99.9% uptime SLA for the lightweight drop-in widget script",
+      "Instant Email, SMS, and CRM lead routing with complete roof specs, storm urgency flag, and estimated budget range",
+      "Quarterly Tampa Bay & Hillsborough County Florida Building Code material and wind-mitigation pricing updates",
+      "Monthly conversion funnel report (estimator starts, material breakdowns, and booked Tampa inspections)"
+    ]
+  },
+  "telemetry_endpoint": "https://forge-lead-router.forge-lead-studio.workers.dev/event",
+  "delivery_mode": "demo"
+}

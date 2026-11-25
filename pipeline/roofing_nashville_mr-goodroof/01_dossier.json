@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_nashville_mr-goodroof",
+  "scouted_at": "2026-11-25T15:18:43Z",
+  "niche": "roofing",
+  "business_name": "Mr. GoodRoof",
+  "location": {
+    "city": "Nashville",
+    "state": "TN",
+    "country": "US"
+  },
+  "website_url": "https://www.mrgoodroof.com/",
+  "contact_info": {
+    "decision_maker": "Jimmy Hiller Jr.",
+    "role": "Owner",
+    "email": "contactus@mrgoodroof.com",
+    "phone": "(615) 824-8100",
+    "contact_page_url": "https://www.mrgoodroof.com/contact/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#003543",
+    "secondary_color_hex": "#F0453B",
+    "brand_vibe": "Premier Nashville GAF Master Elite local brand (roots since 1995)"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage contains zero embedded instant roof quote form — forcing Nashville mobile visitors to navigate off-page or call without seeing any ballpark replacement range",
+      "No interactive Middle Tennessee hail/wind claim triage or shingle vs. standing seam metal pricing comparison"
+    ],
+    "seo_or_speed_leaks": [
+      "Massive 780.9 KB homepage HTML payload creates heavy mobile parsing overhead",
+      "Missing an above-the-fold self-serve ballpark estimator for after-hours Middle Tennessee storm traffic"
+    ],
+    "current_lead_capture_method": "Off-page contact navigation and click-to-call phone line (615) 824-8100"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Mr. GoodRoof's GAF Master Elite reputation is huge in Nashville, yet your 780 KB homepage has zero embedded instant quote calculator for mobile homeowners.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

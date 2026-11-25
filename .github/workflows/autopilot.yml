@@ -1,0 +1,54 @@
+name: Forge Lead Studio — 24/7 Cloud AutoPilot
+
+on:
+  schedule:
+    # 09:00 AM AST (UTC-4) / 13:00 UTC daily
+    - cron: '0 13 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: forge-lead-studio-autopilot
+  cancel-in-progress: false
+
+jobs:
+  autopilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run Forge AutoPilot (KV Telemetry + IMAP Brake + Follow-Ups)
+        env:
+          SENDER_CREDENTIALS_JSON: ${{ secrets.SENDER_CREDENTIALS_JSON }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          TELEMETRY_ADMIN_KEY: ${{ secrets.TELEMETRY_ADMIN_KEY }}
+          TELEMETRY_WORKER_URL: ${{ secrets.TELEMETRY_WORKER_URL }}
+          SENDER_NAME: ${{ secrets.SENDER_NAME }}
+          SENDER_PHYSICAL_ADDRESS: ${{ secrets.SENDER_PHYSICAL_ADDRESS }}
+        run: python scripts/auto_pilot.py --live
+
+      - name: Commit and push updated CRM & autopilot log
+        run: |
+          git config user.name "Forge AutoPilot Bot"
+          git config user.email "forge-autopilot-bot@users.noreply.github.com"
+          git add tracking/crm_pipeline.json tracking/autopilot.log
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(autopilot): daily sync [skip ci]"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME:-main}" || true
+            git push
+          else
+            echo "No CRM or autopilot log changes to commit."
+          fi

@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_san-antonio_decker-roofing",
+  "scouted_at": "2026-11-25T15:18:43Z",
+  "niche": "roofing",
+  "business_name": "Decker Roofing Company LLC",
+  "location": {
+    "city": "San Antonio",
+    "state": "TX",
+    "country": "US"
+  },
+  "website_url": "https://www.decker-roofing.com/",
+  "contact_info": {
+    "decision_maker": "Steve Decker",
+    "role": "President & Founder",
+    "email": "info@decker-roofing.com",
+    "phone": "(210) 825-6125",
+    "contact_page_url": "https://www.decker-roofing.com/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#3C4BA6",
+    "secondary_color_hex": "#7BABF7",
+    "brand_vibe": "Founder-led San Antonio local roofer"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage contains zero embedded instant roof quote calculator or interactive lead capture form, forcing San Antonio mobile homeowners to call without seeing a rough ballpark",
+      "No interactive hail-damage priority selector or heat-reflective Class-4 shingle vs. metal price comparison"
+    ],
+    "seo_or_speed_leaks": [
+      "All 11 of 11 homepage images remain in unoptimized legacy JPG/PNG formats with 5 missing descriptive alt attributes",
+      "Template placeholder text (555-555-5555 / your@email.com) still sits inside page markup"
+    ],
+    "current_lead_capture_method": "Click-to-call phone link (210) 825-6125 and email link with zero embedded instant estimator"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Decker Roofing's homepage has zero interactive quote form — leaving San Antonio homeowners on mobile with no way to preview a hail or heat-reflective roof ballpark first.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

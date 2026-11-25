@@ -1,0 +1,105 @@
+{
+  "prospect_id": "roofing_orlando_drs-roofing",
+  "architected_at": "2026-11-22T23:41:00Z",
+  "template_base": "roofing-quote-calc",
+  "brand_config": {
+    "business_name": "DRS Roofing",
+    "tagline": "Protecting Orlando & Central Florida Since 1995 · License CCC-057239",
+    "primary_hex": "#B1080B",
+    "secondary_hex": "#FFCD57",
+    "surface_hex": "#FAFAFA",
+    "text_hex": "#1E293B",
+    "cta_label": "Lock In Free Orlando Inspection",
+    "phone_display": "(407) 240-1225"
+  },
+  "pricing_engine": {
+    "currency": "USD",
+    "base_rates_per_sqft": {
+      "architectural_shingle": {
+        "min": 6.25,
+        "max": 8.25,
+        "label": "FL-Code Hurricane Shingle"
+      },
+      "standing_seam_metal": {
+        "min": 12.5,
+        "max": 16.5,
+        "label": "Central FL Standing Seam Metal"
+      },
+      "designer_tile": {
+        "min": 14.5,
+        "max": 19.5,
+        "label": "Florida Clay & Concrete Tile"
+      }
+    },
+    "story_multipliers": {
+      "one_story": 1.0,
+      "two_story": 1.14,
+      "three_plus": 1.28
+    },
+    "pitch_multipliers": {
+      "low": 0.96,
+      "standard": 1.0,
+      "steep": 1.18
+    },
+    "financing_apr_percent": 9.99,
+    "financing_term_months": 120
+  },
+  "ux_steps": [
+    {
+      "step_number": 1,
+      "title": "Property Profile",
+      "inputs": [
+        "Orlando home / roof size slider (1,200 – 4,500+ sq. ft., default 2,400 sq. ft.) + one-tap size presets",
+        "Number of stories card selector (1-Story, 2-Story, 3+ Stories)"
+      ],
+      "conversion_psychology_note": "Replaces DRS Roofing's intimidating 14-field /roofing-estimate/ form with effortless visual controls that hook mobile visitors immediately."
+    },
+    {
+      "step_number": 2,
+      "title": "Roof Pitch & Storm Condition",
+      "inputs": [
+        "Roof pitch visual selector (Low, Standard, Steep)",
+        "Urgency selector (Routine Replacement, Storm / Hail Damage, Active Leak)"
+      ],
+      "conversion_psychology_note": "Auto-tags Central Florida hurricane/wind leaks for priority dispatch while capturing roof steepness for accurate labor staging."
+    },
+    {
+      "step_number": 3,
+      "title": "Select Florida-Code System",
+      "inputs": [
+        "Three Florida Building Code tiers: FL-Code Hurricane Shingle, Central FL Standing Seam Metal, and Florida Clay & Concrete Tile"
+      ],
+      "conversion_psychology_note": "Calibrated to real Orlando secondary water barrier and uplift compliance costs so homeowners arrive pre-educated on licensed contractor pricing."
+    },
+    {
+      "step_number": 4,
+      "title": "Instant Orlando Ballpark & 2-Field Booking",
+      "inputs": [
+        "Ungated Florida-code installed range ($15,000 – $19,800) + amortized monthly payment (from $198/mo) + live material switcher",
+        "Friction-free 2-field booking form (Full Name, Phone or Email) + Preferred Inspection Window"
+      ],
+      "conversion_psychology_note": "Replaces 14 required fields with transparent upfront Orlando pricing and 2 quick contact fields, cutting mobile abandonment dramatically."
+    }
+  ],
+  "preview_wrapper_spec": {
+    "hero_headline": "Get Your Orlando Florida-Code Roof Replacement Estimate in 30 Seconds",
+    "hero_subheadline": "Engineered in DRS Roofing's crimson-and-gold identity: swaps your 14-field static /roofing-estimate/ form for a 28 KB instant estimator calibrated to Central Florida hurricane codes.",
+    "pain_points_solved_callouts": [
+      "Replaces the heavy 14-field /roofing-estimate/ form (and 15-field /contact/ form) on drs-roofing.com with an ungated 4-step Florida cost & monthly financing reveal",
+      "Pre-qualifies Central Florida roof size, slope, hurricane-rated material preference, and storm urgency automatically for Richard's team",
+      "Weighs under 30 KB in Shadow DOM — adds zero drag to your 585 KB homepage and installs via one line of code in 5 minutes"
+    ]
+  },
+  "commercial_offer": {
+    "setup_fee_usd": 750,
+    "monthly_retainer_usd": 149,
+    "retainer_deliverables": [
+      "Global edge CDN hosting and 99.9% uptime SLA for the lightweight drop-in widget script",
+      "Instant Email, SMS, and CRM lead routing carrying full roof specs, storm flag, and estimated budget",
+      "Quarterly Central Florida Building Code material and wind-mitigation pricing calibration",
+      "Monthly conversion funnel analytics report (widget starts, reveals, and booked Orlando inspections)"
+    ]
+  },
+  "telemetry_endpoint": "https://forge-lead-router.forge-lead-studio.workers.dev/event",
+  "delivery_mode": "demo"
+}

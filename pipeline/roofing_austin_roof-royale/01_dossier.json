@@ -1,0 +1,44 @@
+{
+  "prospect_id": "roofing_austin_roof-royale",
+  "scouted_at": "2026-11-22T05:59:00Z",
+  "niche": "roofing",
+  "business_name": "Roof Royale",
+  "location": {
+    "city": "Austin",
+    "state": "TX",
+    "country": "US"
+  },
+  "website_url": "https://roofroyale.com/",
+  "contact_info": {
+    "decision_maker": "Tony Schlessinger & Jessica Acosta",
+    "role": "Owners / Founders",
+    "email": "office@roofroyale.com",
+    "phone": "(512) 379-7933",
+    "contact_page_url": "https://roofroyale.com/contact"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#111111",
+    "secondary_color_hex": "#BA9B5A",
+    "brand_vibe": "Veteran-owned premium modern"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Viewport meta tag enforces maximum-scale=1, disabling mobile pinch-to-zoom accessibility and triggering Lighthouse mobile UX warnings",
+      "Homepage and /contact rely on a heavy 8-field static form (with missing placeholders on most inputs) before offering any ballpark replacement cost",
+      "Navigation promotes 'Roof Financing' and 'Residential Roof Replacement', yet visitors have no interactive way to preview estimated project cost or monthly payments"
+    ],
+    "seo_or_speed_leaks": [
+      "9 of 12 homepage images omit native loading='lazy' attributes and 7 remain in legacy JPG/PNG formats",
+      "Includes 1 render-blocking script in <head> and viewport maximum-scale=1 restriction",
+      "Homepage spreads focus across five Texas regions instead of offering an Austin-tailored interactive conversion anchor"
+    ],
+    "current_lead_capture_method": "Static 8-field inspection request form (Name, Phone, Email, Property address, Service dropdown, City/ZIP, Notes, Consent checkbox) on homepage and /contact, plus phone number"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Roof Royale's Austin site promotes roof replacements and financing, yet mobile visitors hit a static 8-field form with no interactive way to check a ballpark cost or estimated monthly payment first.",
+    "proposed_setup_fee_usd": 950,
+    "proposed_retainer_usd": 199
+  }
+}

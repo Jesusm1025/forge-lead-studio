@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agencia.local/schemas/05_qa_audit.schema.json",
+  "title": "Agent 05 Final QA & Compliance Audit",
+  "description": "Strict pre-flight quality assurance and compliance sign-off contract produced by Agent 05 before human deployment.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "prospect_id",
+    "audited_at",
+    "verdict",
+    "overall_score_100",
+    "gates",
+    "unresolved_merge_tags_required_before_send",
+    "human_launch_steps"
+  ],
+  "properties": {
+    "prospect_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+_[a-z0-9-]+_[a-z0-9-]+$",
+      "description": "Matching prospect slug audited across Stages 01–04."
+    },
+    "audited_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 timestamp indicating when the final QA audit completed."
+    },
+    "verdict": {
+      "type": "string",
+      "enum": ["APPROVED", "REJECTED"],
+      "description": "Final release gate verdict; APPROVED only when all 4 gates pass."
+    },
+    "overall_score_100": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Composite QA readiness score from 0 to 100."
+    },
+    "gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "data_and_brand_integrity",
+        "technical_and_ux_readiness",
+        "pricing_math_accuracy",
+        "copy_and_compliance"
+      ],
+      "properties": {
+        "data_and_brand_integrity": { "$ref": "#/$defs/gate_result" },
+        "technical_and_ux_readiness": { "$ref": "#/$defs/gate_result" },
+        "pricing_math_accuracy": { "$ref": "#/$defs/gate_result" },
+        "copy_and_compliance": { "$ref": "#/$defs/gate_result" }
+      }
+    },
+    "unresolved_merge_tags_required_before_send": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 3
+      },
+      "description": "Exact list of merge tags that must be replaced by the human founder / sending tool prior to dispatch."
+    },
+    "human_launch_steps": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "string",
+        "minLength": 10
+      },
+      "description": "Ordered step-by-step human launch checklist for live deployment and outreach."
+    }
+  },
+  "$defs": {
+    "gate_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["passed", "notes"],
+      "properties": {
+        "passed": { "type": "boolean" },
+        "notes": { "type": "string", "minLength": 10 }
+      }
+    }
+  }
+}

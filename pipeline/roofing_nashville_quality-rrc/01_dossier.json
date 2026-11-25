@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_nashville_quality-rrc",
+  "scouted_at": "2026-11-25T15:18:43Z",
+  "niche": "roofing",
+  "business_name": "Quality Roofing & Restoration",
+  "location": {
+    "city": "Nashville",
+    "state": "TN",
+    "country": "US"
+  },
+  "website_url": "https://qualityrrc.com/",
+  "contact_info": {
+    "decision_maker": "Rick Norvil",
+    "role": "President & CEO",
+    "email": "sales@qualityrrc.com",
+    "phone": "(615) 604-5165",
+    "contact_page_url": "https://qualityrrc.com/free-estimate/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#1F2A44",
+    "secondary_color_hex": "#D91D26",
+    "brand_vibe": "Established Greater Nashville & Mt. Juliet storm roofer"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage forces a static 8-field form and estimate page stacks 7-field and 12-field static forms with zero instant Middle Tennessee replacement pricing",
+      "No interactive wind/hail storm urgency flag or architectural shingle vs. metal cost preview before collecting full personal details"
+    ],
+    "seo_or_speed_leaks": [
+      "Slow 2,036 ms server TTFB with 4 render-blocking scripts in <head> and 237.3 KB homepage HTML",
+      "16 of 24 homepage images omit loading='lazy' and 7 lack descriptive alt tags"
+    ],
+    "current_lead_capture_method": "Static 8-field homepage form, 12-field estimate page form, and phone links"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Your Greater Nashville site asks homeowners to fill out an 8-to-12-field static form blind with no 30-second instant storm/replacement ballpark shown first.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

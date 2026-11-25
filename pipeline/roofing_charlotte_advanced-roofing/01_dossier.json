@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_charlotte_advanced-roofing",
+  "scouted_at": "2026-11-24T18:10:58Z",
+  "niche": "roofing",
+  "business_name": "Advanced Roofing Solutions",
+  "location": {
+    "city": "Charlotte",
+    "state": "NC",
+    "country": "US"
+  },
+  "website_url": "https://www.advancedroofingsolutionsclt.com/",
+  "contact_info": {
+    "decision_maker": "Jim Keating",
+    "role": "Co-Owner",
+    "email": "info@advancedroofingsolutionsclt.com",
+    "phone": "(980) 938-4541",
+    "contact_page_url": "https://www.advancedroofingsolutionsclt.com/contact/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#0076BB",
+    "secondary_color_hex": "#1D2939",
+    "brand_vibe": "Multi-generation family-owned Charlotte roofer since 2003"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage and /contact/ duplicate static 7-field forms with zero instant Charlotte roof replacement range or monthly payment preview",
+      "No interactive Carolinas steep-slope or storm-damage qualification before asking mobile visitors for full contact fields"
+    ],
+    "seo_or_speed_leaks": [
+      "Heavy 300.4 KB homepage HTML payload loading 87 images where 76 omit native loading='lazy'",
+      "85 of 87 homepage images lack descriptive alt attributes"
+    ],
+    "current_lead_capture_method": "Duplicated static 7-field forms on homepage and /contact/ plus phone/text links"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Your family's 20+ year Charlotte track record since 2003 shines on advancedroofingsolutionsclt.com, yet mobile visitors still hit static 7-field forms with zero rough pricing first.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_phoenix_gryphon-roofing",
+  "scouted_at": "2026-11-24T18:10:58Z",
+  "niche": "roofing",
+  "business_name": "Gryphon Roofing & Construction",
+  "location": {
+    "city": "Phoenix",
+    "state": "AZ",
+    "country": "US"
+  },
+  "website_url": "https://gogryphon.com/",
+  "contact_info": {
+    "decision_maker": "Russel Hyman",
+    "role": "President & CEO",
+    "email": "hello@gogryphon.com",
+    "phone": "(480) 553-5005",
+    "contact_page_url": "https://gogryphon.com/contact"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#1B2A4A",
+    "secondary_color_hex": "#D49A2A",
+    "brand_vibe": "Industry-leader family-owned since 1994"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage uses a plain 5-field callback form and /contact uses a 6-field form with zero instant Phoenix replacement ballpark or monthly financing estimate",
+      "No interactive tile vs. cool shingle material comparison or monsoon leak urgency triage for mobile homeowners"
+    ],
+    "seo_or_speed_leaks": [
+      "33 of 46 homepage images omit native loading='lazy' attributes and 25 remain in legacy JPG/PNG formats",
+      "43 of 46 homepage images are missing descriptive alt text attributes, hurting local Phoenix SEO"
+    ],
+    "current_lead_capture_method": "Static 5-field homepage callback form, 6-field /contact form, and phone links"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Gryphon's 30-year Phoenix legacy and ARCA leadership stand out, but mobile visitors still hit a plain 5-field callback form with no instant Valley replacement range.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

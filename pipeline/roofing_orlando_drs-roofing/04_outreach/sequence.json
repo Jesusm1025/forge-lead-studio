@@ -1,0 +1,79 @@
+{
+  "prospect_id": "roofing_orlando_drs-roofing",
+  "generated_at": "2026-11-22T23:46:00Z",
+  "target_recipients": [
+    "Richard Rao (Owner & President)",
+    "info@drs-roofing.com"
+  ],
+  "primary_channel": "cold_email",
+  "emails": [
+    {
+      "step": 1,
+      "delay_days": 0,
+      "subject_line_a": "Quick build for DRS Roofing",
+      "subject_line_b": "14-field estimate form fix for Richard",
+      "body_text": "Hey Richard,\n\nI was checking out drs-roofing.com — 30 years serving Orlando and Central Florida speaks for itself.\n\nOne big mobile leak caught my eye: when homeowners tap 'Get A FREE Estimate', they land on a heavy 14-field static form (and 15 fields on Contact) with zero rough Florida-code price range shown first.\n\nSo I built a working 30-second Orlando Roof Estimator in your crimson-and-gold DRS Roofing branding. Homeowners tap their roof specs and see an instant hurricane-code ballpark before leaving their name and number.\n\nMind if I send over the live preview link?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Value-First Reciprocity & High-Friction Callout (calls out exact 14-field /roofing-estimate/ leak; zero links in Step 1)",
+      "word_count": 99
+    },
+    {
+      "step": 2,
+      "delay_days": 3,
+      "subject_line_a": "Your crimson-and-gold Orlando roof calculator",
+      "subject_line_b": "60-sec walkthrough for Richard Rao",
+      "body_text": "Hey Richard,\n\nHere is the live prototype I built for DRS Roofing along with a quick 60-second walkthrough:\n\nLive demo: {{preview_url}}\n60-sec video: {{loom_url}}\n\nTap through all 4 steps on your phone. A 2,400 sq ft Orlando home shows a Florida-code ballpark ($15,000–$19,800, from $198/mo) and lets homeowners compare FL-Code Hurricane Shingle, Standing Seam Metal, and Clay Tile live.\n\nWhen they lock in a free inspection, your office gets their size, slope, material, and storm/leak priority automatically.\n\nWorth a quick 5-min look?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Tangible Proof & Florida Building Code Calibration (exact Orlando numbers + zero-effort phone walkthrough)",
+      "word_count": 87
+    },
+    {
+      "step": 3,
+      "delay_days": 7,
+      "subject_line_a": "5-min install + quick speed note on drs-roofing.com",
+      "subject_line_b": "Two free website fixes for DRS Roofing",
+      "body_text": "Hey Richard,\n\nQuick note — putting this estimator live doesn't require rebuilding drs-roofing.com. It drops onto your estimate page or homepage with one line of code in 5 minutes and weighs just 28 KB.\n\nAlso spotted two easy mobile speed fixes for your web team free of charge: your homepage HTML currently hits 585 KB and loads 176 images without lazy-loading (with 84 still in heavy JPG/PNG formats).\n\nWant me to walk you through how urgent Orlando storm leads route straight to your estimators?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Friction Removal & Concrete Free Speed Audit (585 KB HTML / 176 eager images demonstrates authentic audit)",
+      "word_count": 89
+    },
+    {
+      "step": 4,
+      "delay_days": 12,
+      "subject_line_a": "Keep DRS Roofing preview live?",
+      "subject_line_b": "Closing the loop, Richard",
+      "body_text": "Hey Richard,\n\nI know running residential and commercial crews across Central Florida keeps your schedule packed, so I won't keep crowding your inbox.\n\nShould I leave your DRS Roofing estimator preview live for another week while you test it on your phone, or archive it Friday?\n\nEither way, huge respect for 30+ years of trusted roofing in Orlando.\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Respectful Loss Aversion / Polite Breakup (honors 30-year local legacy and invites crisp response)",
+      "word_count": 63
+    }
+  ],
+  "linkedin_dm_touch": {
+    "connection_note": "Hi Richard — respect the 30-year track record with DRS Roofing in Orlando. I noticed your Free Estimate page hits visitors with a 14-field static form and no ballpark price, so I mocked up a quick crimson-and-gold Florida roof estimator for you. Open to connecting?",
+    "follow_up_dm": "Thanks for connecting, Richard. Here's that working 30-second Orlando Roof Estimator in DRS Roofing colors: {{preview_url}}\n\nTry tapping through FL-Code Hurricane Shingle, Standing Seam Metal, and Clay Tile on your phone — it gives Central Florida homeowners upfront ballparks before asking for their contact info, and installs with one script tag. Zero pressure, happy to chat 5 mins if useful."
+  },
+  "loom_60s_script": {
+    "hook_0_15s": "[SCREEN: drs-roofing.com homepage] \"Hey Richard — quick 60-second video just for you. I was checking out drs-roofing.com here in Orlando — huge respect for 30 years serving Central Florida.\"",
+    "pain_comparison_15_35s": "[SCREEN: Click Get A FREE Estimate -> /roofing-estimate/ 14-field form] \"Here's the one leak I spotted: when a homeowner taps Get A FREE Estimate on their phone, they hit a 14-field static form with zero ballpark pricing. A huge chunk of mobile visitors bail before typing 14 fields blind.\"",
+    "live_demo_walkthrough_35_50s": "[SCREEN: Switch tab to live DRS Roofing MVP & click Steps 1–4] \"So I built a 28-kilobyte fix in your crimson-and-gold branding. Four quick taps — size, stories, slope, storm or routine — and it reveals a Florida-code Orlando range, $15,000 to $19,800, from $198 a month, BEFORE asking for a name and phone. Toggle Metal or Clay Tile live, submit a test, and your office gets every roof detail automatically.\"",
+    "zero_pressure_cta_50_60s": "[SCREEN: Point to 1-line embed bar at top] \"Drops onto your homepage or estimate page in five minutes with zero redesign. Reply if you'd like to put it live — either way, hope it helps.\""
+  },
+  "objection_handlers": [
+    {
+      "objection": "Florida hurricane code, secondary water barriers, and tile underlayment make online quotes tricky.",
+      "reframe_response": "100% agree — this never issues a binding contract price. It gives a realistic Central Florida hurricane-code range with a clear on-site inspection disclaimer so $7,000 tire-kickers filter themselves out while qualified Orlando homeowners arrive pre-educated on licensed pricing ($15k–$45k+)."
+    },
+    {
+      "objection": "Our 14-field form helps filter out unqualified leads.",
+      "reframe_response": "Long forms filter out good mobile homeowners just as fast as bad ones because nobody wants to type 14 fields blind on an iPhone. Showing an honest Florida-code price range first is a much stronger filter — tire-kickers leave on their own, while serious buyers gladly drop their name and number."
+    },
+    {
+      "objection": "Why pay $750 setup + $149/mo when our website already works?",
+      "reframe_response": "Your site already draws Central Florida traffic — this just monetizes the mobile visitors leaving your 14-field form without submitting. It routes full roof specs and storm urgency straight to your inbox/CRM, updates quarterly for Florida material costs, and one extra closed roof covers 3+ years."
+    },
+    {
+      "objection": "Our site is big and I don't want anything breaking WordPress or slowing it down.",
+      "reframe_response": "Zero risk to your layout or speed. It's a self-contained 28 KB vanilla JS script inside Shadow DOM isolation so it can never conflict with your theme — and we'll happily pass along the image lazy-load fix for those 176 homepage images free."
+    },
+    {
+      "objection": "Send me the details and I'll talk it over with the office.",
+      "reframe_response": "Happy to — I'll send a short 3-bullet recap ($750 one-time Florida-code calibration & setup, $149/mo hosting, instant lead routing, and quarterly updates, cancel anytime) plus the live demo link to test on mobile. Mind if I follow up Thursday morning?"
+    }
+  ]
+}

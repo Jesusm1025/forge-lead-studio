@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_raleigh_rex-construction",
+  "scouted_at": "2026-11-25T15:18:43Z",
+  "niche": "roofing",
+  "business_name": "Rex Construction LLC",
+  "location": {
+    "city": "Raleigh",
+    "state": "NC",
+    "country": "US"
+  },
+  "website_url": "https://rexconstructionllc.com/",
+  "contact_info": {
+    "decision_maker": "Nick",
+    "role": "Project Lead & Operations",
+    "email": "Nick@rexconstructionllc.com",
+    "phone": "(919) 946-8100",
+    "contact_page_url": "https://rexconstructionllc.com/contact-us"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#1B2A4A",
+    "secondary_color_hex": "#D97706",
+    "brand_vibe": "Local Raleigh GAF-certified residential contractor"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage only has a minimal 1-field capture and /contact-us relies on a static 5-field form with zero instant Triangle roof replacement pricing",
+      "No interactive Research Triangle storm urgency selector or shingle-vs-metal cost preview before requesting contact info"
+    ],
+    "seo_or_speed_leaks": [
+      "All 10 of 10 homepage images omit native loading='lazy' attributes",
+      "9 of 10 homepage images are missing descriptive alt attributes, hurting local Raleigh SEO"
+    ],
+    "current_lead_capture_method": "Minimal 1-field homepage box, 5-field /contact-us form, and phone links"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Rex Construction's Raleigh site has no interactive roof estimator — leaving mobile homeowners guessing at replacement costs before clicking over to Contact.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

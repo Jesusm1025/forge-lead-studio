@@ -1,0 +1,79 @@
+{
+  "prospect_id": "roofing_austin_austin-roofing-company",
+  "generated_at": "2026-11-22T21:35:00Z",
+  "target_recipients": [
+    "Abraham Ron (Owner)",
+    "info@austinroofingcompany.us"
+  ],
+  "primary_channel": "cold_email",
+  "emails": [
+    {
+      "step": 1,
+      "delay_days": 0,
+      "subject_line_a": "Quick build for Austin Roofing Company",
+      "subject_line_b": "Austin instant roof estimator for Abraham",
+      "body_text": "Hey Abraham,\n\nI was looking at austinroofingcompany.us and noticed homeowners clicking Free Estimate hit a blind 3-field modal asking for their street address and phone number before seeing any ballpark price.\n\nMost Austin homeowners bounce instead of giving their address blind.\n\nSo I built a working 30-second Roof Cost Estimator in your navy-and-gold Austin Roofing Company branding. It shows local shingle, metal, and tile ranges plus monthly payments before asking for a name and phone.\n\nMind if I send over the live preview link?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 89,
+      "psychological_trigger": "Value-First Reciprocity & Curiosity Gap (live navy-and-gold build already complete; zero-link permission CTA protects primary inbox)"
+    },
+    {
+      "step": 2,
+      "delay_days": 3,
+      "subject_line_a": "Your navy-and-gold Austin roof calculator",
+      "subject_line_b": "60-sec walkthrough for Abraham",
+      "body_text": "Hey Abraham,\n\nHere is the live prototype I built for Austin Roofing Company along with a 60-second walkthrough:\n\nLive demo: {{preview_url}}\n60-sec video: {{loom_url}}\n\nTry tapping through all 4 steps on your phone. A 2,400 sq ft Austin home shows an instant ballpark ($13,200–$17,400, from $174/mo) with live toggles for Class 4 Shingle, Metal, and Clay Tile.\n\nWhen a homeowner books a free inspection, you get their roof size, slope, material, and hail urgency upfront.\n\nWorth a quick 5-min look?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 85,
+      "psychological_trigger": "Tangible Proof & Local Specificity (concrete Austin installed pricing + self-testable phone demo)"
+    },
+    {
+      "step": 3,
+      "delay_days": 7,
+      "subject_line_a": "5-min install + quick speed note on austinroofingcompany.us",
+      "subject_line_b": "Quick WordPress speed catch for Abraham",
+      "body_text": "Hey Abraham,\n\nJust so it's clear — adding this estimator doesn't touch or redesign your WordPress site.\n\nIt drops in with one line of code in 5 minutes, runs inside an isolated container, and weighs just 28 KB.\n\nFree heads-up for your web team too: austinroofingcompany.us currently takes about 1.9 seconds on initial response with a 419 KB homepage and 33 legacy JPG/PNG images. Converting those to WebP would speed up mobile loads fast.\n\nWant to see how leads route straight to your phone?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 89,
+      "psychological_trigger": "Zero-Redesign Friction Removal & Unprompted Technical Credibility (gifts concrete WordPress speed findings)"
+    },
+    {
+      "step": 4,
+      "delay_days": 12,
+      "subject_line_a": "Keep Austin Roofing preview live?",
+      "subject_line_b": "Closing the loop, Abraham",
+      "body_text": "Hey Abraham,\n\nI know keeping crews moving across Austin, Round Rock, and Cedar Park keeps your days packed, so I won't crowd your inbox.\n\nShould I keep your Austin Roofing Company estimator preview live another week, or archive it Friday?\n\nEither way, respect the 19-year family-owned run you've built here.\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 55,
+      "psychological_trigger": "Respectful Loss Aversion / Polite Breakup (honors 19-year local track record and invites a low-friction yes/no)"
+    }
+  ],
+  "linkedin_dm_touch": {
+    "connection_note": "Hi Abraham — respect the 19-year run you built with Austin Roofing Company. I noticed your Free Estimate modal asks for an address before showing any price range, so I mocked up a quick navy-and-gold roof calculator for you. Open to connecting?",
+    "follow_up_dm": "Thanks for connecting, Abraham. Here's that working 30-second Austin Roof Estimator in your navy-and-gold colors: {{preview_url}}\n\nTest it on your phone — homeowners see calibrated Austin ranges for Class 4 Shingle, Metal, and Tile upfront before entering a name and number, and it installs on your WordPress site with one line of code. Zero pressure, happy to walk through it for 5 mins if useful."
+  },
+  "loom_60s_script": {
+    "hook_0_15s": "[SCREEN: austinroofingcompany.us homepage] \"Hey Abraham — quick 60-second video just for you. I was looking through austinroofingcompany.us — awesome 19-year Austin track record with over 1,400 roofs serviced.\"",
+    "pain_comparison_15_35s": "[SCREEN: Click 'Free Estimate' modal] \"Here's one leak I noticed: your WordPress homepage runs heavy at over 400 KB, and when a homeowner taps Free Estimate, they hit a blind 3-field modal asking for their street address and phone with zero price range. A lot of Austin homeowners drop off right there.\"",
+    "live_demo_walkthrough_35_50s": "[SCREEN: Switch tab to live Austin Roofing Company MVP index.html & click Steps 1–4] \"So I built a 28-kilobyte working estimator in your exact navy-and-gold colors. Four quick taps — roof size, stories, slope, hail or routine — and it immediately shows $13,200 to $17,400, from $174 a month, BEFORE asking for a name and phone. Toggle Metal or Clay Tile live, submit a test lead, and your phone gets every roof detail automatically.\"",
+    "zero_pressure_cta_50_60s": "[SCREEN: Point to 1-line embed bar at top] \"Drops onto your WordPress site in five minutes with zero redesign. Reply if you want to put it live — either way, hope it helps.\""
+  },
+  "objection_handlers": [
+    {
+      "objection": "We already have a WordPress developer / SEO agency.",
+      "reframe_response": "Perfect — we don't replace your web team or touch your WordPress theme. They paste one 28 KB script tag onto your homepage or estimate page in 5 minutes, and it immediately turns the Austin SEO traffic they're already bringing in into 2x–3x more pre-qualified inspection requests."
+    },
+    {
+      "objection": "Every Austin roof is different — I don't want homeowners holding me to an online number.",
+      "reframe_response": "Totally fair, and it never issues a binding bid. It gives an honest Central Texas ballpark range with a clear on-site inspection disclaimer so $5,000 tire-kickers filter themselves out before you drive across I-35, while real buyers arrive pre-educated on $13k–$35k replacement budgets."
+    },
+    {
+      "objection": "Why pay $750 setup + $149/mo when we already have Forminator for free?",
+      "reframe_response": "Forminator is a static blind form that waits for WordPress JS to load and gives zero pricing feedback, which causes mobile drop-off. Our tool is 100% branded to Austin Roofing Company, routes roof size, pitch, material, and hail urgency straight to your phone/CRM, includes quarterly Austin pricing updates, and a single closed roof replacement pays for over three years."
+    },
+    {
+      "objection": "Our site is already slow — won't another widget hurt speed even more?",
+      "reframe_response": "Quite the opposite. The entire widget is 28 KB (under 9 KB gzipped — smaller than one thumbnail on your homepage) with zero external scripts or frameworks, running in Shadow DOM so it renders instantaneously without touching Elementor or WordPress."
+    },
+    {
+      "objection": "Send me the details and I'll look at it next week.",
+      "reframe_response": "Will do — I'll send a short 3-line summary ($750 one-time calibration & setup, $149/mo for hosting, SMS/email lead routing, and quarterly Austin pricing updates, cancel anytime) with the live preview link so you can try it on your phone. Mind if I check back Tuesday morning?"
+    }
+  ]
+}

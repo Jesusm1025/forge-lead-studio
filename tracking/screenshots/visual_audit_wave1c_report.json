@@ -1,0 +1,698 @@
+[
+  {
+    "slug": "allstate-roofing",
+    "url": "https://allstate-roofing-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Allstate Roofing Inc. — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://allstate-roofing-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\allstate-roofing_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$13,800 – $18,600",
+      "revealedMonthly": "$182/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\allstate-roofing_mobile.png"
+    },
+    "widget_live_bytes": 28436,
+    "passed": true
+  },
+  {
+    "slug": "right-way-roofing",
+    "url": "https://right-way-roofing-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Right Way Roofing Inc. — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://right-way-roofing-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\right-way-roofing_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$13,800 – $18,600",
+      "revealedMonthly": "$182/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\right-way-roofing_mobile.png"
+    },
+    "widget_live_bytes": 28442,
+    "passed": true
+  },
+  {
+    "slug": "gryphon-roofing",
+    "url": "https://gryphon-roofing-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Gryphon Roofing & Construction — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://gryphon-roofing-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\gryphon-roofing_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$13,800 – $18,600",
+      "revealedMonthly": "$182/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\gryphon-roofing_mobile.png"
+    },
+    "widget_live_bytes": 28445,
+    "passed": true
+  },
+  {
+    "slug": "reset-roofing",
+    "url": "https://reset-roofing-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Reset Roofing — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://reset-roofing-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\reset-roofing_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$12,600 – $16,800",
+      "revealedMonthly": "$166/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\reset-roofing_mobile.png"
+    },
+    "widget_live_bytes": 28429,
+    "passed": true
+  },
+  {
+    "slug": "atlanta-roofing-restoration",
+    "url": "https://atlanta-roofing-restoration-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Atlanta Roofing & Restoration — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 583,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://atlanta-roofing-restoration-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\atlanta-roofing-restoration_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$12,600 – $16,800",
+      "revealedMonthly": "$166/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\atlanta-roofing-restoration_mobile.png"
+    },
+    "widget_live_bytes": 28467,
+    "passed": true
+  },
+  {
+    "slug": "ameristar-roofing",
+    "url": "https://ameristar-roofing-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Ameristar Roofing & Restoration — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 583,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://ameristar-roofing-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\ameristar-roofing_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$12,600 – $16,800",
+      "revealedMonthly": "$166/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\ameristar-roofing_mobile.png"
+    },
+    "widget_live_bytes": 28458,
+    "passed": true
+  },
+  {
+    "slug": "evergreen-roofing",
+    "url": "https://evergreen-roofing-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Evergreen Roofing Solutions — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://evergreen-roofing-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\evergreen-roofing_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$12,600 – $17,400",
+      "revealedMonthly": "$166/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\evergreen-roofing_mobile.png"
+    },
+    "widget_live_bytes": 28452,
+    "passed": true
+  },
+  {
+    "slug": "advanced-roofing",
+    "url": "https://advanced-roofing-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Advanced Roofing Solutions — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://advanced-roofing-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\advanced-roofing_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$12,600 – $17,400",
+      "revealedMonthly": "$166/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\advanced-roofing_mobile.png"
+    },
+    "widget_live_bytes": 28445,
+    "passed": true
+  },
+  {
+    "slug": "horizon-roof-restoration",
+    "url": "https://horizon-roof-restoration-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Horizon Roof Restoration — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://horizon-roof-restoration-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\horizon-roof-restoration_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$12,600 – $17,400",
+      "revealedMonthly": "$166/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\horizon-roof-restoration_mobile.png"
+    },
+    "widget_live_bytes": 28460,
+    "passed": true
+  },
+  {
+    "slug": "academy-roofing",
+    "url": "https://academy-roofing-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Academy Roofing Inc. — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://academy-roofing-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\academy-roofing_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$14,400 – $19,200",
+      "revealedMonthly": "$190/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\academy-roofing_mobile.png"
+    },
+    "widget_live_bytes": 28453,
+    "passed": true
+  },
+  {
+    "slug": "wilson-brothers-roofing",
+    "url": "https://wilson-brothers-roofing-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Wilson Brothers Roofing, Inc. — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 583,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://wilson-brothers-roofing-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\wilson-brothers-roofing_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$14,400 – $19,200",
+      "revealedMonthly": "$190/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\wilson-brothers-roofing_mobile.png"
+    },
+    "widget_live_bytes": 28478,
+    "passed": true
+  },
+  {
+    "slug": "family-roofing",
+    "url": "https://family-roofing-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Family Roofing — Instant Roof Replacement & Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 568,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://family-roofing-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\family-roofing_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$14,400 – $19,200",
+      "revealedMonthly": "$190/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\family-roofing_mobile.png"
+    },
+    "widget_live_bytes": 28444,
+    "passed": true
+  }
+]

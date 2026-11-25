@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H.E. Parmer Company — Instant Roof Replacement &amp; Financing Estimator (Live Prototype)</title>
+  <style>
+    :root {
+      --primary: #1C1F26;
+      --secondary: #CF2E2E;
+      --surface: #FAF9F8;
+      --text: #1C1F26;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--surface);
+      color: var(--text);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: clip;
+    }
+    /* Slim Executive Preview Bar */
+    .preview-bar {
+      background: #0B0D10;
+      color: #E5E7EB;
+      border-bottom: 1px solid rgba(186, 155, 90, 0.35);
+      font-size: 12px;
+      padding: 9px 16px;
+      max-width: 100%;
+    }
+    .preview-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      min-width: 0;
+    }
+    .preview-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      min-width: 0;
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22C55E;
+      box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.25);
+      flex-shrink: 0;
+    }
+    .embed-box {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      min-width: 0;
+      max-width: 100%;
+    }
+    .embed-code {
+      display: block;
+      background: #171B21;
+      color: #FDE68A;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 6px;
+      padding: 5px 10px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 11px;
+      max-width: 100%;
+      min-width: 0;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .copy-btn {
+      appearance: none;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      background: var(--secondary);
+      color: #FFFFFF;
+      border-radius: 6px;
+      padding: 5px 11px;
+      font: inherit;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      min-height: 28px;
+    }
+    .copy-btn:hover { filter: brightness(1.08); }
+
+    /* Branded Prospect Header */
+    .site-header {
+      background: var(--primary);
+      color: #FFFFFF;
+      border-bottom: 3px solid var(--secondary);
+      padding: 16px 20px;
+    }
+    .header-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .logo-lockup {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-shield {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      border: 1.5px solid rgba(255, 255, 255, 0.35);
+      background: rgba(255, 255, 255, 0.14);
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-name {
+      font-family: "Barlow Condensed", "Oswald", "Arial Narrow", sans-serif;
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+    .logo-tag {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.82);
+      margin-top: 2px;
+    }
+    .header-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      background: var(--secondary);
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+    }
+
+    /* Main Split Stage */
+    .stage {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 40px 20px 56px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(0, 1fr);
+      gap: 38px;
+      align-items: start;
+    }
+    .eyebrow {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--primary);
+      background: #FFFFFF;
+      border: 1px solid var(--secondary);
+      padding: 5px 12px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-family: "Barlow Condensed", "Oswald", "Arial Narrow", sans-serif;
+      font-size: clamp(34px, 4.4vw, 52px);
+      font-weight: 800;
+      line-height: 1.04;
+      letter-spacing: 0.01em;
+      margin: 0 0 14px;
+      color: var(--primary);
+    }
+    .lead-copy {
+      font-size: 16px;
+      color: #464646;
+      margin: 0 0 24px;
+      max-width: 540px;
+    }
+    .trust-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 26px;
+    }
+    .trust-pill {
+      background: #FFFFFF;
+      border: 1px solid #E3DFD3;
+      border-radius: 10px;
+      padding: 9px 13px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .upgrade-card {
+      background: #FFFFFF;
+      border: 1px solid #E3DFD3;
+      border-top: 3px solid var(--secondary);
+      border-radius: 14px;
+      padding: 20px 22px;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.05);
+    }
+    .upgrade-title {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary);
+      margin: 0 0 12px;
+    }
+    .upgrade-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 11px;
+    }
+    .upgrade-list li {
+      position: relative;
+      padding-left: 24px;
+      font-size: 14px;
+      color: #2B2B2B;
+      line-height: 1.45;
+    }
+    .upgrade-list li::before {
+      content: "\2713";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--secondary);
+      font-weight: 900;
+    }
+
+    /* Live CRM Hook Drawer */
+    .crm-section {
+      max-width: 1180px;
+      margin: 0 auto 48px;
+      padding: 0 20px;
+    }
+    .crm-card {
+      background: #111317;
+      color: #F3F4F6;
+      border-radius: 14px;
+      border: 1px solid rgba(186, 155, 90, 0.38);
+      padding: 18px 22px;
+    }
+    .crm-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .crm-head h2 {
+      margin: 0;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: #FDE68A;
+    }
+    .crm-status {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      color: #D1D5DB;
+    }
+    .crm-status.live {
+      background: rgba(34, 197, 94, 0.18);
+      color: #86EFAC;
+    }
+    .crm-pre {
+      margin: 0;
+      background: #090B0E;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 14px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+      color: #E5E7EB;
+      overflow-x: auto;
+      line-height: 1.45;
+    }
+
+    footer {
+      border-top: 1px solid #E3DFD3;
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+    }
+
+    .stage > section { min-width: 0; max-width: 100%; }
+
+    @media (max-width: 920px) {
+      .stage { grid-template-columns: minmax(0, 1fr); padding: 24px 16px 40px; gap: 24px; }
+      .embed-box { width: 100%; }
+      .embed-code { width: 100%; }
+      .crm-section { padding: 0 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="preview-bar" role="region" aria-label="Prototype embed bar">
+    <div class="preview-inner">
+      <div class="preview-tag">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Live Prototype · H.E. Parmer Company · Shadow DOM · Zero External Dependencies</span>
+      </div>
+      <div class="embed-box">
+        <code class="embed-code" id="embed-snippet">&lt;div id="trojan-quote-widget"&gt;&lt;/div&gt;&lt;script src="https://he-parmer-demo.pages.dev/widget.js" defer&gt;&lt;/script&gt;</code>
+        <button type="button" class="copy-btn" id="copy-embed">Copy 1-Line Embed</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-lockup">
+        <div class="logo-shield" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5L12 4l9 7.5"/><path d="M5 10.5V20h14v-9.5"/></svg>
+        </div>
+        <div>
+          <div class="logo-name">H.E. Parmer Company</div>
+          <div class="logo-tag">Nashville&#x27;s Oldest Family-Owned Roofing &amp; Sheet Metal Co. · Since 1889</div>
+        </div>
+      </div>
+      <a class="header-phone" href="tel:6152552513">Call (615) 255-2513</a>
+    </div>
+  </header>
+
+  <main class="stage">
+    <section>
+      <span class="eyebrow">Custom Conversion Prototype · Built for H.E. Parmer Company</span>
+      <h1>Get Your Instant Nashville Roof Replacement &amp; Financing Ballpark in 30 Seconds</h1>
+      <p class="lead-copy">Built in H.E. Parmer Company&#x27;s charcoal-and-crimson branding: turns hesitant Nashville &amp; Middle TN mobile visitors into pre-qualified inspection bookings without rebuilding heparmer.com.</p>
+
+      <div class="trust-strip">
+        <span class="trust-pill">Shadow DOM Isolated</span>
+        <span class="trust-pill">&lt;30KB Vanilla JS</span>
+        <span class="trust-pill">5-Minute Drop-In Install</span>
+        <span class="trust-pill">Mobile-First Accessible</span>
+      </div>
+
+      <div class="upgrade-card">
+        <h2 class="upgrade-title">Key Conversion Upgrades Engineered for H.E. Parmer Company</h2>
+        <ul class="upgrade-list">
+          <li>Homepage contains zero embedded quote form or interactive estimator — forcing mobile Nashville homeowners to call during office hours without any rough price guidance</li>
+          <li>Automatically captures roof sq. ft., stories, slope, Wind &amp; Hail-Rated Shingle/Middle TN Standing Seam Metal/Architectural Slate &amp; Tile preference, and storm/leak urgency before your team dials</li>
+          <li>Self-contained &lt;30 KB Shadow DOM script — drops onto heparmer.com with one line of code in 5 minutes and zero site redesign</li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-label="Interactive Roof Estimator Demo">
+      <div id="trojan-quote-widget" data-telemetry-endpoint="https://forge-lead-router.forge-lead-studio.workers.dev/event" data-delivery-mode="demo"></div>
+    </section>
+  </main>
+
+  <section class="crm-section" aria-label="Live CRM Webhook Integration Inspector">
+    <div class="crm-card">
+      <div class="crm-head">
+        <h2>Live CRM / SMS Webhook Event Inspector (<code>trojan:lead_captured</code>)</h2>
+        <span class="crm-status" id="crm-status">Awaiting test submission above…</span>
+      </div>
+      <pre class="crm-pre" id="crm-output">// Complete the 4-step estimator above and click "Lock In Free Nashville Inspection" to inspect the structured CRM payload dispatched automatically to your inbox / SMS / webhook.</pre>
+    </div>
+  </section>
+
+  <footer>
+    Interactive prototype prepared exclusively for H.E. Parmer Company · Drop-in embed bundle engineered for instant deployment without site redesign.
+  </footer>
+
+  <script src="./widget.js" defer></script>
+  <script>
+    (function () {
+      var copyBtn = document.getElementById('copy-embed');
+      var snippet = document.getElementById('embed-snippet');
+      if (copyBtn && snippet) {
+        copyBtn.addEventListener('click', function () {
+          var txt = snippet.textContent;
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(txt).then(function () {
+              copyBtn.textContent = 'Copied!';
+              setTimeout(function () { copyBtn.textContent = 'Copy 1-Line Embed'; }, 1800);
+            });
+          } else {
+            copyBtn.textContent = 'Select & Copy';
+          }
+        });
+      }
+      window.addEventListener('trojan:lead_captured', function (ev) {
+        var out = document.getElementById('crm-output');
+        var st = document.getElementById('crm-status');
+        if (out) out.textContent = JSON.stringify(ev.detail, null, 2);
+        if (st) {
+          st.textContent = 'Lead Payload Captured · Ready for CRM / SMS Routing';
+          st.classList.add('live');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

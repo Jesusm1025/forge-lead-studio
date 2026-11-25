@@ -1,0 +1,105 @@
+{
+  "prospect_id": "roofing_dallas_honestroof",
+  "architected_at": "2026-11-22T23:41:00Z",
+  "template_base": "roofing-quote-calc",
+  "brand_config": {
+    "business_name": "HonestRoof.com",
+    "tagline": "Trusted by DFW Homeowners for 70+ Years · Honest Upfront Pricing",
+    "primary_hex": "#9F0712",
+    "secondary_hex": "#0F172A",
+    "surface_hex": "#F8FAFC",
+    "text_hex": "#0F172A",
+    "cta_label": "Lock In Same-Day DFW Inspection",
+    "phone_display": "(817) 809-7000"
+  },
+  "pricing_engine": {
+    "currency": "USD",
+    "base_rates_per_sqft": {
+      "architectural_shingle": {
+        "min": 5.5,
+        "max": 7.25,
+        "label": "Class 4 Impact-Resistant Shingle"
+      },
+      "standing_seam_metal": {
+        "min": 11.5,
+        "max": 15.0,
+        "label": "Standing Seam Metal Roof"
+      },
+      "designer_tile": {
+        "min": 13.5,
+        "max": 18.25,
+        "label": "Stone-Coated Steel & Tile"
+      }
+    },
+    "story_multipliers": {
+      "one_story": 1.0,
+      "two_story": 1.12,
+      "three_plus": 1.25
+    },
+    "pitch_multipliers": {
+      "low": 0.95,
+      "standard": 1.0,
+      "steep": 1.18
+    },
+    "financing_apr_percent": 9.99,
+    "financing_term_months": 120
+  },
+  "ux_steps": [
+    {
+      "step_number": 1,
+      "title": "Property Profile",
+      "inputs": [
+        "DFW home / roof footprint slider (1,200 – 4,500+ sq. ft., default 2,400 sq. ft.) + quick-tap presets",
+        "Number of stories card selector (1-Story, 2-Story, 3+ Stories)"
+      ],
+      "conversion_psychology_note": "Delivers on HonestRoof.com's 'honest upfront pricing by the square' brand promise in 5 seconds instead of greeting visitors with a 9-field address interrogation."
+    },
+    {
+      "step_number": 2,
+      "title": "Roof Pitch & Storm Urgency",
+      "inputs": [
+        "Visual roof pitch selector (Low 2/12–4/12, Standard 5/12–7/12, Steep 8/12+)",
+        "Condition & urgency selector (Routine Replacement, Storm / Hail Damage, Active Leak)"
+      ],
+      "conversion_psychology_note": "Separates DFW hail-claim inspections from straight retail cash/finance replacements before Dennis's team schedules a same-day visit."
+    },
+    {
+      "step_number": 3,
+      "title": "Select DFW Roofing System",
+      "inputs": [
+        "Three Dallas–Fort Worth material cards: Class 4 Impact-Resistant Shingle, Standing Seam Metal Roof, and Stone-Coated Steel & Tile"
+      ],
+      "conversion_psychology_note": "Educates North Texas homeowners on Class 4 hail-discount shingle and metal upgrades while displaying transparent per-sq-ft local averages."
+    },
+    {
+      "step_number": 4,
+      "title": "Upfront Ballpark Reveal & 2-Field Same-Day Booking",
+      "inputs": [
+        "Ungated DFW installed range ($13,200 – $17,400) + amortized monthly payment (from $174/mo) + live material toggle",
+        "Friction-free 2-field booking form (Full Name, Phone or Email) + Preferred Inspection Window"
+      ],
+      "conversion_psychology_note": "Showing transparent DFW pricing BEFORE asking for contact info proves honesty immediately and converts twice as many mobile visitors as a blind 9-field form."
+    }
+  ],
+  "preview_wrapper_spec": {
+    "hero_headline": "Get Your Honest Upfront DFW Roof Replacement Ballpark in 30 Seconds",
+    "hero_subheadline": "Built in HonestRoof.com's crimson-and-slate branding: brings your 'honest pricing by the square' promise to life before asking Dallas–Fort Worth homeowners for 9 personal form fields.",
+    "pain_points_solved_callouts": [
+      "Replaces the static 9-field address form on honestroof.com with an instant 4-step DFW roof & monthly financing estimator",
+      "Pre-qualifies home sq. ft., stories, slope, material tier, and North Texas hail/leak urgency automatically before booking a same-day inspection",
+      "Zero-bloat <30 KB Shadow DOM drop-in script — installs in 5 minutes alongside your existing site with zero redesign"
+    ]
+  },
+  "commercial_offer": {
+    "setup_fee_usd": 750,
+    "monthly_retainer_usd": 149,
+    "retainer_deliverables": [
+      "Global edge CDN hosting and 99.9% uptime SLA for the lightweight drop-in widget script",
+      "Instant Email, SMS, and CRM lead routing with complete roof size, pitch, material, and hail urgency specs",
+      "Quarterly Dallas–Fort Worth shingle, metal, and stone-coated steel pricing calibration",
+      "Monthly conversion funnel analytics report (starts, estimate reveals, and booked same-day inspections)"
+    ]
+  },
+  "telemetry_endpoint": "https://forge-lead-router.forge-lead-studio.workers.dev/event",
+  "delivery_mode": "demo"
+}

@@ -1,0 +1,103 @@
+{
+  "prospect_id": "roofing_atlanta_atlanta-roofing-restoration",
+  "architected_at": "2026-11-24T18:10:58Z",
+  "template_base": "roofing-quote-calc",
+  "brand_config": {
+    "business_name": "Atlanta Roofing & Restoration",
+    "tagline": "Excellence in Every Shingle · Metro Atlanta Roof Replacement & Storm Restoration",
+    "primary_hex": "#DC3232",
+    "secondary_hex": "#1E293B",
+    "surface_hex": "#FAF8F8",
+    "text_hex": "#1E293B",
+    "cta_label": "Book Free Atlanta Inspection",
+    "phone_display": "(678) 643-8274"
+  },
+  "pricing_engine": {
+    "currency": "USD",
+    "base_rates_per_sqft": {
+      "architectural_shingle": {
+        "min": 5.25,
+        "max": 7.0,
+        "label": "Storm-Rated Architectural Shingle"
+      },
+      "standing_seam_metal": {
+        "min": 11.0,
+        "max": 14.5,
+        "label": "Standing Seam Metal Roof"
+      },
+      "designer_tile": {
+        "min": 13.0,
+        "max": 17.5,
+        "label": "Designer Slate & Luxury Tile"
+      }
+    },
+    "story_multipliers": {
+      "one_story": 1.0,
+      "two_story": 1.12,
+      "three_plus": 1.25
+    },
+    "pitch_multipliers": {
+      "low": 0.95,
+      "standard": 1.0,
+      "steep": 1.18
+    },
+    "financing_apr_percent": 9.99,
+    "financing_term_months": 120
+  },
+  "ux_steps": [
+    {
+      "step_number": 1,
+      "title": "Property Profile",
+      "inputs": [
+        "Atlanta home / roof footprint slider (1,200 – 4,500+ sq. ft., default 2,400 sq. ft.) + one-tap presets",
+        "Number of stories card selector (1-Story, 2-Story, 3+ Stories)"
+      ],
+      "conversion_psychology_note": "Engages Atlanta homeowners in 5 seconds with visual controls instead of a high-friction static contact form."
+    },
+    {
+      "step_number": 2,
+      "title": "Roof Pitch & Storm Condition",
+      "inputs": [
+        "Visual roof slope selector (Low 2/12–4/12, Standard 5/12–7/12, Steep 8/12+)",
+        "Urgency & condition selector (Routine Replacement, Storm / Hail Damage, Active Leak)"
+      ],
+      "conversion_psychology_note": "Separates urgent Metro Atlanta storm/hail claims from planned retail replacements before scheduling an inspection."
+    },
+    {
+      "step_number": 3,
+      "title": "Select Atlanta Roofing System",
+      "inputs": [
+        "Three localized material cards: Storm-Rated Architectural Shingle, Standing Seam Metal Roof, and Designer Slate & Luxury Tile"
+      ],
+      "conversion_psychology_note": "Pre-educates Atlanta homeowners on Georgia hail/wind & architectural shingle material tiers and transparent installed ranges."
+    },
+    {
+      "step_number": 4,
+      "title": "Instant Atlanta Ballpark & 2-Field Booking",
+      "inputs": [
+        "Ungated Atlanta installed range ($12,600–$16,800) + amortized monthly payment (from $166/mo) + live material toggle",
+        "Simple 2-field booking form (Full Name, Phone or Email) + Preferred Inspection Window"
+      ],
+      "conversion_psychology_note": "Revealing honest local pricing BEFORE asking for contact info eliminates cold-form abandonment and pre-qualifies buyers."
+    }
+  ],
+  "preview_wrapper_spec": {
+    "hero_headline": "Get Your Instant Atlanta Roof Replacement & Financing Ballpark in 30 Seconds",
+    "hero_subheadline": "Built in Atlanta Roofing & Restoration's crimson-and-slate branding: turns hesitant Metro Atlanta mobile visitors into pre-qualified inspection bookings without rebuilding atlroofingandrestoration.com.",
+    "pain_points_solved_callouts": [
+      "Homepage pushes a static 7-field form and /free-inspection stacks 9-field and 7-field static forms with zero instant Metro Atlanta replacement pricing",
+      "Automatically captures roof sq. ft., stories, slope, Storm-Rated Architectural Shingle/Standing Seam Metal Roof/Designer Slate & Luxury Tile preference, and storm/leak urgency before your team dials",
+      "Self-contained <30 KB Shadow DOM script — drops onto atlroofingandrestoration.com with one line of code in 5 minutes and zero site redesign"
+    ]
+  },
+  "commercial_offer": {
+    "setup_fee_usd": 750,
+    "monthly_retainer_usd": 149,
+    "retainer_deliverables": [
+      "Global edge CDN hosting and 99.9% uptime SLA for the lightweight drop-in widget script",
+      "Instant Email, SMS, and CRM webhook lead routing carrying full roof specs and storm urgency priority",
+      "Quarterly Metro Atlanta material and labor pricing calibration",
+      "Monthly conversion funnel analytics report (widget starts, reveals, and booked Atlanta inspections)"
+    ]
+  }
+}

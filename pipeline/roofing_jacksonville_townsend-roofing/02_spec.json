@@ -1,0 +1,105 @@
+{
+  "prospect_id": "roofing_jacksonville_townsend-roofing",
+  "architected_at": "2026-11-25T15:18:43Z",
+  "template_base": "roofing-quote-calc",
+  "telemetry_endpoint": "https://forge-lead-router.forge-lead-studio.workers.dev/event",
+  "delivery_mode": "demo",
+  "brand_config": {
+    "business_name": "Townsend Roofing & Construction Services, Inc.",
+    "tagline": "Multi-Generational Jacksonville FL Roofing · Shingle, Metal & Tile",
+    "primary_hex": "#1212DA",
+    "secondary_hex": "#062B4F",
+    "surface_hex": "#F5F7FF",
+    "text_hex": "#0C1830",
+    "cta_label": "Book Free Jacksonville Inspection",
+    "phone_display": "(904) 645-5887"
+  },
+  "pricing_engine": {
+    "currency": "USD",
+    "base_rates_per_sqft": {
+      "architectural_shingle": {
+        "min": 6.25,
+        "max": 8.25,
+        "label": "FL-Code Hurricane Shingle"
+      },
+      "standing_seam_metal": {
+        "min": 12.5,
+        "max": 16.5,
+        "label": "Coastal Standing Seam Metal"
+      },
+      "designer_tile": {
+        "min": 14.5,
+        "max": 19.5,
+        "label": "Coastal Clay & Concrete Tile"
+      }
+    },
+    "story_multipliers": {
+      "one_story": 1.0,
+      "two_story": 1.14,
+      "three_plus": 1.28
+    },
+    "pitch_multipliers": {
+      "low": 0.96,
+      "standard": 1.0,
+      "steep": 1.18
+    },
+    "financing_apr_percent": 9.99,
+    "financing_term_months": 120
+  },
+  "ux_steps": [
+    {
+      "step_number": 1,
+      "title": "Property Profile",
+      "inputs": [
+        "Jacksonville home / roof footprint slider (1,200 – 4,500+ sq. ft., default 2,400 sq. ft.) + one-tap presets",
+        "Number of stories card selector (1-Story, 2-Story, 3+ Stories)"
+      ],
+      "conversion_psychology_note": "Engages Jacksonville homeowners in 5 seconds with visual controls instead of a high-friction static contact form."
+    },
+    {
+      "step_number": 2,
+      "title": "Roof Pitch & Storm Condition",
+      "inputs": [
+        "Visual roof slope selector (Low 2/12–4/12, Standard 5/12–7/12, Steep 8/12+)",
+        "Urgency & condition selector (Routine Replacement, Storm / Hail Damage, Active Leak)"
+      ],
+      "conversion_psychology_note": "Separates urgent Jacksonville & Northeast FL storm/hail claims from planned retail replacements before scheduling an inspection."
+    },
+    {
+      "step_number": 3,
+      "title": "Select Jacksonville Roofing System",
+      "inputs": [
+        "Three localized material cards: FL-Code Hurricane Shingle, Coastal Standing Seam Metal, and Coastal Clay & Concrete Tile"
+      ],
+      "conversion_psychology_note": "Pre-educates Jacksonville homeowners on Northeast Florida coastal hurricane code & metal/shingle material tiers and transparent installed ranges."
+    },
+    {
+      "step_number": 4,
+      "title": "Instant Jacksonville Ballpark & 2-Field Booking",
+      "inputs": [
+        "Ungated Jacksonville installed range ($15,000–$19,800) + amortized monthly payment (from $198/mo) + live material toggle",
+        "Simple 2-field booking form (Full Name, Phone or Email) + Preferred Inspection Window"
+      ],
+      "conversion_psychology_note": "Revealing honest local pricing BEFORE asking for contact info eliminates cold-form abandonment and pre-qualifies buyers."
+    }
+  ],
+  "preview_wrapper_spec": {
+    "hero_headline": "Get Your Instant Jacksonville Roof Replacement & Financing Ballpark in 30 Seconds",
+    "hero_subheadline": "Built in Townsend Roofing & Construction Services, Inc.'s cobalt-and-navy branding: turns hesitant Jacksonville & Northeast FL mobile visitors into pre-qualified inspection bookings without rebuilding townsendroofing.com.",
+    "pain_points_solved_callouts": [
+      "Contact page forces mobile visitors through an 8-field static form while the homepage gives zero instant Northeast Florida hurricane-code replacement pricing",
+      "Automatically captures roof sq. ft., stories, slope, FL-Code Hurricane Shingle/Coastal Standing Seam Metal/Coastal Clay & Concrete Tile preference, and storm/leak urgency before your team dials",
+      "Self-contained <30 KB Shadow DOM script — drops onto townsendroofing.com with one line of code in 5 minutes and zero site redesign"
+    ]
+  },
+  "commercial_offer": {
+    "setup_fee_usd": 750,
+    "monthly_retainer_usd": 149,
+    "retainer_deliverables": [
+      "Global edge CDN hosting and 99.9% uptime SLA for the lightweight drop-in widget script",
+      "Instant Email, SMS, and CRM webhook lead routing carrying full roof specs and storm urgency priority",
+      "Quarterly Jacksonville & Northeast FL material and labor pricing calibration",
+      "Monthly conversion funnel analytics report (widget starts, reveals, and booked Jacksonville inspections)"
+    ]
+  }
+}

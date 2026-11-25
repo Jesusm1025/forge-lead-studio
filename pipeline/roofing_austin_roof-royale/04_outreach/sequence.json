@@ -1,0 +1,84 @@
+{
+  "prospect_id": "roofing_austin_roof-royale",
+  "generated_at": "2026-11-22T16:15:00Z",
+  "target_recipients": [
+    "Tony Schlessinger (Owner / Founder)",
+    "Jessica Acosta (Owner / Founder)",
+    "office@roofroyale.com"
+  ],
+  "primary_channel": "cold_email",
+  "emails": [
+    {
+      "step": 1,
+      "delay_days": 0,
+      "subject_line_a": "Quick build for Roof Royale",
+      "subject_line_b": "Austin roof financing calculator for Roof Royale",
+      "body_text": "Hey Tony & Jessica,\n\nI was looking through roofroyale.com and noticed you promote Roof Financing right in your top menu, but Austin homeowners still hit a static 8-field form with no way to see a ballpark cost or monthly payment first.\n\nMost folks bounce rather than hand over their phone number blind.\n\nSo I built a working 30-second Roof & Financing Estimator in your black-and-gold Roof Royale branding. It shows Austin shingle, metal, and tile ranges plus monthly payments before asking for a name and number.\n\nMind if I send over the live preview link?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 100,
+      "psychological_trigger": "Value-First Reciprocity & Curiosity Gap (proof already built in their exact brand; permission-based zero-link CTA protects inbox placement)"
+    },
+    {
+      "step": 2,
+      "delay_days": 3,
+      "subject_line_a": "Your black-and-gold Roof Royale estimator",
+      "subject_line_b": "60-sec walkthrough for Tony & Jessica",
+      "body_text": "Hey Tony & Jessica,\n\nRather than ask twice, here is the live prototype I built for Roof Royale along with a 60-second walkthrough:\n\nLive demo: {{preview_url}}\n60-sec video: {{loom_url}}\n\nClick through all 4 steps on your phone. A homeowner with a 2,400 sq ft Austin roof sees an instant ballpark ($13,200–$17,400, from $174/mo) and can toggle Shingle, Metal, or Tile live.\n\nWhen they book a free inspection, your advisors get their roof size, pitch, material, and storm/hail flag automatically.\n\nWorth a quick 5-min look?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 89,
+      "psychological_trigger": "Tangible Proof & Specificity (concrete Austin pricing math + interactive self-test on their own phone eliminates skepticism)"
+    },
+    {
+      "step": 3,
+      "delay_days": 7,
+      "subject_line_a": "5-min install + quick mobile note on roofroyale.com",
+      "subject_line_b": "One small mobile fix on roofroyale.com",
+      "body_text": "Hey Tony & Jessica,\n\nQuick note in case you thought that estimator required a website redesign — it doesn't.\n\nIt drops onto roofroyale.com with one line of code in 5 minutes, stays isolated from your existing styling, and weighs less than a single photo (28 KB).\n\nBonus heads-up for your web team: roofroyale.com currently sets maximum-scale=1 in its mobile viewport tag, which blocks pinch-to-zoom on phones and dings mobile UX scores. Easy 10-second fix either way.\n\nWant me to walk you through how it plugs into your CRM?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 93,
+      "psychological_trigger": "Friction Removal & Unprompted Technical Credibility (removes redesign fear and gifts a real live-site viewport bug fix)"
+    },
+    {
+      "step": 4,
+      "delay_days": 12,
+      "subject_line_a": "Keep Roof Royale preview live?",
+      "subject_line_b": "Closing the loop on Austin calculator",
+      "body_text": "Hey Tony & Jessica,\n\nI know storm season and running crews across five Texas markets keeps your plates full, so I won't keep crowding your inbox.\n\nShould I keep the Roof Royale calculator preview live for another week while you take a look, or archive it on Friday?\n\nEither way, appreciate what your veteran-owned team is building in Central Texas.\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 65,
+      "psychological_trigger": "Respectful Loss Aversion / Polite Breakup (lowers guard and prompts a quick yes/no decision without pressure)"
+    }
+  ],
+  "linkedin_dm_touch": {
+    "connection_note": "Hi Tony — respect what you & Jessica built with Roof Royale in Austin. I noticed your site offers Roof Financing without an instant price preview, so I mocked up a quick black-and-gold roof calculator for you. Mind if we connect?",
+    "follow_up_dm": "Thanks for connecting, Tony. Here's that working 30-second Roof & Financing Estimator I put together in Roof Royale's black-and-gold colors: {{preview_url}}\n\nTry tapping through Shingle, Metal, and Tile on your phone — it shows Austin ranges + monthly payments upfront before asking for a name and number, and drops onto roofroyale.com with one script tag. Zero pressure, let me know if it's worth a 5-min chat."
+  },
+  "loom_60s_script": {
+    "hook_0_15s": "[SCREEN: roofroyale.com homepage] \"Hey Tony and Jessica — quick 60-second video just for you. I was checking out roofroyale.com here in Austin. Really respect the veteran-owned setup and the clean black-and-gold branding, and I noticed you promote Roof Financing right in your top nav.\"",
+    "pain_comparison_15_35s": "[SCREEN: Scroll to Roof Royale's 8-field static form] \"Here's the one spot where you're likely leaking ready-to-buy homeowners: if someone wants a ballpark roof cost or monthly payment, they hit this 8-field form and have to give up their phone and street address blind. Most homeowners bounce — or your advisors spend time chasing tire-kickers who weren't ready for a $15k replacement.\"",
+    "live_demo_walkthrough_35_50s": "[SCREEN: Switch tab to live Roof Royale MVP index.html & click Steps 1–4] \"So I built a working fix in your exact black-and-gold branding. Four quick taps — size, stories, pitch, storm or routine — and it immediately shows a calibrated Austin range, $13,200 to $17,400, from $174 a month, BEFORE asking for contact info. Toggle Metal or Tile live, submit a quick test, and down here your CRM gets every roof spec automatically.\"",
+    "zero_pressure_cta_50_60s": "[SCREEN: Highlight top 1-line embed bar] \"It's 28 kilobytes, drops onto roofroyale.com in five minutes with zero redesign. Reply if you'd like to put this live on your site — either way, hope it's useful.\""
+  },
+  "objection_handlers": [
+    {
+      "objection": "We already have a website guy / marketing agency.",
+      "reframe_response": "That's actually ideal — we don't replace your agency or redesign roofroyale.com. This is a single 28 KB drop-in script tag your web guy can paste onto your homepage and financing page in 5 minutes. It simply turns the traffic your agency already brings in into 2x–3x more qualified inspection bookings."
+    },
+    {
+      "objection": "We can't quote roofs accurately online — every roof has hidden decking, valleys, or code issues.",
+      "reframe_response": "100% agree, and this tool never gives a binding bid. It gives an honest Central Texas ballpark range with a clear on-site confirmation disclaimer so $5,000 tire-kickers filter themselves out before your Community Advisors roll a truck, while serious buyers arrive pre-educated on realistic $13k–$36k investment and financing options."
+    },
+    {
+      "objection": "Why pay $950 setup + $199/mo when Roofr/Roofle exist or we could add a cheap form plugin?",
+      "reframe_response": "Generic calculators slap third-party branding on your page and cost $150–$300+/mo anyway, while static form plugins don't show pricing or financing at all. Ours is 100% white-labeled in Roof Royale's black-and-gold identity, routes every lead's sq. ft., pitch, material, and storm flag straight to your CRM/SMS, includes quarterly pricing updates across all five of your Texas markets, and a single closed Austin roof replacement pays for the tool for over four years."
+    },
+    {
+      "objection": "We're slammed right now with storm calls and crews — bad time to add tech.",
+      "reframe_response": "Storm surges are actually when this pays off fastest. Instead of your office manually sorting active leaks and hail claims from routine shoppers, the widget tags storm/leak urgency automatically and puts them into your ASAP slot. You don't lift a finger — one 10-minute review of your pricing ranges, and we hand your web team the single script line."
+    },
+    {
+      "objection": "Will adding a calculator slow down our website or mess up our mobile design?",
+      "reframe_response": "Zero chance. It's pure vanilla JavaScript (28 KB total, 8.8 KB gzipped — smaller than a single roof photo) wrapped in Shadow DOM isolation, so it cannot touch or break a single pixel of roofroyale.com's layout. Plus we'll send your team the 1-line fix for your current maximum-scale=1 mobile zoom tag for free."
+    },
+    {
+      "objection": "Just email me the pricing and let me think about it.",
+      "reframe_response": "Happy to — I'll send a 3-bullet recap ($950 one-time calibration & install, $199/mo for hosting, CRM/SMS routing, and quarterly Texas price updates, cancel anytime) along with the live link so you and Jessica can test it on your phones. Mind if I check back in Thursday morning for a quick yes or no?"
+    }
+  ]
+}

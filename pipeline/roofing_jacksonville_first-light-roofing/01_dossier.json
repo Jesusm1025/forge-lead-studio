@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_jacksonville_first-light-roofing",
+  "scouted_at": "2026-11-25T15:18:43Z",
+  "niche": "roofing",
+  "business_name": "First Light Home Services LLC",
+  "location": {
+    "city": "Jacksonville",
+    "state": "FL",
+    "country": "US"
+  },
+  "website_url": "https://firstlightroofingservices.com/",
+  "contact_info": {
+    "decision_maker": "Joseph Hewett & Corey Williams",
+    "role": "Co-Owners",
+    "email": "roofing@firstlighthomeservices.com",
+    "phone": "(904) 571-3646",
+    "contact_page_url": "https://firstlightroofingservices.com/contact/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#062B4F",
+    "secondary_color_hex": "#3FB6F0",
+    "brand_vibe": "Owner-operated Jacksonville fortified roof specialist"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage contains zero embedded quote form — pushing Jacksonville mobile visitors off-page to a static 7-field /contact/ form with no instant Florida-code ballpark",
+      "No interactive comparison for Northeast Florida hurricane-rated shingle vs. coastal standing seam metal before requesting contact details"
+    ],
+    "seo_or_speed_leaks": [
+      "1,557 ms server TTFB with 1 render-blocking script in <head>",
+      "10 of 16 homepage images omit loading='lazy' and 14 remain in legacy JPG/PNG formats"
+    ],
+    "current_lead_capture_method": "Off-page 7-field /contact/ form and click-to-call phone line (904) 571-3646"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "First Light's homepage has zero quote form — every Jacksonville visitor gets bounced to a 7-field contact page without seeing a Florida hurricane-code ballpark first.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

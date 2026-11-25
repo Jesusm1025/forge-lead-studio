@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "agency_model": "Value-First / Trojan Horse B2B Digital Agency",
+  "target_markets": ["US", "CA", "UK", "AU"],
+  "active_wave": {
+    "wave_id": "WAVE_01",
+    "niche": "roofing",
+    "target_regions": [
+      "Austin, TX",
+      "Dallas, TX",
+      "Houston, TX",
+      "Tampa, FL",
+      "Orlando, FL"
+    ],
+    "default_solution_type": "TYPE_A_ROOFING_CALCULATOR",
+    "default_pricing_usd": {
+      "setup_fee_min": 500,
+      "setup_fee_default": 750,
+      "setup_fee_max": 1500,
+      "retainer_min": 99,
+      "retainer_default": 149,
+      "retainer_max": 250
+    }
+  },
+  "workspace_paths": {
+    "agents": "agents/",
+    "schemas": "schemas/",
+    "templates": "templates/",
+    "pipeline": "pipeline/",
+    "tracking": "tracking/crm_pipeline.json"
+  },
+  "compliance_profiles": {
+    "US": "CAN-SPAM",
+    "CA": "CASL",
+    "UK": "PECR / UK GDPR",
+    "AU": "Australian Spam Act 2003"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agencia.local/schemas/04_outreach_sequence.schema.json",
+  "title": "Agent 04 B2B Outreach Sequence",
+  "description": "Strict output contract produced by Agent 04 (B2B Closer & Copywriter) for Agent 05 (QA & Compliance Auditor) and human deployment.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "prospect_id",
+    "generated_at",
+    "target_recipients",
+    "primary_channel",
+    "emails",
+    "linkedin_dm_touch",
+    "loom_60s_script",
+    "objection_handlers"
+  ],
+  "properties": {
+    "prospect_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+_[a-z0-9-]+_[a-z0-9-]+$",
+      "description": "Matching prospect slug from Agent 01/02."
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 timestamp when the outreach sequence was generated."
+    },
+    "target_recipients": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 3
+      },
+      "description": "Named decision-makers and/or verified target email addresses."
+    },
+    "primary_channel": {
+      "type": "string",
+      "enum": ["cold_email", "linkedin_dm", "hybrid_email_linkedin"],
+      "default": "cold_email"
+    },
+    "emails": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "step",
+          "delay_days",
+          "subject_line_a",
+          "subject_line_b",
+          "body_text",
+          "word_count",
+          "psychological_trigger"
+        ],
+        "properties": {
+          "step": { "type": "integer", "minimum": 1, "maximum": 5 },
+          "delay_days": { "type": "integer", "minimum": 0, "maximum": 30 },
+          "subject_line_a": { "type": "string", "minLength": 4, "maxLength": 75 },
+          "subject_line_b": { "type": "string", "minLength": 4, "maxLength": 75 },
+          "body_text": { "type": "string", "minLength": 50 },
+          "word_count": {
+            "type": "integer",
+            "minimum": 20,
+            "maximum": 119,
+            "description": "Strict cold email ceiling: must remain under 120 words."
+          },
+          "psychological_trigger": { "type": "string", "minLength": 5 }
+        }
+      }
+    },
+    "linkedin_dm_touch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["connection_note", "follow_up_dm"],
+      "properties": {
+        "connection_note": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 280,
+          "description": "LinkedIn invitation note strictly under 280 characters."
+        },
+        "follow_up_dm": {
+          "type": "string",
+          "minLength": 30,
+          "maxLength": 600
+        }
+      }
+    },
+    "loom_60s_script": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "hook_0_15s",
+        "pain_comparison_15_35s",
+        "live_demo_walkthrough_35_50s",
+        "zero_pressure_cta_50_60s"
+      ],
+      "properties": {
+        "hook_0_15s": { "type": "string", "minLength": 25 },
+        "pain_comparison_15_35s": { "type": "string", "minLength": 30 },
+        "live_demo_walkthrough_35_50s": { "type": "string", "minLength": 30 },
+        "zero_pressure_cta_50_60s": { "type": "string", "minLength": 20 }
+      }
+    },
+    "objection_handlers": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["objection", "reframe_response"],
+        "properties": {
+          "objection": { "type": "string", "minLength": 10 },
+          "reframe_response": { "type": "string", "minLength": 30 }
+        }
+      }
+    }
+  }
+}

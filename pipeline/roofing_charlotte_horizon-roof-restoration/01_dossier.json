@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_charlotte_horizon-roof-restoration",
+  "scouted_at": "2026-11-24T18:10:58Z",
+  "niche": "roofing",
+  "business_name": "Horizon Roof Restoration",
+  "location": {
+    "city": "Charlotte",
+    "state": "NC",
+    "country": "US"
+  },
+  "website_url": "https://horizonrr.com/",
+  "contact_info": {
+    "decision_maker": "Matthew Hultquist",
+    "role": "Owner & CEO",
+    "email": "info@horizonrr.com",
+    "phone": "(980) 275-1085",
+    "contact_page_url": "https://horizonrr.com/contact/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#04194E",
+    "secondary_color_hex": "#D17F35",
+    "brand_vibe": "Premium Charlotte residential roof restoration"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage and /roof-estimates/ have zero embedded instant quote calculator, redirecting mobile visitors to a 5-field /contact/ form with no ballpark pricing",
+      "No interactive steep-slope, storm damage, or shingle-vs-metal estimator to pre-qualify South Charlotte homeowners before booking"
+    ],
+    "seo_or_speed_leaks": [
+      "258.5 KB homepage HTML with 2,129 ms TTFB and 7 render-blocking scripts in <head>",
+      "20 of 55 homepage images omit loading='lazy' and 14 lack descriptive alt attributes"
+    ],
+    "current_lead_capture_method": "Off-page 5-field /contact/ form and call/text line (980) 275-1085"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Horizon's homepage and /roof-estimates/ page have no interactive calculator — mobile Charlotte visitors still have to fill out a blind contact form without seeing a rough range.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_atlanta_ameristar-roofing",
+  "scouted_at": "2026-11-24T18:10:58Z",
+  "niche": "roofing",
+  "business_name": "Ameristar Roofing & Restoration",
+  "location": {
+    "city": "Atlanta",
+    "state": "GA",
+    "country": "US"
+  },
+  "website_url": "https://www.ameristarpro.com/",
+  "contact_info": {
+    "decision_maker": "Dale Pendergraft",
+    "role": "Owner & President",
+    "email": "info@ameristarpro.com",
+    "phone": "(770) 831-1770",
+    "contact_page_url": "https://www.ameristarpro.com/contact"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#102D44",
+    "secondary_color_hex": "#55C7F3",
+    "brand_vibe": "Established North Atlanta & Buford roofer"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage contains zero embedded quote form, pushing mobile shoppers off-page to a static 9-field /contact form with zero instant Atlanta ballpark pricing",
+      "No interactive selector for Georgia hail damage insurance checks or shingle vs. standing seam metal pricing"
+    ],
+    "seo_or_speed_leaks": [
+      "Heavy 344.0 KB homepage HTML payload where 17 of 19 images remain in legacy JPG/PNG formats",
+      "6 of 19 homepage images omit native loading='lazy' and 2 lack descriptive alt text"
+    ],
+    "current_lead_capture_method": "Off-page 9-field /contact form and click-to-call phone line (770) 831-1770"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Ameristar's homepage has zero embedded quote form — every mobile visitor gets bounced to a 9-field /contact form with no rough Metro Atlanta replacement ballpark first.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

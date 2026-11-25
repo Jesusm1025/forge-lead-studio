@@ -1,0 +1,105 @@
+{
+  "prospect_id": "roofing_dallas_davis-roofing-solutions",
+  "architected_at": "2026-11-22T23:41:00Z",
+  "template_base": "roofing-quote-calc",
+  "brand_config": {
+    "business_name": "Davis Roofing Solutions",
+    "tagline": "DFW's Most Trusted Roofing Contractor · Honest Local Craftsmanship",
+    "primary_hex": "#0369D5",
+    "secondary_hex": "#FFB43A",
+    "surface_hex": "#F5F9FF",
+    "text_hex": "#071A2B",
+    "cta_label": "Book Free DFW Roof Inspection",
+    "phone_display": "(817) 857-7663"
+  },
+  "pricing_engine": {
+    "currency": "USD",
+    "base_rates_per_sqft": {
+      "architectural_shingle": {
+        "min": 5.5,
+        "max": 7.25,
+        "label": "Class 4 Hail-Resistant Shingle"
+      },
+      "standing_seam_metal": {
+        "min": 11.5,
+        "max": 15.0,
+        "label": "Standing Seam Metal System"
+      },
+      "designer_tile": {
+        "min": 13.5,
+        "max": 18.25,
+        "label": "Designer Clay & Concrete Tile"
+      }
+    },
+    "story_multipliers": {
+      "one_story": 1.0,
+      "two_story": 1.12,
+      "three_plus": 1.25
+    },
+    "pitch_multipliers": {
+      "low": 0.95,
+      "standard": 1.0,
+      "steep": 1.18
+    },
+    "financing_apr_percent": 9.99,
+    "financing_term_months": 120
+  },
+  "ux_steps": [
+    {
+      "step_number": 1,
+      "title": "Property Profile",
+      "inputs": [
+        "Interactive roof sq. ft. slider (1,200 – 4,500+ sq. ft., default 2,400 sq. ft.) + one-tap DFW size presets",
+        "Number of stories card selector (1-Story, 2-Story, 3+ Stories)"
+      ],
+      "conversion_psychology_note": "Replaces Davis Roofing Solutions' intimidating 13-field 'be as detailed as possible' static form with 2-second visual taps on mobile."
+    },
+    {
+      "step_number": 2,
+      "title": "Roof Complexity & Storm Status",
+      "inputs": [
+        "Roof pitch visual diagram selector (Low, Standard, Steep)",
+        "Urgency & condition selector (Routine Replacement, Storm / Hail Damage, Active Leak)"
+      ],
+      "conversion_psychology_note": "Captures the exact diagnostic context Drew's reps ask for before calling — without forcing homeowners to type paragraphs on a phone screen."
+    },
+    {
+      "step_number": 3,
+      "title": "Select Roofing Material",
+      "inputs": [
+        "Three DFW material cards: Class 4 Hail-Resistant Shingle, Standing Seam Metal System, and Designer Clay & Concrete Tile"
+      ],
+      "conversion_psychology_note": "Highlights DFW metal and Class 4 hail upgrades upfront, driving higher average job tickets and fewer budget mismatches."
+    },
+    {
+      "step_number": 4,
+      "title": "Instant DFW Ballpark & 2-Field Inspection Booking",
+      "inputs": [
+        "Ungated DFW installed range ($13,200 – $17,400) + monthly financing preview (from $174/mo) + live material switcher",
+        "Clean 2-field booking form (Full Name, Phone or Email) + Preferred Inspection Window"
+      ],
+      "conversion_psychology_note": "Removes cold-form friction by showing realistic DFW replacement numbers first, then routing full roof specs automatically to Drew's sales team."
+    }
+  ],
+  "preview_wrapper_spec": {
+    "hero_headline": "Get Your Instant Dallas–Fort Worth Roof Replacement Estimate in 30 Seconds",
+    "hero_subheadline": "Tailored to Davis Roofing Solutions' blue-and-amber identity: replaces your heavy 13-field static form with a 28 KB Shadow DOM estimator that hands your reps every roof detail automatically.",
+    "pain_points_solved_callouts": [
+      "Eliminates the 13-field static form on davisroofingsolutions.com where mobile homeowners drop off before hitting submit",
+      "Automatically collects roof sq. ft., stories, slope, material preference, and hail urgency so reps arrive prepared before dialing",
+      "Zero-bloat <30 KB Shadow DOM script — adds zero image weight to your 384 KB homepage and installs in 5 minutes"
+    ]
+  },
+  "commercial_offer": {
+    "setup_fee_usd": 750,
+    "monthly_retainer_usd": 149,
+    "retainer_deliverables": [
+      "Global edge CDN hosting and 99.9% uptime SLA for the lightweight drop-in widget script",
+      "Instant Email, SMS, and CRM webhook lead routing with full roof qualification specs",
+      "Quarterly Dallas–Fort Worth hail-resistant shingle and metal pricing calibration",
+      "Monthly conversion funnel analytics report (starts, reveals, and booked inspections)"
+    ]
+  },
+  "telemetry_endpoint": "https://forge-lead-router.forge-lead-studio.workers.dev/event",
+  "delivery_mode": "demo"
+}

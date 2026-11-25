@@ -1,0 +1,105 @@
+{
+  "prospect_id": "roofing_raleigh_rex-construction",
+  "architected_at": "2026-11-25T15:18:43Z",
+  "template_base": "roofing-quote-calc",
+  "telemetry_endpoint": "https://forge-lead-router.forge-lead-studio.workers.dev/event",
+  "delivery_mode": "demo",
+  "brand_config": {
+    "business_name": "Rex Construction LLC",
+    "tagline": "Trusted Raleigh & Wake County Roofing Contractor · Storm & Replacement",
+    "primary_hex": "#1B2A4A",
+    "secondary_hex": "#D97706",
+    "surface_hex": "#FAF9F5",
+    "text_hex": "#152038",
+    "cta_label": "Book Free Raleigh Roof Inspection",
+    "phone_display": "(919) 946-8100"
+  },
+  "pricing_engine": {
+    "currency": "USD",
+    "base_rates_per_sqft": {
+      "architectural_shingle": {
+        "min": 5.25,
+        "max": 7.25,
+        "label": "Triangle Storm-Rated Shingle"
+      },
+      "standing_seam_metal": {
+        "min": 11.25,
+        "max": 15.0,
+        "label": "Standing Seam Metal Roof"
+      },
+      "designer_tile": {
+        "min": 13.25,
+        "max": 17.75,
+        "label": "Designer Slate & Luxury Tile"
+      }
+    },
+    "story_multipliers": {
+      "one_story": 1.0,
+      "two_story": 1.14,
+      "three_plus": 1.26
+    },
+    "pitch_multipliers": {
+      "low": 0.95,
+      "standard": 1.0,
+      "steep": 1.18
+    },
+    "financing_apr_percent": 9.99,
+    "financing_term_months": 120
+  },
+  "ux_steps": [
+    {
+      "step_number": 1,
+      "title": "Property Profile",
+      "inputs": [
+        "Raleigh home / roof footprint slider (1,200 – 4,500+ sq. ft., default 2,400 sq. ft.) + one-tap presets",
+        "Number of stories card selector (1-Story, 2-Story, 3+ Stories)"
+      ],
+      "conversion_psychology_note": "Engages Raleigh homeowners in 5 seconds with visual controls instead of a high-friction static contact form."
+    },
+    {
+      "step_number": 2,
+      "title": "Roof Pitch & Storm Condition",
+      "inputs": [
+        "Visual roof slope selector (Low 2/12–4/12, Standard 5/12–7/12, Steep 8/12+)",
+        "Urgency & condition selector (Routine Replacement, Storm / Hail Damage, Active Leak)"
+      ],
+      "conversion_psychology_note": "Separates urgent Raleigh & Research Triangle storm/hail claims from planned retail replacements before scheduling an inspection."
+    },
+    {
+      "step_number": 3,
+      "title": "Select Raleigh Roofing System",
+      "inputs": [
+        "Three localized material cards: Triangle Storm-Rated Shingle, Standing Seam Metal Roof, and Designer Slate & Luxury Tile"
+      ],
+      "conversion_psychology_note": "Pre-educates Raleigh homeowners on Research Triangle storm & architectural shingle material tiers and transparent installed ranges."
+    },
+    {
+      "step_number": 4,
+      "title": "Instant Raleigh Ballpark & 2-Field Booking",
+      "inputs": [
+        "Ungated Raleigh installed range ($12,600–$17,400) + amortized monthly payment (from $166/mo) + live material toggle",
+        "Simple 2-field booking form (Full Name, Phone or Email) + Preferred Inspection Window"
+      ],
+      "conversion_psychology_note": "Revealing honest local pricing BEFORE asking for contact info eliminates cold-form abandonment and pre-qualifies buyers."
+    }
+  ],
+  "preview_wrapper_spec": {
+    "hero_headline": "Get Your Instant Raleigh Roof Replacement & Financing Ballpark in 30 Seconds",
+    "hero_subheadline": "Built in Rex Construction LLC's navy-and-amber branding: turns hesitant Raleigh & Research Triangle mobile visitors into pre-qualified inspection bookings without rebuilding rexconstructionllc.com.",
+    "pain_points_solved_callouts": [
+      "Homepage only has a minimal 1-field capture and /contact-us relies on a static 5-field form with zero instant Triangle roof replacement pricing",
+      "Automatically captures roof sq. ft., stories, slope, Triangle Storm-Rated Shingle/Standing Seam Metal Roof/Designer Slate & Luxury Tile preference, and storm/leak urgency before your team dials",
+      "Self-contained <30 KB Shadow DOM script — drops onto rexconstructionllc.com with one line of code in 5 minutes and zero site redesign"
+    ]
+  },
+  "commercial_offer": {
+    "setup_fee_usd": 750,
+    "monthly_retainer_usd": 149,
+    "retainer_deliverables": [
+      "Global edge CDN hosting and 99.9% uptime SLA for the lightweight drop-in widget script",
+      "Instant Email, SMS, and CRM webhook lead routing carrying full roof specs and storm urgency priority",
+      "Quarterly Raleigh & Research Triangle material and labor pricing calibration",
+      "Monthly conversion funnel analytics report (widget starts, reveals, and booked Raleigh inspections)"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "forge-lead-router",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-24",
+  "workers_dev": true,
+  "observability": {
+    "enabled": true,
+    "traces": {
+      "enabled": true
+    }
+  },
+  "kv_namespaces": [
+    {
+      "binding": "FORGE_TELEMETRY",
+      "id": "68239b6b05254c12b2c3a5da4d28a4e3"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "prospect_id": "roofing_houston_advantage-roofing",
+  "architected_at": "2026-11-22T23:41:00Z",
+  "template_base": "roofing-quote-calc",
+  "brand_config": {
+    "business_name": "Advantage Roofing",
+    "tagline": "3rd-Generation Family-Owned Houston Roofer · Hand-Nailed Craftsmanship",
+    "primary_hex": "#CF2131",
+    "secondary_hex": "#CFBE9C",
+    "surface_hex": "#FAF8F4",
+    "text_hex": "#1A1A1A",
+    "cta_label": "Schedule Free Houston Inspection",
+    "phone_display": "(713) 609-9319"
+  },
+  "pricing_engine": {
+    "currency": "USD",
+    "base_rates_per_sqft": {
+      "architectural_shingle": {
+        "min": 5.75,
+        "max": 7.5,
+        "label": "Hand-Nailed Wind-Rated Shingle"
+      },
+      "standing_seam_metal": {
+        "min": 11.75,
+        "max": 15.5,
+        "label": "Gulf Coast Standing Seam Metal"
+      },
+      "designer_tile": {
+        "min": 14.0,
+        "max": 18.75,
+        "label": "Coastal Concrete & Clay Tile"
+      }
+    },
+    "story_multipliers": {
+      "one_story": 1.0,
+      "two_story": 1.12,
+      "three_plus": 1.25
+    },
+    "pitch_multipliers": {
+      "low": 0.95,
+      "standard": 1.0,
+      "steep": 1.18
+    },
+    "financing_apr_percent": 9.99,
+    "financing_term_months": 120
+  },
+  "ux_steps": [
+    {
+      "step_number": 1,
+      "title": "Property Profile",
+      "inputs": [
+        "Greater Houston / Katy home size slider (1,200 – 4,500+ sq. ft., default 2,400 sq. ft.) + one-tap size presets",
+        "Number of stories card selector (1-Story, 2-Story, 3+ Stories)"
+      ],
+      "conversion_psychology_note": "Engages Houston & Katy homeowners immediately with tactile size controls instead of a generic static callback form."
+    },
+    {
+      "step_number": 2,
+      "title": "Roof Pitch & Storm Condition",
+      "inputs": [
+        "Roof slope visual selector (Low 2/12–4/12, Standard 5/12–7/12, Steep 8/12+)",
+        "Condition & Gulf Coast storm urgency selector (Routine Replacement, Storm / Hail Damage, Active Leak)"
+      ],
+      "conversion_psychology_note": "Separates urgent Houston tropical-storm/hail claims from planned replacements automatically before booking Donald's crew."
+    },
+    {
+      "step_number": 3,
+      "title": "Select Wind-Rated Material",
+      "inputs": [
+        "Three Gulf Coast roofing tiers: Hand-Nailed Wind-Rated Shingle, Gulf Coast Standing Seam Metal, and Coastal Concrete & Clay Tile"
+      ],
+      "conversion_psychology_note": "Reinforces Advantage Roofing's signature hand-nailed wind-resistance advantage while anchoring realistic Greater Houston installed budgets."
+    },
+    {
+      "step_number": 4,
+      "title": "Instant Houston Ballpark & 2-Field Inspection Booking",
+      "inputs": [
+        "Ungated Houston installed range ($13,800 – $18,000) + amortized monthly payment (from $182/mo) + live material toggle",
+        "Simple 2-field inspection request (Full Name, Phone or Email) + Preferred Inspection Window"
+      ],
+      "conversion_psychology_note": "Upfront Gulf Coast cost transparency builds 3rd-generation trust before asking for phone details, turning hesitant researchers into qualified Katy/Houston leads."
+    }
+  ],
+  "preview_wrapper_spec": {
+    "hero_headline": "Get Your Greater Houston Roof Replacement & Wind-Rated Estimate in 30 Seconds",
+    "hero_subheadline": "Designed in Advantage Roofing's exact crimson-and-sandstone palette: turns passive Houston & Katy visitors into pre-qualified inspection bookings without rebuilding your site.",
+    "pain_points_solved_callouts": [
+      "Upgrades the static 5-field homepage form on advantageroofingtx.com into an interactive 4-step Gulf Coast roof & financing calculator",
+      "Highlights Advantage Roofing's hand-nailed wind-rated shingle and coastal metal pricing upfront to filter out low-ball tire-kickers",
+      "Ultra-light <30 KB Shadow DOM drop-in script — adds zero load drag on top of your 1.45s server response and installs in 5 minutes"
+    ]
+  },
+  "commercial_offer": {
+    "setup_fee_usd": 750,
+    "monthly_retainer_usd": 149,
+    "retainer_deliverables": [
+      "Global edge CDN hosting and 99.9% uptime SLA for the lightweight drop-in widget script",
+      "Instant Email, SMS, and CRM lead routing with roof size, pitch, material, and storm urgency specs",
+      "Quarterly Greater Houston & Gulf Coast wind-rated material pricing calibration",
+      "Monthly conversion funnel performance report (starts, reveals, and booked Houston inspections)"
+    ]
+  },
+  "telemetry_endpoint": "https://forge-lead-router.forge-lead-studio.workers.dev/event",
+  "delivery_mode": "demo"
+}

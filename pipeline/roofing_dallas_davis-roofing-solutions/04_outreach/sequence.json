@@ -1,0 +1,79 @@
+{
+  "prospect_id": "roofing_dallas_davis-roofing-solutions",
+  "generated_at": "2026-11-22T23:46:00Z",
+  "target_recipients": [
+    "Drew Davis (Founder & CEO)",
+    "drew@davisroofingsolutions.com"
+  ],
+  "primary_channel": "cold_email",
+  "emails": [
+    {
+      "step": 1,
+      "delay_days": 0,
+      "subject_line_a": "Quick build for Davis Roofing Solutions",
+      "subject_line_b": "13-field form fix for Drew",
+      "body_text": "Hey Drew,\n\nI was checking out davisroofingsolutions.com — strong DFW reputation, especially the straight-shooter approach to honest inspections.\n\nOne conversion leak jumped out on mobile: your homepage and contact page both ask homeowners to fill out a 13-field form 'as detailed as possible' before seeing any rough price range.\n\nSo I built a working 30-second DFW Roof Estimator in your exact blue-and-amber Davis Roofing Solutions colors. Homeowners tap their roof specs and see an instant ballpark before leaving their name and number.\n\nMind if I send over the live preview link?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Value-First Reciprocity & Specific Gap Callout (quotes their exact 13-field form friction; zero links in Step 1)",
+      "word_count": 96
+    },
+    {
+      "step": 2,
+      "delay_days": 3,
+      "subject_line_a": "Your blue-and-amber DFW roof calculator",
+      "subject_line_b": "60-sec walkthrough for Drew Davis",
+      "body_text": "Hey Drew,\n\nHere is the live prototype I built for Davis Roofing Solutions along with a 60-second walkthrough:\n\nLive demo: {{preview_url}}\n60-sec video: {{loom_url}}\n\nTap through all 4 steps on your phone. A 2,400 sq ft DFW home shows a calibrated ballpark ($13,200–$17,400, from $174/mo) and lets homeowners compare Class 4 Hail-Resistant Shingle, Standing Seam Metal, and Designer Tile live.\n\nWhen they book a free inspection, your reps automatically get their size, stories, slope, material, and hail urgency.\n\nWorth a quick 5-min look?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Tangible Proof & Sales-Rep Qualification Angle (hands reps full roof details without making homeowners type paragraphs)",
+      "word_count": 88
+    },
+    {
+      "step": 3,
+      "delay_days": 7,
+      "subject_line_a": "5-min install + quick speed note on davisroofingsolutions.com",
+      "subject_line_b": "Two free website catches for Davis Roofing Solutions",
+      "body_text": "Hey Drew,\n\nQuick heads-up — this estimator doesn't touch or redesign davisroofingsolutions.com. It drops onto your site with one line of code in 5 minutes and weighs just 28 KB inside Shadow DOM.\n\nAlso caught two easy mobile speed wins for your web team free of charge: your homepage HTML is 384 KB and all 78 homepage images currently load eagerly without lazy-loading (with 13 still in legacy JPG/PNG).\n\nWant me to walk you through how urgent DFW hail leads route straight to your crew?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Friction Removal & Free Technical Audit Gift (78/78 eager images fact proves real homework)",
+      "word_count": 90
+    },
+    {
+      "step": 4,
+      "delay_days": 12,
+      "subject_line_a": "Keep Davis Roofing Solutions preview live?",
+      "subject_line_b": "Closing the loop, Drew",
+      "body_text": "Hey Drew,\n\nI know leading a growing DFW roofing operation keeps your calendar jammed, so I won't keep pinging your inbox.\n\nShould I keep your Davis Roofing Solutions estimator preview live for another week so you can tap through it, or archive it Friday?\n\nEither way, respect what you've built across Dallas–Fort Worth.\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Respectful Loss Aversion / Polite Breakup (low pressure, triggers quick decision)",
+      "word_count": 58
+    }
+  ],
+  "linkedin_dm_touch": {
+    "connection_note": "Hi Drew — respect what you've built with Davis Roofing Solutions in DFW. Noticed mobile visitors hit a 13-field form with no ballpark pricing, so I mocked up a quick blue-and-amber DFW roof estimator for you. Open to connecting?",
+    "follow_up_dm": "Thanks for connecting, Drew. Here's that working 30-second DFW Roof Estimator in Davis Roofing Solutions colors: {{preview_url}}\n\nTap through Class 4 Shingle, Metal, and Tile on your phone — it shows homeowners a calibrated ballpark first, then sends their roof size, slope, and hail urgency straight to your reps. Installs with one line of code. Zero pressure, happy to chat 5 mins if useful."
+  },
+  "loom_60s_script": {
+    "hook_0_15s": "[SCREEN: davisroofingsolutions.com homepage] \"Hey Drew — quick 60-second video just for you. I was checking out davisroofingsolutions.com here in DFW — really solid brand and straight-shooter messaging.\"",
+    "pain_comparison_15_35s": "[SCREEN: Scroll to 13-field form on homepage /contact/] \"Here's the one leak I spotted: mobile visitors hit a 13-field form asking them to be as detailed as possible with zero rough pricing shown. Most homeowners on their phone close the tab instead of typing out 13 fields blind.\"",
+    "live_demo_walkthrough_35_50s": "[SCREEN: Switch tab to live Davis Roofing Solutions MVP & tap Steps 1–4] \"So I built a 28-kilobyte fix in your blue-and-amber branding. Four quick taps — size, stories, slope, hail or routine — and it reveals a calibrated DFW range, $13,200 to $17,400, from $174 a month, BEFORE asking for a name and phone. Switch to Metal or Tile live, submit a test, and your team gets every roof detail automatically.\"",
+    "zero_pressure_cta_50_60s": "[SCREEN: Point to 1-line embed bar at top] \"Drops onto your homepage in five minutes without touching your layout. Reply if you'd like to test it live — either way, hope it's useful.\""
+  },
+  "objection_handlers": [
+    {
+      "objection": "Our reps need detailed info before calling — that's why our form has 13 fields.",
+      "reframe_response": "That makes total sense — and this actually gives your reps better info than a blank text box. Instead of forcing homeowners to type paragraphs on a phone, 4 visual taps automatically capture roof sq. ft., stories, slope, material preference, and hail urgency while doubling form completion."
+    },
+    {
+      "objection": "Every DFW roof is different — I don't want homeowners holding us to an online number.",
+      "reframe_response": "100% agree — it never quotes a binding price. It shows a realistic DFW ballpark range with a clear on-site inspection disclaimer so low-ball shoppers filter themselves out while serious homeowners book already expecting $13k–$40k+."
+    },
+    {
+      "objection": "Why spend $750 setup + $149/mo when we already have a website agency?",
+      "reframe_response": "Most agencies charge $5k+ for full site rebuilds and still stick a static form on the page. This is a focused $750 drop-in conversion tool your web team pastes in 5 minutes, includes quarterly DFW pricing updates and instant CRM routing, and pays for itself 3+ years over with one closed job."
+    },
+    {
+      "objection": "Will this slow down our site or clash with our WordPress styling?",
+      "reframe_response": "Zero conflict and zero bloat. It weighs 28 KB total (less than one tiny thumbnail) and runs inside Shadow DOM isolation so it can never break a single CSS rule on davisroofingsolutions.com — plus we'll share the quick lazy-load fix for your 78 homepage images free."
+    },
+    {
+      "objection": "Email me the pricing and I'll run it by my marketing guy.",
+      "reframe_response": "Happy to — I'll send a clean 3-bullet summary ($750 one-time calibration & setup, $149/mo hosting, CRM webhook routing, and quarterly DFW updates, cancel anytime) plus the live link so you and your marketing guy can click through it on mobile. Mind if I follow up Thursday morning?"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_orlando_drs-roofing",
+  "scouted_at": "2026-11-22T23:25:00Z",
+  "niche": "roofing",
+  "business_name": "DRS Roofing",
+  "location": {
+    "city": "Orlando",
+    "state": "FL",
+    "country": "US"
+  },
+  "website_url": "https://drs-roofing.com/",
+  "contact_info": {
+    "decision_maker": "Richard Rao",
+    "role": "Owner & President",
+    "email": "info@drs-roofing.com",
+    "phone": "(407) 240-1225",
+    "contact_page_url": "https://drs-roofing.com/roofing-estimate/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#B1080B",
+    "secondary_color_hex": "#FFCD57",
+    "brand_vibe": "Established residential and commercial"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Dedicated /roofing-estimate/ page forces mobile visitors through a heavy 14-field static form (and 15 fields on /contact/) with zero instant Central Florida ballpark pricing",
+      "Homepage duplicates two static 9-field forms without offering an interactive roof size, pitch, or hurricane-code material estimator"
+    ],
+    "seo_or_speed_leaks": [
+      "Extremely heavy 585 KB homepage HTML payload loading 232 total images, with 176 images missing loading='lazy'",
+      "84 of 232 homepage images remain in unoptimized legacy JPG/PNG formats instead of WebP/AVIF"
+    ],
+    "current_lead_capture_method": "Static 9-field homepage forms and 14-field /roofing-estimate/ form plus click-to-call phone link"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Your Orlando site has 30 years of credibility, yet homeowners clicking 'Get A FREE Estimate' hit a 14-field static form with no interactive way to check a Florida-code replacement ballpark first.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

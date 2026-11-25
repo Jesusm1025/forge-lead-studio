@@ -1,0 +1,103 @@
+{
+  "prospect_id": "roofing_charlotte_advanced-roofing",
+  "architected_at": "2026-11-24T18:10:58Z",
+  "template_base": "roofing-quote-calc",
+  "brand_config": {
+    "business_name": "Advanced Roofing Solutions",
+    "tagline": "Family-Owned Charlotte Roofing & Storm Restoration Since 2003",
+    "primary_hex": "#0076BB",
+    "secondary_hex": "#1D2939",
+    "surface_hex": "#F5F9FD",
+    "text_hex": "#1D2939",
+    "cta_label": "Schedule Free Charlotte Inspection",
+    "phone_display": "(980) 938-4541"
+  },
+  "pricing_engine": {
+    "currency": "USD",
+    "base_rates_per_sqft": {
+      "architectural_shingle": {
+        "min": 5.25,
+        "max": 7.25,
+        "label": "Carolinas Wind-Rated Shingle"
+      },
+      "standing_seam_metal": {
+        "min": 11.25,
+        "max": 15.0,
+        "label": "Standing Seam Metal System"
+      },
+      "designer_tile": {
+        "min": 13.25,
+        "max": 17.75,
+        "label": "Architectural Slate & Tile"
+      }
+    },
+    "story_multipliers": {
+      "one_story": 1.0,
+      "two_story": 1.14,
+      "three_plus": 1.26
+    },
+    "pitch_multipliers": {
+      "low": 0.95,
+      "standard": 1.0,
+      "steep": 1.2
+    },
+    "financing_apr_percent": 9.99,
+    "financing_term_months": 120
+  },
+  "ux_steps": [
+    {
+      "step_number": 1,
+      "title": "Property Profile",
+      "inputs": [
+        "Charlotte home / roof footprint slider (1,200 – 4,500+ sq. ft., default 2,400 sq. ft.) + one-tap presets",
+        "Number of stories card selector (1-Story, 2-Story, 3+ Stories)"
+      ],
+      "conversion_psychology_note": "Engages Charlotte homeowners in 5 seconds with visual controls instead of a high-friction static contact form."
+    },
+    {
+      "step_number": 2,
+      "title": "Roof Pitch & Storm Condition",
+      "inputs": [
+        "Visual roof slope selector (Low 2/12–4/12, Standard 5/12–7/12, Steep 8/12+)",
+        "Urgency & condition selector (Routine Replacement, Storm / Hail Damage, Active Leak)"
+      ],
+      "conversion_psychology_note": "Separates urgent Charlotte & Carolinas storm/hail claims from planned retail replacements before scheduling an inspection."
+    },
+    {
+      "step_number": 3,
+      "title": "Select Charlotte Roofing System",
+      "inputs": [
+        "Three localized material cards: Carolinas Wind-Rated Shingle, Standing Seam Metal System, and Architectural Slate & Tile"
+      ],
+      "conversion_psychology_note": "Pre-educates Charlotte homeowners on Carolinas storm & steep-slope material tiers and transparent installed ranges."
+    },
+    {
+      "step_number": 4,
+      "title": "Instant Charlotte Ballpark & 2-Field Booking",
+      "inputs": [
+        "Ungated Charlotte installed range ($12,600–$17,400) + amortized monthly payment (from $166/mo) + live material toggle",
+        "Simple 2-field booking form (Full Name, Phone or Email) + Preferred Inspection Window"
+      ],
+      "conversion_psychology_note": "Revealing honest local pricing BEFORE asking for contact info eliminates cold-form abandonment and pre-qualifies buyers."
+    }
+  ],
+  "preview_wrapper_spec": {
+    "hero_headline": "Get Your Instant Charlotte Roof Replacement & Financing Ballpark in 30 Seconds",
+    "hero_subheadline": "Built in Advanced Roofing Solutions's blue-and-slate branding: turns hesitant Charlotte & Carolinas mobile visitors into pre-qualified inspection bookings without rebuilding advancedroofingsolutionsclt.com.",
+    "pain_points_solved_callouts": [
+      "Homepage and /contact/ duplicate static 7-field forms with zero instant Charlotte roof replacement range or monthly payment preview",
+      "Automatically captures roof sq. ft., stories, slope, Carolinas Wind-Rated Shingle/Standing Seam Metal System/Architectural Slate & Tile preference, and storm/leak urgency before your team dials",
+      "Self-contained <30 KB Shadow DOM script — drops onto advancedroofingsolutionsclt.com with one line of code in 5 minutes and zero site redesign"
+    ]
+  },
+  "commercial_offer": {
+    "setup_fee_usd": 750,
+    "monthly_retainer_usd": 149,
+    "retainer_deliverables": [
+      "Global edge CDN hosting and 99.9% uptime SLA for the lightweight drop-in widget script",
+      "Instant Email, SMS, and CRM webhook lead routing carrying full roof specs and storm urgency priority",
+      "Quarterly Charlotte & Carolinas material and labor pricing calibration",
+      "Monthly conversion funnel analytics report (widget starts, reveals, and booked Charlotte inspections)"
+    ]
+  }
+}

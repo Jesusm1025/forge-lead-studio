@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_atlanta_reset-roofing",
+  "scouted_at": "2026-11-24T18:10:58Z",
+  "niche": "roofing",
+  "business_name": "Reset Roofing",
+  "location": {
+    "city": "Atlanta",
+    "state": "GA",
+    "country": "US"
+  },
+  "website_url": "https://resetroofing.com/",
+  "contact_info": {
+    "decision_maker": "Martin Shepard",
+    "role": "CEO & Co-Owner",
+    "email": "info@resetroofing.com",
+    "phone": "(770) 317-1237",
+    "contact_page_url": "https://resetroofing.com/free-estimate"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#183057",
+    "secondary_color_hex": "#F37125",
+    "brand_vibe": "Modern family-owned Metro Atlanta contractor"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage and /free-estimate contain zero embedded instant roof estimator, forcing Metro Atlanta mobile visitors to click through or call without any rough ballpark pricing",
+      "No interactive Georgia storm/hail triage or architectural shingle vs. metal price comparison before booking"
+    ],
+    "seo_or_speed_leaks": [
+      "Massive 671.6 KB homepage HTML document with 2 render-blocking scripts in <head>",
+      "38 of 95 homepage images omit loading='lazy' and 76 of 95 images lack descriptive alt tags"
+    ],
+    "current_lead_capture_method": "Off-page /free-estimate flow and click-to-call phone line (770) 317-1237"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Reset Roofing's 'protecting you like family' brand is strong across Metro Atlanta, yet your homepage gives mobile homeowners zero interactive way to preview a roof ballpark first.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

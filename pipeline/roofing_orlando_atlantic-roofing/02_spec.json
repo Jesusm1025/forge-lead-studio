@@ -1,0 +1,105 @@
+{
+  "prospect_id": "roofing_orlando_atlantic-roofing",
+  "architected_at": "2026-11-22T23:41:00Z",
+  "template_base": "roofing-quote-calc",
+  "brand_config": {
+    "business_name": "Atlantic Roofing & Construction",
+    "tagline": "Family-Owned Orlando Roofing Experts Since 1989 · CCC1330939",
+    "primary_hex": "#0D6EFD",
+    "secondary_hex": "#0654C4",
+    "surface_hex": "#F5F8FF",
+    "text_hex": "#0F172A",
+    "cta_label": "Schedule Free Orlando Inspection",
+    "phone_display": "(800) 411-0920"
+  },
+  "pricing_engine": {
+    "currency": "USD",
+    "base_rates_per_sqft": {
+      "architectural_shingle": {
+        "min": 6.25,
+        "max": 8.25,
+        "label": "Hurricane-Rated Architectural Shingle"
+      },
+      "standing_seam_metal": {
+        "min": 12.5,
+        "max": 16.5,
+        "label": "Coastal Standing Seam Metal"
+      },
+      "designer_tile": {
+        "min": 14.5,
+        "max": 19.5,
+        "label": "Florida Designer Clay & Concrete Tile"
+      }
+    },
+    "story_multipliers": {
+      "one_story": 1.0,
+      "two_story": 1.14,
+      "three_plus": 1.28
+    },
+    "pitch_multipliers": {
+      "low": 0.96,
+      "standard": 1.0,
+      "steep": 1.18
+    },
+    "financing_apr_percent": 9.99,
+    "financing_term_months": 120
+  },
+  "ux_steps": [
+    {
+      "step_number": 1,
+      "title": "Property Profile",
+      "inputs": [
+        "Orlando home / roof area slider (1,200 – 4,500+ sq. ft., default 2,400 sq. ft.) + one-tap size presets",
+        "Number of stories card selector (1-Story, 2-Story, 3+ Stories)"
+      ],
+      "conversion_psychology_note": "Directly plugs atlanticroofingandconstruction.com's zero-homepage-form gap — turning silent browsers into active quote sessions right above the fold."
+    },
+    {
+      "step_number": 2,
+      "title": "Roof Pitch & Storm Condition",
+      "inputs": [
+        "Roof slope visual diagram selector (Low, Standard, Steep)",
+        "Condition & storm urgency selector (Routine Replacement, Storm / Hail Damage, Active Leak)"
+      ],
+      "conversion_psychology_note": "Auto-routes urgent Central Florida hurricane leaks and storm damage into priority scheduling for Michael's project managers."
+    },
+    {
+      "step_number": 3,
+      "title": "Select Hurricane-Ready System",
+      "inputs": [
+        "Three Florida Building Code material cards: Hurricane-Rated Architectural Shingle, Coastal Standing Seam Metal, and Florida Designer Clay & Concrete Tile"
+      ],
+      "conversion_psychology_note": "Sets realistic Central Florida licensed contractor expectations across shingle, metal, and tile before quoting."
+    },
+    {
+      "step_number": 4,
+      "title": "Instant Orlando Ballpark & 2-Field Inspection Booking",
+      "inputs": [
+        "Ungated Florida-code installed range ($15,000 – $19,800) + amortized monthly payment (from $198/mo) + live material toggle",
+        "Simple 2-field booking form (Full Name, Phone or Email) + Preferred Inspection Window"
+      ],
+      "conversion_psychology_note": "Gives Atlantic Roofing an always-on 24/7 digital lead capture engine even after 6pm Friday–Sunday office hours when phone lines close."
+    }
+  ],
+  "preview_wrapper_spec": {
+    "hero_headline": "Get Your Orlando Hurricane-Ready Roof Replacement Estimate in 30 Seconds",
+    "hero_subheadline": "Built in Atlantic Roofing & Construction's signature coastal blue identity: adds a 24/7 interactive roof estimator directly to your homepage where zero quote form exists today.",
+    "pain_points_solved_callouts": [
+      "Closes atlanticroofingandconstruction.com's zero-homepage-form gap by placing a 4-step interactive Orlando roof estimator directly on your landing page",
+      "Captures after-hours & weekend leads automatically (when your Mon–Fri 9am–6pm office is closed) with full roof specs and storm urgency tagging",
+      "Self-contained <30 KB Shadow DOM script — installs via one line of code in 5 minutes with zero site redesign"
+    ]
+  },
+  "commercial_offer": {
+    "setup_fee_usd": 750,
+    "monthly_retainer_usd": 149,
+    "retainer_deliverables": [
+      "Global edge CDN hosting and 99.9% uptime SLA for the lightweight drop-in widget script",
+      "24/7 automated Email, SMS, and CRM lead routing with roof sq. ft., pitch, material, and storm priority",
+      "Quarterly Orlando & East Florida hurricane-code material pricing calibration",
+      "Monthly conversion funnel performance report (starts, estimate reveals, and booked inspections)"
+    ]
+  },
+  "telemetry_endpoint": "https://forge-lead-router.forge-lead-studio.workers.dev/event",
+  "delivery_mode": "demo"
+}

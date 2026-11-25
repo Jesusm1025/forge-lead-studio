@@ -1,0 +1,111 @@
+[2026-11-24T19:13:44Z] [START  ] ================ FORGE LEAD STUDIO AUTOPILOT — DRY-RUN (as-of 2026-11-24) ================
+[2026-11-24T19:13:44Z] [IMAP   ] Connecting to imap.gmail.com:993 as forgeleadstudio@gmail.com (lookback 14d since 10-Nov-2026)...
+[2026-11-24T19:14:16Z] [START  ] ================ FORGE LEAD STUDIO AUTOPILOT — DRY-RUN (as-of 2026-11-24) ================
+[2026-11-24T19:14:16Z] [IMAP   ] Connecting to imap.gmail.com:993 as forgeleadstudio@gmail.com (lookback 14d since 10-Nov-2026)...
+[2026-11-24T19:14:18Z] [IMAP   ] Login OK. Found 9 inbox messages since 10-Nov-2026; inspecting 9 recent messages.
+[2026-11-24T19:14:21Z] [IMAP-OK] Scanned 9 messages | New Replies: 0 | Unsubscribes: 0 | Bounces: 0
+[2026-11-24T19:14:21Z] [QUEUE  ] Reference UTC Date: 2026-11-24 | Quota used: 12/15 | Due now: 0 | Upcoming: 19 | Skipped/Halted: 1
+[2026-11-24T19:14:21Z] [UPCOMING] Scheduled 2026-11-25 (2 prospects): Buddy's Roofing & Repairs, Inc. (Step 2), Roof Royale (Step 2)
+[2026-11-24T19:14:21Z] [UPCOMING] Scheduled 2026-11-26 (5 prospects): Advantage Roofing (Step 2), Atlantic Roofing & Construction (Step 2), DRS Roofing (Step 2), Davis Roofing Solutions (Step 2), HonestRoof.com (Step 2)
+[2026-11-24T19:14:21Z] [UPCOMING] Scheduled 2026-11-27 (12 prospects): Academy Roofing Inc. (Step 2), Advanced Roofing Solutions (Step 2), Allstate Roofing Inc. (Step 2), Ameristar Roofing & Restoration (Step 2), Atlanta Roofing & Restoration (Step 2), Evergreen Roofing Solutions (Step 2), Family Roofing (Step 2), Gryphon Roofing & Construction (Step 2), Horizon Roof Restoration (Step 2), Reset Roofing (Step 2), Right Way Roofing Inc. (Step 2), Wilson Brothers Roofing, Inc. (Step 2)
+[2026-11-24T19:14:21Z] [DONE   ] AutoPilot complete | Mode=DRY-RUN (as-of 2026-11-24) | Dispatched=0 | Deferred=0 | Quota=12/15
+[2026-11-24T19:24:00Z] [START  ] ================ FORGE LEAD STUDIO AUTOPILOT — DRY-RUN (as-of 2026-11-25) ================
+[2026-11-24T19:24:00Z] [IMAP   ] Connecting to imap.gmail.com:993 as forgeleadstudio@gmail.com (lookback 14d since 10-Nov-2026)...
+[2026-11-24T19:24:02Z] [IMAP   ] Login OK. Found 9 inbox messages since 10-Nov-2026; inspecting 9 recent messages.
+[2026-11-24T19:24:04Z] [IMAP-OK] Scanned 9 messages | New Replies: 0 | Unsubscribes: 0 | Bounces: 0
+[2026-11-24T19:24:04Z] [QUEUE  ] Reference UTC Date: 2026-11-25 | Quota used: 0/15 | Due now: 2 | Upcoming: 17 | Skipped/Halted: 1
+[2026-11-24T19:24:04Z] [DRY-RUN] WOULD SEND Step 2 -> Buddy's Roofing & Repairs, Inc. <info@buddysroofing.com> (sent 2026-11-22, due 2026-11-25) | cmd: C:\Users\jesus\AppData\Local\Programs\Python\Python314\python.exe c:\agencia\scripts\send_outreach.py roofing_tampa_buddys-roofing --step 2 --allow-no-loom --dry-run
+[2026-11-24T19:24:04Z] [DRY-RUN] WOULD SEND Step 2 -> Roof Royale <office@roofroyale.com> (sent 2026-11-22, due 2026-11-25) | cmd: C:\Users\jesus\AppData\Local\Programs\Python\Python314\python.exe c:\agencia\scripts\send_outreach.py roofing_austin_roof-royale --step 2 --allow-no-loom --dry-run
+[2026-11-24T19:24:04Z] [UPCOMING] Scheduled 2026-11-26 (5 prospects): Advantage Roofing (Step 2), Atlantic Roofing & Construction (Step 2), DRS Roofing (Step 2), Davis Roofing Solutions (Step 2), HonestRoof.com (Step 2)
+[2026-11-24T19:24:04Z] [UPCOMING] Scheduled 2026-11-27 (12 prospects): Academy Roofing Inc. (Step 2), Advanced Roofing Solutions (Step 2), Allstate Roofing Inc. (Step 2), Ameristar Roofing & Restoration (Step 2), Atlanta Roofing & Restoration (Step 2), Evergreen Roofing Solutions (Step 2), Family Roofing (Step 2), Gryphon Roofing & Construction (Step 2), Horizon Roof Restoration (Step 2), Reset Roofing (Step 2), Right Way Roofing Inc. (Step 2), Wilson Brothers Roofing, Inc. (Step 2)
+[2026-11-24T19:24:04Z] [DONE   ] AutoPilot complete | Mode=DRY-RUN (as-of 2026-11-25) | Dispatched=2 | Deferred=0 | Quota=2/15
+[2026-11-25T14:58:46Z] [START  ] ================ FORGE LEAD STUDIO AUTOPILOT — DRY-RUN (as-of 2026-11-25) ================
+[2026-11-25T14:58:46Z] [TELEMETRY] Roof Royale (roofing_austin_roof-royale): views=1 (prev 0), max_step=4/4, test_leads=1, prod_leads=0
+[2026-11-25T14:58:46Z] [HOT-VIEW] [DRY-RUN] Would send [HOT DEMO VIEW] alert for Roof Royale (views=1, step=4/4).
+[2026-11-25T14:58:46Z] [TELEMETRY] DRS Roofing (roofing_orlando_drs-roofing): views=1 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T14:58:46Z] [HOT-VIEW] [DRY-RUN] Would send [HOT DEMO VIEW] alert for DRS Roofing (views=1, step=1/4).
+[2026-11-25T14:58:46Z] [CRM    ] Merged KV telemetry updates for 2 prospect(s) into c:\agencia\tracking\crm_pipeline.json.
+[2026-11-25T14:58:46Z] [TEL-OK ] Worker KV stats pulled: 2 active keys | CRM updated: 2 | Hot demo views: 2
+[2026-11-25T14:58:46Z] [IMAP   ] Connecting to imap.gmail.com:993 as forgeleadstudio@gmail.com (lookback 14d since 11-Nov-2026)...
+[2026-11-25T14:58:47Z] [IMAP   ] Login OK. Found 9 inbox messages since 11-Nov-2026; inspecting 9 recent messages.
+[2026-11-25T14:58:48Z] [IMAP-OK] Scanned 9 messages | New Replies: 0 | Unsubscribes: 0 | Bounces: 0
+[2026-11-25T14:58:48Z] [QUEUE  ] Reference UTC Date: 2026-11-25 | Quota used: 0/15 | Due now: 2 | Upcoming: 17 | Skipped/Halted: 1
+[2026-11-25T14:58:48Z] [DRY-RUN] WOULD SEND Step 2 -> Buddy's Roofing & Repairs, Inc. <info@buddysroofing.com> (sent 2026-11-22, due 2026-11-25) | cmd: C:\Users\jesus\AppData\Local\Programs\Python\Python314\python.exe c:\agencia\scripts\send_outreach.py roofing_tampa_buddys-roofing --step 2 --allow-no-loom --dry-run
+[2026-11-25T14:58:48Z] [DRY-RUN] WOULD SEND Step 2 -> Roof Royale <office@roofroyale.com> (sent 2026-11-22, due 2026-11-25) | cmd: C:\Users\jesus\AppData\Local\Programs\Python\Python314\python.exe c:\agencia\scripts\send_outreach.py roofing_austin_roof-royale --step 2 --allow-no-loom --dry-run
+[2026-11-25T14:58:48Z] [UPCOMING] Scheduled 2026-11-26 (5 prospects): Advantage Roofing (Step 2), Atlantic Roofing & Construction (Step 2), DRS Roofing (Step 2), Davis Roofing Solutions (Step 2), HonestRoof.com (Step 2)
+[2026-11-25T14:58:48Z] [UPCOMING] Scheduled 2026-11-27 (12 prospects): Academy Roofing Inc. (Step 2), Advanced Roofing Solutions (Step 2), Allstate Roofing Inc. (Step 2), Ameristar Roofing & Restoration (Step 2), Atlanta Roofing & Restoration (Step 2), Evergreen Roofing Solutions (Step 2), Family Roofing (Step 2), Gryphon Roofing & Construction (Step 2), Horizon Roof Restoration (Step 2), Reset Roofing (Step 2), Right Way Roofing Inc. (Step 2), Wilson Brothers Roofing, Inc. (Step 2)
+[2026-11-25T14:58:48Z] [DONE   ] AutoPilot complete | Mode=DRY-RUN (as-of 2026-11-25) | Dispatched=2 | Deferred=0 | Quota=2/15
+[2026-11-25T15:06:47Z] [START  ] ================ FORGE LEAD STUDIO AUTOPILOT — LIVE AUTOPILOT ================
+[2026-11-25T15:06:47Z] [WARN   ] Failed to pull KV telemetry from https://forge-lead-router.forge-lead-studio.workers.dev/stats: <urlopen error [Errno 11001] getaddrinfo failed>
+[2026-11-25T15:06:47Z] [TEL-OK ] Worker KV stats pulled: 0 active keys | CRM updated: 0 | Hot demo views: 0
+[2026-11-25T15:06:47Z] [IMAP   ] Connecting to imap.gmail.com:993 as forgeleadstudio@gmail.com (lookback 14d since 11-Nov-2026)...
+[2026-11-25T15:08:12Z] [START  ] ================ FORGE LEAD STUDIO AUTOPILOT — LIVE AUTOPILOT ================
+[2026-11-25T15:08:15Z] [HOT-VIEW] Sent [HOT DEMO VIEW] alert to forgeleadstudio@gmail.com for DRS Roofing (views=1, step=1/4).
+[2026-11-25T15:08:15Z] [CRM    ] Merged KV telemetry updates for 0 prospect(s) into c:\agencia\tracking\crm_pipeline.json.
+[2026-11-25T15:08:15Z] [TEL-OK ] Worker KV stats pulled: 1 active keys | CRM updated: 0 | Hot demo views: 1
+[2026-11-25T15:08:15Z] [IMAP   ] Connecting to imap.gmail.com:993 as forgeleadstudio@gmail.com (lookback 14d since 11-Nov-2026)...
+[2026-11-25T15:08:15Z] [IMAP   ] Login OK. Found 10 inbox messages since 11-Nov-2026; inspecting 10 recent messages.
+[2026-11-25T15:08:17Z] [IMAP-OK] Scanned 10 messages | New Replies: 0 | Unsubscribes: 0 | Bounces: 0
+[2026-11-25T15:08:17Z] [QUEUE  ] Reference UTC Date: 2026-11-25 | Quota used: 0/15 | Due now: 2 | Upcoming: 17 | Skipped/Halted: 1
+[2026-11-25T15:08:17Z] [DISPATCH] Executing Step 2 LIVE -> Buddy's Roofing & Repairs, Inc. <info@buddysroofing.com>...
+[2026-11-25T15:08:18Z] [SENT   ] roofing_tampa_buddys-roofing Step 2: [SENT   ] Email Step 2 delivered to info@buddysroofing.com at 2026-11-25T15:08:18Z and recorded in c:\agencia\tracking\crm_pipeline.json. | Quota now 1/15
+[2026-11-25T15:08:18Z] [DISPATCH] Executing Step 2 LIVE -> Roof Royale <office@roofroyale.com>...
+[2026-11-25T15:08:21Z] [SENT   ] roofing_austin_roof-royale Step 2: [SENT   ] Email Step 2 delivered to office@roofroyale.com at 2026-11-25T15:08:21Z and recorded in c:\agencia\tracking\crm_pipeline.json. | Quota now 2/15
+[2026-11-25T15:08:21Z] [UPCOMING] Scheduled 2026-11-26 (5 prospects): Advantage Roofing (Step 2), Atlantic Roofing & Construction (Step 2), DRS Roofing (Step 2), Davis Roofing Solutions (Step 2), HonestRoof.com (Step 2)
+[2026-11-25T15:08:21Z] [UPCOMING] Scheduled 2026-11-27 (12 prospects): Academy Roofing Inc. (Step 2), Advanced Roofing Solutions (Step 2), Allstate Roofing Inc. (Step 2), Ameristar Roofing & Restoration (Step 2), Atlanta Roofing & Restoration (Step 2), Evergreen Roofing Solutions (Step 2), Family Roofing (Step 2), Gryphon Roofing & Construction (Step 2), Horizon Roof Restoration (Step 2), Reset Roofing (Step 2), Right Way Roofing Inc. (Step 2), Wilson Brothers Roofing, Inc. (Step 2)
+[2026-11-25T15:08:21Z] [DONE   ] AutoPilot complete | Mode=LIVE AUTOPILOT | Dispatched=2 | Deferred=0 | Quota=2/15
+[2026-11-25T23:32:52Z] [START  ] ================ FORGE LEAD STUDIO AUTOPILOT — DRY-RUN (as-of 2026-11-26) ================
+[2026-11-25T23:32:52Z] [AUTH   ] Loaded sender credentials via file:config/sender_credentials.json.
+[2026-11-25T23:32:52Z] [WARN   ] Failed to pull KV telemetry from https://forge-lead-router.forge-lead-studio.workers.dev/stats: <urlopen error [Errno 11001] getaddrinfo failed>
+[2026-11-25T23:32:52Z] [TEL-OK ] Worker KV stats pulled: 0 active keys | CRM updated: 0 | Hot demo views: 0
+[2026-11-25T23:32:52Z] [IMAP   ] Connecting to imap.gmail.com:993 as forgeleadstudio@gmail.com (lookback 14d since 11-Nov-2026)...
+[2026-11-25T23:33:34Z] [START  ] ================ FORGE LEAD STUDIO AUTOPILOT — DRY-RUN (as-of 2026-11-26) ================
+[2026-11-25T23:33:34Z] [AUTH   ] Loaded sender credentials via file:config/sender_credentials.json.
+[2026-11-25T23:33:35Z] [TELEMETRY] Buddy's Roofing & Repairs, Inc. (roofing_tampa_buddys-roofing): views=1 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:33:35Z] [HOT-VIEW] [DRY-RUN] Would send [HOT DEMO VIEW] alert for Buddy's Roofing & Repairs, Inc. (views=1, step=1/4).
+[2026-11-25T23:33:35Z] [TELEMETRY] HonestRoof.com (roofing_dallas_honestroof): views=1 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:33:35Z] [HOT-VIEW] [DRY-RUN] Would send [HOT DEMO VIEW] alert for HonestRoof.com (views=1, step=1/4).
+[2026-11-25T23:33:35Z] [TELEMETRY] Davis Roofing Solutions (roofing_dallas_davis-roofing-solutions): views=1 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:33:35Z] [HOT-VIEW] [DRY-RUN] Would send [HOT DEMO VIEW] alert for Davis Roofing Solutions (views=1, step=1/4).
+[2026-11-25T23:33:35Z] [TELEMETRY] Advantage Roofing (roofing_houston_advantage-roofing): views=1 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:33:35Z] [HOT-VIEW] [DRY-RUN] Would send [HOT DEMO VIEW] alert for Advantage Roofing (views=1, step=1/4).
+[2026-11-25T23:33:35Z] [TELEMETRY] Atlantic Roofing & Construction (roofing_orlando_atlantic-roofing): views=1 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:33:35Z] [HOT-VIEW] [DRY-RUN] Would send [HOT DEMO VIEW] alert for Atlantic Roofing & Construction (views=1, step=1/4).
+[2026-11-25T23:33:35Z] [TELEMETRY] Decker Roofing Company LLC (roofing_san-antonio_decker-roofing): views=5 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:33:35Z] [HOT-VIEW] [DRY-RUN] Would send [HOT DEMO VIEW] alert for Decker Roofing Company LLC (views=5, step=1/4).
+[2026-11-25T23:33:35Z] [TELEMETRY] JM Melton Roofing (roofing_san-antonio_jm-melton-roofing): views=4 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:33:35Z] [HOT-VIEW] [DRY-RUN] Would send [HOT DEMO VIEW] alert for JM Melton Roofing (views=4, step=1/4).
+[2026-11-25T23:33:35Z] [TELEMETRY] Twin Hammers Roofing & Contracting (roofing_san-antonio_twin-hammers-roofing): views=6 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:33:35Z] [HOT-VIEW] [DRY-RUN] Would send [HOT DEMO VIEW] alert for Twin Hammers Roofing & Contracting (views=6, step=1/4).
+[2026-11-25T23:33:35Z] [TELEMETRY] First Light Home Services LLC (roofing_jacksonville_first-light-roofing): views=5 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:33:35Z] [HOT-VIEW] [DRY-RUN] Would send [HOT DEMO VIEW] alert for First Light Home Services LLC (views=5, step=1/4).
+[2026-11-25T23:33:35Z] [TELEMETRY] Townsend Roofing & Construction Services, Inc. (roofing_jacksonville_townsend-roofing): views=5 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:33:35Z] [HOT-VIEW] [DRY-RUN] Would send [HOT DEMO VIEW] alert for Townsend Roofing & Construction Services, Inc. (views=5, step=1/4).
+[2026-11-25T23:33:35Z] [TELEMETRY] Allegiance Roofing Services (roofing_jacksonville_allegiance-roofing): views=4 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:33:35Z] [HOT-VIEW] [DRY-RUN] Would send [HOT DEMO VIEW] alert for Allegiance Roofing Services (views=4, step=1/4).
+[2026-11-25T23:33:35Z] [TELEMETRY] Raleigh Residential Exteriors (roofing_raleigh_raleigh-residential-exteriors): views=4 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:33:35Z] [HOT-VIEW] [DRY-RUN] Would send [HOT DEMO VIEW] alert for Raleigh Residential Exteriors (views=4, step=1/4).
+[2026-11-25T23:33:35Z] [TELEMETRY] Rex Construction LLC (roofing_raleigh_rex-construction): views=3 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:33:35Z] [HOT-VIEW] [DRY-RUN] Would send [HOT DEMO VIEW] alert for Rex Construction LLC (views=3, step=1/4).
+[2026-11-25T23:33:35Z] [TELEMETRY] Aceline Roofing (roofing_raleigh_aceline-roofing): views=5 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:33:35Z] [HOT-VIEW] [DRY-RUN] Would send [HOT DEMO VIEW] alert for Aceline Roofing (views=5, step=1/4).
+[2026-11-25T23:33:35Z] [TELEMETRY] Quality Roofing & Restoration (roofing_nashville_quality-rrc): views=5 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:33:35Z] [HOT-VIEW] [DRY-RUN] Would send [HOT DEMO VIEW] alert for Quality Roofing & Restoration (views=5, step=1/4).
+[2026-11-25T23:33:35Z] [TELEMETRY] Mr. GoodRoof (roofing_nashville_mr-goodroof): views=8 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:33:35Z] [HOT-VIEW] [DRY-RUN] Would send [HOT DEMO VIEW] alert for Mr. GoodRoof (views=8, step=1/4).
+[2026-11-25T23:33:35Z] [TELEMETRY] H.E. Parmer Company (roofing_nashville_he-parmer): views=4 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-25T23:33:35Z] [HOT-VIEW] [DRY-RUN] Would send [HOT DEMO VIEW] alert for H.E. Parmer Company (views=4, step=1/4).
+[2026-11-25T23:33:35Z] [TEL-OK ] Worker KV stats pulled: 18 active keys | CRM updated: 17 | Hot demo views: 17
+[2026-11-25T23:33:35Z] [IMAP   ] Connecting to imap.gmail.com:993 as forgeleadstudio@gmail.com (lookback 14d since 11-Nov-2026)...
+[2026-11-25T23:33:37Z] [IMAP   ] Login OK. Found 11 inbox messages since 11-Nov-2026; inspecting 11 recent messages.
+[2026-11-25T23:33:40Z] [BOUNCE ] Detected DSN bounce for Aceline Roofing (info@acelineroofing.com) — Subject: Delivery Status Notification (Failure)
+[2026-11-25T23:33:40Z] [IMAP-OK] Scanned 11 messages | New Replies: 0 | Unsubscribes: 0 | Bounces: 1
+[2026-11-25T23:33:40Z] [QUEUE  ] Reference UTC Date: 2026-11-26 | Quota used: 0/15 | Due now: 4 | Upcoming: 27 | Skipped/Halted: 1
+[2026-11-25T23:33:40Z] [DRY-RUN] WOULD SEND Step 2 -> Advantage Roofing <info@advantageroofingtx.com> (sent 2026-11-23, due 2026-11-26) | cmd: C:\Users\jesus\AppData\Local\Programs\Python\Python314\python.exe c:\agencia\scripts\send_outreach.py roofing_houston_advantage-roofing --step 2 --allow-no-loom --dry-run
+[2026-11-25T23:33:40Z] [DRY-RUN] WOULD SEND Step 2 -> Atlantic Roofing & Construction <contact@atlanticroofusa.com> (sent 2026-11-23, due 2026-11-26) | cmd: C:\Users\jesus\AppData\Local\Programs\Python\Python314\python.exe c:\agencia\scripts\send_outreach.py roofing_orlando_atlantic-roofing --step 2 --allow-no-loom --dry-run
+[2026-11-25T23:33:40Z] [DRY-RUN] WOULD SEND Step 2 -> Davis Roofing Solutions <drew@davisroofingsolutions.com> (sent 2026-11-23, due 2026-11-26) | cmd: C:\Users\jesus\AppData\Local\Programs\Python\Python314\python.exe c:\agencia\scripts\send_outreach.py roofing_dallas_davis-roofing-solutions --step 2 --allow-no-loom --dry-run
+[2026-11-25T23:33:40Z] [DRY-RUN] WOULD SEND Step 2 -> HonestRoof.com <info@honestroof.com> (sent 2026-11-23, due 2026-11-26) | cmd: C:\Users\jesus\AppData\Local\Programs\Python\Python314\python.exe c:\agencia\scripts\send_outreach.py roofing_dallas_honestroof --step 2 --allow-no-loom --dry-run
+[2026-11-25T23:33:40Z] [UPCOMING] Scheduled 2026-11-27 (12 prospects): Academy Roofing Inc. (Step 2), Advanced Roofing Solutions (Step 2), Allstate Roofing Inc. (Step 2), Ameristar Roofing & Restoration (Step 2), Atlanta Roofing & Restoration (Step 2), Evergreen Roofing Solutions (Step 2), Family Roofing (Step 2), Gryphon Roofing & Construction (Step 2), Horizon Roof Restoration (Step 2), Reset Roofing (Step 2), Right Way Roofing Inc. (Step 2), Wilson Brothers Roofing, Inc. (Step 2)
+[2026-11-25T23:33:40Z] [UPCOMING] Scheduled 2026-11-28 (12 prospects): Aceline Roofing (Step 2), Allegiance Roofing Services (Step 2), Decker Roofing Company LLC (Step 2), First Light Home Services LLC (Step 2), H.E. Parmer Company (Step 2), JM Melton Roofing (Step 2), Mr. GoodRoof (Step 2), Quality Roofing & Restoration (Step 2), Raleigh Residential Exteriors (Step 2), Rex Construction LLC (Step 2), Townsend Roofing & Construction Services, Inc. (Step 2), Twin Hammers Roofing & Contracting (Step 2)
+[2026-11-25T23:33:40Z] [UPCOMING] Scheduled 2026-11-29 (3 prospects): Buddy's Roofing & Repairs, Inc. (Step 3), DRS Roofing (Step 3), Roof Royale (Step 3)
+[2026-11-25T23:33:40Z] [DONE   ] AutoPilot complete | Mode=DRY-RUN (as-of 2026-11-26) | Dispatched=4 | Deferred=0 | Quota=4/15

@@ -1,0 +1,79 @@
+{
+  "prospect_id": "roofing_houston_advantage-roofing",
+  "generated_at": "2026-11-22T23:46:00Z",
+  "target_recipients": [
+    "Donald Goehring (Owner & President)",
+    "info@advantageroofingtx.com"
+  ],
+  "primary_channel": "cold_email",
+  "emails": [
+    {
+      "step": 1,
+      "delay_days": 0,
+      "subject_line_a": "Quick build for Advantage Roofing",
+      "subject_line_b": "Houston roof estimator for Donald",
+      "body_text": "Hey Donald,\n\nI was looking at advantageroofingtx.com and respected seeing a 3rd-generation Houston roofer still standing behind hand-nailed installations.\n\nOne conversion leak jumped out: mobile homeowners hit a plain 5-field callback form with no way to preview a Gulf Coast replacement range or compare wind-rated shingle versus standing seam metal first.\n\nSo I built a working 30-second Houston Roof Estimator in your crimson-and-sandstone Advantage Roofing branding. Homeowners tap their size, slope, and wind-rated material to see a real ballpark before leaving their name and phone.\n\nMind if I send over the live preview link?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Craftsmanship Respect & Value-First Reciprocity (honors 3rd-gen hand-nailed reputation; link-free Step 1 protects inbox)",
+      "word_count": 99
+    },
+    {
+      "step": 2,
+      "delay_days": 3,
+      "subject_line_a": "Your crimson-and-sandstone Houston roof calculator",
+      "subject_line_b": "60-sec walkthrough for Donald Goehring",
+      "body_text": "Hey Donald,\n\nHere is the live prototype I built for Advantage Roofing along with a quick 60-second walkthrough:\n\nLive demo: {{preview_url}}\n60-sec video: {{loom_url}}\n\nTap through all 4 steps on your phone. A 2,400 sq ft Houston home shows a Gulf Coast ballpark ($13,800–$18,000, from $182/mo) and lets homeowners compare Hand-Nailed Wind-Rated Shingle, Gulf Coast Standing Seam Metal, and Coastal Tile live.\n\nWhen they schedule a free inspection, your office automatically gets their size, slope, material, and storm/leak urgency.\n\nWorth a quick 5-min look?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Tangible Proof & Gulf Coast Pricing Accuracy (calibrated Houston wind-rated rates + instant mobile test)",
+      "word_count": 89
+    },
+    {
+      "step": 3,
+      "delay_days": 7,
+      "subject_line_a": "5-min install + quick speed note on advantageroofingtx.com",
+      "subject_line_b": "Two free website catches for Advantage Roofing",
+      "body_text": "Hey Donald,\n\nQuick heads-up — putting this estimator live takes 5 minutes with zero redesign of advantageroofingtx.com. It installs via one line of code in Shadow DOM isolation and weighs just 28 KB.\n\nAlso noticed two easy website fixes for your web team free of charge: your server currently takes about 1.45 seconds to respond on mobile, and all 21 homepage images load eagerly without lazy-loading.\n\nWant me to walk you through how urgent Katy and Houston storm leads flag straight to your crew?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Friction Removal & Free Site Speed Value Gift (1.45s TTFB + 21/21 eager images builds immediate technical trust)",
+      "word_count": 89
+    },
+    {
+      "step": 4,
+      "delay_days": 12,
+      "subject_line_a": "Keep Advantage Roofing preview live?",
+      "subject_line_b": "Closing the loop, Donald",
+      "body_text": "Hey Donald,\n\nI know overseeing crews across Greater Houston and Katy keeps your hands full, so I won't keep filling your inbox.\n\nShould I leave your Advantage Roofing estimator preview live for another week while you take a look, or archive it Friday?\n\nEither way, huge respect for three generations of hand-nailed Houston roofing.\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Respectful Loss Aversion / Polite Breakup (honors family craftsmanship and prompts clean reply)",
+      "word_count": 59
+    }
+  ],
+  "linkedin_dm_touch": {
+    "connection_note": "Hi Donald — huge respect for 3 generations of hand-nailed roofing across Houston & Katy. Noticed advantageroofingtx.com only has a static callback form with no ballpark estimator, so I mocked up a quick crimson-and-sandstone calculator for you. Open to connecting?",
+    "follow_up_dm": "Thanks for connecting, Donald. Here's that working 30-second Houston Roof Estimator in Advantage Roofing colors: {{preview_url}}\n\nTry tapping through Hand-Nailed Wind-Rated Shingle, Gulf Coast Metal, and Tile on your phone — it shows homeowners a calibrated Houston ballpark upfront and installs in 5 minutes with one script tag. Zero pressure, happy to chat 5 mins if useful."
+  },
+  "loom_60s_script": {
+    "hook_0_15s": "[SCREEN: advantageroofingtx.com homepage] \"Hey Donald — quick 60-second video just for you. I was checking out advantageroofingtx.com — huge respect for three generations in Houston still standing behind hand-nailed installations.\"",
+    "pain_comparison_15_35s": "[SCREEN: Scroll to static 5-field homepage form & /contact/] \"Here's the one gap I caught: homeowners on mobile hit a plain callback form with zero rough Gulf Coast ballpark pricing and no way to compare wind-rated shingle versus metal. A lot of folks close the tab before dialing.\"",
+    "live_demo_walkthrough_35_50s": "[SCREEN: Switch tab to live Advantage Roofing MVP & click Steps 1–4] \"So I built a 28-kilobyte fix in your crimson-and-sandstone branding. Four taps — size, stories, slope, storm or routine — and it immediately shows a calibrated Houston range, $13,800 to $18,000, from $182 a month, BEFORE asking for a name and phone. Toggle Gulf Coast Metal or Tile live, submit a test, and your office gets every roof spec automatically.\"",
+    "zero_pressure_cta_50_60s": "[SCREEN: Point to 1-line embed bar at top] \"Drops onto your homepage in five minutes with zero redesign. Reply if you'd like to put it live — either way, hope it's useful.\""
+  },
+  "objection_handlers": [
+    {
+      "objection": "Hand-nailed craftsmanship costs more than nail-gun chuck-in-a-truck quotes — won't online pricing hurt us?",
+      "reframe_response": "It actually protects your margin. By calibrating the estimator to real Gulf Coast wind-rated craftsmanship ($13.8k–$45k+), bargain-basement tire-kickers filter themselves out before calling, while homeowners who value quality book already comfortable with your pricing."
+    },
+    {
+      "objection": "We already get solid word-of-mouth referrals around Katy and West Houston.",
+      "reframe_response": "3rd-generation referrals are unbeatable — and even referred neighbors still pull up advantageroofingtx.com on their phone at 8pm before calling. Giving them a 30-second estimator captures those ready-to-buy visitors who prefer seeing a ballpark before picking up the phone."
+    },
+    {
+      "objection": "Why pay $750 setup + $149/mo when we already have a contact form?",
+      "reframe_response": "Your static 5-field form gives zero price context and misses storm urgency. This drops right onto your homepage, flags active leaks and hail claims into your priority slot, includes quarterly Houston material updates, and one extra closed replacement pays for 3+ years."
+    },
+    {
+      "objection": "I don't want anyone redesigning or breaking our current site.",
+      "reframe_response": "Zero redesign needed. It's a single 28 KB vanilla JS script wrapped in Shadow DOM isolation so it cannot touch any existing page styles or add speed lag — and we'll give your web guy the lazy-load fix for your 21 homepage images free of charge."
+    },
+    {
+      "objection": "Send me the breakdown and I'll review it over the weekend.",
+      "reframe_response": "Happy to — I'll send a clean 3-bullet recap ($750 one-time Gulf Coast calibration & setup, $149/mo hosting, instant SMS/email routing, and quarterly pricing updates, cancel anytime) plus the live link to tap through on your phone. Good to follow up Thursday morning?"
+    }
+  ]
+}

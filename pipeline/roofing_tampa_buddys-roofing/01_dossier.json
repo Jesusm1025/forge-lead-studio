@@ -1,0 +1,44 @@
+{
+  "prospect_id": "roofing_tampa_buddys-roofing",
+  "scouted_at": "2026-11-22T05:59:00Z",
+  "niche": "roofing",
+  "business_name": "Buddy's Roofing & Repairs, Inc.",
+  "location": {
+    "city": "Tampa",
+    "state": "FL",
+    "country": "US"
+  },
+  "website_url": "https://buddysroofing.com/",
+  "contact_info": {
+    "decision_maker": "Buddy Cheaves",
+    "role": "Owner & President",
+    "email": "info@buddysroofing.com",
+    "phone": "(813) 690-3296",
+    "contact_page_url": "https://buddysroofing.com/contact.html"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#B20000",
+    "secondary_color_hex": "#102B35",
+    "brand_vibe": "Family-owned trustworthy"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage contains zero embedded lead capture forms; clicking 'Book service online' redirects visitors off-page to /contact.html",
+      "Dedicated /contact.html relies on a static 7-field text form (Name, Phone, Email, ZIP, Street Address, Service dropdown, Notes) with no interactive roof price estimator or material tier preview",
+      "Header and contact page display two different 813 phone numbers ((813) 690-3296 vs. (813) 982-0218), creating avoidable mobile click-to-call confusion"
+    ],
+    "seo_or_speed_leaks": [
+      "Header brand logo loads an oversized 1395x1117 PNG file with an empty alt='' attribute",
+      "13 of 23 homepage images have missing or empty alt attributes, and 6 images omit loading='lazy'",
+      "Homepage hero targets Tampa, FL while service cards immediately below repeat 'in Dover', diluting core Tampa roof replacement relevance alongside a 1,107 ms initial server response"
+    ],
+    "current_lead_capture_method": "Off-page redirect from homepage CTAs to a static 7-field form on /contact.html plus click-to-call phone links"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Your Tampa site showcases 37+ years of family-owned credibility, but homeowners on the homepage have no instant roof estimator and get sent off-page to a static 7-field contact form before seeing any ballpark pricing.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

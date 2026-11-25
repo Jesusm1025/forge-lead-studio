@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_raleigh_raleigh-residential-exteriors",
+  "scouted_at": "2026-11-25T15:18:43Z",
+  "niche": "roofing",
+  "business_name": "Raleigh Residential Exteriors",
+  "location": {
+    "city": "Raleigh",
+    "state": "NC",
+    "country": "US"
+  },
+  "website_url": "https://raleighresidentialexteriors.com/",
+  "contact_info": {
+    "decision_maker": "Ray & Carter Garris",
+    "role": "President & Co-Owner",
+    "email": "info@raleighresidentialexteriors.com",
+    "phone": "(919) 916-5599",
+    "contact_page_url": "https://raleighresidentialexteriors.com/contact/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#222960",
+    "secondary_color_hex": "#0095EB",
+    "brand_vibe": "Hands-on family-owned Raleigh & Cary roofer"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage contains zero embedded quote form — sending Triangle mobile homeowners off-page to a static 5-field /contact/ form with zero instant ballpark pricing",
+      "No interactive Research Triangle storm/hail triage or architectural shingle vs. metal price estimator"
+    ],
+    "seo_or_speed_leaks": [
+      "Slow 3,979 ms initial server TTFB paired with 2 render-blocking scripts in <head>",
+      "6 of 13 homepage images omit native loading='lazy' attributes"
+    ],
+    "current_lead_capture_method": "Off-page 5-field /contact/ form and click-to-call phone line (919) 916-5599"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Your family's hands-on Raleigh & Cary brand is strong, yet your homepage has zero quote form and takes nearly 4 seconds to respond without showing a rough roof ballpark.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

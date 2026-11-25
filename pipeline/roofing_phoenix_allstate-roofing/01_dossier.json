@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_phoenix_allstate-roofing",
+  "scouted_at": "2026-11-24T18:10:58Z",
+  "niche": "roofing",
+  "business_name": "Allstate Roofing Inc.",
+  "location": {
+    "city": "Phoenix",
+    "state": "AZ",
+    "country": "US"
+  },
+  "website_url": "https://www.allstateroofingaz.com/",
+  "contact_info": {
+    "decision_maker": "Chad William Thomas",
+    "role": "Owner & CEO",
+    "email": "info@allstateroofingaz.com",
+    "phone": "(602) 484-7663",
+    "contact_page_url": "https://www.allstateroofingaz.com/contact-us/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#413905",
+    "secondary_color_hex": "#87781D",
+    "brand_vibe": "Established family-owned Valley roofer"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage stacks three separate 8-to-9-field static forms and /contact-us/ forces another 8-field form with zero instant Phoenix tile or shingle ballpark pricing",
+      "No interactive selector for Arizona clay/concrete tile vs. cool shingle or monsoon damage triage before requesting full personal contact fields"
+    ],
+    "seo_or_speed_leaks": [
+      "Heavy 423.8 KB homepage HTML payload with 2,568 ms initial server TTFB delaying mobile load",
+      "38 of 40 homepage images remain in legacy JPG/PNG formats instead of modern WebP/AVIF"
+    ],
+    "current_lead_capture_method": "Three static 8-to-9-field homepage forms, 8-field /contact-us/ form, and click-to-call phone links"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Your Phoenix site stacks three 8-to-9-field static forms on the homepage without letting Arizona homeowners preview a rough tile or shingle ballpark first.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

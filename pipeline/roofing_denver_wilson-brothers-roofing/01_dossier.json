@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_denver_wilson-brothers-roofing",
+  "scouted_at": "2026-11-24T18:10:58Z",
+  "niche": "roofing",
+  "business_name": "Wilson Brothers Roofing, Inc.",
+  "location": {
+    "city": "Denver",
+    "state": "CO",
+    "country": "US"
+  },
+  "website_url": "https://www.wilsonbrothersroofing.com/",
+  "contact_info": {
+    "decision_maker": "Douglas Wilson",
+    "role": "President",
+    "email": "doug@wilsonbrothersroofing.com",
+    "phone": "(303) 294-9535",
+    "contact_page_url": "https://www.wilsonbrothersroofing.com/contact-us/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#00295B",
+    "secondary_color_hex": "#C92E2E",
+    "brand_vibe": "Long-standing family-run Denver contractor"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage and /contact-us/ contain zero interactive quote form, forcing Denver homeowners to dial during office hours or email staff blind with no ballpark range",
+      "No interactive Front Range hail-damage triage or Class-4 impact shingle pricing preview for after-hours mobile traffic"
+    ],
+    "seo_or_speed_leaks": [
+      "Slow 4,552 ms initial server TTFB delays first paint for mobile visitors",
+      "All 9 homepage images remain in legacy JPG/PNG formats with 4 omitting loading='lazy' and 3 missing alt text"
+    ],
+    "current_lead_capture_method": "Direct phone line (303) 294-9535 and listed staff email links with zero embedded homepage form"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Wilson Brothers has deep Denver credibility, but your homepage has zero quote form — leaving after-hours mobile homeowners with no way to check a Class-4 hail roof range.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_dallas_davis-roofing-solutions",
+  "scouted_at": "2026-11-22T23:25:00Z",
+  "niche": "roofing",
+  "business_name": "Davis Roofing Solutions",
+  "location": {
+    "city": "Dallas",
+    "state": "TX",
+    "country": "US"
+  },
+  "website_url": "https://davisroofingsolutions.com/",
+  "contact_info": {
+    "decision_maker": "Drew Davis",
+    "role": "Founder & CEO",
+    "email": "drew@davisroofingsolutions.com",
+    "phone": "(817) 857-7663",
+    "contact_page_url": "https://davisroofingsolutions.com/contact/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#0369D5",
+    "secondary_color_hex": "#FFB43A",
+    "brand_vibe": "Local community modern"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage and /contact/ both force mobile visitors through a heavy 13-field static form asking homeowners to 'be as detailed as possible' without offering any instant price range first",
+      "No interactive storm/hail triage or material comparison before requesting full contact details"
+    ],
+    "seo_or_speed_leaks": [
+      "Bloated 384 KB homepage HTML payload where 78 of 78 homepage images omit native loading='lazy' attributes",
+      "13 homepage images remain in legacy JPG/PNG formats instead of modern WebP/AVIF"
+    ],
+    "current_lead_capture_method": "Static 13-field contact form on homepage and /contact/ plus click-to-call phone line (817-857-ROOF)"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Your DFW site asks homeowners to fill out a 13-field static form in full detail before calling, with no 30-second instant roof estimator to show a realistic ballpark range first.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

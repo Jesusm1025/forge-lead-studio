@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_orlando_atlantic-roofing",
+  "scouted_at": "2026-11-22T23:25:00Z",
+  "niche": "roofing",
+  "business_name": "Atlantic Roofing & Construction",
+  "location": {
+    "city": "Orlando",
+    "state": "FL",
+    "country": "US"
+  },
+  "website_url": "https://atlanticroofingandconstruction.com/",
+  "contact_info": {
+    "decision_maker": "Michael Gagne",
+    "role": "President",
+    "email": "contact@atlanticroofusa.com",
+    "phone": "(800) 411-0920",
+    "contact_page_url": "https://atlanticroofingandconstruction.com/free-estimate/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#0D6EFD",
+    "secondary_color_hex": "#0654C4",
+    "brand_vibe": "Family-owned coastal trustworthy"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage contains zero embedded lead capture forms and /free-estimate/ exposes no interactive roof quote calculator, forcing mobile visitors to dial or hunt for contact info",
+      "No instant Florida hurricane-code cost range or monthly payment estimator anywhere in the conversion flow"
+    ],
+    "seo_or_speed_leaks": [
+      "218 KB homepage HTML with 2 render-blocking scripts in <head> and 5 of 8 images missing descriptive alt attributes",
+      "Organization JSON-LD logo URL still points to an external third-party domain (toplocalroofpros.com)"
+    ],
+    "current_lead_capture_method": "Click-to-call phone links (800-411-0920) and /free-estimate/ page with no embedded instant estimator"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Atlantic Roofing's 30+ year Orlando reputation is strong, but your homepage has zero quote form and visitors clicking Free Estimate get no instant Florida ballpark range before calling.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

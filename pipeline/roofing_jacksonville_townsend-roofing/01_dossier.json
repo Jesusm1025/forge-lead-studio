@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_jacksonville_townsend-roofing",
+  "scouted_at": "2026-11-25T15:18:43Z",
+  "niche": "roofing",
+  "business_name": "Townsend Roofing & Construction Services, Inc.",
+  "location": {
+    "city": "Jacksonville",
+    "state": "FL",
+    "country": "US"
+  },
+  "website_url": "https://townsendroofing.com/",
+  "contact_info": {
+    "decision_maker": "Christopher A. Townsend",
+    "role": "President & Owner",
+    "email": "info@townsendroofing.com",
+    "phone": "(904) 645-5887",
+    "contact_page_url": "https://townsendroofing.com/contact/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#1212DA",
+    "secondary_color_hex": "#062B4F",
+    "brand_vibe": "Multi-generational family-owned Jacksonville roofer"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Contact page forces mobile visitors through an 8-field static form while the homepage gives zero instant Northeast Florida hurricane-code replacement pricing",
+      "No interactive coastal shingle vs. standing seam metal or storm urgency selector before asking for phone and email"
+    ],
+    "seo_or_speed_leaks": [
+      "Slow 3,899 ms initial server TTFB paired with 4 render-blocking scripts in <head>",
+      "Heavy 247.6 KB homepage HTML loading 61 images where 12 lack descriptive alt tags and 10 stay in legacy JPG/PNG"
+    ],
+    "current_lead_capture_method": "Static 3-field homepage form, 8-field /contact/ form, and office phone line"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Townsend's multi-generational Jacksonville heritage stands out, yet mobile homeowners still hit an 8-field static contact form after a nearly 4-second page delay with zero rough pricing.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

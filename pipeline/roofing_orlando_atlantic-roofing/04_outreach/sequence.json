@@ -1,0 +1,79 @@
+{
+  "prospect_id": "roofing_orlando_atlantic-roofing",
+  "generated_at": "2026-11-22T23:46:00Z",
+  "target_recipients": [
+    "Michael Gagne (President)",
+    "contact@atlanticroofusa.com"
+  ],
+  "primary_channel": "cold_email",
+  "emails": [
+    {
+      "step": 1,
+      "delay_days": 0,
+      "subject_line_a": "Quick build for Atlantic Roofing & Construction",
+      "subject_line_b": "Homepage roof estimator for Michael",
+      "body_text": "Hey Michael,\n\nI was looking at atlanticroofingandconstruction.com — huge respect for 30+ years of family-owned roofing across Orlando.\n\nOne conversion leak caught my eye: your homepage has zero quote form at all, and visitors clicking Free Estimate get no instant Florida ballpark — especially after 6pm or on weekends when the office phones close.\n\nSo I built a working 30-second Orlando Roof Estimator in your signature coastal-blue Atlantic Roofing branding. Homeowners tap their roof specs and see an instant hurricane-code ballpark before leaving their name and phone.\n\nMind if I send over the live preview link?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Value-First Reciprocity & After-Hours Revenue Leak (targets zero homepage form + weekend lead loss; zero links in Step 1)",
+      "word_count": 101
+    },
+    {
+      "step": 2,
+      "delay_days": 3,
+      "subject_line_a": "Your coastal-blue Orlando roof calculator",
+      "subject_line_b": "60-sec walkthrough for Michael Gagne",
+      "body_text": "Hey Michael,\n\nHere is the live prototype I built for Atlantic Roofing & Construction plus a 60-second walkthrough:\n\nLive demo: {{preview_url}}\n60-sec video: {{loom_url}}\n\nTap through all 4 steps on your phone. A 2,400 sq ft Orlando home shows a Florida-code ballpark ($15,000–$19,800, from $198/mo) and lets homeowners compare Hurricane-Rated Shingle, Coastal Standing Seam Metal, and Florida Tile live.\n\nWhen they book a free inspection, your team automatically gets their size, slope, material, and storm/leak urgency 24/7.\n\nWorth a quick 5-min look?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Tangible Proof & 24/7 Lead Capture Engine (exact calibrated Orlando numbers + phone test)",
+      "word_count": 87
+    },
+    {
+      "step": 3,
+      "delay_days": 7,
+      "subject_line_a": "5-min install + quick site note on atlanticroofingandconstruction.com",
+      "subject_line_b": "Two free website catches for Atlantic Roofing",
+      "body_text": "Hey Michael,\n\nQuick heads-up — this estimator doesn't require rebuilding atlanticroofingandconstruction.com. It drops straight onto your homepage with one line of code in 5 minutes and weighs just 28 KB.\n\nAlso caught two quick fixes for your web team free of charge: your Google schema logo still links out to a third-party domain (toplocalroofpros.com), and 5 of 8 homepage images are missing descriptive alt tags.\n\nWant me to show you how after-hours storm leads route straight to your project managers?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Friction Removal & High-Trust Technical Catch (spotting third-party schema logo leak proves deep genuine review)",
+      "word_count": 85
+    },
+    {
+      "step": 4,
+      "delay_days": 12,
+      "subject_line_a": "Keep Atlantic Roofing preview live?",
+      "subject_line_b": "Closing the loop, Michael",
+      "body_text": "Hey Michael,\n\nI know running roofing and construction crews across Orlando keeps your week moving fast, so I won't keep filling your inbox.\n\nShould I leave your Atlantic Roofing & Construction estimator preview live for another week so you can check it out, or archive it Friday?\n\nEither way, huge respect for 35+ years of family-run craftsmanship in Central Florida.\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "psychological_trigger": "Respectful Loss Aversion / Polite Breakup (respects 35-year legacy and encourages fast yes/no)",
+      "word_count": 65
+    }
+  ],
+  "linkedin_dm_touch": {
+    "connection_note": "Hi Michael — respect the 35-year family run with Atlantic Roofing & Construction in Orlando. Noticed your homepage has no embedded quote form or instant ballpark estimator, so I mocked up a coastal-blue Florida roof calculator for you. Open to connecting?",
+    "follow_up_dm": "Thanks for connecting, Michael. Here's that working 30-second Orlando Roof Estimator in Atlantic Roofing & Construction colors: {{preview_url}}\n\nTry tapping through Hurricane Shingle, Coastal Metal, and Tile on your phone — it captures after-hours and weekend leads with full roof specs and drops onto your homepage with one line of code. Zero pressure, happy to chat 5 mins if useful."
+  },
+  "loom_60s_script": {
+    "hook_0_15s": "[SCREEN: atlanticroofingandconstruction.com homepage] \"Hey Michael — quick 60-second video just for you. I was checking out atlanticroofingandconstruction.com — huge respect for 35-plus years of family-owned roofing in Orlando.\"",
+    "pain_comparison_15_35s": "[SCREEN: Scroll homepage & click /free-estimate/] \"Here's the one gap I caught: there's no quote form right on your homepage, and when homeowners tap Free Estimate after 6pm or on weekends, there's no instant Florida ballpark to keep them engaged before they bounce to the next roofer.\"",
+    "live_demo_walkthrough_35_50s": "[SCREEN: Switch tab to live Atlantic Roofing MVP & click Steps 1–4] \"So I built a 28-kilobyte fix in your exact coastal-blue colors. Four taps — size, stories, slope, storm or routine — and it immediately shows a Florida-code Orlando range, $15,000 to $19,800, from $198 a month, BEFORE asking for a name and phone. Toggle Metal or Tile live, submit a test, and your team gets every roof detail automatically 24/7.\"",
+    "zero_pressure_cta_50_60s": "[SCREEN: Point to 1-line embed bar at top] \"Drops onto your homepage in five minutes with zero redesign. Reply if you'd like to put it live — either way, hope it's useful.\""
+  },
+  "objection_handlers": [
+    {
+      "objection": "Most of our Orlando customers prefer calling (800) 411-0920 directly.",
+      "reframe_response": "Phone callers will always be gold — and your 800 number stays front and center right inside the widget. This simply catches the 40%+ of homeowners browsing your site at 8pm or on Sundays when your office is closed, so they lock in an inspection instead of calling a competitor Monday."
+    },
+    {
+      "objection": "Florida hurricane code and insurance jobs vary too much for online numbers.",
+      "reframe_response": "100% agree — it never spits out a binding quote. It gives a realistic Orlando hurricane-code ballpark with an on-site inspection disclaimer, pre-educating homeowners on licensed pricing ($15k–$45k+) and tagging storm damage for priority follow-up."
+    },
+    {
+      "objection": "Why pay $750 setup + $149/mo when we already get steady business?",
+      "reframe_response": "Because right now your homepage has zero quote form capturing after-hours traffic you're already earning. This installs in 5 minutes, routes full roof specs straight to your inbox/SMS 24/7, stays calibrated quarterly for Florida materials, and one single extra replacement covers 3+ years."
+    },
+    {
+      "objection": "I don't want anyone redesigning or messing with our website.",
+      "reframe_response": "Zero redesign required. It's a self-contained 28 KB vanilla JS script inside Shadow DOM isolation so it cannot break a single style on your site — and we'll even send your web person the 2-minute fix for that third-party toplocalroofpros.com schema logo URL for free."
+    },
+    {
+      "objection": "Email me the pricing and I'll look it over with my office.",
+      "reframe_response": "Happy to — I'll send a clean 3-bullet recap ($750 one-time Florida-code calibration & setup, $149/mo hosting, 24/7 SMS/email routing, and quarterly updates, cancel anytime) plus the live link so you can tap through it on your phone. Good to check back Thursday morning?"
+    }
+  ]
+}

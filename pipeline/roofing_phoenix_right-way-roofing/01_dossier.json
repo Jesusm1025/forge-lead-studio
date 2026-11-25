@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_phoenix_right-way-roofing",
+  "scouted_at": "2026-11-24T18:10:58Z",
+  "niche": "roofing",
+  "business_name": "Right Way Roofing Inc.",
+  "location": {
+    "city": "Phoenix",
+    "state": "AZ",
+    "country": "US"
+  },
+  "website_url": "https://azroof.com/",
+  "contact_info": {
+    "decision_maker": "Johnnie & Lori Clark",
+    "role": "Owners & Presidents",
+    "email": "info@azroof.com",
+    "phone": "(602) 299-8851",
+    "contact_page_url": "https://azroof.com/contact.htm"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#112337",
+    "secondary_color_hex": "#FFC600",
+    "brand_vibe": "Multi-generation Phoenix heritage since 1963"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage and /contact.htm push mobile homeowners into a static 7-field form with zero instant Phoenix roof replacement ballpark or financing preview",
+      "No interactive comparison between Arizona tile, cool shingle, and standing seam metal before requesting personal details"
+    ],
+    "seo_or_speed_leaks": [
+      "Slow 2,767 ms server TTFB with 5 render-blocking scripts in <head>",
+      "All 32 of 32 homepage images load eagerly without native loading='lazy' and 4 images lack alt text"
+    ],
+    "current_lead_capture_method": "Static 7-field form on homepage and /contact.htm plus click-to-call phone line"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Right Way Roofing has 60+ years of Phoenix trust since 1963, yet mobile homeowners still hit a static 7-field form with zero rough tile or shingle pricing upfront.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

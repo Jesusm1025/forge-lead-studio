@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_houston_advantage-roofing",
+  "scouted_at": "2026-11-22T23:25:00Z",
+  "niche": "roofing",
+  "business_name": "Advantage Roofing",
+  "location": {
+    "city": "Houston",
+    "state": "TX",
+    "country": "US"
+  },
+  "website_url": "https://www.advantageroofingtx.com/",
+  "contact_info": {
+    "decision_maker": "Donald Goehring",
+    "role": "Owner & President",
+    "email": "info@advantageroofingtx.com",
+    "phone": "(713) 609-9319",
+    "contact_page_url": "https://www.advantageroofingtx.com/contact/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#CF2131",
+    "secondary_color_hex": "#CFBE9C",
+    "brand_vibe": "Family-owned craftsmanship"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage relies on a static 5-field form and /contact/ uses a 7-field form with zero instant Houston roof replacement ballpark or financing preview",
+      "No interactive selector for Houston Gulf Coast wind/hail upgrades or metal vs. architectural shingle comparison"
+    ],
+    "seo_or_speed_leaks": [
+      "Slow 1,454 ms initial server TTFB delays first paint on mobile devices",
+      "All 21 of 21 homepage images load eagerly without native loading='lazy' attributes"
+    ],
+    "current_lead_capture_method": "Static 5-field homepage form, 7-field /contact/ form, and click-to-call phone link"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Advantage Roofing's 3rd-generation Houston reputation stands out, but homeowners on your site hit a static 5-field form with no interactive way to check a Gulf Coast replacement range before calling.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

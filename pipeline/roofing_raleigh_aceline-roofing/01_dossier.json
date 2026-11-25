@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_raleigh_aceline-roofing",
+  "scouted_at": "2026-11-25T15:18:43Z",
+  "niche": "roofing",
+  "business_name": "Aceline Roofing",
+  "location": {
+    "city": "Raleigh",
+    "state": "NC",
+    "country": "US"
+  },
+  "website_url": "https://acelineroofing.com/",
+  "contact_info": {
+    "decision_maker": "Aceline Roofing Management",
+    "role": "Owner / Management",
+    "email": "info@acelineroofing.com",
+    "phone": "(919) 389-9571",
+    "contact_page_url": "https://acelineroofing.com/contact-us/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#2FA09A",
+    "secondary_color_hex": "#FFCC00",
+    "brand_vibe": "Local family-owned Research Triangle roofer"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage contains zero embedded quote form — pushing Triangle visitors off-page to an 8-field /contact-us/ form with zero instant ballpark pricing",
+      "No interactive Research Triangle storm damage flag or shingle vs. standing seam metal comparison"
+    ],
+    "seo_or_speed_leaks": [
+      "Heavy 269.3 KB homepage HTML where all 11 of 11 images lack descriptive alt text and remain in legacy JPG/PNG formats",
+      "5 of 11 homepage images omit native loading='lazy' attributes"
+    ],
+    "current_lead_capture_method": "Off-page 8-field /contact-us/ form and phone line (919) 389-9571"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Aceline Roofing's homepage has zero quote form — every Raleigh visitor gets bounced to a blind 8-field /contact-us/ form with no rough pricing upfront.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

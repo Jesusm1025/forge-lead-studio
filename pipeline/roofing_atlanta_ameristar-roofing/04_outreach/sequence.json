@@ -1,0 +1,79 @@
+{
+  "prospect_id": "roofing_atlanta_ameristar-roofing",
+  "generated_at": "2026-11-24T18:10:58Z",
+  "target_recipients": [
+    "Dale Pendergraft (Owner & President)",
+    "info@ameristarpro.com"
+  ],
+  "primary_channel": "cold_email",
+  "emails": [
+    {
+      "step": 1,
+      "delay_days": 0,
+      "subject_line_a": "Quick build for Ameristar Roofing & Restoration",
+      "subject_line_b": "Atlanta roof estimator for Dale",
+      "body_text": "Hey Dale,\n\nI was looking at ameristarpro.com — huge respect for leading Ameristar Roofing & Restoration across Buford and Metro Atlanta.\n\nOne mobile conversion leak caught my eye: ameristarpro.com has zero quote form right on the homepage — mobile homeowners get bounced to a 9-field /contact form with no ballpark price range shown first.\n\nSo I built a working 30-second Atlanta Roof Estimator in your navy-and-sky-blue Ameristar Roofing & Restoration branding. Homeowners tap their roof size, slope, and material tier to see an honest local ballpark before leaving their name and phone.\n\nMind if I send over the live preview link?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 106,
+      "psychological_trigger": "Value-First Reciprocity & Verified Site Gap Callout (zero links in Step 1 protects inbox deliverability)"
+    },
+    {
+      "step": 2,
+      "delay_days": 3,
+      "subject_line_a": "Your navy-and-sky-blue Atlanta roof calculator",
+      "subject_line_b": "60-sec walkthrough for Dale Pendergraft",
+      "body_text": "Hey Dale,\n\nHere is the live prototype I built for Ameristar Roofing & Restoration plus a quick 60-second walkthrough:\n\nLive demo: {{preview_url}}\n60-sec video: {{loom_url}}\n\nTap through all 4 steps on your phone. A 2,400 sq ft Atlanta home shows a calibrated ballpark ($12,600–$16,800, from $166/mo) and lets homeowners compare Storm-Rated Architectural Shingle, Standing Seam Metal Roof, and Designer Slate & Luxury Tile live.\n\nWhen they book a free inspection, your team automatically gets their size, slope, material, and storm priority.\n\nWorth a quick 5-min look?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 91,
+      "psychological_trigger": "Tangible Proof & Localized Atlanta Rate Calibration (instant phone click-through)"
+    },
+    {
+      "step": 3,
+      "delay_days": 7,
+      "subject_line_a": "5-min install + quick site note on ameristarpro.com",
+      "subject_line_b": "Two free website catches for Ameristar Roofing & Restoration",
+      "body_text": "Hey Dale,\n\nQuick heads-up — putting this estimator live takes 5 minutes with zero redesign of ameristarpro.com. It drops in with one line of code inside Shadow DOM isolation and weighs just 28 KB.\n\nAlso spotted two quick website fixes for your web team free of charge: your homepage HTML currently hits 344 KB with 17 of 19 images still in unoptimized JPG/PNG formats and 6 images missing lazy-loading.\n\nWant me to walk you through how urgent Atlanta storm and leak leads flag straight to your priority slot?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 93,
+      "psychological_trigger": "Friction Removal & Unprompted Technical Value Gift (free speed/SEO audit items earn peer trust)"
+    },
+    {
+      "step": 4,
+      "delay_days": 12,
+      "subject_line_a": "Keep Ameristar Roofing & Restoration preview live?",
+      "subject_line_b": "Closing the loop, Dale",
+      "body_text": "Hey Dale,\n\nI know running roofing crews across Metro Atlanta keeps your schedule nonstop, so I won't keep crowding your inbox.\n\nShould I leave your Ameristar Roofing & Restoration estimator preview live for another week while you test it on your phone, or archive it Friday?\n\nEither way, respect what you've built in Atlanta.\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 59,
+      "psychological_trigger": "Respectful Loss Aversion / Polite Breakup (low-pressure contractor sign-off)"
+    }
+  ],
+  "linkedin_dm_touch": {
+    "connection_note": "Hi Dale — respect what you've built with Ameristar Roofing & Restoration in Atlanta. Noticed ameristarpro.com has no instant roof ballpark tool for mobile visitors, so I mocked up a quick navy-and-sky-blue Atlanta roof estimator for you. Open to connecting?",
+    "follow_up_dm": "Thanks for connecting, Dale. Here's that working 30-second Atlanta Roof Estimator in Ameristar Roofing & Restoration colors: {{preview_url}}\n\nTap through Storm-Rated Architectural Shingle, Standing Seam Metal Roof, and Designer Slate & Luxury Tile on your phone — it gives homeowners an honest local ballpark upfront before asking for a name and phone, and installs on ameristarpro.com with one line of code. Zero pressure, happy to chat 5 mins if useful."
+  },
+  "loom_60s_script": {
+    "hook_0_15s": "[SCREEN: ameristarpro.com homepage] \"Hey Dale — quick 60-second video just for you. I was checking out ameristarpro.com here in Atlanta — huge respect for leading Ameristar Roofing & Restoration across Buford and Metro Atlanta.\"",
+    "pain_comparison_15_35s": "[SCREEN: Show current form / contact flow on ameristarpro.com] \"Here's the conversion gap I caught: there's no form right on your homepage, and tapping Contact drops mobile visitors onto a 9-field form with zero rough pricing.\"",
+    "live_demo_walkthrough_35_50s": "[SCREEN: Switch tab to live Ameristar Roofing & Restoration MVP & tap Steps 1–4] \"So I built a 28-kilobyte fix in your exact navy-and-sky-blue branding. Four quick taps — size, stories, slope, storm or routine — and it immediately reveals a calibrated Atlanta ballpark, $12,600–$16,800, from $166/mo, BEFORE asking for a name and phone. Toggle Metal or Tile live, submit a test, and your office gets every roof detail automatically.\"",
+    "zero_pressure_cta_50_60s": "[SCREEN: Point to 1-line embed bar at top] \"Drops onto your homepage in five minutes with zero redesign. Reply if you'd like to put it live — either way, hope it helps.\""
+  },
+  "objection_handlers": [
+    {
+      "objection": "Every Atlanta roof has different decking, flashing, and code needs — I don't want online quotes boxing us in.",
+      "reframe_response": "100% agree — this never issues a binding bid. It gives an honest Metro Atlanta ballpark range with a clear on-site inspection disclaimer so low-ball shoppers filter themselves out while qualified homeowners book already expecting real licensed pricing ($12,600–$16,800+)."
+    },
+    {
+      "objection": "We already get strong word-of-mouth referrals and repeat business.",
+      "reframe_response": "That local reputation is gold — and even referred neighbors still pull up ameristarpro.com on their phone at 8pm before calling. A 30-second estimator simply captures the ready-to-buy homeowners already visiting your site who want a ballpark before dialing."
+    },
+    {
+      "objection": "Why pay $750 setup + $149/mo when we already have a website contact form?",
+      "reframe_response": "Blind static forms leak mobile shoppers who bounce before typing 7+ fields. This drops directly onto your homepage, tags urgent Atlanta storm and leak leads into your priority slot, updates regional pricing quarterly, and a single extra closed roof ($15,000+) pays for 3+ years."
+    },
+    {
+      "objection": "I don't want anyone breaking or redesigning ameristarpro.com.",
+      "reframe_response": "Zero redesign required. It's a self-contained 28 KB vanilla JS script wrapped in Shadow DOM isolation so it cannot alter a single CSS rule on ameristarpro.com — your web person pastes one line in 5 minutes, and we'll share those site speed fixes free."
+    },
+    {
+      "objection": "Email me the numbers and I'll review it with my team.",
+      "reframe_response": "Happy to — I'll send a clean 3-bullet recap ($750 one-time Atlanta calibration & setup, $149/mo edge hosting, instant SMS/email routing, and quarterly updates, cancel anytime) plus the live link to tap through on your phone. Good to follow up Thursday morning?"
+    }
+  ]
+}

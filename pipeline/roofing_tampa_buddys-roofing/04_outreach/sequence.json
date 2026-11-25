@@ -1,0 +1,79 @@
+{
+  "prospect_id": "roofing_tampa_buddys-roofing",
+  "generated_at": "2026-11-22T21:35:00Z",
+  "target_recipients": [
+    "Buddy Cheaves (Owner & President)",
+    "info@buddysroofing.com"
+  ],
+  "primary_channel": "cold_email",
+  "emails": [
+    {
+      "step": 1,
+      "delay_days": 0,
+      "subject_line_a": "Quick build for Buddy's Roofing",
+      "subject_line_b": "Tampa homepage roof estimator for Buddy",
+      "body_text": "Hey Buddy,\n\nI was looking at buddysroofing.com and noticed your homepage has zero quote form — every Book Online button sends Tampa homeowners off-page to a 7-field contact form with no ballpark pricing.\n\nA lot of Florida homeowners close the tab rather than fill out 7 fields blind.\n\nSo I built a working 30-second Tampa Roof Estimator in your crimson-and-slate Buddy's Roofing branding. It shows hurricane-rated shingle, metal, and tile ranges right on the homepage before asking for a name and number.\n\nMind if I send over the live preview link?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 96,
+      "psychological_trigger": "Value-First Reciprocity & Specific Gap Callout (zero homepage form fixed proactively; zero-link Step 1 protects inbox)"
+    },
+    {
+      "step": 2,
+      "delay_days": 3,
+      "subject_line_a": "Your crimson-and-slate Tampa roof calculator",
+      "subject_line_b": "60-sec walkthrough for Buddy Cheaves",
+      "body_text": "Hey Buddy,\n\nHere is the live prototype I built for Buddy's Roofing along with a 60-second walkthrough:\n\nLive demo: {{preview_url}}\n60-sec video: {{loom_url}}\n\nTap through all 4 steps on your phone. A 2,400 sq ft Tampa home shows a Florida-code ballpark ($15,000–$19,800, from $198/mo) and lets homeowners compare Hurricane Shingle, Coastal Metal, and Clay Tile live.\n\nWhen they book a free inspection, your office gets their size, pitch, material, and storm/leak priority automatically.\n\nWorth a quick 5-min look?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 83,
+      "psychological_trigger": "Tangible Proof & Florida Code Specificity (calibrated Tampa wind-code pricing + instant phone test)"
+    },
+    {
+      "step": 3,
+      "delay_days": 7,
+      "subject_line_a": "5-min install + quick site note on buddysroofing.com",
+      "subject_line_b": "Two quick website fixes for Buddy's Roofing",
+      "body_text": "Hey Buddy,\n\nQuick heads-up — this estimator doesn't require rebuilding buddysroofing.com. It drops onto your homepage with one line of code in 5 minutes and weighs just 28 KB.\n\nAlso noticed two easy fixes for your web team free of charge: your header logo currently loads a 1395x1117 PNG with missing alt text, and your homepage splits between two different 813 phone numbers.\n\nWant me to walk you through how urgent storm leads route straight to your crew?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 83,
+      "psychological_trigger": "Friction Removal & Unprompted Value Gift (gives concrete logo/phone fixes for free to earn trust)"
+    },
+    {
+      "step": 4,
+      "delay_days": 12,
+      "subject_line_a": "Keep Buddy's Roofing preview live?",
+      "subject_line_b": "Closing the loop, Buddy",
+      "body_text": "Hey Buddy,\n\nI know running your own direct-hire crews across Tampa Bay keeps things moving nonstop, so I won't keep filling your inbox.\n\nShould I leave your Buddy's Roofing estimator preview live for another week while you take a look, or archive it Friday?\n\nEither way, huge respect for 37+ years of family-run roofing in Tampa.\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 61,
+      "psychological_trigger": "Respectful Loss Aversion / Polite Breakup (honors 37-year direct-hire heritage and triggers quick reply)"
+    }
+  ],
+  "linkedin_dm_touch": {
+    "connection_note": "Hi Buddy — respect the 37-year family run with direct-hire crews in Tampa Bay. I noticed buddysroofing.com has no quote form on the homepage, so I mocked up a quick crimson-and-slate hurricane roof estimator for you. Open to connecting?",
+    "follow_up_dm": "Thanks for connecting, Buddy. Here's that working 30-second Tampa Roof Estimator I built in Buddy's Roofing colors: {{preview_url}}\n\nTry tapping through Shingle, Coastal Metal, and Clay Tile on your phone — it gives Tampa homeowners Florida-code ballparks upfront before asking for a name and number, and installs on your homepage with one script tag. Zero pressure, happy to chat 5 mins if useful."
+  },
+  "loom_60s_script": {
+    "hook_0_15s": "[SCREEN: buddysroofing.com homepage] \"Hey Buddy — quick 60-second video just for you. I was checking out buddysroofing.com here in Tampa — huge respect for 37 years running your own direct-hire crews with zero subcontractors.\"",
+    "pain_comparison_15_35s": "[SCREEN: Scroll homepage & click Book service online -> /contact.html] \"Here's the one leak I caught: there's no form on your homepage at all. When a Tampa homeowner taps Book Online, they get bounced to /contact.html and hit a 7-field form with zero ballpark price. A lot of folks leave before finishing.\"",
+    "live_demo_walkthrough_35_50s": "[SCREEN: Switch tab to live Buddy's Roofing MVP index.html & click Steps 1–4] \"So I built a 28-kilobyte fix in your exact crimson-and-slate colors. Four quick taps — size, stories, slope, storm or routine — and it immediately reveals a Florida-code Tampa range, $15,000 to $19,800, from $198 a month, BEFORE asking for a name and phone. Toggle Metal or Clay Tile live, submit a test, and your team gets every roof detail automatically.\"",
+    "zero_pressure_cta_50_60s": "[SCREEN: Point to 1-line embed bar at top] \"Drops right onto your homepage in five minutes with no redesign. Reply if you'd like to put it live — either way, hope it's useful.\""
+  },
+  "objection_handlers": [
+    {
+      "objection": "We already get steady business from referrals and repeat customers.",
+      "reframe_response": "That 37-year word-of-mouth reputation is gold — and even referrals still visit buddysroofing.com on their phone before calling. Right now there's no form on your homepage. Adding a 30-second estimator simply captures the Tampa homeowners already checking you out online who prefer seeing a ballpark before picking up the phone."
+    },
+    {
+      "objection": "Florida Building Code and wind mitigation requirements vary too much for online quotes.",
+      "reframe_response": "100% agree — this never gives a binding bid. It gives an honest Tampa Bay hurricane-code range with a clear on-site inspection disclaimer so $6,000 tire-kickers filter themselves out, while qualified homeowners understand why a direct-hire Florida-code roof runs $15k–$45k+."
+    },
+    {
+      "objection": "Why pay $750 setup + $149/mo when we already have a /contact.html page?",
+      "reframe_response": "Your /contact.html page is an off-page 7-field form with no pricing transparency, which leaks mobile visitors. This tool sits directly on your homepage in Buddy's crimson-and-slate colors, flags active leaks and storm jobs into your ASAP slot for your 24/7 crews, updates Tampa pricing quarterly, and one extra closed replacement covers 3+ years."
+    },
+    {
+      "objection": "I don't want anyone breaking or redesigning our current website.",
+      "reframe_response": "Zero redesign required. It's a single 28 KB vanilla JavaScript script wrapped in Shadow DOM isolation, so it cannot touch or alter a single pixel of your existing styles. Your web guy pastes one line in 5 minutes — and we'll even send over the fix for your oversized 1395x1117 PNG logo for free."
+    },
+    {
+      "objection": "Email me the numbers and I'll look it over with Crystal and the office.",
+      "reframe_response": "Happy to — I'll send a clean 3-bullet recap ($750 one-time calibration & setup, $149/mo for hosting, SMS/email routing, and quarterly Florida material updates, cancel anytime) plus the live link so you and Crystal can test it on your phones. Mind if I follow up Thursday morning?"
+    }
+  ]
+}

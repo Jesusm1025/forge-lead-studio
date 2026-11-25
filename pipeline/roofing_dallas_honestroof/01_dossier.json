@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_dallas_honestroof",
+  "scouted_at": "2026-11-22T23:25:00Z",
+  "niche": "roofing",
+  "business_name": "HonestRoof.com",
+  "location": {
+    "city": "Dallas",
+    "state": "TX",
+    "country": "US"
+  },
+  "website_url": "https://www.honestroof.com/",
+  "contact_info": {
+    "decision_maker": "Dennis B. Harrison",
+    "role": "President & CEO",
+    "email": "info@honestroof.com",
+    "phone": "(817) 809-7000",
+    "contact_page_url": "https://www.honestroof.com/contact-us"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#9F0712",
+    "secondary_color_hex": "#0F172A",
+    "brand_vibe": "Multi-generational trustworthy"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage, /about-us, and /contact-us all push visitors into a static 9-field estimate form (Name, Email, Phone, Street Address, City, State, ZIP, Details, Referral) with zero instant ballpark pricing",
+      "About page explicitly highlights 'honest and upfront price by the square', yet mobile shoppers have no interactive way to preview a DFW replacement range before submitting 7 required personal fields"
+    ],
+    "seo_or_speed_leaks": [
+      "Heavy 317 KB homepage HTML document with 1 render-blocking script in <head>",
+      "3 of 19 homepage images omit native loading='lazy' and 1 image lacks descriptive alt text"
+    ],
+    "current_lead_capture_method": "Static 9-field estimate request form on homepage and /contact-us plus click-to-call phone link"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "HonestRoof.com promises honest, upfront DFW pricing by the square, yet homeowners still hit a 9-field contact form with no interactive way to preview a ballpark replacement cost first.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

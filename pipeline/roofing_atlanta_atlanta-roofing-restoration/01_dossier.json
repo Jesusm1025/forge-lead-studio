@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_atlanta_atlanta-roofing-restoration",
+  "scouted_at": "2026-11-24T18:10:58Z",
+  "niche": "roofing",
+  "business_name": "Atlanta Roofing & Restoration",
+  "location": {
+    "city": "Atlanta",
+    "state": "GA",
+    "country": "US"
+  },
+  "website_url": "https://atlroofingandrestoration.com/",
+  "contact_info": {
+    "decision_maker": "Brett Moon",
+    "role": "Founder & Owner",
+    "email": "brett@atlroofingandrestoration.com",
+    "phone": "(678) 643-8274",
+    "contact_page_url": "https://atlroofingandrestoration.com/free-inspection"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#DC3232",
+    "secondary_color_hex": "#1E293B",
+    "brand_vibe": "Owner-led Metro Atlanta storm & shingle specialist"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage pushes a static 7-field form and /free-inspection stacks 9-field and 7-field static forms with zero instant Metro Atlanta replacement pricing",
+      "No interactive storm/hail damage flag or architectural shingle vs. metal cost preview before requesting full contact details"
+    ],
+    "seo_or_speed_leaks": [
+      "Very slow 7,260 ms initial server TTFB plus 7 render-blocking scripts in <head> stall mobile rendering",
+      "All 12 of 12 homepage images load eagerly without loading='lazy' in legacy JPG/PNG formats"
+    ],
+    "current_lead_capture_method": "Static 7-field homepage form, 9-field /free-inspection form, and phone links"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Your Metro Atlanta site asks homeowners to fill out a static 7-to-9-field inspection form with zero instant ballpark pricing after waiting 7 seconds for the page to respond.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

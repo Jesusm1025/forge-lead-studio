@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_jacksonville_allegiance-roofing",
+  "scouted_at": "2026-11-25T15:18:43Z",
+  "niche": "roofing",
+  "business_name": "Allegiance Roofing Services",
+  "location": {
+    "city": "Jacksonville",
+    "state": "FL",
+    "country": "US"
+  },
+  "website_url": "https://www.allegianceroofjax.com/",
+  "contact_info": {
+    "decision_maker": "Thomas J. Robertson",
+    "role": "Owner & President",
+    "email": "allegianceroofservices@gmail.com",
+    "phone": "(904) 513-3976",
+    "contact_page_url": "https://www.allegianceroofjax.com/contact"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#3C4BA6",
+    "secondary_color_hex": "#7BABF7",
+    "brand_vibe": "Owner-led Northeast Florida residential roofer"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage contains zero embedded quote form — forcing mobile homeowners to hunt for /contact and submit a blind 5-field form with zero Florida ballpark pricing",
+      "No interactive Northeast Florida hurricane-code material switcher or storm/leak urgency routing"
+    ],
+    "seo_or_speed_leaks": [
+      "31 of 32 homepage images remain in legacy JPG/PNG formats, with 9 omitting loading='lazy' and 9 lacking alt text",
+      "1,780 ms initial server response plus leftover placeholder strings in page markup"
+    ],
+    "current_lead_capture_method": "Off-page 5-field /contact form and click-to-call phone line (904) 513-3976"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Allegiance Roofing's homepage has zero quote form — leaving Jacksonville and Fruit Cove mobile shoppers with no instant Florida-code ballpark before calling.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "prospect_id": "roofing_denver_family-roofing",
+  "scouted_at": "2026-11-24T18:10:58Z",
+  "niche": "roofing",
+  "business_name": "Family Roofing",
+  "location": {
+    "city": "Denver",
+    "state": "CO",
+    "country": "US"
+  },
+  "website_url": "https://familyroofing.com/",
+  "contact_info": {
+    "decision_maker": "Laya Laboe",
+    "role": "Owner",
+    "email": "RoofingLady@gmail.com",
+    "phone": "(720) 329-0009",
+    "contact_page_url": "https://familyroofing.com/contact/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#00719D",
+    "secondary_color_hex": "#FFC42E",
+    "brand_vibe": "Award-winning local Denver & Lakewood family roofer"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage contains zero embedded quote calculator or form, forcing Denver & Lakewood mobile visitors to call or hunt for contact details without seeing a ballpark range",
+      "No interactive Front Range hail-damage priority selector or Class-4 impact shingle vs. metal price estimator"
+    ],
+    "seo_or_speed_leaks": [
+      "Slow 5,257 ms server TTFB with 2 render-blocking scripts in <head>",
+      "All 33 of 33 homepage images load eagerly in legacy JPG/PNG formats and 31 of 33 lack descriptive alt tags"
+    ],
+    "current_lead_capture_method": "Click-to-call phone line (720) 329-0009 and direct email with zero embedded homepage quote form"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_A_ROOFING_CALCULATOR",
+    "pitch_hook_english": "Your award-winning Lakewood & Denver reputation stands out, but familyroofing.com has zero quote form on the homepage to capture after-hours Front Range hail shoppers.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

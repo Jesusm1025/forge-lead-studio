@@ -1,0 +1,105 @@
+{
+  "prospect_id": "roofing_austin_roof-royale",
+  "architected_at": "2026-11-22T14:48:00Z",
+  "template_base": "roofing-quote-calc",
+  "brand_config": {
+    "business_name": "Roof Royale",
+    "tagline": "Veteran-Owned. Texas-Rooted. Built on Honest Work.",
+    "primary_hex": "#111111",
+    "secondary_hex": "#BA9B5A",
+    "surface_hex": "#FAF8F0",
+    "text_hex": "#151515",
+    "cta_label": "Lock In Free Roof Inspection",
+    "phone_display": "(512) 379-7933"
+  },
+  "pricing_engine": {
+    "currency": "USD",
+    "base_rates_per_sqft": {
+      "architectural_shingle": {
+        "min": 5.5,
+        "max": 7.25,
+        "label": "Class 3/4 Architectural Shingle"
+      },
+      "standing_seam_metal": {
+        "min": 11.5,
+        "max": 15.0,
+        "label": "Standing Seam Metal (24-Gauge)"
+      },
+      "designer_tile": {
+        "min": 13.5,
+        "max": 18.5,
+        "label": "Clay & Concrete Designer Tile"
+      }
+    },
+    "story_multipliers": {
+      "one_story": 1.0,
+      "two_story": 1.12,
+      "three_plus": 1.25
+    },
+    "pitch_multipliers": {
+      "low": 0.95,
+      "standard": 1.0,
+      "steep": 1.18
+    },
+    "financing_apr_percent": 9.99,
+    "financing_term_months": 120
+  },
+  "ux_steps": [
+    {
+      "step_number": 1,
+      "title": "Property Profile",
+      "inputs": [
+        "Approximate home / roof size range slider (1,200 – 4,500+ sq. ft., default 2,400 sq. ft.) paired with quick-tap size presets (Small <1,800, Mid 1,800–2,800, Large 2,800+)",
+        "Number of stories card selector (1-Story, 2-Story, 3+ Stories)"
+      ],
+      "conversion_psychology_note": "Zero-typing visual tap and slider controls eliminate the cold intimidation of Roof Royale's current 8-field form and trigger an immediate micro-commitment within 5 seconds."
+    },
+    {
+      "step_number": 2,
+      "title": "Roof Complexity & Condition",
+      "inputs": [
+        "Roof pitch visual selector with simple slope icons (Low 2/12–4/12, Standard 5/12–7/12, Steep 8/12+)",
+        "Current roof urgency & condition selector (Routine Replacement, Storm / Hail Damage, Active Leak)"
+      ],
+      "conversion_psychology_note": "Pre-qualifies urgent Austin hail/insurance claims vs. retail replacements automatically for Roof Royale's Community Advisors while reinforcing consultative, honest-guidance positioning."
+    },
+    {
+      "step_number": 3,
+      "title": "Select Roofing System",
+      "inputs": [
+        "Three side-by-side Austin material cards with lifespan & hail-resilience badges: Class 3/4 Architectural Shingle, Standing Seam Metal (24-Gauge), and Clay & Concrete Designer Tile"
+      ],
+      "conversion_psychology_note": "Anchors perceived value across Good / Better / Best tiers calibrated to Central Texas economics, educating homeowners on impact-resistant and metal upgrades before the reveal."
+    },
+    {
+      "step_number": 4,
+      "title": "Instant Ballpark, Financing Preview & Free Inspection Booking",
+      "inputs": [
+        "Ungated instant installed cost range (e.g., $13,200 – $17,400) + amortized monthly payment callout ('Est. from $174/mo with Roof Financing') + dynamic Storm/Insurance Claim badge if Storm/Hail was selected",
+        "Friction-free 2-field inspection lock-in form: Full Name, Mobile Phone or Email, plus 1-tap Preferred Inspection Window (Morning, Afternoon, ASAP / Storm Urgent)"
+      ],
+      "conversion_psychology_note": "Revealing the ballpark range and monthly financing BEFORE asking for contact details removes sticker shock, fulfills Roof Royale's 'Roof Financing' nav promise, and cuts form abandonment in half compared to blind contact forms."
+    }
+  ],
+  "preview_wrapper_spec": {
+    "hero_headline": "Get Your Austin Roof Replacement Ballpark & Monthly Financing Estimate in 30 Seconds",
+    "hero_subheadline": "Built for Roof Royale: an instant, mobile-first Shadow DOM estimator in your exact obsidian-and-gold identity that pre-qualifies Austin homeowners before your advisors roll a truck.",
+    "pain_points_solved_callouts": [
+      "Replaces the high-friction 8-field static form with a 4-step interactive funnel that captures roof size, pitch, material, and storm urgency automatically",
+      "Turns Roof Royale's existing 'Roof Financing' offering into a live monthly payment preview right inside the quote experience",
+      "Zero-bloat <30KB drop-in script with full mobile accessibility (resolves the live site's maximum-scale=1 pinch-zoom restriction inside the embed preview) and installs on roofroyale.com in under 5 minutes"
+    ]
+  },
+  "commercial_offer": {
+    "setup_fee_usd": 950,
+    "monthly_retainer_usd": 199,
+    "retainer_deliverables": [
+      "Global edge CDN hosting and 99.9% uptime SLA for the lightweight drop-in widget script",
+      "Instant lead routing via Email, SMS, and webhook integration into Roof Royale's CRM (including full roof specs: sq. ft., stories, pitch, material, urgency, and ballpark range)",
+      "Quarterly Central Texas material and financing APR/term calibration across Austin, San Antonio, DFW, Houston, and Abilene markets",
+      "Monthly conversion funnel analytics report (widget starts, step drop-offs, and booked inspections) plus ongoing mobile UX maintenance"
+    ]
+  },
+  "telemetry_endpoint": "https://forge-lead-router.forge-lead-studio.workers.dev/event",
+  "delivery_mode": "demo"
+}

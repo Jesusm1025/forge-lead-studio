@@ -1,0 +1,79 @@
+{
+  "prospect_id": "roofing_phoenix_gryphon-roofing",
+  "generated_at": "2026-11-24T18:10:58Z",
+  "target_recipients": [
+    "Russel Hyman (President & CEO)",
+    "hello@gogryphon.com"
+  ],
+  "primary_channel": "cold_email",
+  "emails": [
+    {
+      "step": 1,
+      "delay_days": 0,
+      "subject_line_a": "Quick build for Gryphon Roofing & Construction",
+      "subject_line_b": "Phoenix roof estimator for Russel",
+      "body_text": "Hey Russel,\n\nI was looking at gogryphon.com — huge respect for 30+ years leading Phoenix roofing since 1994 and serving as ARCA President.\n\nOne mobile conversion leak caught my eye: mobile visitors on gogryphon.com hit a plain 5-field callback form (6 fields on Contact) with no interactive way to preview a Valley tile or shingle range first.\n\nSo I built a working 30-second Phoenix Roof Estimator in your navy-and-gold Gryphon Roofing & Construction branding. Homeowners tap their roof size, slope, and material tier to see an honest local ballpark before leaving their name and phone.\n\nMind if I send over the live preview link?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 109,
+      "psychological_trigger": "Value-First Reciprocity & Verified Site Gap Callout (zero links in Step 1 protects inbox deliverability)"
+    },
+    {
+      "step": 2,
+      "delay_days": 3,
+      "subject_line_a": "Your navy-and-gold Phoenix roof calculator",
+      "subject_line_b": "60-sec walkthrough for Russel Hyman",
+      "body_text": "Hey Russel,\n\nHere is the live prototype I built for Gryphon Roofing & Construction plus a quick 60-second walkthrough:\n\nLive demo: {{preview_url}}\n60-sec video: {{loom_url}}\n\nTap through all 4 steps on your phone. A 2,400 sq ft Phoenix home shows a calibrated ballpark ($13,800–$18,600, from $182/mo) and lets homeowners compare Heat-Reflective Cool Shingle, Desert Standing Seam Metal, and Arizona Clay & Concrete Tile live.\n\nWhen they book a free inspection, your team automatically gets their size, slope, material, and storm priority.\n\nWorth a quick 5-min look?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 91,
+      "psychological_trigger": "Tangible Proof & Localized Phoenix Rate Calibration (instant phone click-through)"
+    },
+    {
+      "step": 3,
+      "delay_days": 7,
+      "subject_line_a": "5-min install + quick site note on gogryphon.com",
+      "subject_line_b": "Two free website catches for Gryphon Roofing & Construction",
+      "body_text": "Hey Russel,\n\nQuick heads-up — putting this estimator live takes 5 minutes with zero redesign of gogryphon.com. It drops in with one line of code inside Shadow DOM isolation and weighs just 28 KB.\n\nAlso spotted two quick website fixes for your web team free of charge: 33 of 46 homepage images on gogryphon.com currently load without lazy-loading, and 43 of 46 images are missing descriptive alt text for Phoenix SEO.\n\nWant me to walk you through how urgent Phoenix storm and leak leads flag straight to your priority slot?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 95,
+      "psychological_trigger": "Friction Removal & Unprompted Technical Value Gift (free speed/SEO audit items earn peer trust)"
+    },
+    {
+      "step": 4,
+      "delay_days": 12,
+      "subject_line_a": "Keep Gryphon Roofing & Construction preview live?",
+      "subject_line_b": "Closing the loop, Russel",
+      "body_text": "Hey Russel,\n\nI know running roofing crews across Phoenix Valley keeps your schedule nonstop, so I won't keep crowding your inbox.\n\nShould I leave your Gryphon Roofing & Construction estimator preview live for another week while you test it on your phone, or archive it Friday?\n\nEither way, respect what you've built in Phoenix.\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 59,
+      "psychological_trigger": "Respectful Loss Aversion / Polite Breakup (low-pressure contractor sign-off)"
+    }
+  ],
+  "linkedin_dm_touch": {
+    "connection_note": "Hi Russel — respect what you've built with Gryphon Roofing & Construction in Phoenix. Noticed gogryphon.com has no instant roof ballpark tool for mobile visitors, so I mocked up a quick navy-and-gold Phoenix roof estimator for you. Open to connecting?",
+    "follow_up_dm": "Thanks for connecting, Russel. Here's that working 30-second Phoenix Roof Estimator in Gryphon Roofing & Construction colors: {{preview_url}}\n\nTap through Heat-Reflective Cool Shingle, Desert Standing Seam Metal, and Arizona Clay & Concrete Tile on your phone — it gives homeowners an honest local ballpark upfront before asking for a name and phone, and installs on gogryphon.com with one line of code. Zero pressure, happy to chat 5 mins if useful."
+  },
+  "loom_60s_script": {
+    "hook_0_15s": "[SCREEN: gogryphon.com homepage] \"Hey Russel — quick 60-second video just for you. I was checking out gogryphon.com here in Phoenix — huge respect for 30+ years leading Phoenix roofing since 1994 and serving as ARCA President.\"",
+    "pain_comparison_15_35s": "[SCREEN: Show current form / contact flow on gogryphon.com] \"Here's the conversion gap I caught: homeowners on mobile hit a plain callback form with zero ballpark pricing for Phoenix tile or cool shingle roofs before handing over their phone number.\"",
+    "live_demo_walkthrough_35_50s": "[SCREEN: Switch tab to live Gryphon Roofing & Construction MVP & tap Steps 1–4] \"So I built a 28-kilobyte fix in your exact navy-and-gold branding. Four quick taps — size, stories, slope, storm or routine — and it immediately reveals a calibrated Phoenix ballpark, $13,800–$18,600, from $182/mo, BEFORE asking for a name and phone. Toggle Metal or Tile live, submit a test, and your office gets every roof detail automatically.\"",
+    "zero_pressure_cta_50_60s": "[SCREEN: Point to 1-line embed bar at top] \"Drops onto your homepage in five minutes with zero redesign. Reply if you'd like to put it live — either way, hope it helps.\""
+  },
+  "objection_handlers": [
+    {
+      "objection": "Every Phoenix roof has different decking, flashing, and code needs — I don't want online quotes boxing us in.",
+      "reframe_response": "100% agree — this never issues a binding bid. It gives an honest Phoenix Valley ballpark range with a clear on-site inspection disclaimer so low-ball shoppers filter themselves out while qualified homeowners book already expecting real licensed pricing ($13,800–$18,600+)."
+    },
+    {
+      "objection": "We already get strong word-of-mouth referrals and repeat business.",
+      "reframe_response": "That local reputation is gold — and even referred neighbors still pull up gogryphon.com on their phone at 8pm before calling. A 30-second estimator simply captures the ready-to-buy homeowners already visiting your site who want a ballpark before dialing."
+    },
+    {
+      "objection": "Why pay $750 setup + $149/mo when we already have a website contact form?",
+      "reframe_response": "Blind static forms leak mobile shoppers who bounce before typing 7+ fields. This drops directly onto your homepage, tags urgent Phoenix storm and leak leads into your priority slot, updates regional pricing quarterly, and a single extra closed roof ($16,500+) pays for 3+ years."
+    },
+    {
+      "objection": "I don't want anyone breaking or redesigning gogryphon.com.",
+      "reframe_response": "Zero redesign required. It's a self-contained 28 KB vanilla JS script wrapped in Shadow DOM isolation so it cannot alter a single CSS rule on gogryphon.com — your web person pastes one line in 5 minutes, and we'll share those site speed fixes free."
+    },
+    {
+      "objection": "Email me the numbers and I'll review it with my team.",
+      "reframe_response": "Happy to — I'll send a clean 3-bullet recap ($750 one-time Phoenix calibration & setup, $149/mo edge hosting, instant SMS/email routing, and quarterly updates, cancel anytime) plus the live link to tap through on your phone. Good to follow up Thursday morning?"
+    }
+  ]
+}
