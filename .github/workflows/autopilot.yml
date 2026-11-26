@@ -48,6 +48,19 @@ jobs:
             cp tracking/niche_intelligence.json public/tracking/niche_intelligence.json
           fi
 
+      - name: Auto-Redeploy Protected Executive Dashboard (Cloudflare Pages Direct API)
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          TELEMETRY_ADMIN_KEY: ${{ secrets.TELEMETRY_ADMIN_KEY }}
+          SENDER_CREDENTIALS_JSON: ${{ secrets.SENDER_CREDENTIALS_JSON }}
+        run: |
+          if [ -n "${CLOUDFLARE_ACCOUNT_ID}" ] && [ -n "${CLOUDFLARE_API_TOKEN}" ]; then
+            python scripts/deploy_pages_api.py --deploy-dashboard
+          else
+            echo "CLOUDFLARE_ACCOUNT_ID / CLOUDFLARE_API_TOKEN not configured — skipping dashboard redeploy."
+          fi
+
       - name: Commit and push updated CRM, Niche Intelligence & autopilot log
         run: |
           git config user.name "Forge AutoPilot Bot"

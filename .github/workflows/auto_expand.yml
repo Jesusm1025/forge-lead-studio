@@ -1,0 +1,110 @@
+name: Forge Lead Studio — Cloud Wave Auto-Expansion
+
+on:
+  workflow_dispatch:
+    inputs:
+      vertical:
+        description: 'Target vertical (auto = expand any SCALE vertical with <12 queued)'
+        required: true
+        default: 'auto'
+        type: choice
+        options:
+          - auto
+          - roofing
+          - hvac
+      count:
+        description: 'Number of new qualified contractors to scout, build, QA & deploy (1–12)'
+        required: true
+        default: '12'
+        type: string
+      metros:
+        description: 'Optional comma-separated metros (e.g. "Houston, TX; Austin, TX" or "Houston TX, Austin TX")'
+        required: false
+        default: ''
+        type: string
+  workflow_run:
+    workflows: ["Forge Lead Studio — 24/7 Cloud AutoPilot"]
+    types:
+      - completed
+
+permissions:
+  contents: write
+
+concurrency:
+  group: forge-lead-studio-auto-expand
+  cancel-in-progress: false
+
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Set up Node.js 20 (required by QA Gate)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Cloud Wave Expansion Engine (Scout -> Hydrate -> QA 100/100 -> Cloudflare Pages)
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          TELEMETRY_ADMIN_KEY: ${{ secrets.TELEMETRY_ADMIN_KEY }}
+          SENDER_CREDENTIALS_JSON: ${{ secrets.SENDER_CREDENTIALS_JSON }}
+          INPUT_VERTICAL: ${{ github.event.inputs.vertical }}
+          INPUT_COUNT: ${{ github.event.inputs.count }}
+          INPUT_METROS: ${{ github.event.inputs.metros }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_run" ] || [ "${INPUT_VERTICAL}" = "auto" ]; then
+            python scripts/auto_expand.py --auto --count "${INPUT_COUNT:-12}"
+          else
+            if [ -n "${INPUT_METROS}" ]; then
+              python scripts/auto_expand.py --vertical "${INPUT_VERTICAL}" --count "${INPUT_COUNT:-12}" --metros "${INPUT_METROS}"
+            else
+              python scripts/auto_expand.py --vertical "${INPUT_VERTICAL}" --count "${INPUT_COUNT:-12}"
+            fi
+          fi
+
+      - name: Recompute Agent 00 Niche Intelligence & Sync Public Tracking Ledgers
+        run: |
+          python scripts/niche_evaluator.py
+          mkdir -p public/tracking
+          cp tracking/crm_pipeline.json public/tracking/crm_pipeline.json
+          cp tracking/niche_intelligence.json public/tracking/niche_intelligence.json
+
+      - name: Redeploy Protected Executive Dashboard (when Cloudflare secrets configured)
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          TELEMETRY_ADMIN_KEY: ${{ secrets.TELEMETRY_ADMIN_KEY }}
+          SENDER_CREDENTIALS_JSON: ${{ secrets.SENDER_CREDENTIALS_JSON }}
+        run: |
+          if [ -n "${CLOUDFLARE_ACCOUNT_ID}" ] && [ -n "${CLOUDFLARE_API_TOKEN}" ]; then
+            python scripts/deploy_pages_api.py --deploy-dashboard
+          else
+            echo "CLOUDFLARE_ACCOUNT_ID / CLOUDFLARE_API_TOKEN not set — skipping live dashboard redeploy."
+          fi
+
+      - name: Commit and push expanded pipeline & tracking ledgers
+        run: |
+          git config user.name "Forge AutoPilot Bot"
+          git config user.email "forge-autopilot-bot@users.noreply.github.com"
+          git add pipeline/ tracking/crm_pipeline.json tracking/niche_intelligence.json public/tracking/crm_pipeline.json public/tracking/niche_intelligence.json
+          if ! git diff --cached --quiet; then
+            git commit -m "feat(auto-expand): cloud wave expansion + Agent 00 sync [skip ci]"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME:-main}" || true
+            git push
+          else
+            echo "No new expanded prospects or tracking updates to commit."
+          fi
