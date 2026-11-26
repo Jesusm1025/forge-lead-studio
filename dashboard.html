@@ -910,6 +910,159 @@
     }
     .toast.show { transform: translateY(0); opacity: 1; }
 
+    /* ===== ACCESS LOCK OVERLAY ===== */
+    body.locked { overflow: hidden; }
+    body.locked .shell {
+      visibility: hidden;
+      pointer-events: none;
+      user-select: none;
+      opacity: 0;
+    }
+    .auth-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background:
+        radial-gradient(900px 520px at 20% 10%, rgba(245, 158, 11, 0.14), transparent 60%),
+        radial-gradient(800px 520px at 85% 85%, rgba(56, 189, 248, 0.12), transparent 60%),
+        rgba(7, 10, 16, 0.96);
+      backdrop-filter: blur(18px);
+    }
+    body.locked .auth-overlay { display: flex; }
+
+    .auth-card {
+      width: 100%;
+      max-width: 430px;
+      background: linear-gradient(180deg, rgba(17, 24, 39, 0.98), rgba(11, 16, 28, 0.98));
+      border: 1px solid rgba(245, 158, 11, 0.34);
+      border-radius: 18px;
+      padding: 28px 26px 24px;
+      box-shadow: 0 28px 64px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(148, 163, 184, 0.08);
+    }
+    .auth-head {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin-bottom: 18px;
+    }
+    .auth-title {
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+    .auth-sub {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+    .auth-desc {
+      font-size: 13px;
+      color: #CBD5E1;
+      line-height: 1.5;
+      margin: 0 0 18px;
+    }
+    .auth-label {
+      display: block;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 7px;
+    }
+    .auth-input {
+      width: 100%;
+      background: #070B13;
+      border: 1px solid rgba(148, 163, 184, 0.28);
+      border-radius: 11px;
+      color: var(--text);
+      padding: 12px 14px;
+      font-family: var(--mono);
+      font-size: 13.5px;
+      outline: none;
+      transition: border-color 0.16s ease, box-shadow 0.16s ease;
+    }
+    .auth-input:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.18);
+    }
+    .auth-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 12px 0 16px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .auth-remember {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .auth-remember input { accent-color: var(--gold); width: 15px; height: 15px; cursor: pointer; }
+    .auth-btn {
+      width: 100%;
+      justify-content: center;
+      padding: 12px 16px;
+      font-size: 13.5px;
+      border-radius: 11px;
+    }
+    .auth-btn:disabled { opacity: 0.65; cursor: wait; transform: none; }
+    .auth-err {
+      min-height: 18px;
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #FDA4AF;
+    }
+    .auth-foot {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+      font-size: 11px;
+      color: var(--dim);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .btn-lock {
+      border-color: rgba(244, 63, 94, 0.35);
+      color: #FDA4AF;
+      background: rgba(244, 63, 94, 0.08);
+    }
+    .btn-lock:hover {
+      background: rgba(244, 63, 94, 0.18);
+      border-color: rgba(244, 63, 94, 0.6);
+      color: #FFE4E6;
+    }
+    .kv-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.32);
+      color: #6EE7B7;
+      font-size: 11px;
+      font-family: var(--mono);
+      font-weight: 700;
+    }
+    .kv-chip.off {
+      background: rgba(148, 163, 184, 0.08);
+      border-color: var(--border);
+      color: var(--dim);
+    }
+
     /* Responsive */
     @media (max-width: 1220px) {
       .kpi-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -922,7 +1075,53 @@
     }
   </style>
 </head>
-<body>
+<body class="locked">
+  <!-- ACCESS LOCK OVERLAY -->
+  <div class="auth-overlay" id="auth-overlay" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+    <form class="auth-card" id="auth-form" autocomplete="off">
+      <div class="auth-head">
+        <div class="forge-badge" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#090D16" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+        </div>
+        <div>
+          <div class="auth-title" id="auth-title">Forge Lead Studio</div>
+          <div class="auth-sub">Executive Command Center · Protected Access</div>
+        </div>
+      </div>
+      <p class="auth-desc">
+        Enter your <code>ADMIN_KEY</code> to unlock prospect contact details, pipeline revenue figures, and live Cloudflare Worker KV demo telemetry.
+      </p>
+      <label class="auth-label" for="auth-key-input">Admin Access Key</label>
+      <input
+        type="password"
+        id="auth-key-input"
+        class="auth-input"
+        placeholder="Paste ADMIN_KEY…"
+        autocomplete="current-password"
+        required
+      >
+      <div class="auth-row">
+        <label class="auth-remember">
+          <input type="checkbox" id="auth-remember">
+          <span>Remember on this device</span>
+        </label>
+        <span style="font-family:var(--mono);font-size:10.5px;color:var(--dim)">Edge Verified</span>
+      </div>
+      <button type="submit" class="btn btn-gold auth-btn" id="auth-submit-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg>
+        Unlock Command Center
+      </button>
+      <div class="auth-err" id="auth-err" role="alert"></div>
+      <div class="auth-foot">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span>Zero prospect PII is fetched or rendered prior to edge key verification.</span>
+      </div>
+    </form>
+  </div>
+
   <div class="shell">
     <!-- TOP EXECUTIVE BAR -->
     <header class="topbar">
@@ -939,14 +1138,15 @@
             Forge Lead Studio
             <span class="brand-pill">Zero-Token Command Center</span>
           </div>
-          <div class="brand-sub">Autonomous 6-Agent Trojan Horse Pipeline · Live Local CRM Telemetry (<code style="color:#CBD5E1">./tracking/crm_pipeline.json</code>)</div>
+          <div class="brand-sub">Autonomous 6-Agent Trojan Horse Pipeline · Live CRM + Cloudflare Worker KV Telemetry</div>
         </div>
       </div>
 
       <div class="top-actions">
+        <span class="kv-chip off" id="kv-chip" title="Live Cloudflare Worker KV engagement telemetry">KV: Locked</span>
         <div class="sync-chip" id="sync-chip" title="Auto-refreshes every 10 seconds">
           <span class="pulse-dot" id="sync-dot"></span>
-          <span id="sync-text">Connecting to CRM…</span>
+          <span id="sync-text">Locked — awaiting key</span>
         </div>
         <button type="button" class="btn" id="btn-reload">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
@@ -956,6 +1156,10 @@
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
           Load JSON
         </label>
+        <button type="button" class="btn btn-lock" id="btn-lock" title="Lock dashboard and clear saved key">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Lock
+        </button>
         <input type="file" id="crm-file-input" accept=".json,application/json" style="display:none">
       </div>
     </header>
@@ -1094,11 +1298,17 @@
       'use strict';
 
       const CRM_URL = './tracking/crm_pipeline.json';
+      const WORKER_STATS_URL = 'https://forge-lead-router.forge-lead-studio.workers.dev/stats';
+      const AUTH_STORAGE_KEY = 'forge_lead_admin_key_v1';
       const DAILY_LIMIT = 15;
       const REFRESH_MS = 10000;
 
       const state = {
         crm: null,
+        liveTelemetry: null,
+        kvOnline: false,
+        adminKey: '',
+        unlocked: false,
         wave: 'ALL',
         status: 'ALL',
         query: '',
@@ -1161,16 +1371,16 @@
         if (st === 'REPLIED') {
           return { kind: 'urgent', label: 'REPLIED — ACT', sub: 'Open objection playbook', priority: 0, isNov25: false };
         }
-        const step = Number(p.last_sent_step || 0);
-        const sentAt = p.last_sent_at || (p.outreach_history && p.outreach_history.length ? p.outreach_history[p.outreach_history.length - 1].sent_at : null);
+        const step = Math.max(Number(p.current_step || 0), Number(p.last_sent_step || 0));
+        const sentAt = (step && p[`step_${step}_sent_at`]) || p.last_sent_at || (p.outreach_history && p.outreach_history.length ? p.outreach_history[p.outreach_history.length - 1].sent_at : null);
         if (!sentAt || step === 0) {
-          return { kind: 'upcoming', label: 'Step 1 Ready', sub: 'Not yet dispatched', priority: 50, isNov25: false };
+          return { kind: 'upcoming', label: 'Step 1 Ready', sub: 'Not yet dispatched', priority: 50, isDueSoon: false };
         }
         const sentDate = new Date(sentAt);
         const delayDays = step === 1 ? 3 : step === 2 ? 4 : step === 3 ? 5 : 0;
         const nextStep = Math.min(4, step + 1);
         if (step >= 4) {
-          return { kind: 'muted', label: 'Sequence Done', sub: '4 / 4 sent', priority: 90, isNov25: false };
+          return { kind: 'muted', label: 'Sequence Done', sub: '4 / 4 sent', priority: 90, isDueSoon: false };
         }
         const dueDate = new Date(sentDate.getTime() + delayDays * 86400000);
         const dueYmd = dueDate.toISOString().slice(0, 10);
@@ -1178,16 +1388,16 @@
         const diffMs = dueDate.getTime() - Date.now();
         const diffHrs = Math.round(diffMs / 3600000);
         const diffDays = Math.ceil(diffMs / 86400000);
-        const isNov25 = dueYmd === '2026-11-25' || dueLabel === 'Nov 25';
+        const isDueSoon = diffHrs <= 24;
 
         if (diffMs <= 0) {
-          return { kind: 'overdue', label: `DUE NOW · Step ${nextStep}`, sub: `Target ${dueLabel}`, priority: 1, dueMs: dueDate.getTime(), isNov25, nextStep, dueLabel };
+          return { kind: 'overdue', label: `DUE NOW · Step ${nextStep}`, sub: `Target ${dueLabel}`, priority: 1, dueMs: dueDate.getTime(), dueYmd, isDueSoon: true, nextStep, dueLabel };
         }
-        if (isNov25 || diffHrs <= 24) {
-          const hrsTxt = diffHrs <= 24 ? `in ${Math.max(1, diffHrs)}h` : `tomorrow`;
-          return { kind: 'urgent', label: `STEP ${nextStep} DUE ${dueLabel.toUpperCase()}`, sub: `${hrsTxt} · Day +${delayDays}`, priority: 2, dueMs: dueDate.getTime(), isNov25, nextStep, dueLabel };
+        if (isDueSoon) {
+          const hrsTxt = `in ${Math.max(1, diffHrs)}h`;
+          return { kind: 'urgent', label: `STEP ${nextStep} DUE ${dueLabel.toUpperCase()}`, sub: `${hrsTxt} · Day +${delayDays}`, priority: 2, dueMs: dueDate.getTime(), dueYmd, isDueSoon: true, nextStep, dueLabel };
         }
-        return { kind: 'upcoming', label: `Step ${nextStep} · ${dueLabel}`, sub: `in ${diffDays}d (Day +${delayDays})`, priority: 10 + diffDays, dueMs: dueDate.getTime(), isNov25: false, nextStep, dueLabel };
+        return { kind: 'upcoming', label: `Step ${nextStep} · ${dueLabel}`, sub: `in ${diffDays}d (Day +${delayDays})`, priority: 10 + diffDays, dueMs: dueDate.getTime(), dueYmd, isDueSoon: false, nextStep, dueLabel };
       }
 
       /* ===== 6-FLOOR PIXEL/VECTOR SPRITES ===== */
@@ -1280,7 +1490,7 @@
             num: 2, code: '02', name: '02 Architect',
             rgb: '96, 165, 250',
             active: architected > 0,
-            task: `${architected} metro pricing specs · 9 US markets`,
+            task: `${architected} metro pricing specs · ${new Set(prospects.map(p => `${p.city}, ${p.state}`)).size} US markets`,
             count: architected, unit: 'SPECS', filterStatus: 'ALL'
           },
           {
@@ -1368,7 +1578,7 @@
       }
 
       function renderFilters(prospects) {
-        const waveOrder = ['ALL', 'Wave 1', 'Wave 1B', 'Wave 1C'];
+        const waveOrder = ['ALL', 'Wave 1', 'Wave 1B', 'Wave 1C', 'Wave 1D'];
         const extraWaves = [...new Set(prospects.map(inferWave))].filter(w => !waveOrder.includes(w));
         const waves = [...waveOrder, ...extraWaves];
 
@@ -1392,20 +1602,21 @@
           fu: computeFollowUp(p),
         }));
 
-        // Follow-up Alert Strip
-        const nov25Due = enriched.filter(x => x.fu.isNov25 || x.fu.kind === 'overdue');
-        const nextWaveDue = enriched.filter(x => x.st === 'SENT' && !x.fu.isNov25 && x.fu.kind !== 'overdue');
-        if (nov25Due.length > 0) {
-          const names = nov25Due.map(x => `<strong>${esc(x.p.business_name)}</strong>`).join(', ');
+        // Dynamic Follow-Up Alert Strip
+        const dueSoon = enriched.filter(x => x.st === 'SENT' && (x.fu.isDueSoon || x.fu.kind === 'overdue'));
+        const laterActive = enriched.filter(x => x.st === 'SENT' && !x.fu.isDueSoon && x.fu.kind !== 'overdue');
+        if (dueSoon.length > 0) {
+          const nextLabel = dueSoon[0].fu.dueLabel || 'Next 24h';
+          const names = dueSoon.slice(0, 5).map(x => `<strong>${esc(x.p.business_name)}</strong>`).join(', ') + (dueSoon.length > 5 ? ` +${dueSoon.length - 5} more` : '');
           $('followup-strip').innerHTML = `
             <div>
-              <strong>STEP 2 ACTION QUEUE (Nov 25):</strong> ${nov25Due.length} prospect${nov25Due.length === 1 ? '' : 's'} entering Day +3 Live Preview + Loom follow-up window (${names}) · ${nextWaveDue.length} more queued Nov 26–27.
+              <strong>NEXT AUTOPILOT QUEUE (${esc(nextLabel)}):</strong> ${dueSoon.length} prospect${dueSoon.length === 1 ? '' : 's'} due (${names}) · ${laterActive.length} more advancing in cloud schedule.
             </div>
-            <button type="button" class="btn btn-gold" id="btn-filter-due">Focus Wave 1 Due</button>
+            <button type="button" class="btn btn-gold" id="btn-filter-due" data-due-wave="${esc(dueSoon[0].wave)}">Focus Due Queue</button>
           `;
         } else {
           $('followup-strip').innerHTML = `
-            <div><strong>Follow-Up Radar:</strong> ${nextWaveDue.length} active prospects advancing toward Day +3 Step 2 sequences.</div>
+            <div><strong>Cloud AutoPilot Radar:</strong> ${laterActive.length} active prospects advancing cleanly across daily 09:00 AM AST GitHub Actions schedule.</div>
             <span class="panel-meta">0 overdue actions</span>
           `;
         }
@@ -1446,8 +1657,10 @@
           let engHtml;
           if (leads > 0) {
             engHtml = `<div class="eng-badge eng-lead"${lastTip}><span>★ ${views} view${views === 1 ? '' : 's'} · ${leads} lead${leads === 1 ? '' : 's'}</span><span class="eng-sub">Max Step ${maxStep || 4}/4</span></div>`;
+          } else if (maxStep >= 2) {
+            engHtml = `<div class="eng-badge eng-hot"${lastTip}><span>🔥 ${views} view${views === 1 ? '' : 's'} · Step ${maxStep}/4</span><span class="eng-sub">Interactive prospect</span></div>`;
           } else if (views > 0) {
-            engHtml = `<div class="eng-badge eng-hot"${lastTip}><span>● ${views} view${views === 1 ? '' : 's'} · Step ${maxStep}/4</span><span class="eng-sub">Active prospect</span></div>`;
+            engHtml = `<div class="eng-badge eng-idle"${lastTip}><span>● ${views} view${views === 1 ? '' : 's'} · Step ${maxStep}/4</span><span class="eng-sub">Page load / scan</span></div>`;
           } else {
             engHtml = `<div class="eng-badge eng-idle"><span>0 views · Step 0/4</span><span class="eng-sub">${p.telemetry_enabled ? 'Telemetry live' : 'Pending view'}</span></div>`;
           }
@@ -1549,20 +1762,142 @@
         }
       }
 
+      function mergeTelemetry(crmData, remoteMap) {
+        if (!crmData || !Array.isArray(crmData.prospects) || !remoteMap) return crmData;
+        for (const p of crmData.prospects) {
+          const r = remoteMap[p.prospect_id];
+          if (!r) continue;
+          p.demo_views = Math.max(Number(p.demo_views || 0), Number(r.views || 0));
+          p.max_step_reached = Math.max(Number(p.max_step_reached || 0), Number(r.max_step_reached || 0));
+          p.test_leads = Math.max(Number(p.test_leads || 0), Number(r.test_leads || 0));
+          p.prod_leads = Math.max(Number(p.prod_leads || 0), Number(r.prod_leads || 0));
+          if (r.last_viewed_at) p.last_viewed_at = r.last_viewed_at;
+          if (Array.isArray(r.recent_leads) && r.recent_leads.length) p.recent_leads = r.recent_leads.slice(0, 5);
+        }
+        return crmData;
+      }
+
+      async function verifyAdminKey(candidateKey) {
+        const key = String(candidateKey || '').trim();
+        if (!key) return { ok: false, error: 'Please enter your ADMIN_KEY.' };
+        try {
+          const res = await fetch(`${WORKER_STATS_URL}?secret=${encodeURIComponent(key)}`, {
+            headers: { 'X-Admin-Key': key },
+            cache: 'no-store',
+          });
+          if (res.status === 401 || res.status === 403) {
+            return { ok: false, error: 'Invalid ADMIN_KEY — access denied.' };
+          }
+          if (!res.ok) {
+            return { ok: false, error: `Verification endpoint returned HTTP ${res.status}.` };
+          }
+          const payload = await res.json();
+          if (!payload || payload.ok !== true) {
+            return { ok: false, error: 'Invalid ADMIN_KEY — verification failed.' };
+          }
+          return { ok: true, telemetry: payload.prospects || {} };
+        } catch (err) {
+          return { ok: false, error: `Could not reach Cloudflare Edge auth (${err.message}).` };
+        }
+      }
+
+      async function fetchLiveWorkerStats() {
+        if (!state.adminKey) return null;
+        try {
+          const res = await fetch(`${WORKER_STATS_URL}?secret=${encodeURIComponent(state.adminKey)}`, {
+            headers: { 'X-Admin-Key': state.adminKey },
+            cache: 'no-store',
+          });
+          if (!res.ok) return null;
+          const payload = await res.json();
+          if (payload && payload.ok) {
+            state.liveTelemetry = payload.prospects || {};
+            state.kvOnline = true;
+            const kChip = $('kv-chip');
+            if (kChip) {
+              kChip.className = 'kv-chip';
+              kChip.textContent = `KV LIVE · ${Object.keys(state.liveTelemetry).length} tracked`;
+            }
+            return state.liveTelemetry;
+          }
+        } catch {}
+        state.kvOnline = false;
+        const kChip = $('kv-chip');
+        if (kChip) {
+          kChip.className = 'kv-chip off';
+          kChip.textContent = 'KV: Offline';
+        }
+        return null;
+      }
+
+      function lockDashboard(clearMsg = '') {
+        state.unlocked = false;
+        state.adminKey = '';
+        state.crm = null;
+        state.liveTelemetry = null;
+        state.kvOnline = false;
+        state.lastFetchOk = false;
+        try { sessionStorage.removeItem(AUTH_STORAGE_KEY); } catch {}
+        try { localStorage.removeItem(AUTH_STORAGE_KEY); } catch {}
+        document.body.classList.add('locked');
+        $('pipeline-tbody').innerHTML = '<tr><td colspan="7" class="empty-state">Locked — enter ADMIN_KEY to view CRM pipeline.</td></tr>';
+        $('auth-key-input').value = '';
+        $('auth-err').textContent = clearMsg;
+        const kChip = $('kv-chip');
+        if (kChip) { kChip.className = 'kv-chip off'; kChip.textContent = 'KV: Locked'; }
+        $('sync-dot').className = 'pulse-dot warn';
+        $('sync-text').textContent = 'Locked — awaiting key';
+        setTimeout(() => $('auth-key-input')?.focus(), 60);
+      }
+
+      function unlockDashboard(key, telemetryMap, remember) {
+        state.adminKey = key;
+        state.unlocked = true;
+        if (telemetryMap) {
+          state.liveTelemetry = telemetryMap;
+          state.kvOnline = true;
+          const kChip = $('kv-chip');
+          if (kChip) {
+            kChip.className = 'kv-chip';
+            kChip.textContent = `KV LIVE · ${Object.keys(telemetryMap).length} tracked`;
+          }
+        }
+        try {
+          if (remember) {
+            localStorage.setItem(AUTH_STORAGE_KEY, key);
+            sessionStorage.removeItem(AUTH_STORAGE_KEY);
+          } else {
+            sessionStorage.setItem(AUTH_STORAGE_KEY, key);
+          }
+        } catch {}
+        $('auth-err').textContent = '';
+        document.body.classList.remove('locked');
+        fetchCRM(false);
+      }
+
       async function fetchCRM(isManual = false) {
+        if (!state.unlocked) return;
         if (state.manualLoaded && !isManual && location.protocol === 'file:') return;
         try {
-          const res = await fetch(`${CRM_URL}?_=${Date.now()}`, { cache: 'no-store' });
-          if (!res.ok) throw new Error(`HTTP ${res.status}`);
-          const data = await res.json();
-          state.crm = data;
+          const crmReq = fetch(`${CRM_URL}?_=${Date.now()}`, {
+            headers: state.adminKey ? { 'X-Admin-Key': state.adminKey } : {},
+            cache: 'no-store',
+          });
+          const [crmRes, kvMap] = await Promise.all([crmReq, fetchLiveWorkerStats()]);
+          if (crmRes.status === 401 || crmRes.status === 403) {
+            lockDashboard('Session key expired or rejected by Edge. Please unlock again.');
+            return;
+          }
+          if (!crmRes.ok) throw new Error(`HTTP ${crmRes.status}`);
+          const data = await crmRes.json();
+          state.crm = mergeTelemetry(data, kvMap || state.liveTelemetry);
           state.lastFetchOk = true;
           state.countdown = REFRESH_MS / 1000;
           $('cors-banner').classList.remove('show');
           $('sync-dot').className = 'pulse-dot';
           $('sync-text').textContent = `LIVE · Synced ${new Date().toLocaleTimeString([], { hour12: false })} (${state.countdown}s)`;
           renderAll();
-          if (isManual) showToast(`CRM reloaded (${data.prospects.length} prospects).`);
+          if (isManual) showToast(`CRM + Live KV reloaded (${data.prospects.length} prospects).`);
         } catch (err) {
           state.lastFetchOk = false;
           $('sync-dot').className = 'pulse-dot warn';
@@ -1594,7 +1929,7 @@
 
         const dueBtn = e.target.closest('#btn-filter-due');
         if (dueBtn) {
-          state.wave = 'Wave 1';
+          state.wave = dueBtn.dataset.dueWave || 'ALL';
           state.status = 'SENT';
           renderAll();
           return;
@@ -1612,14 +1947,42 @@
       });
 
       $('btn-reload').addEventListener('click', () => fetchCRM(true));
+      $('btn-lock').addEventListener('click', () => {
+        lockDashboard('');
+        showToast('Command Center locked.');
+      });
+
+      $('auth-form').addEventListener('submit', async e => {
+        e.preventDefault();
+        const input = $('auth-key-input');
+        const btn = $('auth-submit-btn');
+        const errEl = $('auth-err');
+        const key = input.value.trim();
+        const remember = Boolean($('auth-remember')?.checked);
+        errEl.textContent = '';
+        btn.disabled = true;
+        btn.textContent = 'Verifying with Cloudflare Edge…';
+        const res = await verifyAdminKey(key);
+        btn.disabled = false;
+        btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg> Unlock Command Center';
+        if (!res.ok) {
+          errEl.textContent = res.error;
+          input.select();
+          input.focus();
+          return;
+        }
+        unlockDashboard(key, res.telemetry, remember);
+        showToast('Access verified · Live KV telemetry active.');
+      });
 
       $('crm-file-input').addEventListener('change', e => {
+        if (!state.unlocked) return;
         const file = e.target.files && e.target.files[0];
         if (!file) return;
         const reader = new FileReader();
         reader.onload = () => {
           try {
-            state.crm = JSON.parse(String(reader.result));
+            state.crm = mergeTelemetry(JSON.parse(String(reader.result)), state.liveTelemetry);
             state.manualLoaded = true;
             $('cors-banner').classList.remove('show');
             $('sync-dot').className = 'pulse-dot';
@@ -1636,7 +1999,7 @@
       // 1-second ticker for countdown & UTC clock + 10-second auto-refresh
       setInterval(() => {
         if ($('hq-clock')) $('hq-clock').textContent = new Date().toISOString().slice(11, 19) + ' UTC';
-        if (state.lastFetchOk && !state.manualLoaded) {
+        if (state.unlocked && state.lastFetchOk && !state.manualLoaded) {
           state.countdown--;
           if (state.countdown <= 0) {
             fetchCRM(false);
@@ -1646,8 +2009,29 @@
         }
       }, 1000);
 
-      // Initial boot
-      fetchCRM(false);
+      // Initial boot: auto-verify saved key if present, else stay locked
+      (async function boot() {
+        let saved = '';
+        let fromLocal = false;
+        try {
+          saved = sessionStorage.getItem(AUTH_STORAGE_KEY) || '';
+          if (!saved) {
+            saved = localStorage.getItem(AUTH_STORAGE_KEY) || '';
+            fromLocal = Boolean(saved);
+          }
+        } catch {}
+        if (saved) {
+          $('auth-err').textContent = 'Restoring verified session…';
+          const res = await verifyAdminKey(saved);
+          if (res.ok) {
+            unlockDashboard(saved, res.telemetry, fromLocal);
+            return;
+          }
+          lockDashboard('Saved session key is no longer valid — please enter ADMIN_KEY.');
+        } else {
+          setTimeout(() => $('auth-key-input')?.focus(), 80);
+        }
+      })();
     })();
   </script>
 </body>
