@@ -25,7 +25,12 @@ import urllib.parse
 import urllib.request
 from datetime import date, datetime, timedelta, timezone
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+if SCRIPT_DIR not in sys.path:
+    sys.path.insert(0, SCRIPT_DIR)
+import niche_evaluator
+
+ROOT = os.path.dirname(SCRIPT_DIR)
 CRM_PATH = os.path.join(ROOT, "tracking", "crm_pipeline.json")
 CREDS_PATH = os.path.join(ROOT, "config", "sender_credentials.json")
 LOG_PATH = os.path.join(ROOT, "tracking", "autopilot.log")
@@ -656,6 +661,88 @@ def run_followup_dispatcher(creds: dict, live_mode: bool, ref_date: date, logger
     }
 
 
+def send_niche_decision_alert(creds: dict, vertical_info: dict, logger: Logger):
+    sender_email = creds["sender_email"].strip()
+    app_pw = creds["gmail_app_password"].replace(" ", "").strip()
+    v_key = vertical_info["vertical"]
+    verdict = vertical_info["verdict"]
+    m = vertical_info["metrics"]
+    rec_en = vertical_info["recommendation"]["en"]
+    rec_es = vertical_info["recommendation"]["es"]
+
+    msg = EmailMessage()
+    msg["From"] = formataddr((f"{creds['sender_name'].strip()} Agent 00", sender_email))
+    msg["To"] = sender_email
+    msg["Subject"] = f"[NICHE DECISION] {v_key.upper()} -> {verdict} ({m['demo_engagement_rate']*100:.1f}% eng · {m['reply_rate']*100:.1f}% reply)"
+    msg["Date"] = formatdate(localtime=False)
+    msg["X-Priority"] = "1"
+    msg["Importance"] = "High"
+
+    moves_en = "\n".join(f"  - {item}" for item in rec_en.get("next_moves", []))
+    moves_es = "\n".join(f"  - {item}" for item in rec_es.get("next_moves", []))
+    body = (
+        f"AGENT 00 — AUTONOMOUS NICHE DECISION ALERT\n"
+        f"{'=' * 64}\n"
+        f"Vertical           : {vertical_info['display_name']['en']} ({v_key})\n"
+        f"New Verdict        : {verdict}\n"
+        f"Step 2+ Delivered  : {m['step2_plus_delivered']}\n"
+        f"Engaged Demos      : {m['engaged_demos']} ({m['demo_engagement_rate']*100:.1f}%)\n"
+        f"Human Replies      : {m['human_replies']} ({m['reply_rate']*100:.1f}% of {m['active_sent']} active sends)\n"
+        f"Bounces / Unsubs   : {m['bounces']} / {m['unsubscribes']}\n"
+        f"{'-' * 64}\n"
+        f"[EN] {rec_en['headline']}\n"
+        f"{rec_en['summary']}\n"
+        f"Recommended Moves:\n{moves_en}\n"
+        f"{'-' * 64}\n"
+        f"[ES] {rec_es['headline']}\n"
+        f"{rec_es['summary']}\n"
+        f"Acciones Recomendadas:\n{moves_es}\n"
+        f"{'=' * 64}\n"
+        f"Live Dashboard: https://forge-lead-dashboard.pages.dev\n"
+    )
+    msg.set_content(body, subtype="plain", charset="utf-8")
+
+    context = ssl.create_default_context()
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context, timeout=20) as server:
+        server.login(sender_email, app_pw)
+        server.send_message(msg)
+    logger.log("ALERT", f"[NICHE DECISION] email sent to {sender_email} for {v_key.upper()} -> {verdict}.")
+
+
+def run_niche_evaluator_phase(creds: dict, live_mode: bool, logger: Logger) -> dict:
+    intel = niche_evaluator.evaluate_niches(
+        crm_path=CRM_PATH,
+        output_path=niche_evaluator.INTEL_PATH,
+        public_output_path=niche_evaluator.PUBLIC_INTEL_PATH,
+        write_files=live_mode,
+    )
+    summary_parts = []
+    for v_key, v_info in (intel.get("verticals") or {}).items():
+        m = v_info["metrics"]
+        summary_parts.append(
+            f"{v_key}={v_info['verdict']} (S2+={m['step2_plus_delivered']}, eng={m['demo_engagement_rate']*100:.1f}%, rep={m['reply_rate']*100:.1f}%)"
+        )
+    logger.log("AGENT00", "Niche verdicts: " + (", ".join(summary_parts) or "none"))
+
+    transitions = intel.get("new_transitions") or []
+    alerts_sent = 0
+    for tr in transitions:
+        v_key = tr["vertical"]
+        new_v = tr["new_verdict"]
+        v_info = intel["verticals"][v_key]
+        if live_mode:
+            try:
+                send_niche_decision_alert(creds, v_info, logger)
+                niche_evaluator.persist_alerted_verdict(v_key, new_v)
+                alerts_sent += 1
+            except Exception as ex:
+                logger.log("WARN", f"Failed to send [NICHE DECISION] email for {v_key}: {ex}")
+        else:
+            logger.log("DRY-RUN", f"WOULD SEND [NICHE DECISION] alert for {v_key.upper()} -> {new_v}")
+
+    return {"intel": intel, "transitions": transitions, "alerts_sent": alerts_sent}
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Forge Lead Studio — Zero-Token Daily AutoPilot (IMAP Reply Safety Brake + Step 2/3/4 Scheduler)."
@@ -697,9 +784,12 @@ def main():
     # Phase 3: Scheduled Step 2 / 3 / 4 Dispatcher
     disp_stats = run_followup_dispatcher(creds, live_mode=live_mode, ref_date=ref_date, logger=logger)
 
+    # Phase 4: Agent 00 Autonomous Niche Evaluator & First-Time Decision Alerts
+    niche_stats = run_niche_evaluator_phase(creds, live_mode=live_mode, logger=logger)
+
     logger.log(
         "DONE",
-        f"AutoPilot complete | Mode={mode_lbl} | Dispatched={len(disp_stats['dispatched'])} | Deferred={len(disp_stats['quota_deferred'])} | Quota={disp_stats['sent_today_after']}/{disp_stats['daily_limit']}",
+        f"AutoPilot complete | Mode={mode_lbl} | Dispatched={len(disp_stats['dispatched'])} | Deferred={len(disp_stats['quota_deferred'])} | Quota={disp_stats['sent_today_after']}/{disp_stats['daily_limit']} | NicheAlerts={niche_stats['alerts_sent']}",
     )
     return 0
 

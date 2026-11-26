@@ -1076,6 +1076,272 @@
       color: var(--dim);
     }
 
+    /* ===== ES | EN LANGUAGE TOGGLE ===== */
+    .lang-toggle {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px;
+      border-radius: 999px;
+      background: #080C14;
+      border: 1px solid rgba(148, 163, 184, 0.28);
+      gap: 2px;
+    }
+    .lang-btn {
+      appearance: none;
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      padding: 4px 10px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+    .lang-btn:hover { color: var(--text); }
+    .lang-btn.active {
+      background: linear-gradient(135deg, #F59E0B, #D97706);
+      color: #090D16;
+      box-shadow: 0 0 12px rgba(245, 158, 11, 0.35);
+    }
+    .auth-head-bar {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .auth-head-bar .auth-head { margin-bottom: 0; }
+
+    /* ===== AGENT 00: NICHE RADAR PANEL ===== */
+    .niche-panel {
+      margin-bottom: 18px;
+    }
+    .niche-head-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .niche-mode-pill {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(245, 158, 11, 0.14);
+      color: #FDE68A;
+      border: 1px solid rgba(245, 158, 11, 0.38);
+    }
+    .niche-mode-pill.scale { background: var(--emerald-soft); color: #6EE7B7; border-color: rgba(16, 185, 129, 0.45); }
+    .niche-mode-pill.pivot { background: var(--rose-soft); color: #FDA4AF; border-color: rgba(244, 63, 94, 0.45); }
+
+    .niche-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 14px;
+      padding: 16px 18px;
+    }
+    .niche-card {
+      position: relative;
+      background: linear-gradient(180deg, rgba(17, 24, 39, 0.94), rgba(9, 13, 22, 0.96));
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 15px 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+    .niche-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 3px;
+      background: var(--v-accent, var(--amber));
+    }
+    .niche-card.v-SCALE { --v-accent: #10B981; border-color: rgba(16, 185, 129, 0.35); }
+    .niche-card.v-TESTING { --v-accent: #F59E0B; border-color: rgba(245, 158, 11, 0.28); }
+    .niche-card.v-PIVOT { --v-accent: #F43F5E; border-color: rgba(244, 63, 94, 0.42); }
+
+    .niche-card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .niche-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .niche-ticket {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      color: var(--muted);
+      margin-top: 3px;
+    }
+    .verdict-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+    .verdict-pill .v-dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; box-shadow: 0 0 8px currentColor; }
+    .verdict-SCALE { background: rgba(16, 185, 129, 0.16); color: #6EE7B7; border: 1px solid rgba(16, 185, 129, 0.55); }
+    .verdict-TESTING { background: rgba(245, 158, 11, 0.16); color: #FDE68A; border: 1px solid rgba(245, 158, 11, 0.52); }
+    .verdict-PIVOT { background: rgba(244, 63, 94, 0.18); color: #FDA4AF; border: 1px solid rgba(244, 63, 94, 0.55); }
+
+    .niche-metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .nm-box {
+      background: rgba(8, 12, 20, 0.85);
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      border-radius: 9px;
+      padding: 8px 9px;
+    }
+    .nm-lbl {
+      font-size: 9.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--dim);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .nm-val {
+      font-family: var(--mono);
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--text);
+      margin-top: 3px;
+      line-height: 1.1;
+    }
+    .nm-sub {
+      font-family: var(--mono);
+      font-size: 9.5px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .niche-rec-box {
+      background: rgba(8, 12, 20, 0.72);
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      border-radius: 10px;
+      padding: 11px 12px;
+    }
+    .niche-rec-head {
+      font-size: 12.5px;
+      font-weight: 800;
+      color: #F8FAFC;
+      margin-bottom: 4px;
+    }
+    .niche-rec-summary {
+      font-size: 11.5px;
+      color: var(--muted);
+      line-height: 1.45;
+      margin: 0 0 8px;
+    }
+    .niche-moves {
+      margin: 0;
+      padding-left: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 11.5px;
+      color: #CBD5E1;
+      line-height: 1.38;
+    }
+    .niche-card-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: auto;
+      padding-top: 4px;
+    }
+    .metro-chips {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+    .metro-chip {
+      font-family: var(--mono);
+      font-size: 10px;
+      padding: 2px 7px;
+      border-radius: 6px;
+      background: rgba(56, 189, 248, 0.1);
+      color: #7DD3FC;
+      border: 1px solid rgba(56, 189, 248, 0.24);
+    }
+    .pivot-box {
+      background: rgba(244, 63, 94, 0.1);
+      border: 1px solid rgba(244, 63, 94, 0.35);
+      border-radius: 9px;
+      padding: 9px 11px;
+      font-size: 11.5px;
+      color: #FFE4E6;
+    }
+    .backlog-strip {
+      padding: 11px 18px 14px;
+      border-top: 1px solid var(--border);
+      background: rgba(8, 12, 20, 0.65);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      font-size: 11px;
+    }
+    .backlog-lbl {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--dim);
+      margin-right: 4px;
+    }
+    .backlog-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 9px;
+      border-radius: 8px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid var(--border);
+      color: #CBD5E1;
+      font-size: 11px;
+    }
+    .backlog-score {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 800;
+      color: #FDE68A;
+      background: rgba(245, 158, 11, 0.16);
+      padding: 1px 5px;
+      border-radius: 4px;
+    }
+
     /* Responsive */
     @media (max-width: 1220px) {
       .kpi-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -1085,6 +1351,8 @@
       .shell { padding: 12px 12px 40px; }
       .kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .kpi-val { font-size: 24px; }
+      .niche-grid { grid-template-columns: 1fr; padding: 12px; }
+      .niche-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
   </style>
 </head>
@@ -1092,22 +1360,28 @@
   <!-- ACCESS LOCK OVERLAY -->
   <div class="auth-overlay" id="auth-overlay" role="dialog" aria-modal="true" aria-labelledby="auth-title">
     <form class="auth-card" id="auth-form" autocomplete="off">
-      <div class="auth-head">
-        <div class="forge-badge" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#090D16" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="11" width="18" height="11" rx="2"/>
-            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-          </svg>
+      <div class="auth-head-bar">
+        <div class="auth-head">
+          <div class="forge-badge" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#090D16" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+          </div>
+          <div>
+            <div class="auth-title" id="auth-title">Forge Lead Studio</div>
+            <div class="auth-sub" id="auth-sub">Executive Command Center · Protected Access</div>
+          </div>
         </div>
-        <div>
-          <div class="auth-title" id="auth-title">Forge Lead Studio</div>
-          <div class="auth-sub">Executive Command Center · Protected Access</div>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="es">ES</button>
+          <button type="button" class="lang-btn active" data-lang="en">EN</button>
         </div>
       </div>
-      <p class="auth-desc">
+      <p class="auth-desc" id="auth-desc">
         Enter your <code>ADMIN_KEY</code> to unlock prospect contact details, pipeline revenue figures, and live Cloudflare Worker KV demo telemetry.
       </p>
-      <label class="auth-label" for="auth-key-input">Admin Access Key</label>
+      <label class="auth-label" for="auth-key-input" id="auth-label">Admin Access Key</label>
       <input
         type="password"
         id="auth-key-input"
@@ -1119,18 +1393,18 @@
       <div class="auth-row">
         <label class="auth-remember">
           <input type="checkbox" id="auth-remember">
-          <span>Remember on this device</span>
+          <span id="auth-remember-lbl">Remember on this device</span>
         </label>
-        <span style="font-family:var(--mono);font-size:10.5px;color:var(--dim)">Edge Verified</span>
+        <span style="font-family:var(--mono);font-size:10.5px;color:var(--dim)" id="auth-edge-lbl">Edge Verified</span>
       </div>
       <button type="submit" class="btn btn-gold auth-btn" id="auth-submit-btn">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg>
-        Unlock Command Center
+        <span id="auth-submit-txt">Unlock Command Center</span>
       </button>
       <div class="auth-err" id="auth-err" role="alert"></div>
       <div class="auth-foot">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        <span>Zero prospect PII is fetched or rendered prior to edge key verification.</span>
+        <span id="auth-foot-txt">Zero prospect PII is fetched or rendered prior to edge key verification.</span>
       </div>
     </form>
   </div>
@@ -1149,13 +1423,17 @@
         <div>
           <div class="brand-title">
             Forge Lead Studio
-            <span class="brand-pill">Zero-Token Command Center</span>
+            <span class="brand-pill" id="brand-pill">Zero-Token Command Center</span>
           </div>
-          <div class="brand-sub">Autonomous 6-Agent Trojan Horse Pipeline · Live CRM + Cloudflare Worker KV Telemetry</div>
+          <div class="brand-sub" id="brand-sub">Autonomous 6-Agent Trojan Horse Pipeline · Live CRM + Cloudflare Worker KV Telemetry</div>
         </div>
       </div>
 
       <div class="top-actions">
+        <div class="lang-toggle" id="lang-toggle" role="group" aria-label="Language switcher">
+          <button type="button" class="lang-btn" data-lang="es" id="lang-btn-es">ES</button>
+          <button type="button" class="lang-btn active" data-lang="en" id="lang-btn-en">EN</button>
+        </div>
         <span class="kv-chip off" id="kv-chip" title="Live Cloudflare Worker KV engagement telemetry">KV: Locked</span>
         <div class="sync-chip" id="sync-chip" title="Auto-refreshes every 10 seconds">
           <span class="pulse-dot" id="sync-dot"></span>
@@ -1163,15 +1441,15 @@
         </div>
         <button type="button" class="btn" id="btn-reload">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
-          Reload CRM
+          <span id="btn-reload-txt">Reload CRM</span>
         </button>
         <label class="btn btn-ghost" for="crm-file-input" title="Load crm_pipeline.json manually if opened via file://">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-          Load JSON
+          <span id="btn-load-txt">Load JSON</span>
         </label>
         <button type="button" class="btn btn-lock" id="btn-lock" title="Lock dashboard and clear saved key">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          Lock
+          <span id="btn-lock-txt">Lock</span>
         </button>
         <input type="file" id="crm-file-input" accept=".json,application/json" style="display:none">
       </div>
@@ -1179,45 +1457,63 @@
 
     <!-- FILE:// CORS FALLBACK NOTICE -->
     <div class="cors-banner" id="cors-banner">
-      <div>
+      <div id="cors-banner-txt">
         <strong>Direct `file://` mode detected:</strong> Browser CORS blocks automatic `fetch('./tracking/crm_pipeline.json')`.
         Launch via <code>c:\agencia\open_dashboard.bat</code> for live 10s auto-refresh, or pick <code>tracking/crm_pipeline.json</code> manually.
       </div>
-      <label class="btn btn-gold" for="crm-file-input">Select crm_pipeline.json</label>
+      <label class="btn btn-gold" for="crm-file-input" id="cors-banner-btn">Select crm_pipeline.json</label>
     </div>
 
     <!-- EXECUTIVE KPI BAR -->
     <section class="kpi-grid" aria-label="Executive Pipeline KPIs">
       <article class="kpi-card cyan">
-        <div class="kpi-label"><span>Active Prospects</span><span id="kpi-metros">0 Metros</span></div>
+        <div class="kpi-label"><span id="kpi-lbl-active">Active Prospects</span><span id="kpi-metros">0 Metros</span></div>
         <div class="kpi-val" id="kpi-active">—</div>
         <div class="kpi-sub" id="kpi-active-sub">Excludes BOUNCED_MX</div>
       </article>
 
       <article class="kpi-card purple">
-        <div class="kpi-label"><span>Setup Fees Pipeline</span><span>One-Time</span></div>
+        <div class="kpi-label"><span id="kpi-lbl-setup">Setup Fees Pipeline</span><span id="kpi-tag-setup">One-Time</span></div>
         <div class="kpi-val" id="kpi-setup">—</div>
         <div class="kpi-sub" id="kpi-setup-sub">Active deals only</div>
       </article>
 
       <article class="kpi-card emerald">
-        <div class="kpi-label"><span>Monthly Recurring (MRR)</span><span>Retainer</span></div>
+        <div class="kpi-label"><span id="kpi-lbl-mrr">Monthly Recurring (MRR)</span><span id="kpi-tag-mrr">Retainer</span></div>
         <div class="kpi-val" id="kpi-mrr">—</div>
         <div class="kpi-sub" id="kpi-arr-sub">ARR: —</div>
       </article>
 
       <article class="kpi-card gold">
-        <div class="kpi-label"><span>Year-1 Contract Value</span><span>Setup + 12× MRR</span></div>
+        <div class="kpi-label"><span id="kpi-lbl-acv">Year-1 Contract Value</span><span id="kpi-tag-acv">Setup + 12× MRR</span></div>
         <div class="kpi-val" id="kpi-acv">—</div>
         <div class="kpi-sub" id="kpi-acv-sub">Annualized pipeline potential</div>
       </article>
 
       <article class="kpi-card" id="kpi-quota-card">
-        <div class="kpi-label"><span>Daily Gmail Quota</span><span id="kpi-utc-date">UTC</span></div>
+        <div class="kpi-label"><span id="kpi-lbl-quota">Daily Gmail Quota</span><span id="kpi-utc-date">UTC</span></div>
         <div class="kpi-val" id="kpi-quota">— / 15</div>
         <div class="quota-bar-track"><div class="quota-bar-fill" id="quota-fill" style="width:0%"></div></div>
         <div class="kpi-sub" id="kpi-quota-sub">Deliverability safety cap</div>
       </article>
+    </section>
+
+    <!-- AGENT 00: AUTONOMOUS NICHE RADAR & PIVOT ENGINE -->
+    <section class="panel niche-panel" id="niche-panel" aria-label="Agent 00 Niche Radar">
+      <div class="panel-head">
+        <div class="panel-title">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="12" x2="18" y2="6"/></svg>
+          <span id="niche-panel-title">NICHE RADAR (AGENT 00)</span>
+        </div>
+        <div class="niche-head-right">
+          <span class="niche-mode-pill" id="niche-mode-pill">Evaluating…</span>
+          <span class="panel-meta" id="niche-updated-meta">—</span>
+        </div>
+      </div>
+      <div class="niche-grid" id="niche-grid">
+        <div class="empty-state" style="grid-column:1/-1;padding:24px;">Loading Agent 00 niche intelligence…</div>
+      </div>
+      <div class="backlog-strip" id="niche-backlog"></div>
     </section>
 
     <!-- MAIN 2-COLUMN WORKSPACE -->
@@ -1227,14 +1523,14 @@
         <div class="panel-head">
           <div class="panel-title">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.2"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/></svg>
-            Forge Lead Studio — Live Floor
+            <span id="hq-panel-title">Forge Lead Studio — Live Floor</span>
           </div>
           <span class="panel-meta" id="hq-status-badge">6 AGENTS ONLINE</span>
         </div>
 
         <div class="hq-wrap">
           <div class="hq-roof">
-            <span class="beacon"><span class="beacon-led"></span> FORGE HQ · 6-AGENT ASSEMBLY LINE</span>
+            <span class="beacon"><span class="beacon-led"></span> <span id="hq-roof-lbl">FORGE HQ · 6-AGENT ASSEMBLY LINE</span></span>
             <span id="hq-clock">LIVE</span>
           </div>
 
@@ -1247,10 +1543,10 @@
           </div>
 
           <div class="hq-footer" id="hq-footer">
-            <div class="hq-footer-row"><span>Live Cloudflare Demos</span><strong id="hq-demos">—</strong></div>
-            <div class="hq-footer-row"><span>Live Demo Views / Test Leads</span><strong id="hq-views">—</strong></div>
-            <div class="hq-footer-row"><span>Avg Shadow DOM Bundle</span><strong id="hq-avg-kb">—</strong></div>
-            <div class="hq-footer-row"><span>CRM Last Updated</span><strong id="hq-updated">—</strong></div>
+            <div class="hq-footer-row"><span id="hq-lbl-demos">Live Cloudflare Demos</span><strong id="hq-demos">—</strong></div>
+            <div class="hq-footer-row"><span id="hq-lbl-views">Live Demo Views / Test Leads</span><strong id="hq-views">—</strong></div>
+            <div class="hq-footer-row"><span id="hq-lbl-avg-kb">Avg Shadow DOM Bundle</span><strong id="hq-avg-kb">—</strong></div>
+            <div class="hq-footer-row"><span id="hq-lbl-updated">CRM Last Updated</span><strong id="hq-updated">—</strong></div>
           </div>
         </div>
       </section>
@@ -1260,7 +1556,7 @@
         <div class="panel-head">
           <div class="panel-title">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2.2"><path d="M3 3h18v18H3zM3 9h18M9 21V9"/></svg>
-            Prospect Pipeline &amp; Follow-Up Action Center
+            <span id="pipe-panel-title">Prospect Pipeline &amp; Follow-Up Action Center</span>
           </div>
           <span class="panel-meta" id="table-count-meta">Showing 0 of 0</span>
         </div>
@@ -1289,13 +1585,13 @@
           <table>
             <thead>
               <tr>
-                <th>Business &amp; Metro</th>
-                <th>Decision Maker &amp; Email</th>
-                <th>Status</th>
-                <th>Live Demo</th>
-                <th>Demo Engagement</th>
-                <th>Step 2 Follow-Up</th>
-                <th>1-Click Action</th>
+                <th id="th-biz">Business &amp; Metro</th>
+                <th id="th-dm">Decision Maker &amp; Email</th>
+                <th id="th-status">Status</th>
+                <th id="th-demo">Live Demo</th>
+                <th id="th-eng">Demo Engagement</th>
+                <th id="th-fu">Follow-Up Schedule</th>
+                <th id="th-act">1-Click Action</th>
               </tr>
             </thead>
             <tbody id="pipeline-tbody">
@@ -1314,17 +1610,303 @@
       'use strict';
 
       const CRM_URL = './tracking/crm_pipeline.json';
+      const NICHE_URL = './tracking/niche_intelligence.json';
       const WORKER_STATS_URL = 'https://forge-lead-router.forge-lead-studio.workers.dev/stats';
       const AUTH_STORAGE_KEY = 'forge_lead_admin_key_v1';
+      const LANG_STORAGE_KEY = 'forge_lead_lang_v1';
       const DAILY_LIMIT = 15;
       const REFRESH_MS = 10000;
 
+      const I18N = {
+        en: {
+          pageTitle: 'Forge Lead Studio — Executive Command Center',
+          authSub: 'Executive Command Center · Protected Access',
+          authDesc: 'Enter your <code>ADMIN_KEY</code> to unlock prospect contact details, pipeline revenue figures, Agent 00 niche intelligence, and live Cloudflare Worker KV telemetry.',
+          authLabel: 'Admin Access Key',
+          authPlaceholder: 'Paste ADMIN_KEY…',
+          authRemember: 'Remember on this device',
+          authEdge: 'Edge Verified',
+          authSubmit: 'Unlock Command Center',
+          authVerifying: 'Verifying with Cloudflare Edge…',
+          authFoot: 'Zero prospect PII is fetched or rendered prior to edge key verification.',
+          authErrEmpty: 'Please enter your ADMIN_KEY.',
+          authErrInvalid: 'Invalid ADMIN_KEY — access denied.',
+          authErrRestoring: 'Restoring verified session…',
+          authErrExpired: 'Session key expired or rejected by Edge. Please unlock again.',
+          authErrSavedBad: 'Saved session key is no longer valid — please enter ADMIN_KEY.',
+          brandPill: 'Zero-Token Command Center',
+          brandSub: 'Autonomous 7-Agent Trojan Horse Pipeline · Live CRM + Agent 00 Radar + Worker KV Telemetry',
+          kvLocked: 'KV: Locked',
+          kvOffline: 'KV: Offline',
+          kvLive: n => `KV LIVE · ${n} tracked`,
+          syncLocked: 'Locked — awaiting key',
+          syncAuto: s => `LIVE · Auto-sync in ${s}s`,
+          syncSynced: (ts, s) => `LIVE · Synced ${ts} (${s}s)`,
+          btnReload: 'Reload CRM',
+          btnLoad: 'Load JSON',
+          btnLock: 'Lock',
+          corsHtml: '<strong>Direct `file://` mode detected:</strong> Browser CORS blocks automatic `fetch(\'./tracking/crm_pipeline.json\')`. Launch via <code>c:\\agencia\\open_dashboard.bat</code> for live 10s auto-refresh, or pick <code>tracking/crm_pipeline.json</code> manually.',
+          corsBtn: 'Select crm_pipeline.json',
+          kpiActive: 'Active Prospects',
+          kpiMetros: n => `${n} US Metros`,
+          kpiActiveSub: (tot, b) => b ? `${tot} total deployed · ${b} BOUNCED_MX excluded` : `${tot} total deployed · 0 bounces`,
+          kpiSetup: 'Setup Fees Pipeline',
+          kpiSetupTag: 'One-Time',
+          kpiSetupSub: (avg, n) => n ? `Avg ${avg} / client across ${n} deals` : 'No active deals',
+          kpiMrr: 'Monthly Recurring (MRR)',
+          kpiMrrTag: 'Retainer',
+          kpiArrSub: arr => `Annualized Retainer: ${arr} / yr`,
+          kpiAcv: 'Year-1 Contract Value',
+          kpiAcvTag: 'Setup + 12× MRR',
+          kpiAcvSub: (s, a) => `${s} setup + ${a} (12m)`,
+          kpiQuota: 'Daily Gmail Quota',
+          kpiQuotaRem: r => `${r} safe send slot${r === 1 ? '' : 's'} remaining today UTC`,
+          kpiQuotaCap: 'Daily cap reached — wait for 00:00 UTC reset',
+          nicheTitle: 'NICHE RADAR (AGENT 00)',
+          nicheUpdated: ts => ts ? `Evaluated ${ts}` : 'Awaiting Agent 00',
+          nicheModeTesting: 'SIGNAL GATHERING · TESTING',
+          nicheModeScale: 'WINNER DETECTED · SCALE READY',
+          nicheModePivot: 'LOW TRACTION · PIVOT ALERT',
+          nicheEng: 'Demo Eng.',
+          nicheReply: 'Reply Rate',
+          nicheStep2: 'Step 2+ Demos',
+          nichePipe: 'Year-1 Pipeline',
+          nicheTicket: 'Avg Ticket',
+          nicheFilterBtn: 'Filter Vertical →',
+          nicheNextMetros: 'Next Metros:',
+          nicheBacklogLbl: 'Agent 00 Pivot Backlog:',
+          nichePivotTitle: 'Recommended Pivot Target:',
+          verdictText: { SCALE: 'SCALE · WINNER', TESTING: 'TESTING · SIGNAL', PIVOT: 'PIVOT · LOW TRACTION' },
+          hqTitle: 'Forge Lead Studio — Live Floor',
+          hqOnline: '6 AGENTS ONLINE',
+          hqRoof: 'FORGE HQ · 6-AGENT ASSEMBLY LINE',
+          hqDemosLbl: 'Live Cloudflare Demos',
+          hqViewsLbl: 'Live Demo Views / Test Leads',
+          hqAvgKbLbl: 'Avg Shadow DOM Bundle',
+          hqUpdatedLbl: 'CRM Last Updated',
+          hqDemosVal: (l, t) => `${l} / ${t} HTTPS Live`,
+          hqViewsVal: (v, l) => `${v} views · ${l} leads`,
+          floors: {
+            f6Name: '06 Dispatcher', f6Unit: 'SENT LIVE', f6Task: (d, s, b) => `${d} Cloudflare demos · ${s} SENT${b ? ` (${b} MX bounce)` : ''}`,
+            f5Name: '05 QA Auditor', f5Unit: 'APPROVED', f5Task: (qa, t) => `${qa}/${t} verified 100/100 APPROVED · 4-Gate scan`,
+            f4Name: '04 Closer', f4UnitRep: 'REPLIED', f4UnitPack: 'PACKS', f4Task: (r, c) => r > 0 ? `${r} active replies/deals · ${c} packs armed` : `${c} CAN-SPAM 4-step sequences (<120 words)`,
+            f3Name: '03 Builder', f3Unit: 'MVPS', f3Task: (b, kb) => `${b} Shadow DOM MVPs hydrated · avg ${kb} KB`,
+            f2Name: '02 Architect', f2Unit: 'SPECS', f2Task: (a, m) => `${a} metro pricing specs · ${m} US markets`,
+            f1Name: '01 Scout', f1Unit: 'SCOUTED', f1Task: s => `${s} verified contractors · Roofing & HVAC`,
+          },
+          pipeTitle: 'Prospect Pipeline & Follow-Up Action Center',
+          showingMeta: (f, t) => `Showing ${f} of ${t}`,
+          lblVertical: 'Vertical',
+          lblWave: 'Wave',
+          lblStatus: 'Status',
+          allLabel: 'All',
+          vertNames: { Roofing: 'Roofing', HVAC: 'HVAC' },
+          searchPlaceholder: 'Filter business, metro, owner, email…',
+          thBiz: 'Business & Metro',
+          thDm: 'Decision Maker & Email',
+          thStatus: 'Status',
+          thDemo: 'Live Demo',
+          thEng: 'Demo Engagement',
+          thFu: 'Follow-Up Schedule',
+          thAct: '1-Click Action',
+          statusLabels: {
+            ALL: 'ALL',
+            SENT: 'SENT',
+            QUEUED_STEP_1: 'QUEUED_STEP_1',
+            REPLIED: 'REPLIED',
+            BOUNCED_MX: 'BOUNCED_MX',
+            CLOSED_WON: 'CLOSED_WON',
+            SCOUTED: 'SCOUTED',
+            BUILT: 'BUILT',
+          },
+          fuNextQueue: (lbl, cnt, names, later) => `<strong>NEXT AUTOPILOT QUEUE (${lbl}):</strong> ${cnt} prospect${cnt === 1 ? '' : 's'} due (${names}) · ${later} more advancing in cloud schedule.`,
+          fuFocusBtn: 'Focus Due Queue',
+          fuRadar: later => `<strong>Cloud AutoPilot Radar:</strong> ${later} active prospects advancing cleanly across daily 09:00 AM AST GitHub Actions schedule.`,
+          fuZeroOverdue: '0 overdue actions',
+          fuBounced: 'MX BOUNCED', fuBouncedSub: 'Phone / LinkedIn alt',
+          fuClosed: 'CLOSED WON', fuClosedSub: 'Client onboarded',
+          fuReplied: 'REPLIED — ACT', fuRepliedSub: 'Open objection playbook',
+          fuQueued: 'QUEUED · Step 1', fuQueuedSub: 'Next AutoPilot run',
+          fuStep1Ready: 'Step 1 Ready', fuNotSent: 'Not yet dispatched',
+          fuSeqDone: 'Sequence Done', fuSeqSub: '4 / 4 sent',
+          fuDueNow: s => `DUE NOW · Step ${s}`,
+          fuTarget: d => `Target ${d}`,
+          fuDueSoon: (s, d) => `STEP ${s} DUE ${d.toUpperCase()}`,
+          fuInHrs: (h, d) => `in ${h}h · Day +${d}`,
+          fuUpcoming: (s, d) => `Step ${s} · ${d}`,
+          fuInDays: (days, d) => `in ${days}d (Day +${d})`,
+          engLead: (v, l) => `★ ${v} view${v === 1 ? '' : 's'} · ${l} lead${l === 1 ? '' : 's'}`,
+          engMaxStep: s => `Max Step ${s}/4`,
+          engHot: (v, s) => `🔥 ${v} view${v === 1 ? '' : 's'} · Step ${s}/4`,
+          engInteractive: 'Interactive prospect',
+          engLoad: (v, s) => `● ${v} view${v === 1 ? '' : 's'} · Step ${s}/4`,
+          engPageScan: 'Page load / scan',
+          engZero: '0 views · Step 0/4',
+          engTelLive: 'Telemetry live',
+          engTelPending: 'Pending view',
+          liveDemoBtn: 'Live Demo ↗',
+          notDeployed: 'Not deployed',
+          copyStep: s => `Copy Step ${s}`,
+          copied: '✓ Copied!',
+          emptyTable: 'No prospects match the active Vertical / Wave / Status / Search filters.',
+          lockedTable: 'Locked — enter ADMIN_KEY to view CRM pipeline.',
+          toastReloaded: n => `CRM + Live KV + Agent 00 reloaded (${n} prospects).`,
+          toastLocked: 'Command Center locked.',
+          toastUnlocked: 'Access verified · Live KV telemetry active.',
+          toastLang: 'Language switched to English (EN).',
+        },
+        es: {
+          pageTitle: 'Forge Lead Studio — Centro de Comando Ejecutivo',
+          authSub: 'Centro de Comando Ejecutivo · Acceso Protegido',
+          authDesc: 'Ingresa tu <code>ADMIN_KEY</code> para desbloquear contactos de prospectos, métricas de ingresos, inteligencia de nichos (Agente 00) y telemetría KV en vivo.',
+          authLabel: 'Clave de Acceso Admin',
+          authPlaceholder: 'Pega tu ADMIN_KEY…',
+          authRemember: 'Recordar en este dispositivo',
+          authEdge: 'Verificado en Edge',
+          authSubmit: 'Desbloquear Centro de Comando',
+          authVerifying: 'Verificando con Cloudflare Edge…',
+          authFoot: 'Cero datos personales se descargan o muestran antes de verificar la clave en Edge.',
+          authErrEmpty: 'Por favor ingresa tu ADMIN_KEY.',
+          authErrInvalid: 'ADMIN_KEY inválida — acceso denegado.',
+          authErrRestoring: 'Restaurando sesión verificada…',
+          authErrExpired: 'La sesión expiró o fue rechazada por Edge. Desbloquea nuevamente.',
+          authErrSavedBad: 'La clave guardada ya no es válida — ingresa tu ADMIN_KEY.',
+          brandPill: 'Centro Cero-Tokens',
+          brandSub: 'Pipeline Autónomo de 7 Agentes · CRM Vivo + Radar Agente 00 + Telemetría Cloudflare KV',
+          kvLocked: 'KV: Bloqueado',
+          kvOffline: 'KV: Sin conexión',
+          kvLive: n => `KV EN VIVO · ${n} rastreados`,
+          syncLocked: 'Bloqueado — esperando clave',
+          syncAuto: s => `EN VIVO · Auto-sync en ${s}s`,
+          syncSynced: (ts, s) => `EN VIVO · Sync ${ts} (${s}s)`,
+          btnReload: 'Recargar CRM',
+          btnLoad: 'Cargar JSON',
+          btnLock: 'Bloquear',
+          corsHtml: '<strong>Modo directo `file://` detectado:</strong> CORS bloquea `fetch(\'./tracking/crm_pipeline.json\')`. Inicia con <code>c:\\agencia\\open_dashboard.bat</code> para auto-refresco o carga el JSON manualmente.',
+          corsBtn: 'Elegir crm_pipeline.json',
+          kpiActive: 'Prospectos Activos',
+          kpiMetros: n => `${n} Mercados EE.UU.`,
+          kpiActiveSub: (tot, b) => b ? `${tot} desplegados · ${b} rebotes MX excluidos` : `${tot} desplegados · 0 rebotes`,
+          kpiSetup: 'Pipeline de Setup Inicial',
+          kpiSetupTag: 'Pago Único',
+          kpiSetupSub: (avg, n) => n ? `Prom. ${avg} / cliente en ${n} tratos` : 'Sin tratos activos',
+          kpiMrr: 'Ingreso Mensual (MRR)',
+          kpiMrrTag: 'Recurrente',
+          kpiArrSub: arr => `Retainer Anualizado: ${arr} / año`,
+          kpiAcv: 'Valor Contrato Año 1',
+          kpiAcvTag: 'Setup + 12× MRR',
+          kpiAcvSub: (s, a) => `${s} setup + ${a} (12m)`,
+          kpiQuota: 'Cuota Diaria Gmail',
+          kpiQuotaRem: r => `${r} envío${r === 1 ? '' : 's'} seguro${r === 1 ? '' : 's'} disponible${r === 1 ? '' : 's'} hoy UTC`,
+          kpiQuotaCap: 'Límite diario alcanzado — esperar reinicio 00:00 UTC',
+          nicheTitle: 'RADAR DE NICHOS (AGENTE 00)',
+          nicheUpdated: ts => ts ? `Evaluado ${ts}` : 'Esperando Agente 00',
+          nicheModeTesting: 'RECOPILANDO SEÑAL · EN PRUEBA',
+          nicheModeScale: 'GANADOR DETECTADO · LISTO PARA ESCALAR',
+          nicheModePivot: 'BAJA TRACCIÓN · ALERTA DE PIVOTE',
+          nicheEng: 'Interacción',
+          nicheReply: 'Respuestas',
+          nicheStep2: 'Demos Paso 2+',
+          nichePipe: 'Pipeline Año 1',
+          nicheTicket: 'Ticket Prom.',
+          nicheFilterBtn: 'Filtrar Vertical →',
+          nicheNextMetros: 'Próximos Mercados:',
+          nicheBacklogLbl: 'Backlog de Pivote (Agente 00):',
+          nichePivotTitle: 'Vertical Recomendada para Pivotar:',
+          verdictText: { SCALE: 'ESCALAR · GANADOR', TESTING: 'EN PRUEBA · SEÑAL', PIVOT: 'PIVOTAR · BAJA TRACCIÓN' },
+          hqTitle: 'Forge Lead Studio — Piso en Vivo',
+          hqOnline: '6 AGENTES ACTIVOS',
+          hqRoof: 'FORGE HQ · LÍNEA DE 6 AGENTES',
+          hqDemosLbl: 'Demos Activos Cloudflare',
+          hqViewsLbl: 'Vistas Demo / Leads Prueba',
+          hqAvgKbLbl: 'Peso Prom. Shadow DOM',
+          hqUpdatedLbl: 'Última Actualización CRM',
+          hqDemosVal: (l, t) => `${l} / ${t} HTTPS Activos`,
+          hqViewsVal: (v, l) => `${v} vistas · ${l} leads`,
+          floors: {
+            f6Name: '06 Despachador', f6Unit: 'ENVIADOS', f6Task: (d, s, b) => `${d} demos Cloudflare · ${s} ENVIADOS${b ? ` (${b} rebote MX)` : ''}`,
+            f5Name: '05 Auditor QA', f5Unit: 'APROBADOS', f5Task: (qa, t) => `${qa}/${t} verificados 100/100 APROBADOS · 4 filtros`,
+            f4Name: '04 Cerrador', f4UnitRep: 'RESPUESTAS', f4UnitPack: 'PAQUETES', f4Task: (r, c) => r > 0 ? `${r} respuestas/tratos activos · ${c} secuencias listas` : `${c} secuencias CAN-SPAM de 4 pasos (<120 palabras)`,
+            f3Name: '03 Constructor', f3Unit: 'MVPS', f3Task: (b, kb) => `${b} MVPs Shadow DOM hidratados · prom. ${kb} KB`,
+            f2Name: '02 Arquitecto', f2Unit: 'PLANOS', f2Task: (a, m) => `${a} especificaciones de precios · ${m} mercados EE.UU.`,
+            f1Name: '01 Explorador', f1Unit: 'AUDITADOS', f1Task: s => `${s} contratistas verificados · Techos y HVAC`,
+          },
+          pipeTitle: 'Pipeline de Prospectos y Centro de Seguimiento',
+          showingMeta: (f, t) => `Mostrando ${f} de ${t}`,
+          lblVertical: 'Vertical',
+          lblWave: 'Ola',
+          lblStatus: 'Estado',
+          allLabel: 'Todos',
+          vertNames: { Roofing: 'Techos', HVAC: 'HVAC' },
+          searchPlaceholder: 'Filtrar negocio, ciudad, dueño, correo…',
+          thBiz: 'Negocio y Mercado',
+          thDm: 'Decisor y Correo',
+          thStatus: 'Estado',
+          thDemo: 'Demo Vivo',
+          thEng: 'Interacción Demo',
+          thFu: 'Seguimiento',
+          thAct: 'Acción 1-Clic',
+          statusLabels: {
+            ALL: 'TODOS',
+            SENT: 'ENVIADO',
+            QUEUED_STEP_1: 'EN COLA PASO 1',
+            REPLIED: 'RESPONDIÓ',
+            BOUNCED_MX: 'REBOTÓ MX',
+            CLOSED_WON: 'GANADO',
+            SCOUTED: 'AUDITADO',
+            BUILT: 'CONSTRUIDO',
+          },
+          fuNextQueue: (lbl, cnt, names, later) => `<strong>PRÓXIMA COLA AUTOPILOT (${lbl}):</strong> ${cnt} prospecto${cnt === 1 ? '' : 's'} por enviar (${names}) · ${later} más avanzando en la agenda cloud.`,
+          fuFocusBtn: 'Enfocar Pendientes',
+          fuRadar: later => `<strong>Radar Cloud AutoPilot:</strong> ${later} prospectos activos avanzando en la programación diaria de GitHub Actions (09:00 AM AST).`,
+          fuZeroOverdue: '0 acciones vencidas',
+          fuBounced: 'REBOTÓ MX', fuBouncedSub: 'Teléfono / LinkedIn alt.',
+          fuClosed: 'CERRADO GANADO', fuClosedSub: 'Cliente activado',
+          fuReplied: 'RESPONDIÓ — ACTUAR', fuRepliedSub: 'Abrir guía de objeciones',
+          fuQueued: 'EN COLA · Paso 1', fuQueuedSub: 'Próximo AutoPilot',
+          fuStep1Ready: 'Paso 1 Listo', fuNotSent: 'Aún no enviado',
+          fuSeqDone: 'Secuencia Completa', fuSeqSub: '4 / 4 enviados',
+          fuDueNow: s => `PENDIENTE HOY · Paso ${s}`,
+          fuTarget: d => `Meta ${d}`,
+          fuDueSoon: (s, d) => `PASO ${s} PARA ${d.toUpperCase()}`,
+          fuInHrs: (h, d) => `en ${h}h · Día +${d}`,
+          fuUpcoming: (s, d) => `Paso ${s} · ${d}`,
+          fuInDays: (days, d) => `en ${days}d (Día +${d})`,
+          engLead: (v, l) => `★ ${v} vista${v === 1 ? '' : 's'} · ${l} lead${l === 1 ? '' : 's'}`,
+          engMaxStep: s => `Paso Máx. ${s}/4`,
+          engHot: (v, s) => `🔥 ${v} vista${v === 1 ? '' : 's'} · Paso ${s}/4`,
+          engInteractive: 'Prospecto interactivo',
+          engLoad: (v, s) => `● ${v} vista${v === 1 ? '' : 's'} · Paso ${s}/4`,
+          engPageScan: 'Carga / escaneo',
+          engZero: '0 vistas · Paso 0/4',
+          engTelLive: 'Telemetría activa',
+          engTelPending: 'Sin visitas aún',
+          liveDemoBtn: 'Demo Vivo ↗',
+          notDeployed: 'Sin desplegar',
+          copyStep: s => `Copiar Paso ${s}`,
+          copied: '✓ ¡Copiado!',
+          emptyTable: 'Ningún prospecto coincide con los filtros de Vertical / Ola / Estado / Búsqueda.',
+          lockedTable: 'Bloqueado — ingresa tu ADMIN_KEY para ver el pipeline CRM.',
+          toastReloaded: n => `CRM + KV en vivo + Agente 00 recargados (${n} prospectos).`,
+          toastLocked: 'Centro de Comando bloqueado.',
+          toastUnlocked: 'Acceso verificado · Telemetría KV activa.',
+          toastLang: 'Idioma cambiado a Español (ES).',
+        },
+      };
+
       const state = {
         crm: null,
+        nicheIntel: null,
         liveTelemetry: null,
         kvOnline: false,
         adminKey: '',
         unlocked: false,
+        lang: (() => {
+          try {
+            const saved = localStorage.getItem(LANG_STORAGE_KEY);
+            return saved === 'es' ? 'es' : 'en';
+          } catch { return 'en'; }
+        })(),
         vertical: 'ALL',
         wave: 'ALL',
         status: 'ALL',
@@ -1335,8 +1917,77 @@
       };
 
       const $ = id => document.getElementById(id);
+      const t = () => I18N[state.lang] || I18N.en;
       const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
       const fmtUsd = n => '$' + Math.round(Number(n) || 0).toLocaleString('en-US');
+
+      function applyStaticTranslations() {
+        const L = t();
+        document.documentElement.lang = state.lang;
+        document.title = L.pageTitle;
+        document.querySelectorAll('.lang-btn[data-lang]').forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.lang === state.lang);
+          btn.setAttribute('aria-pressed', btn.dataset.lang === state.lang ? 'true' : 'false');
+        });
+        if ($('auth-sub')) $('auth-sub').textContent = L.authSub;
+        if ($('auth-desc')) $('auth-desc').innerHTML = L.authDesc;
+        if ($('auth-label')) $('auth-label').textContent = L.authLabel;
+        if ($('auth-key-input')) $('auth-key-input').placeholder = L.authPlaceholder;
+        if ($('auth-remember-lbl')) $('auth-remember-lbl').textContent = L.authRemember;
+        if ($('auth-edge-lbl')) $('auth-edge-lbl').textContent = L.authEdge;
+        if ($('auth-submit-txt')) $('auth-submit-txt').textContent = L.authSubmit;
+        if ($('auth-foot-txt')) $('auth-foot-txt').textContent = L.authFoot;
+        if ($('brand-pill')) $('brand-pill').textContent = L.brandPill;
+        if ($('brand-sub')) $('brand-sub').textContent = L.brandSub;
+        if ($('btn-reload-txt')) $('btn-reload-txt').textContent = L.btnReload;
+        if ($('btn-load-txt')) $('btn-load-txt').textContent = L.btnLoad;
+        if ($('btn-lock-txt')) $('btn-lock-txt').textContent = L.btnLock;
+        if ($('cors-banner-txt')) $('cors-banner-txt').innerHTML = L.corsHtml;
+        if ($('cors-banner-btn')) $('cors-banner-btn').textContent = L.corsBtn;
+        if ($('kpi-lbl-active')) $('kpi-lbl-active').textContent = L.kpiActive;
+        if ($('kpi-lbl-setup')) $('kpi-lbl-setup').textContent = L.kpiSetup;
+        if ($('kpi-tag-setup')) $('kpi-tag-setup').textContent = L.kpiSetupTag;
+        if ($('kpi-lbl-mrr')) $('kpi-lbl-mrr').textContent = L.kpiMrr;
+        if ($('kpi-tag-mrr')) $('kpi-tag-mrr').textContent = L.kpiMrrTag;
+        if ($('kpi-lbl-acv')) $('kpi-lbl-acv').textContent = L.kpiAcv;
+        if ($('kpi-tag-acv')) $('kpi-tag-acv').textContent = L.kpiAcvTag;
+        if ($('kpi-lbl-quota')) $('kpi-lbl-quota').textContent = L.kpiQuota;
+        if ($('niche-panel-title')) $('niche-panel-title').textContent = L.nicheTitle;
+        if ($('hq-panel-title')) $('hq-panel-title').textContent = L.hqTitle;
+        if ($('hq-status-badge')) $('hq-status-badge').textContent = L.hqOnline;
+        if ($('hq-roof-lbl')) $('hq-roof-lbl').textContent = L.hqRoof;
+        if ($('hq-lbl-demos')) $('hq-lbl-demos').textContent = L.hqDemosLbl;
+        if ($('hq-lbl-views')) $('hq-lbl-views').textContent = L.hqViewsLbl;
+        if ($('hq-lbl-avg-kb')) $('hq-lbl-avg-kb').textContent = L.hqAvgKbLbl;
+        if ($('hq-lbl-updated')) $('hq-lbl-updated').textContent = L.hqUpdatedLbl;
+        if ($('pipe-panel-title')) $('pipe-panel-title').textContent = L.pipeTitle;
+        if ($('search-input')) $('search-input').placeholder = L.searchPlaceholder;
+        if ($('th-biz')) $('th-biz').textContent = L.thBiz;
+        if ($('th-dm')) $('th-dm').textContent = L.thDm;
+        if ($('th-status')) $('th-status').textContent = L.thStatus;
+        if ($('th-demo')) $('th-demo').textContent = L.thDemo;
+        if ($('th-eng')) $('th-eng').textContent = L.thEng;
+        if ($('th-fu')) $('th-fu').textContent = L.thFu;
+        if ($('th-act')) $('th-act').textContent = L.thAct;
+        const kChip = $('kv-chip');
+        if (kChip) {
+          if (!state.unlocked) kChip.textContent = L.kvLocked;
+          else if (state.kvOnline && state.liveTelemetry) kChip.textContent = L.kvLive(Object.keys(state.liveTelemetry).length);
+          else kChip.textContent = L.kvOffline;
+        }
+        if (!state.unlocked && $('sync-text')) $('sync-text').textContent = L.syncLocked;
+        else if (state.unlocked && state.lastFetchOk && !state.manualLoaded && $('sync-text')) {
+          $('sync-text').textContent = L.syncAuto(state.countdown);
+        }
+      }
+
+      function setLanguage(lang, announce = true) {
+        state.lang = lang === 'es' ? 'es' : 'en';
+        try { localStorage.setItem(LANG_STORAGE_KEY, state.lang); } catch {}
+        applyStaticTranslations();
+        if (state.unlocked && state.crm) renderAll();
+        if (announce) showToast(t().toastLang);
+      }
 
       function getSetupFee(p) {
         return Number(p.proposed_setup_fee_usd ?? p.setup_fee ?? p.quoted_setup ?? 0);
@@ -1382,33 +2033,34 @@
       }
 
       function formatShortDate(d) {
-        return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+        return d.toLocaleDateString(state.lang === 'es' ? 'es-US' : 'en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
       }
 
       function computeFollowUp(p) {
+        const L = t();
         const st = normalizeStatus(p.status);
         if (st === 'BOUNCED_MX') {
-          return { kind: 'muted', label: 'MX BOUNCED', sub: 'Phone / LinkedIn alt', priority: 99, isNov25: false };
+          return { kind: 'muted', label: L.fuBounced, sub: L.fuBouncedSub, priority: 99, isNov25: false };
         }
         if (st === 'CLOSED_WON') {
-          return { kind: 'muted', label: 'CLOSED WON', sub: 'Client onboarded', priority: 95, isNov25: false };
+          return { kind: 'muted', label: L.fuClosed, sub: L.fuClosedSub, priority: 95, isNov25: false };
         }
         if (st === 'REPLIED') {
-          return { kind: 'urgent', label: 'REPLIED — ACT', sub: 'Open objection playbook', priority: 0, isDueSoon: false };
+          return { kind: 'urgent', label: L.fuReplied, sub: L.fuRepliedSub, priority: 0, isDueSoon: false };
         }
         if (st === 'QUEUED_STEP_1') {
-          return { kind: 'urgent', label: 'QUEUED · Step 1', sub: 'Next AutoPilot run', priority: 3, isDueSoon: true, nextStep: 1, dueLabel: 'Next Run' };
+          return { kind: 'urgent', label: L.fuQueued, sub: L.fuQueuedSub, priority: 3, isDueSoon: true, nextStep: 1, dueLabel: L.fuQueuedSub };
         }
         const step = Math.max(Number(p.current_step || 0), Number(p.last_sent_step || 0));
         const sentAt = (step && p[`step_${step}_sent_at`]) || p.last_sent_at || (p.outreach_history && p.outreach_history.length ? p.outreach_history[p.outreach_history.length - 1].sent_at : null);
         if (!sentAt || step === 0) {
-          return { kind: 'upcoming', label: 'Step 1 Ready', sub: 'Not yet dispatched', priority: 50, isDueSoon: false };
+          return { kind: 'upcoming', label: L.fuStep1Ready, sub: L.fuNotSent, priority: 50, isDueSoon: false };
         }
         const sentDate = new Date(sentAt);
         const delayDays = step === 1 ? 3 : step === 2 ? 4 : step === 3 ? 5 : 0;
         const nextStep = Math.min(4, step + 1);
         if (step >= 4) {
-          return { kind: 'muted', label: 'Sequence Done', sub: '4 / 4 sent', priority: 90, isDueSoon: false };
+          return { kind: 'muted', label: L.fuSeqDone, sub: L.fuSeqSub, priority: 90, isDueSoon: false };
         }
         const dueDate = new Date(sentDate.getTime() + delayDays * 86400000);
         const dueYmd = dueDate.toISOString().slice(0, 10);
@@ -1419,13 +2071,12 @@
         const isDueSoon = diffHrs <= 24;
 
         if (diffMs <= 0) {
-          return { kind: 'overdue', label: `DUE NOW · Step ${nextStep}`, sub: `Target ${dueLabel}`, priority: 1, dueMs: dueDate.getTime(), dueYmd, isDueSoon: true, nextStep, dueLabel };
+          return { kind: 'overdue', label: L.fuDueNow(nextStep), sub: L.fuTarget(dueLabel), priority: 1, dueMs: dueDate.getTime(), dueYmd, isDueSoon: true, nextStep, dueLabel };
         }
         if (isDueSoon) {
-          const hrsTxt = `in ${Math.max(1, diffHrs)}h`;
-          return { kind: 'urgent', label: `STEP ${nextStep} DUE ${dueLabel.toUpperCase()}`, sub: `${hrsTxt} · Day +${delayDays}`, priority: 2, dueMs: dueDate.getTime(), dueYmd, isDueSoon: true, nextStep, dueLabel };
+          return { kind: 'urgent', label: L.fuDueSoon(nextStep, dueLabel), sub: L.fuInHrs(Math.max(1, diffHrs), delayDays), priority: 2, dueMs: dueDate.getTime(), dueYmd, isDueSoon: true, nextStep, dueLabel };
         }
-        return { kind: 'upcoming', label: `Step ${nextStep} · ${dueLabel}`, sub: `in ${diffDays}d (Day +${delayDays})`, priority: 10 + diffDays, dueMs: dueDate.getTime(), dueYmd, isDueSoon: false, nextStep, dueLabel };
+        return { kind: 'upcoming', label: L.fuUpcoming(nextStep, dueLabel), sub: L.fuInDays(diffDays, delayDays), priority: 10 + diffDays, dueMs: dueDate.getTime(), dueYmd, isDueSoon: false, nextStep, dueLabel };
       }
 
       /* ===== 6-FLOOR PIXEL/VECTOR SPRITES ===== */
@@ -1471,6 +2122,8 @@
       }
 
       function renderHQ(prospects) {
+        const L = t();
+        const F = L.floors;
         const total = prospects.length;
         const scoutedAll = total;
         const architected = prospects.filter(p => p.spec_path || p.architected_at).length;
@@ -1484,55 +2137,56 @@
         const avgBytes = built
           ? Math.round(prospects.reduce((acc, p) => acc + (Number(p.widget_bytes) || 0), 0) / built)
           : 0;
+        const marketCount = new Set(prospects.map(p => `${p.city}, ${p.state}`)).size;
 
         const floors = [
           {
-            num: 6, code: '06', name: '06 Dispatcher',
+            num: 6, code: '06', name: F.f6Name,
             rgb: '245, 158, 11',
             active: sentActive > 0 || liveDemos > 0,
-            task: `${liveDemos} Cloudflare demos · ${sentActive} SENT${bounced ? ` (${bounced} MX bounce)` : ''}`,
-            count: sentActive, unit: 'SENT LIVE', filterStatus: 'SENT'
+            task: F.f6Task(liveDemos, sentActive, bounced),
+            count: sentActive, unit: F.f6Unit, filterStatus: 'SENT'
           },
           {
-            num: 5, code: '05', name: '05 QA Auditor',
+            num: 5, code: '05', name: F.f5Name,
             rgb: '16, 185, 129',
             active: qaApproved > 0,
-            task: `${qaApproved}/${total} verified 100/100 APPROVED · 4-Gate scan`,
-            count: qaApproved, unit: 'APPROVED', filterStatus: 'ALL'
+            task: F.f5Task(qaApproved, total),
+            count: qaApproved, unit: F.f5Unit, filterStatus: 'ALL'
           },
           {
-            num: 4, code: '04', name: '04 Closer',
+            num: 4, code: '04', name: F.f4Name,
             rgb: '167, 139, 250',
             active: closerReady > 0 || repliedOrWon > 0,
-            task: repliedOrWon > 0 ? `${repliedOrWon} active replies/deals · ${closerReady} packs armed` : `${closerReady} CAN-SPAM 4-step sequences (<120 words)`,
-            count: repliedOrWon > 0 ? repliedOrWon : closerReady, unit: repliedOrWon > 0 ? 'REPLIED' : 'PACKS', filterStatus: repliedOrWon > 0 ? 'REPLIED' : 'ALL'
+            task: F.f4Task(repliedOrWon, closerReady),
+            count: repliedOrWon > 0 ? repliedOrWon : closerReady, unit: repliedOrWon > 0 ? F.f4UnitRep : F.f4UnitPack, filterStatus: repliedOrWon > 0 ? 'REPLIED' : 'ALL'
           },
           {
-            num: 3, code: '03', name: '03 Builder',
+            num: 3, code: '03', name: F.f3Name,
             rgb: '56, 189, 248',
             active: built > 0,
-            task: `${built} Shadow DOM MVPs hydrated · avg ${(avgBytes / 1024).toFixed(1)} KB`,
-            count: built, unit: 'MVPS', filterStatus: 'ALL'
+            task: F.f3Task(built, (avgBytes / 1024).toFixed(1)),
+            count: built, unit: F.f3Unit, filterStatus: 'ALL'
           },
           {
-            num: 2, code: '02', name: '02 Architect',
+            num: 2, code: '02', name: F.f2Name,
             rgb: '96, 165, 250',
             active: architected > 0,
-            task: `${architected} metro pricing specs · ${new Set(prospects.map(p => `${p.city}, ${p.state}`)).size} US markets`,
-            count: architected, unit: 'SPECS', filterStatus: 'ALL'
+            task: F.f2Task(architected, marketCount),
+            count: architected, unit: F.f2Unit, filterStatus: 'ALL'
           },
           {
-            num: 1, code: '01', name: '01 Scout',
+            num: 1, code: '01', name: F.f1Name,
             rgb: '45, 212, 191',
             active: scoutedAll > 0,
-            task: `${scoutedAll} verified contractors · Roofing & HVAC`,
-            count: scoutedAll, unit: 'SCOUTED', filterStatus: 'ALL'
+            task: F.f1Task(scoutedAll),
+            count: scoutedAll, unit: F.f1Unit, filterStatus: 'ALL'
           }
         ];
 
         const spineHtml = '<div class="hq-spine" aria-hidden="true"><div class="hq-packet"></div><div class="hq-packet p2"></div></div>';
         $('hq-building').innerHTML = spineHtml + floors.map(f => `
-          <div class="floor${f.active ? ' active' : ''}" style="--fl-rgb:${f.rgb}" data-filter-status="${f.filterStatus}" title="Click to filter pipeline by ${f.filterStatus}">
+          <div class="floor${f.active ? ' active' : ''}" style="--fl-rgb:${f.rgb}" data-filter-status="${f.filterStatus}">
             <div class="sprite-box">${agentSvg(f.num, f.rgb)}</div>
             <div class="floor-info">
               <div class="floor-top">
@@ -1543,7 +2197,7 @@
             </div>
             <div class="floor-metric">
               <div class="fl-count">${f.count}</div>
-              <div class="fl-unit">${f.unit}</div>
+              <div class="fl-unit">${esc(f.unit)}</div>
             </div>
             <div class="conveyor" aria-hidden="true"></div>
           </div>
@@ -1551,14 +2205,184 @@
 
         const totalViews = prospects.reduce((acc, p) => acc + (Number(p.demo_views) || 0), 0);
         const totalLeads = prospects.reduce((acc, p) => acc + (Number(p.test_leads) || 0) + (Number(p.prod_leads) || 0), 0);
-        $('hq-demos').textContent = `${liveDemos} / ${total} HTTPS Live`;
-        $('hq-views').textContent = `${totalViews} views · ${totalLeads} leads`;
+        $('hq-demos').textContent = L.hqDemosVal(liveDemos, total);
+        $('hq-views').textContent = L.hqViewsVal(totalViews, totalLeads);
         $('hq-avg-kb').textContent = avgBytes ? `${avgBytes.toLocaleString('en-US')} B (${(avgBytes / 1024).toFixed(2)} KB)` : '—';
         $('hq-updated').textContent = state.crm?.updated_at ? state.crm.updated_at.replace('T', ' ').replace('Z', ' UTC') : '—';
         $('hq-clock').textContent = new Date().toISOString().slice(11, 19) + ' UTC';
       }
 
+      function computeFallbackNicheIntel(prospects) {
+        const byV = {};
+        for (const p of prospects) {
+          const vk = inferVertical(p).toLowerCase();
+          if (!byV[vk]) byV[vk] = [];
+          byV[vk].push(p);
+        }
+        const verticals = {};
+        for (const [vk, list] of Object.entries(byV)) {
+          let activeSent = 0, step2 = 0, engaged = 0, replies = 0, bounces = 0, unsubs = 0, setup = 0, mrr = 0;
+          for (const p of list) {
+            const st = normalizeStatus(p.status);
+            const curStep = Math.max(Number(p.current_step || 0), Number(p.last_sent_step || 0), ...(p.outreach_history || []).map(h => Number(h.step || 0)));
+            const mstep = Number(p.max_step_reached || 0);
+            const leads = Number(p.test_leads || 0) + Number(p.prod_leads || 0);
+            if (st === 'BOUNCED_MX') { bounces++; }
+            else { setup += getSetupFee(p); mrr += getRetainer(p); }
+            if (st === 'UNSUBSCRIBED') unsubs++;
+            if (st === 'REPLIED' || st === 'CLOSED_WON') replies++;
+            if (['SENT', 'REPLIED', 'CLOSED_WON', 'UNSUBSCRIBED'].includes(st)) activeSent++;
+            if (st !== 'BOUNCED_MX' && curStep >= 2) step2++;
+            if (mstep >= 2 || leads >= 1) engaged++;
+          }
+          const engRate = engaged / Math.max(1, step2);
+          const repRate = replies / Math.max(1, activeSent);
+          let verdict = 'TESTING';
+          if (step2 >= 10 && (engRate >= 0.08 || repRate >= 0.04)) verdict = 'SCALE';
+          else if (step2 >= 18 && engRate < 0.03 && replies === 0) verdict = 'PIVOT';
+          const isHvac = vk === 'hvac';
+          verticals[vk] = {
+            vertical: vk,
+            display_name: { en: isHvac ? 'Residential HVAC Replacement' : 'Residential Roofing', es: isHvac ? 'Reemplazo Residencial de HVAC' : 'Techos Residenciales (Roofing)' },
+            avg_ticket_usd: isHvac ? '$9,400 – $19,500' : '$12,500 – $26,000',
+            verdict,
+            metrics: {
+              total_prospects: list.length, active_sent: activeSent, step2_plus_delivered: step2,
+              engaged_demos: engaged, human_replies: replies, bounces, unsubscribes: unsubs,
+              demo_engagement_rate: engRate, reply_rate: repRate, active_pipeline_y1_usd: setup + mrr * 12,
+            },
+            recommendation: {
+              en: { headline: `${verdict} (${step2}/15 Step 2+ Demos)`, summary: 'Computed live from CRM + KV telemetry.', next_moves: ['Run scripts/niche_evaluator.py to sync full Agent 00 recommendations.'], target_metros: [] },
+              es: { headline: `${verdict} (${step2}/15 Demos Paso 2+)`, summary: 'Calculado en vivo desde CRM + telemetría KV.', next_moves: ['Ejecuta scripts/niche_evaluator.py para sincronizar las recomendaciones completas del Agente 00.'], target_metros: [] },
+            },
+          };
+        }
+        return { evaluated_at: state.crm?.updated_at || '', agency_summary: { mode: 'TESTING_DISCIPLINE' }, verticals, next_vertical_backlog: [] };
+      }
+
+      function renderNicheRadar(prospects) {
+        const L = t();
+        const lang = state.lang;
+        const intel = state.nicheIntel || computeFallbackNicheIntel(prospects);
+        const verticals = Object.values(intel.verticals || {});
+        const mode = intel.agency_summary?.mode || 'TESTING_DISCIPLINE';
+        const modePill = $('niche-mode-pill');
+        if (modePill) {
+          modePill.className = 'niche-mode-pill' + (mode === 'SCALE_ACTIVE' ? ' scale' : mode === 'PIVOT_RECOMMENDED' ? ' pivot' : '');
+          modePill.textContent = mode === 'SCALE_ACTIVE' ? L.nicheModeScale : (mode === 'PIVOT_RECOMMENDED' ? L.nicheModePivot : L.nicheModeTesting);
+        }
+        if ($('niche-updated-meta')) {
+          const ts = intel.evaluated_at ? intel.evaluated_at.replace('T', ' ').replace('Z', ' UTC') : '';
+          $('niche-updated-meta').textContent = L.nicheUpdated(ts);
+        }
+
+        // Overlay live merged KV engagement on top of niche_intelligence.json metrics for real-time freshness
+        const liveByV = {};
+        for (const p of prospects) {
+          const vk = inferVertical(p).toLowerCase();
+          if (!liveByV[vk]) liveByV[vk] = { engaged: 0, replies: 0 };
+          const mstep = Number(p.max_step_reached || 0);
+          const leads = Number(p.test_leads || 0) + Number(p.prod_leads || 0);
+          const st = normalizeStatus(p.status);
+          if (mstep >= 2 || leads >= 1) liveByV[vk].engaged++;
+          if (st === 'REPLIED' || st === 'CLOSED_WON') liveByV[vk].replies++;
+        }
+
+        $('niche-grid').innerHTML = verticals.map(v => {
+          const m = v.metrics || {};
+          const live = liveByV[v.vertical] || { engaged: 0, replies: 0 };
+          const engaged = Math.max(Number(m.engaged_demos || 0), live.engaged);
+          const replies = Math.max(Number(m.human_replies || 0), live.replies);
+          const s2 = Number(m.step2_plus_delivered || 0);
+          const sent = Number(m.active_sent || 0);
+          const engPct = ((engaged / Math.max(1, s2)) * 100).toFixed(1);
+          const repPct = ((replies / Math.max(1, sent)) * 100).toFixed(1);
+          const verdict = String(v.verdict || 'TESTING').toUpperCase();
+          const vDisplay = (v.display_name && (v.display_name[lang] || v.display_name.en)) || v.vertical.toUpperCase();
+          const rec = (v.recommendation && (v.recommendation[lang] || v.recommendation.en)) || {};
+          const moves = (rec.next_moves || []).slice(0, 3);
+          const targetMetros = (rec.target_metros || []).slice(0, 4);
+          const filterKey = v.vertical === 'hvac' ? 'HVAC' : 'Roofing';
+          const pivotCand = rec.pivot_candidate;
+
+          return `
+            <article class="niche-card v-${esc(verdict)}" data-niche-card="${esc(v.vertical)}">
+              <div class="niche-card-top">
+                <div>
+                  <div class="niche-title">
+                    <span class="vert-tag v-${esc(v.vertical)}">${esc(v.vertical.toUpperCase())}</span>
+                    <span>${esc(vDisplay)}</span>
+                  </div>
+                  <div class="niche-ticket">${esc(L.nicheTicket)}: ${esc(v.avg_ticket_usd || '—')} · ${m.total_prospects || 0} prospects</div>
+                </div>
+                <span class="verdict-pill verdict-${esc(verdict)}">
+                  <span class="v-dot"></span>${esc(L.verdictText[verdict] || verdict)}
+                </span>
+              </div>
+
+              <div class="niche-metrics">
+                <div class="nm-box">
+                  <div class="nm-lbl">${esc(L.nicheEng)}</div>
+                  <div class="nm-val">${engPct}%</div>
+                  <div class="nm-sub">${engaged} / ${Math.max(1, s2)} S2+</div>
+                </div>
+                <div class="nm-box">
+                  <div class="nm-lbl">${esc(L.nicheReply)}</div>
+                  <div class="nm-val">${repPct}%</div>
+                  <div class="nm-sub">${replies} / ${sent} sent</div>
+                </div>
+                <div class="nm-box">
+                  <div class="nm-lbl">${esc(L.nicheStep2)}</div>
+                  <div class="nm-val">${s2}</div>
+                  <div class="nm-sub">${m.bounces || 0} MX · ${m.unsubscribes || 0} unsub</div>
+                </div>
+                <div class="nm-box">
+                  <div class="nm-lbl">${esc(L.nichePipe)}</div>
+                  <div class="nm-val" style="color:#FDE68A">${fmtUsd(m.active_pipeline_y1_usd || 0)}</div>
+                  <div class="nm-sub">${fmtUsd(m.active_pipeline_mrr_usd || 0)}/mo</div>
+                </div>
+              </div>
+
+              <div class="niche-rec-box">
+                <div class="niche-rec-head">${esc(rec.headline || '')}</div>
+                <p class="niche-rec-summary">${esc(rec.summary || '')}</p>
+                <ul class="niche-moves">${moves.map(mv => `<li>${esc(mv)}</li>`).join('')}</ul>
+              </div>
+
+              ${pivotCand ? `
+                <div class="pivot-box">
+                  <strong>${esc(L.nichePivotTitle)}</strong> ${esc(pivotCand.name)} (${esc(pivotCand.avg_ticket_usd)}) — ${esc(pivotCand.calculator_hook)}
+                </div>
+              ` : ''}
+
+              <div class="niche-card-foot">
+                <div class="metro-chips">
+                  <span style="font-size:10px;font-weight:800;color:var(--dim);text-transform:uppercase">${esc(L.nicheNextMetros)}</span>
+                  ${targetMetros.map(mt => `<span class="metro-chip">${esc(mt)}</span>`).join('')}
+                </div>
+                <button type="button" class="pill-btn niche-filter-btn" data-focus-vertical="${esc(filterKey)}">${esc(L.nicheFilterBtn)}</button>
+              </div>
+            </article>
+          `;
+        }).join('');
+
+        const backlog = intel.next_vertical_backlog || [];
+        const backlogEl = $('niche-backlog');
+        if (backlogEl) {
+          if (backlog.length) {
+            backlogEl.style.display = 'flex';
+            backlogEl.innerHTML = `<span class="backlog-lbl">${esc(L.nicheBacklogLbl)}</span>` + backlog.map(b => {
+              const info = b[lang] || b.en || {};
+              return `<span class="backlog-chip" title="${esc(info.calculator_hook || '')}"><span class="backlog-score">${b.priority_score}</span><strong>${esc(info.name || b.vertical)}</strong> <span style="color:var(--dim);font-family:var(--mono);font-size:10px">${esc(b.avg_ticket_usd)}</span></span>`;
+            }).join('');
+          } else {
+            backlogEl.style.display = 'none';
+          }
+        }
+      }
+
       function renderKPIs(prospects) {
+        const L = t();
         const activeList = prospects.filter(p => normalizeStatus(p.status) !== 'BOUNCED_MX');
         const bouncedCount = prospects.length - activeList.length;
         const metros = new Set(activeList.map(p => `${p.city}, ${p.state}`));
@@ -1578,21 +2402,17 @@
         const pct = Math.min(100, Math.round((sentToday / DAILY_LIMIT) * 100));
 
         $('kpi-active').textContent = activeList.length;
-        $('kpi-metros').textContent = `${metros.size} US Metros`;
-        $('kpi-active-sub').textContent = bouncedCount
-          ? `${prospects.length} total deployed · ${bouncedCount} BOUNCED_MX excluded`
-          : `${prospects.length} total deployed · 0 bounces`;
+        $('kpi-metros').textContent = L.kpiMetros(metros.size);
+        $('kpi-active-sub').textContent = L.kpiActiveSub(prospects.length, bouncedCount);
 
         $('kpi-setup').textContent = fmtUsd(totalSetup);
-        $('kpi-setup-sub').textContent = activeList.length
-          ? `Avg ${fmtUsd(totalSetup / activeList.length)} / client across ${activeList.length} deals`
-          : 'No active deals';
+        $('kpi-setup-sub').textContent = L.kpiSetupSub(activeList.length ? fmtUsd(totalSetup / activeList.length) : '$0', activeList.length);
 
         $('kpi-mrr').textContent = `${fmtUsd(totalMrr)}/mo`;
-        $('kpi-arr-sub').textContent = `Annualized Retainer: ${fmtUsd(totalArr)} / yr`;
+        $('kpi-arr-sub').textContent = L.kpiArrSub(fmtUsd(totalArr));
 
         $('kpi-acv').textContent = fmtUsd(totalY1);
-        $('kpi-acv-sub').textContent = `${fmtUsd(totalSetup)} setup + ${fmtUsd(totalArr)} (12m)`;
+        $('kpi-acv-sub').textContent = L.kpiAcvSub(fmtUsd(totalSetup), fmtUsd(totalArr));
 
         $('kpi-utc-date').textContent = todayUtc;
         $('kpi-quota').textContent = `${sentToday} / ${DAILY_LIMIT}`;
@@ -1600,35 +2420,36 @@
         fill.style.width = `${pct}%`;
         fill.className = 'quota-bar-fill' + (sentToday >= 14 ? ' danger' : sentToday >= 11 ? ' amber' : '');
         const remaining = Math.max(0, DAILY_LIMIT - sentToday);
-        $('kpi-quota-sub').textContent = remaining > 0
-          ? `${remaining} safe send slot${remaining === 1 ? '' : 's'} remaining today UTC`
-          : 'Daily cap reached — wait for 00:00 UTC reset';
+        $('kpi-quota-sub').textContent = remaining > 0 ? L.kpiQuotaRem(remaining) : L.kpiQuotaCap;
       }
 
       function renderFilters(prospects) {
+        const L = t();
         const verticals = ['ALL', 'Roofing', 'HVAC'];
-        $('vertical-filters').innerHTML = '<span class="filter-label">Vertical</span>' + verticals.map(v => {
+        $('vertical-filters').innerHTML = `<span class="filter-label">${esc(L.lblVertical)}</span>` + verticals.map(v => {
           const cnt = v === 'ALL' ? prospects.length : prospects.filter(p => inferVertical(p) === v).length;
-          return `<button type="button" class="pill-btn${state.vertical === v ? ' active' : ''}" data-vertical="${esc(v)}">${v === 'ALL' ? 'All' : esc(v)} <span class="pill-cnt">${cnt}</span></button>`;
+          const lbl = v === 'ALL' ? L.allLabel : (L.vertNames[v] || v);
+          return `<button type="button" class="pill-btn${state.vertical === v ? ' active' : ''}" data-vertical="${esc(v)}">${esc(lbl)} <span class="pill-cnt">${cnt}</span></button>`;
         }).join('');
 
         const waveOrder = ['ALL', 'Wave 1', 'Wave 1B', 'Wave 1C', 'Wave 1D', 'HVAC Wave 1'];
         const extraWaves = [...new Set(prospects.map(inferWave))].filter(w => !waveOrder.includes(w));
         const waves = [...waveOrder, ...extraWaves];
 
-        $('wave-filters').innerHTML = '<span class="filter-label">Wave</span>' + waves.map(w => {
+        $('wave-filters').innerHTML = `<span class="filter-label">${esc(L.lblWave)}</span>` + waves.map(w => {
           const cnt = w === 'ALL' ? prospects.length : prospects.filter(p => inferWave(p) === w).length;
-          return `<button type="button" class="pill-btn${state.wave === w ? ' active' : ''}" data-wave="${esc(w)}">${w === 'ALL' ? 'All' : esc(w)} <span class="pill-cnt">${cnt}</span></button>`;
+          return `<button type="button" class="pill-btn${state.wave === w ? ' active' : ''}" data-wave="${esc(w)}">${w === 'ALL' ? esc(L.allLabel) : esc(w)} <span class="pill-cnt">${cnt}</span></button>`;
         }).join('');
 
         const statuses = ['ALL', 'SENT', 'QUEUED_STEP_1', 'REPLIED', 'BOUNCED_MX', 'CLOSED_WON'];
-        $('status-filters').innerHTML = '<span class="filter-label">Status</span>' + statuses.map(s => {
+        $('status-filters').innerHTML = `<span class="filter-label">${esc(L.lblStatus)}</span>` + statuses.map(s => {
           const cnt = s === 'ALL' ? prospects.length : prospects.filter(p => normalizeStatus(p.status) === s).length;
-          return `<button type="button" class="pill-btn${state.status === s ? ' active' : ''}" data-status="${esc(s)}">${esc(s)} <span class="pill-cnt">${cnt}</span></button>`;
+          return `<button type="button" class="pill-btn${state.status === s ? ' active' : ''}" data-status="${esc(s)}">${esc(L.statusLabels[s] || s)} <span class="pill-cnt">${cnt}</span></button>`;
         }).join('');
       }
 
       function renderTable(prospects) {
+        const L = t();
         const enriched = prospects.map(p => ({
           p,
           vertical: inferVertical(p),
@@ -1641,18 +2462,16 @@
         const dueSoon = enriched.filter(x => x.st === 'SENT' && (x.fu.isDueSoon || x.fu.kind === 'overdue'));
         const laterActive = enriched.filter(x => x.st === 'SENT' && !x.fu.isDueSoon && x.fu.kind !== 'overdue');
         if (dueSoon.length > 0) {
-          const nextLabel = dueSoon[0].fu.dueLabel || 'Next 24h';
-          const names = dueSoon.slice(0, 5).map(x => `<strong>${esc(x.p.business_name)}</strong>`).join(', ') + (dueSoon.length > 5 ? ` +${dueSoon.length - 5} more` : '');
+          const nextLabel = dueSoon[0].fu.dueLabel || '24h';
+          const names = dueSoon.slice(0, 5).map(x => `<strong>${esc(x.p.business_name)}</strong>`).join(', ') + (dueSoon.length > 5 ? ` +${dueSoon.length - 5}` : '');
           $('followup-strip').innerHTML = `
-            <div>
-              <strong>NEXT AUTOPILOT QUEUE (${esc(nextLabel)}):</strong> ${dueSoon.length} prospect${dueSoon.length === 1 ? '' : 's'} due (${names}) · ${laterActive.length} more advancing in cloud schedule.
-            </div>
-            <button type="button" class="btn btn-gold" id="btn-filter-due" data-due-wave="${esc(dueSoon[0].wave)}">Focus Due Queue</button>
+            <div>${L.fuNextQueue(esc(nextLabel), dueSoon.length, names, laterActive.length)}</div>
+            <button type="button" class="btn btn-gold" id="btn-filter-due" data-due-wave="${esc(dueSoon[0].wave)}">${esc(L.fuFocusBtn)}</button>
           `;
         } else {
           $('followup-strip').innerHTML = `
-            <div><strong>Cloud AutoPilot Radar:</strong> ${laterActive.length} active prospects advancing cleanly across daily 09:00 AM AST GitHub Actions schedule.</div>
-            <span class="panel-meta">0 overdue actions</span>
+            <div>${L.fuRadar(laterActive.length)}</div>
+            <span class="panel-meta">${esc(L.fuZeroOverdue)}</span>
           `;
         }
 
@@ -1668,13 +2487,12 @@
           return true;
         });
 
-        // Sort: Urgent / Nov 25 Step 2 first, then exact due timestamp, then business name
         filtered.sort((a, b) => a.fu.priority - b.fu.priority || (a.fu.dueMs || 9e15) - (b.fu.dueMs || 9e15) || a.p.business_name.localeCompare(b.p.business_name));
 
-        $('table-count-meta').textContent = `Showing ${filtered.length} of ${prospects.length}`;
+        $('table-count-meta').textContent = L.showingMeta(filtered.length, prospects.length);
 
         if (filtered.length === 0) {
-          $('pipeline-tbody').innerHTML = `<tr><td colspan="7" class="empty-state">No prospects match the active Wave / Status / Search filters.</td></tr>`;
+          $('pipeline-tbody').innerHTML = `<tr><td colspan="7" class="empty-state">${esc(L.emptyTable)}</td></tr>`;
           return;
         }
 
@@ -1692,13 +2510,13 @@
           const lastTip = p.last_viewed_at ? ` title="Last viewed: ${esc(p.last_viewed_at)}"` : '';
           let engHtml;
           if (leads > 0) {
-            engHtml = `<div class="eng-badge eng-lead"${lastTip}><span>★ ${views} view${views === 1 ? '' : 's'} · ${leads} lead${leads === 1 ? '' : 's'}</span><span class="eng-sub">Max Step ${maxStep || 4}/4</span></div>`;
+            engHtml = `<div class="eng-badge eng-lead"${lastTip}><span>${esc(L.engLead(views, leads))}</span><span class="eng-sub">${esc(L.engMaxStep(maxStep || 4))}</span></div>`;
           } else if (maxStep >= 2) {
-            engHtml = `<div class="eng-badge eng-hot"${lastTip}><span>🔥 ${views} view${views === 1 ? '' : 's'} · Step ${maxStep}/4</span><span class="eng-sub">Interactive prospect</span></div>`;
+            engHtml = `<div class="eng-badge eng-hot"${lastTip}><span>${esc(L.engHot(views, maxStep))}</span><span class="eng-sub">${esc(L.engInteractive)}</span></div>`;
           } else if (views > 0) {
-            engHtml = `<div class="eng-badge eng-idle"${lastTip}><span>● ${views} view${views === 1 ? '' : 's'} · Step ${maxStep}/4</span><span class="eng-sub">Page load / scan</span></div>`;
+            engHtml = `<div class="eng-badge eng-idle"${lastTip}><span>${esc(L.engLoad(views, maxStep))}</span><span class="eng-sub">${esc(L.engPageScan)}</span></div>`;
           } else {
-            engHtml = `<div class="eng-badge eng-idle"><span>0 views · Step 0/4</span><span class="eng-sub">${p.telemetry_enabled ? 'Telemetry live' : 'Pending view'}</span></div>`;
+            engHtml = `<div class="eng-badge eng-idle"><span>${esc(L.engZero)}</span><span class="eng-sub">${esc(p.telemetry_enabled ? L.engTelLive : L.engTelPending)}</span></div>`;
           }
 
           const fuHtml = fu.kind === 'muted'
@@ -1706,10 +2524,12 @@
             : `<div class="fu-badge fu-${fu.kind}"><span>${esc(fu.label)}</span><span class="fu-sub">${esc(fu.sub)}</span></div>`;
 
           const demoHtml = p.live_preview_url
-            ? `<a class="demo-btn" href="${esc(p.live_preview_url)}" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>`
-            : `<span class="fu-muted">Not deployed</span>`;
+            ? `<a class="demo-btn" href="${esc(p.live_preview_url)}" target="_blank" rel="noopener noreferrer">${esc(L.liveDemoBtn)}</a>`
+            : `<span class="fu-muted">${esc(L.notDeployed)}</span>`;
 
           const bounceNote = p.bounce_reason ? ` title="${esc(p.bounce_reason)}"` : '';
+          const stLabel = L.statusLabels[st] || st;
+          const vLabel = L.vertNames[vertical] || vertical;
 
           return `
             <tr class="${rowCls}">
@@ -1719,7 +2539,7 @@
                   <div>
                     <div class="biz-name">${esc(p.business_name)}</div>
                     <div class="biz-meta">
-                      <span class="vert-tag v-${vertical.toLowerCase()}">${esc(vertical)}</span>
+                      <span class="vert-tag v-${vertical.toLowerCase()}">${esc(vLabel)}</span>
                       <span class="wave-tag ${waveTagClass(wave)}">${esc(wave)}</span>
                       <span>${esc(p.city)}, ${esc(p.state)}</span>
                       ${kb ? `<span>· ${kb}</span>` : ''}
@@ -1734,7 +2554,7 @@
                 <div class="dm-phone">${esc(p.phone || '')}</div>
               </td>
               <td>
-                <span class="st-badge st-${esc(st)}"${bounceNote}><span class="st-dot"></span>${esc(st)}</span>
+                <span class="st-badge st-${esc(st)}"${bounceNote}><span class="st-dot"></span>${esc(stLabel)}</span>
               </td>
               <td>${demoHtml}</td>
               <td>${engHtml}</td>
@@ -1743,7 +2563,7 @@
                 <div class="act-group">
                   <button type="button" class="copy-cmd-btn" data-cmd="${esc(cmd)}" title="${esc(cmd)}">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                    Copy Step ${nextStep}
+                    ${esc(L.copyStep(nextStep))}
                   </button>
                 </div>
               </td>
@@ -1756,6 +2576,7 @@
         if (!state.crm || !Array.isArray(state.crm.prospects)) return;
         const prospects = state.crm.prospects;
         renderKPIs(prospects);
+        renderNicheRadar(prospects);
         renderHQ(prospects);
         renderFilters(prospects);
         renderTable(prospects);
@@ -1815,30 +2636,32 @@
       }
 
       async function verifyAdminKey(candidateKey) {
+        const L = t();
         const key = String(candidateKey || '').trim();
-        if (!key) return { ok: false, error: 'Please enter your ADMIN_KEY.' };
+        if (!key) return { ok: false, error: L.authErrEmpty };
         try {
           const res = await fetch(`${WORKER_STATS_URL}?secret=${encodeURIComponent(key)}`, {
             headers: { 'X-Admin-Key': key },
             cache: 'no-store',
           });
           if (res.status === 401 || res.status === 403) {
-            return { ok: false, error: 'Invalid ADMIN_KEY — access denied.' };
+            return { ok: false, error: L.authErrInvalid };
           }
           if (!res.ok) {
-            return { ok: false, error: `Verification endpoint returned HTTP ${res.status}.` };
+            return { ok: false, error: `HTTP ${res.status}` };
           }
           const payload = await res.json();
           if (!payload || payload.ok !== true) {
-            return { ok: false, error: 'Invalid ADMIN_KEY — verification failed.' };
+            return { ok: false, error: L.authErrInvalid };
           }
           return { ok: true, telemetry: payload.prospects || {} };
         } catch (err) {
-          return { ok: false, error: `Could not reach Cloudflare Edge auth (${err.message}).` };
+          return { ok: false, error: `Cloudflare Edge auth error (${err.message}).` };
         }
       }
 
       async function fetchLiveWorkerStats() {
+        const L = t();
         if (!state.adminKey) return null;
         try {
           const res = await fetch(`${WORKER_STATS_URL}?secret=${encodeURIComponent(state.adminKey)}`, {
@@ -1853,7 +2676,7 @@
             const kChip = $('kv-chip');
             if (kChip) {
               kChip.className = 'kv-chip';
-              kChip.textContent = `KV LIVE · ${Object.keys(state.liveTelemetry).length} tracked`;
+              kChip.textContent = L.kvLive(Object.keys(state.liveTelemetry).length);
             }
             return state.liveTelemetry;
           }
@@ -1862,32 +2685,35 @@
         const kChip = $('kv-chip');
         if (kChip) {
           kChip.className = 'kv-chip off';
-          kChip.textContent = 'KV: Offline';
+          kChip.textContent = L.kvOffline;
         }
         return null;
       }
 
       function lockDashboard(clearMsg = '') {
+        const L = t();
         state.unlocked = false;
         state.adminKey = '';
         state.crm = null;
+        state.nicheIntel = null;
         state.liveTelemetry = null;
         state.kvOnline = false;
         state.lastFetchOk = false;
         try { sessionStorage.removeItem(AUTH_STORAGE_KEY); } catch {}
         try { localStorage.removeItem(AUTH_STORAGE_KEY); } catch {}
         document.body.classList.add('locked');
-        $('pipeline-tbody').innerHTML = '<tr><td colspan="7" class="empty-state">Locked — enter ADMIN_KEY to view CRM pipeline.</td></tr>';
+        $('pipeline-tbody').innerHTML = `<tr><td colspan="7" class="empty-state">${esc(L.lockedTable)}</td></tr>`;
         $('auth-key-input').value = '';
         $('auth-err').textContent = clearMsg;
         const kChip = $('kv-chip');
-        if (kChip) { kChip.className = 'kv-chip off'; kChip.textContent = 'KV: Locked'; }
+        if (kChip) { kChip.className = 'kv-chip off'; kChip.textContent = L.kvLocked; }
         $('sync-dot').className = 'pulse-dot warn';
-        $('sync-text').textContent = 'Locked — awaiting key';
+        $('sync-text').textContent = L.syncLocked;
         setTimeout(() => $('auth-key-input')?.focus(), 60);
       }
 
       function unlockDashboard(key, telemetryMap, remember) {
+        const L = t();
         state.adminKey = key;
         state.unlocked = true;
         if (telemetryMap) {
@@ -1896,7 +2722,7 @@
           const kChip = $('kv-chip');
           if (kChip) {
             kChip.className = 'kv-chip';
-            kChip.textContent = `KV LIVE · ${Object.keys(telemetryMap).length} tracked`;
+            kChip.textContent = L.kvLive(Object.keys(telemetryMap).length);
           }
         }
         try {
@@ -1915,26 +2741,29 @@
       async function fetchCRM(isManual = false) {
         if (!state.unlocked) return;
         if (state.manualLoaded && !isManual && location.protocol === 'file:') return;
+        const L = t();
         try {
-          const crmReq = fetch(`${CRM_URL}?_=${Date.now()}`, {
-            headers: state.adminKey ? { 'X-Admin-Key': state.adminKey } : {},
-            cache: 'no-store',
-          });
-          const [crmRes, kvMap] = await Promise.all([crmReq, fetchLiveWorkerStats()]);
+          const authHdrs = state.adminKey ? { 'X-Admin-Key': state.adminKey } : {};
+          const crmReq = fetch(`${CRM_URL}?_=${Date.now()}`, { headers: authHdrs, cache: 'no-store' });
+          const nicheReq = fetch(`${NICHE_URL}?_=${Date.now()}`, { headers: authHdrs, cache: 'no-store' }).catch(() => null);
+          const [crmRes, nicheRes, kvMap] = await Promise.all([crmReq, nicheReq, fetchLiveWorkerStats()]);
           if (crmRes.status === 401 || crmRes.status === 403) {
-            lockDashboard('Session key expired or rejected by Edge. Please unlock again.');
+            lockDashboard(L.authErrExpired);
             return;
           }
           if (!crmRes.ok) throw new Error(`HTTP ${crmRes.status}`);
           const data = await crmRes.json();
+          if (nicheRes && nicheRes.ok) {
+            try { state.nicheIntel = await nicheRes.json(); } catch {}
+          }
           state.crm = mergeTelemetry(data, kvMap || state.liveTelemetry);
           state.lastFetchOk = true;
           state.countdown = REFRESH_MS / 1000;
           $('cors-banner').classList.remove('show');
           $('sync-dot').className = 'pulse-dot';
-          $('sync-text').textContent = `LIVE · Synced ${new Date().toLocaleTimeString([], { hour12: false })} (${state.countdown}s)`;
+          $('sync-text').textContent = L.syncSynced(new Date().toLocaleTimeString([], { hour12: false }), state.countdown);
           renderAll();
-          if (isManual) showToast(`CRM + Live KV reloaded (${data.prospects.length} prospects).`);
+          if (isManual) showToast(L.toastReloaded(data.prospects.length));
         } catch (err) {
           state.lastFetchOk = false;
           $('sync-dot').className = 'pulse-dot warn';
@@ -1949,6 +2778,19 @@
 
       // Event delegation
       document.addEventListener('click', e => {
+        const langBtn = e.target.closest('.lang-btn[data-lang]');
+        if (langBtn) { setLanguage(langBtn.dataset.lang, true); return; }
+
+        const focusVBtn = e.target.closest('[data-focus-vertical]');
+        if (focusVBtn) {
+          state.vertical = focusVBtn.dataset.focusVertical;
+          state.wave = 'ALL';
+          state.status = 'ALL';
+          renderAll();
+          document.querySelector('.workspace')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          return;
+        }
+
         const vBtn = e.target.closest('[data-vertical]');
         if (vBtn) { state.vertical = vBtn.dataset.vertical; renderAll(); return; }
 
@@ -1963,7 +2805,6 @@
           state.wave = 'ALL';
           state.status = fl.dataset.filterStatus;
           renderAll();
-          showToast(`Filtered pipeline by ${fl.dataset.filterStatus}`);
           return;
         }
 
@@ -1989,11 +2830,12 @@
       $('btn-reload').addEventListener('click', () => fetchCRM(true));
       $('btn-lock').addEventListener('click', () => {
         lockDashboard('');
-        showToast('Command Center locked.');
+        showToast(t().toastLocked);
       });
 
       $('auth-form').addEventListener('submit', async e => {
         e.preventDefault();
+        const L = t();
         const input = $('auth-key-input');
         const btn = $('auth-submit-btn');
         const errEl = $('auth-err');
@@ -2001,10 +2843,10 @@
         const remember = Boolean($('auth-remember')?.checked);
         errEl.textContent = '';
         btn.disabled = true;
-        btn.textContent = 'Verifying with Cloudflare Edge…';
+        if ($('auth-submit-txt')) $('auth-submit-txt').textContent = L.authVerifying;
         const res = await verifyAdminKey(key);
         btn.disabled = false;
-        btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg> Unlock Command Center';
+        if ($('auth-submit-txt')) $('auth-submit-txt').textContent = t().authSubmit;
         if (!res.ok) {
           errEl.textContent = res.error;
           input.select();
@@ -2012,7 +2854,7 @@
           return;
         }
         unlockDashboard(key, res.telemetry, remember);
-        showToast('Access verified · Live KV telemetry active.');
+        showToast(t().toastUnlocked);
       });
 
       $('crm-file-input').addEventListener('change', e => {
@@ -2044,13 +2886,14 @@
           if (state.countdown <= 0) {
             fetchCRM(false);
           } else {
-            $('sync-text').textContent = `LIVE · Auto-sync in ${state.countdown}s`;
+            $('sync-text').textContent = t().syncAuto(state.countdown);
           }
         }
       }, 1000);
 
-      // Initial boot: auto-verify saved key if present, else stay locked
+      // Initial boot: apply persisted language + auto-verify saved key if present
       (async function boot() {
+        applyStaticTranslations();
         let saved = '';
         let fromLocal = false;
         try {
@@ -2061,13 +2904,13 @@
           }
         } catch {}
         if (saved) {
-          $('auth-err').textContent = 'Restoring verified session…';
+          $('auth-err').textContent = t().authErrRestoring;
           const res = await verifyAdminKey(saved);
           if (res.ok) {
             unlockDashboard(saved, res.telemetry, fromLocal);
             return;
           }
-          lockDashboard('Saved session key is no longer valid — please enter ADMIN_KEY.');
+          lockDashboard(t().authErrSavedBad);
         } else {
           setTimeout(() => $('auth-key-input')?.focus(), 80);
         }

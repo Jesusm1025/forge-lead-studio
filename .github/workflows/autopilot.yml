@@ -40,20 +40,23 @@ jobs:
           SENDER_PHYSICAL_ADDRESS: ${{ secrets.SENDER_PHYSICAL_ADDRESS }}
         run: python scripts/auto_pilot.py --live
 
-      - name: Sync CRM ledger to public dashboard bundle
+      - name: Sync CRM & Niche Intelligence ledgers to public dashboard bundle
         run: |
           mkdir -p public/tracking
           cp tracking/crm_pipeline.json public/tracking/crm_pipeline.json
+          if [ -f tracking/niche_intelligence.json ]; then
+            cp tracking/niche_intelligence.json public/tracking/niche_intelligence.json
+          fi
 
-      - name: Commit and push updated CRM, public dashboard data & autopilot log
+      - name: Commit and push updated CRM, Niche Intelligence & autopilot log
         run: |
           git config user.name "Forge AutoPilot Bot"
           git config user.email "forge-autopilot-bot@users.noreply.github.com"
-          git add tracking/crm_pipeline.json public/tracking/crm_pipeline.json tracking/autopilot.log
+          git add tracking/crm_pipeline.json public/tracking/crm_pipeline.json tracking/niche_intelligence.json public/tracking/niche_intelligence.json tracking/autopilot.log
           if ! git diff --cached --quiet; then
-            git commit -m "chore(autopilot): daily sync [skip ci]"
+            git commit -m "chore(autopilot): daily sync + Agent 00 niche intel [skip ci]"
             git pull --rebase --autostash origin "${GITHUB_REF_NAME:-main}" || true
             git push
           else
-            echo "No CRM or autopilot log changes to commit."
+            echo "No CRM, niche intelligence, or autopilot log changes to commit."
           fi

@@ -1,0 +1,331 @@
+{
+  "schema_version": "1.0.0",
+  "agent": "00-niche-evaluator",
+  "evaluated_at": "2026-11-26T16:29:36Z",
+  "thresholds": {
+    "scale_min_step2_delivered": 10,
+    "scale_min_demo_engagement_rate": 0.08,
+    "scale_min_reply_rate": 0.04,
+    "testing_hold_step2_delivered": 15,
+    "pivot_min_step2_delivered": 18,
+    "pivot_max_demo_engagement_rate": 0.03
+  },
+  "agency_summary": {
+    "mode": "TESTING_DISCIPLINE",
+    "active_vertical_count": 2,
+    "scale_count": 0,
+    "testing_count": 2,
+    "pivot_count": 0,
+    "headline": {
+      "en": "All active verticals in signal-gathering mode — let Cloud AutoPilot deliver 15+ Step 2 demos.",
+      "es": "Todas las verticales activas en recopilación de señal — dejar que Cloud AutoPilot entregue 15+ demos Paso 2."
+    }
+  },
+  "verticals": {
+    "roofing": {
+      "vertical": "roofing",
+      "display_name": {
+        "en": "Residential Roofing",
+        "es": "Techos Residenciales (Roofing)"
+      },
+      "avg_ticket_usd": "$12,500 – $26,000",
+      "verdict": "TESTING",
+      "previous_verdict": "TESTING",
+      "alerted_verdicts": [],
+      "metros": [
+        "Atlanta, GA",
+        "Austin, TX",
+        "Charlotte, NC",
+        "Dallas, TX",
+        "Denver, CO",
+        "Houston, TX",
+        "Jacksonville, FL",
+        "Nashville, TN",
+        "Orlando, FL",
+        "Phoenix, AZ",
+        "Raleigh, NC",
+        "San Antonio, TX",
+        "Tampa, FL"
+      ],
+      "metrics": {
+        "total_prospects": 32,
+        "active_sent": 30,
+        "queued_step_1": 0,
+        "step2_plus_delivered": 3,
+        "engaged_demos": 0,
+        "total_demo_views": 64,
+        "total_leads_captured": 0,
+        "human_replies": 0,
+        "bounces": 2,
+        "unsubscribes": 0,
+        "demo_engagement_rate": 0.0,
+        "reply_rate": 0.0,
+        "bounce_rate": 0.0625,
+        "active_pipeline_setup_usd": 22700,
+        "active_pipeline_mrr_usd": 4520,
+        "active_pipeline_y1_usd": 76940
+      },
+      "recommendation": {
+        "en": {
+          "verdict_label": "TESTING — Gathering Signal",
+          "headline": "Hold Expansion (3/15 Step 2 Demos) & Optimize Copy/Calculator",
+          "summary": "Gathering statistically meaningful signal: 3/15 Step 2+ live demos delivered (0 interactive demos = 0.0%, 0 replies = 0.0%). Hold new wave expansion until 12 more Step 2 deliveries land.",
+          "next_moves": [
+            "Hold new scouting waves until Step 2+ deliveries reach 15 (7 away from SCALE gate at 10+).",
+            "A/B test Step 2 subject lines referencing concrete metro ballpark pricing to lift demo click-through.",
+            "Watch Cloudflare KV for Step 2–4 interactions; call any prospect hitting max_step >= 2 within 15 minutes.",
+            "Pre-stage next target metros once validated: Kansas City, MO, Oklahoma City, OK, Columbus, OH."
+          ],
+          "target_metros": [
+            "Kansas City, MO",
+            "Oklahoma City, OK",
+            "Columbus, OH",
+            "Indianapolis, IN"
+          ],
+          "subject_angles": [
+            "Built a 30-second hail & roof replacement ballpark for {business}",
+            "Quick mobile quote widget for {city} homeowners",
+            "Turning {city} roof clicks into pre-qualified inspections"
+          ],
+          "upsell_addons": [
+            "Storm & Hail Insurance Claim Pre-Qualifier ($299/mo add-on)",
+            "Instant 120-Month Roof Financing Payment Slider ($199/mo add-on)",
+            "After-Hours Emergency Tarping SMS Dispatch Widget ($199/mo add-on)"
+          ]
+        },
+        "es": {
+          "verdict_label": "EN PRUEBA — Recopilando Señal",
+          "headline": "Pausar Expansión (3/15 Demos Paso 2) y Afinar Copy/Calculadora",
+          "summary": "Recopilando señal estadística: 3/15 demos Paso 2+ entregados (0 demos interactivos = 0.0%, 0 respuestas = 0.0%). Espera 12 entregas Paso 2 adicionales antes de abrir una nueva ola.",
+          "next_moves": [
+            "Esperar a alcanzar 15 entregas Paso 2+ antes de abrir otra ola (faltan 7 para evaluar ESCALAR en 10+).",
+            "Probar variantes de asunto en Paso 2 mencionando el rango local estimado para elevar clics al demo.",
+            "Monitorear Cloudflare KV para interacciones en Pasos 2–4 y llamar en menos de 15 min a prospectos activos.",
+            "Mercados pre-seleccionados al validar señal: Kansas City, MO, Oklahoma City, OK, Columbus, OH."
+          ],
+          "target_metros": [
+            "Kansas City, MO",
+            "Oklahoma City, OK",
+            "Columbus, OH",
+            "Indianapolis, IN"
+          ],
+          "subject_angles": [
+            "Creamos una calculadora instantánea de techos y granizo para {business}",
+            "Widget móvil de cotización rápida para propietarios en {city}",
+            "Convierte visitas de {city} en inspecciones pre-calificadas"
+          ],
+          "upsell_addons": [
+            "Pre-Calificador de Reclamos por Granizo y Seguro ($299/mes adicional)",
+            "Simulador de Financiamiento a 120 Meses ($199/mes adicional)",
+            "Widget SMS de Emergencia / Lona 24/7 ($199/mes adicional)"
+          ]
+        }
+      }
+    },
+    "hvac": {
+      "vertical": "hvac",
+      "display_name": {
+        "en": "Residential HVAC Replacement",
+        "es": "Reemplazo Residencial de HVAC"
+      },
+      "avg_ticket_usd": "$9,400 – $19,500",
+      "verdict": "TESTING",
+      "previous_verdict": "TESTING",
+      "alerted_verdicts": [],
+      "metros": [
+        "Atlanta, GA",
+        "Dallas, TX",
+        "Orlando, FL",
+        "Phoenix, AZ",
+        "Tampa, FL"
+      ],
+      "metrics": {
+        "total_prospects": 12,
+        "active_sent": 0,
+        "queued_step_1": 12,
+        "step2_plus_delivered": 0,
+        "engaged_demos": 0,
+        "total_demo_views": 0,
+        "total_leads_captured": 0,
+        "human_replies": 0,
+        "bounces": 0,
+        "unsubscribes": 0,
+        "demo_engagement_rate": 0.0,
+        "reply_rate": 0.0,
+        "bounce_rate": 0.0,
+        "active_pipeline_setup_usd": 9000,
+        "active_pipeline_mrr_usd": 1788,
+        "active_pipeline_y1_usd": 30456
+      },
+      "recommendation": {
+        "en": {
+          "verdict_label": "TESTING — Gathering Signal",
+          "headline": "Hold Expansion (0/15 Step 2 Demos) & Optimize Copy/Calculator",
+          "summary": "12 prospects queued for Step 1 launch (0 Step 2 live demos delivered yet). Hold additional hvac scouting waves until 15+ prospects receive their live demo URL.",
+          "next_moves": [
+            "Hold new scouting waves until Step 2+ deliveries reach 15 (10 away from SCALE gate at 10+).",
+            "A/B test Step 2 subject lines referencing concrete metro ballpark pricing to lift demo click-through.",
+            "Watch Cloudflare KV for Step 2–4 interactions; call any prospect hitting max_step >= 2 within 15 minutes.",
+            "Pre-stage next target metros once validated: Houston, TX, Austin, TX, San Antonio, TX."
+          ],
+          "target_metros": [
+            "Houston, TX",
+            "Austin, TX",
+            "San Antonio, TX",
+            "Charlotte, NC"
+          ],
+          "subject_angles": [
+            "Built a 30-second SEER2 & tonnage replacement quote tool for {business}",
+            "Instant HVAC replacement ballpark + financing for {city} homeowners",
+            "Stop losing {city} AC replacement shoppers who want pricing first"
+          ],
+          "upsell_addons": [
+            "24/7 'No AC' Emergency Dispatch & Triage Widget ($249/mo add-on)",
+            "Federal 25C Heat Pump Tax Credit & Utility Rebate Finder ($199/mo add-on)",
+            "Seasonal Maintenance Club Auto-Enrollment Flow ($199/mo add-on)"
+          ]
+        },
+        "es": {
+          "verdict_label": "EN PRUEBA — Recopilando Señal",
+          "headline": "Pausar Expansión (0/15 Demos Paso 2) y Afinar Copy/Calculadora",
+          "summary": "12 prospectos en cola para el lanzamiento Paso 1 (0 demos Paso 2 entregados aún). Mantén en pausa nuevas olas de hvac hasta que 15+ prospectos reciban su demo en vivo.",
+          "next_moves": [
+            "Esperar a alcanzar 15 entregas Paso 2+ antes de abrir otra ola (faltan 10 para evaluar ESCALAR en 10+).",
+            "Probar variantes de asunto en Paso 2 mencionando el rango local estimado para elevar clics al demo.",
+            "Monitorear Cloudflare KV para interacciones en Pasos 2–4 y llamar en menos de 15 min a prospectos activos.",
+            "Mercados pre-seleccionados al validar señal: Houston, TX, Austin, TX, San Antonio, TX."
+          ],
+          "target_metros": [
+            "Houston, TX",
+            "Austin, TX",
+            "San Antonio, TX",
+            "Charlotte, NC"
+          ],
+          "subject_angles": [
+            "Creamos un cotizador instantáneo SEER2 y tonelaje para {business}",
+            "Estimado inmediato de reemplazo HVAC + financiamiento en {city}",
+            "Captura compradores de aire acondicionado en {city} antes de que llamen a la competencia"
+          ],
+          "upsell_addons": [
+            "Widget de Despacho de Emergencia 'Sin A/C' 24/7 ($249/mes adicional)",
+            "Buscador de Crédito Fiscal Federal 25C y Reembolsos ($199/mes adicional)",
+            "Flujo de Membresía de Mantenimiento Estacional ($199/mes adicional)"
+          ]
+        }
+      }
+    }
+  },
+  "next_vertical_backlog": [
+    {
+      "vertical": "solar",
+      "priority_score": 95,
+      "avg_ticket_usd": "$24,000 – $38,000",
+      "target_metros": [
+        "Phoenix, AZ",
+        "San Diego, CA",
+        "Austin, TX",
+        "Tampa, FL",
+        "Las Vegas, NV"
+      ],
+      "en": {
+        "name": "Residential Solar + Battery Storage",
+        "calculator_hook": "30-second monthly electric bill to solar + battery savings & federal ITC payback estimator",
+        "why_now": "Highest homeowner ticket size ($24k–$38k) and urgent demand for transparent utility offset numbers without pushy door-knocker calls."
+      },
+      "es": {
+        "name": "Energía Solar Residencial + Baterías",
+        "calculator_hook": "Calculadora de 30 segundos: factura eléctrica mensual -> ahorro solar + batería y crédito fiscal federal",
+        "why_now": "Ticket promedio más alto ($24k–$38k) con alta demanda de estimados transparentes sin llamadas invasivas de vendedores."
+      }
+    },
+    {
+      "vertical": "window_door_replacement",
+      "priority_score": 92,
+      "avg_ticket_usd": "$14,000 – $28,000",
+      "target_metros": [
+        "Miami, FL",
+        "Tampa, FL",
+        "Houston, TX",
+        "Dallas, TX",
+        "Charlotte, NC"
+      ],
+      "en": {
+        "name": "Impact Window & Patio Door Replacement",
+        "calculator_hook": "Instant window-count + hurricane impact/Low-E glass pricing & monthly financing ballpark",
+        "why_now": "90%+ of local window contractors hide pricing behind mandatory in-home sales pitches; transparent ballpark calculators convert mobile traffic fast."
+      },
+      "es": {
+        "name": "Reemplazo de Ventanas de Impacto y Puertas",
+        "calculator_hook": "Estimador instantáneo por número de ventanas + vidrio de impacto/Low-E y financiamiento mensual",
+        "why_now": "Más del 90% de instaladores ocultan precios tras citas presenciales; un cotizador transparente convierte tráfico móvil de inmediato."
+      }
+    },
+    {
+      "vertical": "kitchen_bath_remodel",
+      "priority_score": 89,
+      "avg_ticket_usd": "$18,000 – $45,000",
+      "target_metros": [
+        "Atlanta, GA",
+        "Denver, CO",
+        "Nashville, TN",
+        "Raleigh, NC",
+        "Austin, TX"
+      ],
+      "en": {
+        "name": "Kitchen & Walk-In Bath Remodeling",
+        "calculator_hook": "Scope-tier (refresh vs. full gut) + finish grade instant remodel budget & timeline estimator",
+        "why_now": "Remodelers waste hours quoting tire-kickers with $5k budgets; pre-qualifying scope and budget range solves their #1 bottleneck."
+      },
+      "es": {
+        "name": "Remodelación de Cocinas y Baños",
+        "calculator_hook": "Estimador instantáneo por alcance (renovación vs. reforma total) + gama de acabados y tiempo de obra",
+        "why_now": "Los contratistas pierden horas cotizando curiosos sin presupuesto; pre-calificar el rango de inversión resuelve su mayor dolor."
+      }
+    },
+    {
+      "vertical": "concrete_driveways",
+      "priority_score": 85,
+      "avg_ticket_usd": "$8,500 – $16,500",
+      "target_metros": [
+        "Dallas, TX",
+        "Charlotte, NC",
+        "Columbus, OH",
+        "Indianapolis, IN",
+        "Nashville, TN"
+      ],
+      "en": {
+        "name": "Concrete Driveways & Stamped Patios",
+        "calculator_hook": "Square-footage + finish style (broom, stamped, exposed aggregate) + tear-out instant quote",
+        "why_now": "Fragmented independent operators with outdated websites and virtually zero competing SaaS quote widgets."
+      },
+      "es": {
+        "name": "Entradas de Concreto y Patios Estampados",
+        "calculator_hook": "Cotizador por pies cuadrados + acabado (escobillado, estampado, agregado) y demolición previa",
+        "why_now": "Mercado muy fragmentado de contratistas independientes con sitios antiguos y casi cero competencia de widgets SaaS."
+      }
+    },
+    {
+      "vertical": "tree_service",
+      "priority_score": 81,
+      "avg_ticket_usd": "$2,800 – $7,500",
+      "target_metros": [
+        "Atlanta, GA",
+        "Charlotte, NC",
+        "Raleigh, NC",
+        "Orlando, FL",
+        "Houston, TX"
+      ],
+      "en": {
+        "name": "Hazardous Tree Removal & Stump Grinding",
+        "calculator_hook": "Tree height + proximity to structures/powerlines + crane/stump instant removal estimate",
+        "why_now": "Fast sales cycle with high storm-season urgency and immediate need to filter low-margin pruning calls from high-ticket removals."
+      },
+      "es": {
+        "name": "Remoción de Árboles Peligrosos y Destoconado",
+        "calculator_hook": "Estimado inmediato por altura del árbol + cercanía a estructuras/cables + grúa y destoconado",
+        "why_now": "Ciclo de venta rápido con alta urgencia en temporada de tormentas y necesidad de filtrar trabajos pequeños."
+      }
+    }
+  ],
+  "new_transitions": []
+}
