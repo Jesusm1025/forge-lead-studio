@@ -1,0 +1,42 @@
+{
+  "prospect_id": "hvac_phoenix_reliable-air",
+  "scouted_at": "2026-11-26T00:37:18Z",
+  "niche": "hvac",
+  "business_name": "Reliable Air LLC",
+  "location": {
+    "city": "Phoenix",
+    "state": "AZ",
+    "country": "US"
+  },
+  "website_url": "https://reliableairaz.com/",
+  "contact_info": {
+    "decision_maker": "Reliable Air Family Management",
+    "role": "Family Ownership & Management",
+    "email": "info@reliableairaz.com",
+    "phone": "(602) 570-5290",
+    "contact_page_url": "https://reliableairaz.com/contact/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#092C81",
+    "secondary_color_hex": "#0EA5E9",
+    "brand_vibe": "3rd-generation independent Phoenix HVAC contractor since 1996"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage has 0 embedded forms or instant replacement estimators, forcing Phoenix homeowners comparing 3–5 ton AC/heat pump replacements to call before knowing a ballpark range",
+      "Homeowners comparing 3–5 ton SEER2 replacement options on mobile have no instant financing preview before dialing (602) 570-5290"
+    ],
+    "seo_or_speed_leaks": [
+      "No interactive SEER2 & tonnage replacement estimator on reliableairaz.com to capture high-intent after-hours replacement traffic",
+      "High-intent system replacement shoppers bounce to aggregator directories when no rough ballpark is visible"
+    ],
+    "current_lead_capture_method": "Phone-first dispatch and separate contact page with zero interactive sizing or financing estimator"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+    "pitch_hook_english": "Reliableairaz.com has zero embedded instant quote estimator on the homepage — pushing Valley homeowners shopping replacement units off-site without seeing a local SEER2 ballpark.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

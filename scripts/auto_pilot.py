@@ -527,13 +527,36 @@ def run_followup_dispatcher(creds: dict, live_mode: bool, ref_date: date, logger
     sent_today = count_sent_today(crm, today_ymd)
 
     due_now = []
+    queued_step1 = []
     upcoming = []
     skipped = []
 
     for p in crm.get("prospects", []):
         pid = p["prospect_id"]
         st = str(p.get("status", "")).upper()
-        if st in SKIP_STATUSES or st != "SENT":
+        if st in SKIP_STATUSES:
+            skipped.append((pid, st))
+            continue
+
+        if st == "QUEUED_STEP_1":
+            queued_step1.append({
+                "prospect_id": pid,
+                "business_name": p["business_name"],
+                "email": p["email"],
+                "current_step": 0,
+                "next_step": 1,
+                "sent_date": "queued",
+                "due_date": today_ymd,
+                "elapsed_days": 0,
+                "req_days": 0,
+                "has_loom": False,
+                "live_preview_url": p.get("live_preview_url") or "",
+                "is_queued_step1": True,
+                "wave": p.get("wave") or "",
+            })
+            continue
+
+        if st != "SENT":
             skipped.append((pid, st))
             continue
 
@@ -559,6 +582,7 @@ def run_followup_dispatcher(creds: dict, live_mode: bool, ref_date: date, logger
             "req_days": req_days,
             "has_loom": bool((p.get("loom_url") or "").strip()),
             "live_preview_url": p.get("live_preview_url") or "",
+            "is_queued_step1": False,
         }
         if elapsed_days >= req_days:
             due_now.append(item)
@@ -566,20 +590,24 @@ def run_followup_dispatcher(creds: dict, live_mode: bool, ref_date: date, logger
             upcoming.append(item)
 
     due_now.sort(key=lambda x: (x["due_date"], x["business_name"]))
+    queued_step1.sort(key=lambda x: (x["wave"], x["prospect_id"]))
     upcoming.sort(key=lambda x: (x["due_date"], x["business_name"]))
+    dispatch_queue = due_now + queued_step1
 
     logger.log(
         "QUEUE",
-        f"Reference UTC Date: {today_ymd} | Quota used: {sent_today}/{daily_limit} | Due now: {len(due_now)} | Upcoming: {len(upcoming)} | Skipped/Halted: {len(skipped)}",
+        f"Reference UTC Date: {today_ymd} | Quota used: {sent_today}/{daily_limit} | Due follow-ups: {len(due_now)} | Queued Step 1: {len(queued_step1)} | Upcoming: {len(upcoming)} | Skipped/Halted: {len(skipped)}",
     )
 
     dispatched = []
     quota_deferred = []
+    step1_cap = max(1, daily_limit - 1)  # Reserve 1 daily slot for replies/alerts when draining QUEUED_STEP_1
 
-    for item in due_now:
-        if sent_today >= daily_limit:
+    for item in dispatch_queue:
+        cap_for_item = step1_cap if item.get("is_queued_step1") else daily_limit
+        if sent_today >= cap_for_item:
             quota_deferred.append(item)
-            logger.log("QUOTA", f"Daily cap ({daily_limit}/day) reached — deferring {item['business_name']} Step {item['next_step']} to next UTC day.")
+            logger.log("QUOTA", f"Daily cap ({sent_today}/{daily_limit}, Step 1 reserve={step1_cap}) reached — deferring {item['business_name']} Step {item['next_step']} to next UTC day.")
             continue
 
         cmd = [sys.executable, SEND_SCRIPT, item["prospect_id"], "--step", str(item["next_step"])]

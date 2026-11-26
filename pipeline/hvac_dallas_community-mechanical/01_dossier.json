@@ -1,0 +1,42 @@
+{
+  "prospect_id": "hvac_dallas_community-mechanical",
+  "scouted_at": "2026-11-26T00:37:18Z",
+  "niche": "hvac",
+  "business_name": "Community Mechanical",
+  "location": {
+    "city": "Dallas",
+    "state": "TX",
+    "country": "US"
+  },
+  "website_url": "https://communitydfw.com/",
+  "contact_info": {
+    "decision_maker": "Travis Gafford & Andrew Waggoner",
+    "role": "Managing Owners",
+    "email": "info@communitydfw.com",
+    "phone": "(469) 667-7290",
+    "contact_page_url": "https://communitydfw.com/contact/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#1B3A6B",
+    "secondary_color_hex": "#EA4335",
+    "brand_vibe": "Local DFW family-operated HVAC & mechanical replacement team"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage contains 0 embedded quote forms or interactive sizing widgets, forcing DFW mobile visitors to call or navigate off-page without seeing any local SEER2 price ballpark",
+      "Homeowners comparing 3–5 ton SEER2 replacement options on mobile have no instant financing preview before dialing (469) 667-7290"
+    ],
+    "seo_or_speed_leaks": [
+      "No interactive SEER2 & tonnage replacement estimator on communitydfw.com to capture high-intent after-hours replacement traffic",
+      "High-intent system replacement shoppers bounce to aggregator directories when no rough ballpark is visible"
+    ],
+    "current_lead_capture_method": "Click-to-call phone line and static contact link with no instant system estimator"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+    "pitch_hook_english": "Communitydfw.com has zero embedded quote calculator on the homepage — leaving DFW homeowners guessing on turnkey AC + furnace costs and monthly financing before reaching out.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

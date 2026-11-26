@@ -1,0 +1,42 @@
+{
+  "prospect_id": "hvac_phoenix_mark-daniels-ac",
+  "scouted_at": "2026-11-26T00:37:18Z",
+  "niche": "hvac",
+  "business_name": "Mark Daniels Air Conditioning & Heating",
+  "location": {
+    "city": "Phoenix",
+    "state": "AZ",
+    "country": "US"
+  },
+  "website_url": "https://markdanielsac.com/",
+  "contact_info": {
+    "decision_maker": "Mark Daniel Schilling",
+    "role": "Founder & Owner",
+    "email": "Service@markdanielsac.com",
+    "phone": "(480) 571-7219",
+    "contact_page_url": "https://markdanielsac.com/contact-us/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#07527B",
+    "secondary_color_hex": "#CE192C",
+    "brand_vibe": "Established East Valley & Phoenix HVAC specialists since 1996"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage loads a heavy 19-input static form with zero interactive tonnage sizing, SEER2 tier comparison, or monthly payment preview before asking homeowners to submit",
+      "Homeowners comparing 3–5 ton SEER2 replacement options on mobile have no instant financing preview before dialing (480) 571-7219"
+    ],
+    "seo_or_speed_leaks": [
+      "No interactive SEER2 & tonnage replacement estimator on markdanielsac.com to capture high-intent after-hours replacement traffic",
+      "High-intent system replacement shoppers bounce to aggregator directories when no rough ballpark is visible"
+    ],
+    "current_lead_capture_method": "19-input static web form plus phone dispatch with no upfront replacement cost calculator"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+    "pitch_hook_english": "Mobile visitors on markdanielsac.com face a heavy 19-input static form with zero instant Valley AC replacement ballpark or monthly financing estimate shown upfront.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

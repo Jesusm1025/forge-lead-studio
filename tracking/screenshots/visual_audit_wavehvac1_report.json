@@ -1,0 +1,698 @@
+[
+  {
+    "slug": "service-smith-hvac",
+    "url": "https://service-smith-hvac-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Service Smith, L.L.C. — Instant HVAC Replacement & SEER2 Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 475,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://service-smith-hvac-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\service-smith-hvac_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$10,200 – $14,800",
+      "revealedMonthly": "$135/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\service-smith-hvac_mobile.png"
+    },
+    "widget_live_bytes": 28583,
+    "passed": true
+  },
+  {
+    "slug": "reliable-air-hvac",
+    "url": "https://reliable-air-hvac-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Reliable Air LLC — Instant HVAC Replacement & SEER2 Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 475,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://reliable-air-hvac-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\reliable-air-hvac_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$10,200 – $14,800",
+      "revealedMonthly": "$135/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\reliable-air-hvac_mobile.png"
+    },
+    "widget_live_bytes": 28579,
+    "passed": true
+  },
+  {
+    "slug": "mark-daniels-ac-hvac",
+    "url": "https://mark-daniels-ac-hvac-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Mark Daniels Air Conditioning & Heating — Instant HVAC Replacement & SEER2 Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 475,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://mark-daniels-ac-hvac-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\mark-daniels-ac-hvac_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$10,200 – $14,800",
+      "revealedMonthly": "$135/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\mark-daniels-ac-hvac_mobile.png"
+    },
+    "widget_live_bytes": 28601,
+    "passed": true
+  },
+  {
+    "slug": "dfw-hvac",
+    "url": "https://dfw-hvac-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "DFW HVAC — Instant HVAC Replacement & SEER2 Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 475,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://dfw-hvac-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\dfw-hvac_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$9,800 – $14,200",
+      "revealedMonthly": "$129/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\dfw-hvac_mobile.png"
+    },
+    "widget_live_bytes": 28556,
+    "passed": true
+  },
+  {
+    "slug": "reliant-ac-hvac",
+    "url": "https://reliant-ac-hvac-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Reliant Air Conditioning — Instant HVAC Replacement & SEER2 Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 475,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://reliant-ac-hvac-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\reliant-ac-hvac_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$9,800 – $14,200",
+      "revealedMonthly": "$129/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\reliant-ac-hvac_mobile.png"
+    },
+    "widget_live_bytes": 28575,
+    "passed": true
+  },
+  {
+    "slug": "community-mechanical-hvac",
+    "url": "https://community-mechanical-hvac-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Community Mechanical — Instant HVAC Replacement & SEER2 Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 475,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://community-mechanical-hvac-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\community-mechanical-hvac_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$9,800 – $14,200",
+      "revealedMonthly": "$129/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\community-mechanical-hvac_mobile.png"
+    },
+    "widget_live_bytes": 28576,
+    "passed": true
+  },
+  {
+    "slug": "3h-ac-hvac",
+    "url": "https://3h-ac-hvac-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "3H AC of Tampa — Instant HVAC Replacement & SEER2 Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 475,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://3h-ac-hvac-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\3h-ac-hvac_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$9,600 – $13,800",
+      "revealedMonthly": "$127/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\3h-ac-hvac_mobile.png"
+    },
+    "widget_live_bytes": 28565,
+    "passed": true
+  },
+  {
+    "slug": "ac-guy-tampa-hvac",
+    "url": "https://ac-guy-tampa-hvac-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "The A/C Guy of Tampa Bay Inc. — Instant HVAC Replacement & SEER2 Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 475,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://ac-guy-tampa-hvac-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\ac-guy-tampa-hvac_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$9,600 – $13,800",
+      "revealedMonthly": "$127/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\ac-guy-tampa-hvac_mobile.png"
+    },
+    "widget_live_bytes": 28577,
+    "passed": true
+  },
+  {
+    "slug": "ac-mechanix-hvac",
+    "url": "https://ac-mechanix-hvac-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "A/C Mechanix — Instant HVAC Replacement & SEER2 Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 475,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://ac-mechanix-hvac-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\ac-mechanix-hvac_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$9,600 – $13,800",
+      "revealedMonthly": "$127/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\ac-mechanix-hvac_mobile.png"
+    },
+    "widget_live_bytes": 28572,
+    "passed": true
+  },
+  {
+    "slug": "bartlett-hvac",
+    "url": "https://bartlett-hvac-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "Bartlett Heating & Cooling — Instant HVAC Replacement & SEER2 Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 475,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://bartlett-hvac-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\bartlett-hvac_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$9,400 – $13,600",
+      "revealedMonthly": "$124/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\bartlett-hvac_mobile.png"
+    },
+    "widget_live_bytes": 28592,
+    "passed": true
+  },
+  {
+    "slug": "climatesmith-hvac",
+    "url": "https://climatesmith-hvac-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "ClimateSmith, LLC — Instant HVAC Replacement & SEER2 Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 475,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://climatesmith-hvac-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\climatesmith-hvac_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$9,400 – $13,600",
+      "revealedMonthly": "$124/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\climatesmith-hvac_mobile.png"
+    },
+    "widget_live_bytes": 28576,
+    "passed": true
+  },
+  {
+    "slug": "all-airs-hvac",
+    "url": "https://all-airs-hvac-demo.pages.dev",
+    "http_root": 200,
+    "http_widget": 200,
+    "console_errors": [],
+    "failed_requests": [],
+    "desktop": {
+      "title": "All Airs Home Services — Instant HVAC Replacement & SEER2 Financing Estimator (Live Prototype)",
+      "shadowMounted": true,
+      "cardWidth": 546,
+      "cardHeight": 475,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "overflow": false,
+      "embedText": "<div id=\"trojan-quote-widget\"></div><script src=\"https://all-airs-hvac-demo.pages.dev/widget.js\" defer></script>",
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\all-airs-hvac_desktop.png"
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "pinchZoomOk": true,
+      "shadowMounted": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowStep1": false,
+      "clippedStep1": [],
+      "step1Text": "Step 1 of 4",
+      "stepsSeen": [
+        "Step 2 of 4",
+        "Step 3 of 4",
+        "Step 4 of 4"
+      ],
+      "overflows": [
+        {
+          "step": 2,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 3,
+          "docOverflow": false,
+          "clipped": 0
+        },
+        {
+          "step": 4,
+          "docOverflow": false,
+          "clipped": 0
+        }
+      ],
+      "revealedPrice": "$9,400 – $13,600",
+      "revealedMonthly": "$124/mo",
+      "hasBookingForm": true,
+      "hasStormBanner": true,
+      "screenshot": "c:\\agencia\\tracking\\screenshots\\all-airs-hvac_mobile.png"
+    },
+    "widget_live_bytes": 28575,
+    "passed": true
+  }
+]

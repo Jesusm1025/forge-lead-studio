@@ -1,0 +1,74 @@
+{
+  "prospect_id": "hvac_dallas_reliant-ac",
+  "generated_at": "2026-11-26T00:37:18Z",
+  "target_recipients": [
+    "Jeff Stewart <service@reliantairconditioning.com>"
+  ],
+  "primary_channel": "cold_email",
+  "emails": [
+    {
+      "step": 1,
+      "delay_days": 0,
+      "subject_line_a": "Quick HVAC build for Reliant Air Conditioning",
+      "subject_line_b": "Instant SEER2 estimator for reliantairconditioning.com",
+      "body_text": "Hey Jeff,\n\nI was looking at reliantairconditioning.com — huge respect for leading Reliant Air Conditioning as an independent DFW family HVAC institution since 1983.\n\nOne mobile leak caught my eye: reliantairconditioning.com has zero embedded instant quote widget on the homepage — forcing DFW homeowners comparing system replacements to call blind without a ballpark or payment preview.\n\nSo I built a working 30-second Dallas HVAC Estimator in your crimson-and-gold Reliant Air Conditioning branding. Homeowners pick home size, system type, SEER2 tier, and ductwork for an instant local ballpark before leaving their name, phone, and address.\n\nMind if I send the live preview link?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 107,
+      "psychological_trigger": "Reciprocity + permission-based value-first hook"
+    },
+    {
+      "step": 2,
+      "delay_days": 3,
+      "subject_line_a": "Your crimson-and-gold Reliant Air Conditioning HVAC demo",
+      "subject_line_b": "Live preview: Dallas HVAC quote widget",
+      "body_text": "Hey Jeff,\n\nHere is the working Dallas HVAC replacement prototype I built for Reliant Air Conditioning:\n\nLive demo: {{preview_url}}\n60-sec video: {{loom_url}}\n\nIt is calibrated for Dallas–Fort Worth Metroplex installs (for example, a 3–3.5 ton 16–18 SEER2 system prices at $9,800–$14,200, from $129/mo), captures full system specs plus street address, and drops onto reliantairconditioning.com with one line of code in 5 minutes — zero redesign.\n\nWant to put it live on reliantairconditioning.com this week?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 79,
+      "psychological_trigger": "Tangible proof + zero-redesign friction removal"
+    },
+    {
+      "step": 3,
+      "delay_days": 7,
+      "subject_line_a": "Capturing after-hours Dallas AC replacements",
+      "subject_line_b": "1 replacement pays for your quote tool 10x",
+      "body_text": "Hey Jeff,\n\nQuick thought on replacement season across Dallas: homeowners shopping a $9,800–$14,200 AC or heat pump upgrade after hours hate calling blind, so most bounce to national directories.\n\nYour custom Reliant Air Conditioning calculator ({{preview_url}}) shows them a transparent SEER2 ballpark and $129/mo financing preview in 30 seconds — then routes their tonnage, system choice, and street address straight to your team.\n\nOne extra system changeout pays for the $750 setup and $149/mo hosting 10x over. Open to a quick 10-minute look?\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 88,
+      "psychological_trigger": "Asymmetric ROI anchor ($750 setup vs $10k+ changeout)"
+    },
+    {
+      "step": 4,
+      "delay_days": 12,
+      "subject_line_a": "Leaving your Reliant Air Conditioning demo live",
+      "subject_line_b": "Keep your Dallas HVAC preview live?",
+      "body_text": "Hey Jeff,\n\nI know dispatch boards stay packed across Dallas, so I will keep this brief.\n\nI will leave your branded Reliant Air Conditioning HVAC estimator live here for a few more days: {{preview_url}}\n\nIf adding instant SEER2 ballpark quotes to reliantairconditioning.com ever makes sense, just reply \"yes\" and we will install it in 5 minutes.\n\n— {{sender_name}}\n\n{{sender_address}} | {{unsubscribe_line}}",
+      "word_count": 61,
+      "psychological_trigger": "Zero-pressure takeaway close"
+    }
+  ],
+  "linkedin_dm_touch": {
+    "connection_note": "Hey Jeff, Big fan of Reliant Air Conditioning in Dallas. I noticed reliantairconditioning.com has no instant HVAC ballpark tool for mobile shoppers, so I built a working <30KB SEER2 estimator in your brand colors. Happy to send the live link — no pitch.",
+    "follow_up_dm": "Thanks for connecting! Here is the working Dallas HVAC replacement calculator I built for Reliant Air Conditioning: {{preview_url}} — drops onto reliantairconditioning.com in 5 minutes with zero redesign."
+  },
+  "loom_60s_script": {
+    "hook_0_15s": "Open https://reliantairconditioning.com/ on mobile and acknowledge Reliant Air Conditioning's local Dallas reputation while showing the missing instant ballpark.",
+    "pain_comparison_15_35s": "Contrast reliantairconditioning.com has zero embedded instant quote widget on the homepage — forcing DFW homeowners comparing system replacements to call blind without a ballpark or payment preview with how after-hours AC replacement shoppers expect a rough SEER2 and monthly payment preview.",
+    "live_demo_walkthrough_35_50s": "Click through Steps 1–4 on live {{preview_url}} (3–3.5 ton Central AC + Gas Furnace 16–18 SEER2 = $9,800–$14,200, from $129/mo) and submit a sample lead with street address.",
+    "zero_pressure_cta_50_60s": "Show the live trojan:lead_captured CRM webhook payload and invite Jeff to drop the 1-line <30 KB script onto reliantairconditioning.com for $750 setup + $149/mo."
+  },
+  "objection_handlers": [
+    {
+      "objection": "We do not want to publish exact prices without doing a Manual-J load calculation.",
+      "reframe_response": "Totally agree — that is why the widget intentionally displays a realistic Dallas installed range ($9,800–$14,200) with a Manual-J confirmation disclaimer so tire-kickers self-filter and serious homeowners book."
+    },
+    {
+      "objection": "We already use ServiceTitan, Housecall Pro, or our own contact form.",
+      "reframe_response": "This drops right alongside your existing stack and fires a clean JSON webhook (tonnage, system type, SEER2 tier, ductwork, and street address) directly into your dispatch inbox, SMS, or CRM."
+    },
+    {
+      "objection": "Will adding a calculator slow down our site or break our theme?",
+      "reframe_response": "Zero external libraries and under 30 KB of pure Shadow DOM vanilla JS — installs with one script tag in 5 minutes and cannot conflict with existing CSS or hurt Core Web Vitals."
+    },
+    {
+      "objection": "Why is there a $149/mo retainer after the $750 setup?",
+      "reframe_response": "It covers global Cloudflare edge hosting, instant lead routing uptime, and quarterly SEER2 equipment/financing price updates whenever distributor costs shift — a single extra system replacement pays for years of it."
+    }
+  ]
+}

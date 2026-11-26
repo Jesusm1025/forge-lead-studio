@@ -1,0 +1,42 @@
+{
+  "prospect_id": "hvac_atlanta_all-airs",
+  "scouted_at": "2026-11-26T00:37:18Z",
+  "niche": "hvac",
+  "business_name": "All Airs Home Services",
+  "location": {
+    "city": "Atlanta",
+    "state": "GA",
+    "country": "US"
+  },
+  "website_url": "https://allairshomeservices.com/",
+  "contact_info": {
+    "decision_maker": "John Kenney",
+    "role": "Owner",
+    "email": "leads@allairshomeservices.com",
+    "phone": "(770) 445-2700",
+    "contact_page_url": "https://allairshomeservices.com/contact/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#072A4A",
+    "secondary_color_hex": "#8AC735",
+    "brand_vibe": "Metro Atlanta & Kennesaw residential HVAC & home comfort pros"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage contains 0 embedded forms or instant replacement calculators, leaving Metro Atlanta mobile shoppers with no upfront tonnage, SEER2, or financing guidance",
+      "Homeowners comparing 3–5 ton SEER2 replacement options on mobile have no instant financing preview before dialing (770) 445-2700"
+    ],
+    "seo_or_speed_leaks": [
+      "No interactive SEER2 & tonnage replacement estimator on allairshomeservices.com to capture high-intent after-hours replacement traffic",
+      "High-intent system replacement shoppers bounce to aggregator directories when no rough ballpark is visible"
+    ],
+    "current_lead_capture_method": "Phone-first dispatch and separate contact page without an interactive replacement estimator"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+    "pitch_hook_english": "Allairshomeservices.com has zero embedded instant quote estimator on the homepage — forcing Atlanta mobile homeowners to call without seeing a rough AC or heat pump ballpark.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

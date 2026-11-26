@@ -1,0 +1,42 @@
+{
+  "prospect_id": "hvac_tampa_3h-ac",
+  "scouted_at": "2026-11-26T00:37:18Z",
+  "niche": "hvac",
+  "business_name": "3H AC of Tampa",
+  "location": {
+    "city": "Tampa",
+    "state": "FL",
+    "country": "US"
+  },
+  "website_url": "https://3hac.com/",
+  "contact_info": {
+    "decision_maker": "Sarah, Brian & Tom Hebert",
+    "role": "Family Owners",
+    "email": "3hac@3hcontracting.com",
+    "phone": "(813) 979-4208",
+    "contact_page_url": "https://3hac.com/contact/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#191926",
+    "secondary_color_hex": "#4E35DF",
+    "brand_vibe": "50+ year multi-generational Tampa Bay family HVAC specialists"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage contains 0 embedded quote forms or instant replacement calculators, forcing Tampa Bay mobile visitors to dial during business hours without seeing a rough system ballpark",
+      "Homeowners comparing 3–5 ton SEER2 replacement options on mobile have no instant financing preview before dialing (813) 979-4208"
+    ],
+    "seo_or_speed_leaks": [
+      "No interactive SEER2 & tonnage replacement estimator on 3hac.com to capture high-intent after-hours replacement traffic",
+      "High-intent system replacement shoppers bounce to aggregator directories when no rough ballpark is visible"
+    ],
+    "current_lead_capture_method": "Click-to-call phone dispatch and separate contact page without upfront replacement pricing"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+    "pitch_hook_english": "3hac.com has zero embedded instant quote form on the homepage — leaving Tampa Bay mobile homeowners with no quick way to preview coastal SEER2 replacement pricing before calling.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

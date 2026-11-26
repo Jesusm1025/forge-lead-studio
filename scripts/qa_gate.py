@@ -6,7 +6,7 @@ import subprocess
 import sys
 from datetime import datetime, timezone
 
-ROOT = r"c:\agencia"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCHEMAS_DIR = os.path.join(ROOT, "schemas")
 PIPELINE_DIR = os.path.join(ROOT, "pipeline")
 
@@ -161,46 +161,83 @@ if (!host.shadowRoot) throw new Error('Shadow root missing');
 const rootEl = host.shadowRoot.children[1];
 const clickAct = (act, val) => rootEl.dispatch('click', { target: { closest: () => ({ dataset: { act, val: String(val) } }) } });
 
+const isHvac = spec.vertical === 'hvac' || spec.template_base === 'hvac-quote-calc';
 clickAct('step', 2); clickAct('step', 3); clickAct('step', 4);
 rootEl.dispatch('input', { target: { id: 'f-name', value: 'QA Test Homeowner' } });
 rootEl.dispatch('input', { target: { id: 'f-contact', value: '5125550199' } });
+if (isHvac) {
+  rootEl.dispatch('input', { target: { id: 'f-address', value: '1420 Oakridge Dr, 85016' } });
+}
 rootEl.dispatch('submit', { target: { id: 'lead-form' }, preventDefault() {} });
 
 if (events.length !== 1 || events[0].type !== 'trojan:lead_captured') {
   throw new Error('trojan:lead_captured event failed');
 }
 
-// Exhaustive 108-case + 0% APR math matrix
-const calc = sb.TrojanRoofCalc.calculate;
 const eng = spec.pricing_engine;
-const sqfts = [1200, 1600, 2400, 4500];
-const stories = ['one_story', 'two_story', 'three_plus'];
-const pitches = ['low', 'standard', 'steep'];
-const mats = ['architectural_shingle', 'standing_seam_metal', 'designer_tile'];
-
 let cases = 0;
-for (const sqft of sqfts) {
-  for (const s of stories) {
-    for (const p of pitches) {
-      for (const m of mats) {
-        const res = calc({ sqft, stories: s, pitch: p, material: m }, eng);
-        if (!Number.isFinite(res.min_usd) || !Number.isFinite(res.max_usd) || !Number.isFinite(res.monthly_min_usd)) {
-          throw new Error('Non-finite math output: ' + JSON.stringify(res));
+let baseline;
+let baselineLabel;
+
+if (isHvac) {
+  const calc = (sb.TrojanHvacCalc || sb.TrojanQuoteCalc).calculate;
+  const sizes = ['under_1500', '1500_2200', '2200_3000', 'over_3000'];
+  const systems = ['ac_gas_furnace', 'heat_pump', 'ac_coil_only', 'ductless_minisplit'];
+  const tiers = ['standard_seer2', 'high_seer2', 'variable_seer2'];
+  const ducts = ['ok', 'needs_mod'];
+  for (const homeSize of sizes) {
+    for (const systemType of systems) {
+      for (const seerTier of tiers) {
+        for (const ductwork of ducts) {
+          const res = calc({ homeSize, systemType, seerTier, ductwork }, eng);
+          if (!Number.isFinite(res.min_usd) || !Number.isFinite(res.max_usd) || !Number.isFinite(res.monthly_min_usd)) {
+            throw new Error('Non-finite HVAC math output: ' + JSON.stringify(res));
+          }
+          if (!(res.min_usd > 0 && res.max_usd > res.min_usd && res.monthly_min_usd > 0)) {
+            throw new Error('Invalid HVAC pricing bounds: ' + JSON.stringify(res));
+          }
+          cases++;
         }
-        if (!(res.min_usd > 0 && res.max_usd > res.min_usd && res.monthly_min_usd > 0)) {
-          throw new Error('Invalid pricing bounds: ' + JSON.stringify(res));
-        }
-        cases++;
       }
     }
   }
+  const zeroApr = calc({ homeSize: '1500_2200', systemType: 'ac_gas_furnace', seerTier: 'high_seer2', ductwork: 'ok' }, { ...eng, financing_apr_percent: 0 });
+  if (!Number.isFinite(zeroApr.monthly_min_usd) || zeroApr.monthly_min_usd <= 0) {
+    throw new Error('0% APR edge case failed');
+  }
+  baseline = calc({ homeSize: '1500_2200', systemType: 'ac_gas_furnace', seerTier: 'high_seer2', ductwork: 'ok' }, eng);
+  baselineLabel = '1,500–2,200 sq ft (3–3.5 Ton) Central AC + Gas Furnace 16–18 SEER2';
+} else {
+  const calc = sb.TrojanRoofCalc.calculate;
+  const sqfts = [1200, 1600, 2400, 4500];
+  const stories = ['one_story', 'two_story', 'three_plus'];
+  const pitches = ['low', 'standard', 'steep'];
+  const mats = ['architectural_shingle', 'standing_seam_metal', 'designer_tile'];
+
+  for (const sqft of sqfts) {
+    for (const s of stories) {
+      for (const p of pitches) {
+        for (const m of mats) {
+          const res = calc({ sqft, stories: s, pitch: p, material: m }, eng);
+          if (!Number.isFinite(res.min_usd) || !Number.isFinite(res.max_usd) || !Number.isFinite(res.monthly_min_usd)) {
+            throw new Error('Non-finite math output: ' + JSON.stringify(res));
+          }
+          if (!(res.min_usd > 0 && res.max_usd > res.min_usd && res.monthly_min_usd > 0)) {
+            throw new Error('Invalid pricing bounds: ' + JSON.stringify(res));
+          }
+          cases++;
+        }
+      }
+    }
+  }
+  const zeroApr = calc({ sqft: 2400, stories: 'one_story', pitch: 'standard', material: 'architectural_shingle' }, { ...eng, financing_apr_percent: 0 });
+  if (!Number.isFinite(zeroApr.monthly_min_usd) || zeroApr.monthly_min_usd <= 0) {
+    throw new Error('0% APR edge case failed');
+  }
+  baseline = calc({ sqft: 2400, stories: 'one_story', pitch: 'standard', material: 'architectural_shingle' }, eng);
+  baselineLabel = '2,400 sq ft 1-Story Standard Shingle';
 }
-const zeroApr = calc({ sqft: 2400, stories: 'one_story', pitch: 'standard', material: 'architectural_shingle' }, { ...eng, financing_apr_percent: 0 });
-if (!Number.isFinite(zeroApr.monthly_min_usd) || zeroApr.monthly_min_usd <= 0) {
-  throw new Error('0% APR edge case failed');
-}
-const baseline = calc({ sqft: 2400, stories: 'one_story', pitch: 'standard', material: 'architectural_shingle' }, eng);
-console.log(JSON.stringify({ ok: true, cases_tested: cases + 1, baseline, event_fired: true }));
+console.log(JSON.stringify({ ok: true, cases_tested: cases + 1, baseline, baseline_label: baselineLabel, event_fired: true }));
 """
     res = subprocess.run(["node", "-e", js_code, widget_path, spec_path], capture_output=True, text=True)
     if res.returncode != 0:
@@ -338,8 +375,8 @@ def audit_prospect(prospect_id: str):
             g3_issues.append(f"Outreach copy sample pricing does not match live calculator baseline ({expected_range_str}, {expected_mo_str})")
     g3_pass = len(g3_issues) == 0
     g3_notes = (
-        f"Tested {rt['cases_tested']} input combinations (108 full sqft/story/pitch/material permutations + 0% APR edge case) "
-        f"with 0 NaN/bounds errors. Baseline 2,400 sq ft 1-Story Standard Shingle = ${rt['baseline']['min_usd']:,}–${rt['baseline']['max_usd']:,} "
+        f"Tested {rt['cases_tested']} input combinations (full pricing permutation matrix + 0% APR edge case) "
+        f"with 0 NaN/bounds errors. Baseline {rt.get('baseline_label', 'standard')} = ${rt['baseline']['min_usd']:,}–${rt['baseline']['max_usd']:,} "
         f"(from ${rt['baseline']['monthly_min_usd']:,}/mo at {rt['baseline']['apr_percent']}% APR/{rt['baseline']['term_months']} mos), matching outreach copy verbatim."
         if g3_pass else "; ".join(g3_issues)
     )

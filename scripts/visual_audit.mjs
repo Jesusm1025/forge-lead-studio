@@ -48,10 +48,24 @@ const WAVES = {
     { slug: 'mr-goodroof', url: 'https://mr-goodroof-demo.pages.dev', expectedMin: '$13,200' },
     { slug: 'he-parmer', url: 'https://he-parmer-demo.pages.dev', expectedMin: '$13,200' },
   ],
+  'hvac1': [
+    { slug: 'service-smith-hvac', url: 'https://service-smith-hvac-demo.pages.dev', expectedMin: '$10,200', vertical: 'hvac' },
+    { slug: 'reliable-air-hvac', url: 'https://reliable-air-hvac-demo.pages.dev', expectedMin: '$10,200', vertical: 'hvac' },
+    { slug: 'mark-daniels-ac-hvac', url: 'https://mark-daniels-ac-hvac-demo.pages.dev', expectedMin: '$10,200', vertical: 'hvac' },
+    { slug: 'dfw-hvac', url: 'https://dfw-hvac-demo.pages.dev', expectedMin: '$9,800', vertical: 'hvac' },
+    { slug: 'reliant-ac-hvac', url: 'https://reliant-ac-hvac-demo.pages.dev', expectedMin: '$9,800', vertical: 'hvac' },
+    { slug: 'community-mechanical-hvac', url: 'https://community-mechanical-hvac-demo.pages.dev', expectedMin: '$9,800', vertical: 'hvac' },
+    { slug: '3h-ac-hvac', url: 'https://3h-ac-hvac-demo.pages.dev', expectedMin: '$9,600', vertical: 'hvac' },
+    { slug: 'ac-guy-tampa-hvac', url: 'https://ac-guy-tampa-hvac-demo.pages.dev', expectedMin: '$9,600', vertical: 'hvac' },
+    { slug: 'ac-mechanix-hvac', url: 'https://ac-mechanix-hvac-demo.pages.dev', expectedMin: '$9,600', vertical: 'hvac' },
+    { slug: 'bartlett-hvac', url: 'https://bartlett-hvac-demo.pages.dev', expectedMin: '$9,400', vertical: 'hvac' },
+    { slug: 'climatesmith-hvac', url: 'https://climatesmith-hvac-demo.pages.dev', expectedMin: '$9,400', vertical: 'hvac' },
+    { slug: 'all-airs-hvac', url: 'https://all-airs-hvac-demo.pages.dev', expectedMin: '$9,400', vertical: 'hvac' },
+  ],
 };
 const waveArgIdx = process.argv.indexOf('--wave');
 const WAVE_KEY = waveArgIdx !== -1 && process.argv[waveArgIdx + 1] ? process.argv[waveArgIdx + 1].toLowerCase() : '1';
-const TARGETS = WAVE_KEY === 'all' ? [...WAVES['1'], ...WAVES['1b'], ...WAVES['1c'], ...WAVES['1d']] : (WAVES[WAVE_KEY] || WAVES['1']);
+const TARGETS = WAVE_KEY === 'all' ? [...WAVES['1'], ...WAVES['1b'], ...WAVES['1c'], ...WAVES['1d'], ...WAVES['hvac1']] : (WAVES[WAVE_KEY] || WAVES['1']);
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
@@ -241,7 +255,7 @@ async function auditSite(cdp, target) {
     stepsSeen.push(sr.querySelector('.pill')?.textContent?.trim());
     overflows.push({ step: 2, docOverflow: document.documentElement.scrollWidth > document.documentElement.clientWidth, clipped: checkClip() });
 
-    // Select Storm on Step 2, go -> 3
+    // Step 2 interaction (Storm for roofing, keep default Central AC + Gas Furnace for HVAC), go -> 3
     sr.querySelector('[data-act="cond"][data-val="storm"]')?.click();
     await wait(80);
     sr.querySelector('[data-act="step"][data-val="3"]')?.click();
@@ -261,7 +275,7 @@ async function auditSite(cdp, target) {
       revealedPrice: sr.getElementById('rev-range')?.textContent?.trim() || '',
       revealedMonthly: sr.getElementById('rev-mo')?.textContent?.trim() || '',
       hasBookingForm: Boolean(sr.getElementById('lead-form')),
-      hasStormBanner: Boolean(sr.querySelector('.storm'))
+      hasStormBanner: Boolean(sr.querySelector('.storm') || sr.querySelector('.rebate'))
     };
   })()`);
 

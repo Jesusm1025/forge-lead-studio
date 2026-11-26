@@ -1,0 +1,125 @@
+{
+  "prospect_id": "hvac_dallas_dfw-hvac",
+  "architected_at": "2026-11-26T00:37:18Z",
+  "template_base": "hvac-quote-calc",
+  "vertical": "hvac",
+  "telemetry_endpoint": "https://forge-lead-router.forge-lead-studio.workers.dev/event",
+  "delivery_mode": "demo",
+  "brand_config": {
+    "business_name": "DFW HVAC",
+    "tagline": "3rd-Generation Dallas–Fort Worth HVAC Replacement Specialists",
+    "primary_hex": "#003153",
+    "secondary_hex": "#F77F00",
+    "surface_hex": "#F6F9FC",
+    "text_hex": "#0E2235",
+    "cta_label": "Schedule Free DFW HVAC Estimate",
+    "phone_display": "(972) 777-2665"
+  },
+  "pricing_engine": {
+    "currency": "USD",
+    "base_system_prices": {
+      "ac_gas_furnace": {
+        "min": 9800,
+        "max": 14200,
+        "label": "Central AC + Gas Furnace"
+      },
+      "heat_pump": {
+        "min": 10200,
+        "max": 14800,
+        "label": "DFW High-Efficiency Heat Pump"
+      },
+      "ac_coil_only": {
+        "min": 7200,
+        "max": 10600,
+        "label": "AC Condenser & Coil Only"
+      },
+      "ductless_minisplit": {
+        "min": 7800,
+        "max": 11800,
+        "label": "Ductless Mini-Split System"
+      }
+    },
+    "tonnage_multipliers": {
+      "under_1500": 0.85,
+      "1500_2200": 1.0,
+      "2200_3000": 1.18,
+      "over_3000": 1.42
+    },
+    "seer2_multipliers": {
+      "standard_seer2": 0.88,
+      "high_seer2": 1.0,
+      "variable_seer2": 1.24
+    },
+    "ductwork_adder": {
+      "min": 1800,
+      "max": 3200
+    },
+    "financing_apr_percent": 9.99,
+    "financing_term_months": 120
+  },
+  "ux_steps": [
+    {
+      "step_number": 1,
+      "title": "Home Square Footage & Tonnage Sizing",
+      "inputs": [
+        "< 1,500 sq ft (2–2.5 Ton)",
+        "1,500–2,200 sq ft (3–3.5 Ton)",
+        "2,200–3,000 sq ft (4 Ton)",
+        "3,000+ sq ft (5 Ton / Dual Zone)"
+      ],
+      "conversion_psychology_note": "Single-tap home size brackets remove manual-J jargon and anchor accurate tonnage sizing in 5 seconds."
+    },
+    {
+      "step_number": 2,
+      "title": "HVAC System Type Selection",
+      "inputs": [
+        "Central AC + Gas Furnace",
+        "High-Efficiency Heat Pump",
+        "AC Condenser & Coil Only",
+        "Ductless Mini-Split System"
+      ],
+      "conversion_psychology_note": "Clear turnkey equipment cards pre-qualify replacement scope before your comfort advisor dials."
+    },
+    {
+      "step_number": 3,
+      "title": "SEER2 Efficiency Tier & Ductwork",
+      "inputs": [
+        "Standard 14.3–15.2 SEER2",
+        "High-Efficiency 16–18 SEER2",
+        "Variable-Speed 19+ SEER2",
+        "Existing Ductwork OK vs Needs Ductwork Modification"
+      ],
+      "conversion_psychology_note": "Side-by-side SEER2 tiers educate homeowners on federal 25C credits and upsell higher-margin inverter systems."
+    },
+    {
+      "step_number": 4,
+      "title": "Ungated Turnkey Ballpark & Lead Capture",
+      "inputs": [
+        "Instant Installed Range & Financing",
+        "Full Name",
+        "Mobile Phone or Email",
+        "Street Address",
+        "Preferred Visit Window"
+      ],
+      "conversion_psychology_note": "Revealing honest localized pricing upfront drives 2–3x higher qualified in-home estimate bookings with address pre-captured."
+    }
+  ],
+  "preview_wrapper_spec": {
+    "hero_headline": "Get Your Instant Dallas HVAC Replacement & SEER2 Financing Ballpark in 30 Seconds",
+    "hero_subheadline": "Built in DFW HVAC's prussian-blue-and-orange branding: turns hesitant Dallas–Fort Worth Metroplex mobile visitors into pre-qualified replacement bookings without rebuilding dfwhvac.com.",
+    "pain_points_solved_callouts": [
+      "Homepage contains 0 embedded forms or interactive tonnage/SEER2 estimators, pushing Dallas-Fort Worth mobile shoppers off-page without any ballpark replacement range",
+      "Automatically captures home tonnage, system type, SEER2 tier, ductwork status, and homeowner street address before your advisor dials",
+      "Self-contained <30 KB Shadow DOM script — drops onto dfwhvac.com with one line of code in 5 minutes and zero site redesign"
+    ]
+  },
+  "commercial_offer": {
+    "setup_fee_usd": 750,
+    "monthly_retainer_usd": 149,
+    "retainer_deliverables": [
+      "Managed Cloudflare edge hosting & <30 KB Shadow DOM widget updates",
+      "Direct email/SMS/CRM webhook lead routing with full tonnage, SEER2 & street address payload",
+      "Quarterly regional equipment, SEER2 & financing rate updates"
+    ]
+  }
+}

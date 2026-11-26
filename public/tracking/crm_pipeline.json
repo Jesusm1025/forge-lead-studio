@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-11-25T23:59:00Z",
+  "updated_at": "2026-11-26T00:37:18Z",
   "prospects": [
     {
       "prospect_id": "roofing_austin_austin-roofing-company",
@@ -50,7 +50,8 @@
       "last_sent_at": "2026-11-22T23:20:47Z",
       "last_sent_step": 1,
       "bounce_reason": "Temporary mx1.titan.email connection failure on info@austinroofingcompany.us; verified live site (austinroofingcompany.us), BBB, and Austin Chamber records contain no alternate email.",
-      "bounce_checked_at": "2026-11-24T18:10:58Z"
+      "bounce_checked_at": "2026-11-24T18:10:58Z",
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_austin_roof-royale",
@@ -109,7 +110,8 @@
       "last_sent_step": 2,
       "telemetry_enabled": true,
       "demo_views": 0,
-      "max_step_reached": 0
+      "max_step_reached": 0,
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_tampa_buddys-roofing",
@@ -171,7 +173,8 @@
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T17:01:16.999Z"
+      "last_viewed_at": "2026-11-25T17:01:16.999Z",
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_dallas_honestroof",
@@ -221,7 +224,8 @@
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T21:23:17.135Z"
+      "last_viewed_at": "2026-11-25T21:23:17.135Z",
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_dallas_davis-roofing-solutions",
@@ -271,7 +275,8 @@
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T19:53:38.769Z"
+      "last_viewed_at": "2026-11-25T19:53:38.769Z",
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_houston_advantage-roofing",
@@ -321,7 +326,8 @@
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T20:55:20.211Z"
+      "last_viewed_at": "2026-11-25T20:55:20.211Z",
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_orlando_drs-roofing",
@@ -383,7 +389,8 @@
       "last_viewed_at": "2026-11-25T09:36:07.059Z",
       "last_view_alerted_views": 1,
       "current_step": 2,
-      "step_2_sent_at": "2026-11-25T23:25:00Z"
+      "step_2_sent_at": "2026-11-25T23:25:00Z",
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_orlando_atlantic-roofing",
@@ -433,7 +440,8 @@
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T20:10:12.405Z"
+      "last_viewed_at": "2026-11-25T20:10:12.405Z",
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_phoenix_allstate-roofing",
@@ -481,7 +489,8 @@
         }
       ],
       "last_sent_at": "2026-11-24T18:46:54Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_phoenix_right-way-roofing",
@@ -529,7 +538,8 @@
         }
       ],
       "last_sent_at": "2026-11-24T18:46:56Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_phoenix_gryphon-roofing",
@@ -577,7 +587,8 @@
         }
       ],
       "last_sent_at": "2026-11-24T18:46:57Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_atlanta_reset-roofing",
@@ -625,7 +636,8 @@
         }
       ],
       "last_sent_at": "2026-11-24T18:46:59Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_atlanta_atlanta-roofing-restoration",
@@ -673,7 +685,8 @@
         }
       ],
       "last_sent_at": "2026-11-24T18:47:01Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_atlanta_ameristar-roofing",
@@ -721,7 +734,8 @@
         }
       ],
       "last_sent_at": "2026-11-24T18:47:03Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_charlotte_evergreen-roofing",
@@ -769,7 +783,8 @@
         }
       ],
       "last_sent_at": "2026-11-24T18:47:04Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_charlotte_advanced-roofing",
@@ -817,7 +832,8 @@
         }
       ],
       "last_sent_at": "2026-11-24T18:47:06Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_charlotte_horizon-roof-restoration",
@@ -865,7 +881,8 @@
         }
       ],
       "last_sent_at": "2026-11-24T18:47:08Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_denver_academy-roofing",
@@ -913,7 +930,8 @@
         }
       ],
       "last_sent_at": "2026-11-24T18:47:09Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_denver_wilson-brothers-roofing",
@@ -961,7 +979,8 @@
         }
       ],
       "last_sent_at": "2026-11-24T18:47:11Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_denver_family-roofing",
@@ -1009,7 +1028,8 @@
         }
       ],
       "last_sent_at": "2026-11-24T18:47:13Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_san-antonio_decker-roofing",
@@ -1061,7 +1081,8 @@
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T20:25:51.533Z"
+      "last_viewed_at": "2026-11-25T20:25:51.533Z",
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_san-antonio_jm-melton-roofing",
@@ -1113,7 +1134,8 @@
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T17:27:31.407Z"
+      "last_viewed_at": "2026-11-25T17:27:31.407Z",
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_san-antonio_twin-hammers-roofing",
@@ -1165,7 +1187,8 @@
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T18:11:42.291Z"
+      "last_viewed_at": "2026-11-25T18:11:42.291Z",
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_jacksonville_first-light-roofing",
@@ -1217,7 +1240,8 @@
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T18:25:53.115Z"
+      "last_viewed_at": "2026-11-25T18:25:53.115Z",
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_jacksonville_townsend-roofing",
@@ -1269,7 +1293,8 @@
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T19:35:53.612Z"
+      "last_viewed_at": "2026-11-25T19:35:53.612Z",
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_jacksonville_allegiance-roofing",
@@ -1321,7 +1346,8 @@
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T18:44:41.124Z"
+      "last_viewed_at": "2026-11-25T18:44:41.124Z",
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_raleigh_raleigh-residential-exteriors",
@@ -1373,7 +1399,8 @@
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T18:44:53.662Z"
+      "last_viewed_at": "2026-11-25T18:44:53.662Z",
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_raleigh_rex-construction",
@@ -1425,7 +1452,8 @@
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T18:44:58.224Z"
+      "last_viewed_at": "2026-11-25T18:44:58.224Z",
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_raleigh_aceline-roofing",
@@ -1479,7 +1507,8 @@
       "prod_leads": 0,
       "last_viewed_at": "2026-11-25T18:44:29.088Z",
       "bounce_reason": "AutoPilot IMAP DSN detected: Delivery Status Notification (Failure)",
-      "bounce_checked_at": "2026-11-25T23:59:00Z"
+      "bounce_checked_at": "2026-11-25T23:59:00Z",
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_nashville_quality-rrc",
@@ -1531,7 +1560,8 @@
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T20:02:44.394Z"
+      "last_viewed_at": "2026-11-25T20:02:44.394Z",
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_nashville_mr-goodroof",
@@ -1583,7 +1613,8 @@
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T22:50:55.522Z"
+      "last_viewed_at": "2026-11-25T22:50:55.522Z",
+      "vertical": "roofing"
     },
     {
       "prospect_id": "roofing_nashville_he-parmer",
@@ -1635,7 +1666,488 @@
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T18:44:16.370Z"
+      "last_viewed_at": "2026-11-25T18:44:16.370Z",
+      "vertical": "roofing"
+    },
+    {
+      "prospect_id": "hvac_phoenix_service-smith",
+      "business_name": "Service Smith, L.L.C.",
+      "niche": "hvac",
+      "vertical": "hvac",
+      "wave": "HVAC Wave 1",
+      "city": "Phoenix",
+      "state": "AZ",
+      "country": "US",
+      "website_url": "https://servicesmith.com/",
+      "decision_maker": "Paul Smith",
+      "email": "admin@servicesmith.com",
+      "phone": "(480) 478-6425",
+      "primary_color_hex": "#1B365D",
+      "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+      "proposed_setup_fee_usd": 750,
+      "proposed_retainer_usd": 149,
+      "status": "QUEUED_STEP_1",
+      "dossier_path": "pipeline/hvac_phoenix_service-smith/01_dossier.json",
+      "spec_path": "pipeline/hvac_phoenix_service-smith/02_spec.json",
+      "mvp_dir": "pipeline/hvac_phoenix_service-smith/03_mvp",
+      "outreach_dir": "pipeline/hvac_phoenix_service-smith/04_outreach",
+      "qa_audit_path": "pipeline/hvac_phoenix_service-smith/05_qa_audit.json",
+      "qa_report_path": "pipeline/hvac_phoenix_service-smith/05_qa_report.md",
+      "widget_bytes": 28709,
+      "qa_verdict": "APPROVED",
+      "qa_score": 100,
+      "cloudflare_project": "service-smith-hvac-demo",
+      "live_preview_url": "https://service-smith-hvac-demo.pages.dev",
+      "live_widget_url": "https://service-smith-hvac-demo.pages.dev/widget.js",
+      "telemetry_enabled": true,
+      "scouted_at": "2026-11-26T00:37:18Z",
+      "architected_at": "2026-11-26T00:37:18Z",
+      "built_at": "2026-11-26T00:37:18Z",
+      "outreach_generated_at": "2026-11-26T00:37:18Z",
+      "audited_at": "2026-11-26T00:37:18Z",
+      "outreach_history": [],
+      "deployment_id": "c1408d74-54bd-4ba0-8838-3ecf17a3e749",
+      "deployed_at": "2026-11-26T00:43:44Z"
+    },
+    {
+      "prospect_id": "hvac_phoenix_reliable-air",
+      "business_name": "Reliable Air LLC",
+      "niche": "hvac",
+      "vertical": "hvac",
+      "wave": "HVAC Wave 1",
+      "city": "Phoenix",
+      "state": "AZ",
+      "country": "US",
+      "website_url": "https://reliableairaz.com/",
+      "decision_maker": "Reliable Air Family Management",
+      "email": "info@reliableairaz.com",
+      "phone": "(602) 570-5290",
+      "primary_color_hex": "#092C81",
+      "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+      "proposed_setup_fee_usd": 750,
+      "proposed_retainer_usd": 149,
+      "status": "QUEUED_STEP_1",
+      "dossier_path": "pipeline/hvac_phoenix_reliable-air/01_dossier.json",
+      "spec_path": "pipeline/hvac_phoenix_reliable-air/02_spec.json",
+      "mvp_dir": "pipeline/hvac_phoenix_reliable-air/03_mvp",
+      "outreach_dir": "pipeline/hvac_phoenix_reliable-air/04_outreach",
+      "qa_audit_path": "pipeline/hvac_phoenix_reliable-air/05_qa_audit.json",
+      "qa_report_path": "pipeline/hvac_phoenix_reliable-air/05_qa_report.md",
+      "widget_bytes": 28705,
+      "qa_verdict": "APPROVED",
+      "qa_score": 100,
+      "cloudflare_project": "reliable-air-hvac-demo",
+      "live_preview_url": "https://reliable-air-hvac-demo.pages.dev",
+      "live_widget_url": "https://reliable-air-hvac-demo.pages.dev/widget.js",
+      "telemetry_enabled": true,
+      "scouted_at": "2026-11-26T00:37:18Z",
+      "architected_at": "2026-11-26T00:37:18Z",
+      "built_at": "2026-11-26T00:37:18Z",
+      "outreach_generated_at": "2026-11-26T00:37:18Z",
+      "audited_at": "2026-11-26T00:37:18Z",
+      "outreach_history": [],
+      "deployment_id": "3f74c6fe-de2f-4cbf-bf18-021bbebf092f",
+      "deployed_at": "2026-11-26T00:43:44Z"
+    },
+    {
+      "prospect_id": "hvac_phoenix_mark-daniels-ac",
+      "business_name": "Mark Daniels Air Conditioning & Heating",
+      "niche": "hvac",
+      "vertical": "hvac",
+      "wave": "HVAC Wave 1",
+      "city": "Phoenix",
+      "state": "AZ",
+      "country": "US",
+      "website_url": "https://markdanielsac.com/",
+      "decision_maker": "Mark Daniel Schilling",
+      "email": "Service@markdanielsac.com",
+      "phone": "(480) 571-7219",
+      "primary_color_hex": "#07527B",
+      "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+      "proposed_setup_fee_usd": 750,
+      "proposed_retainer_usd": 149,
+      "status": "QUEUED_STEP_1",
+      "dossier_path": "pipeline/hvac_phoenix_mark-daniels-ac/01_dossier.json",
+      "spec_path": "pipeline/hvac_phoenix_mark-daniels-ac/02_spec.json",
+      "mvp_dir": "pipeline/hvac_phoenix_mark-daniels-ac/03_mvp",
+      "outreach_dir": "pipeline/hvac_phoenix_mark-daniels-ac/04_outreach",
+      "qa_audit_path": "pipeline/hvac_phoenix_mark-daniels-ac/05_qa_audit.json",
+      "qa_report_path": "pipeline/hvac_phoenix_mark-daniels-ac/05_qa_report.md",
+      "widget_bytes": 28723,
+      "qa_verdict": "APPROVED",
+      "qa_score": 100,
+      "cloudflare_project": "mark-daniels-ac-hvac-demo",
+      "live_preview_url": "https://mark-daniels-ac-hvac-demo.pages.dev",
+      "live_widget_url": "https://mark-daniels-ac-hvac-demo.pages.dev/widget.js",
+      "telemetry_enabled": true,
+      "scouted_at": "2026-11-26T00:37:18Z",
+      "architected_at": "2026-11-26T00:37:18Z",
+      "built_at": "2026-11-26T00:37:18Z",
+      "outreach_generated_at": "2026-11-26T00:37:18Z",
+      "audited_at": "2026-11-26T00:37:18Z",
+      "outreach_history": [],
+      "deployment_id": "5e012aec-33da-4cd4-905c-d7f37d7e6996",
+      "deployed_at": "2026-11-26T00:43:45Z"
+    },
+    {
+      "prospect_id": "hvac_dallas_dfw-hvac",
+      "business_name": "DFW HVAC",
+      "niche": "hvac",
+      "vertical": "hvac",
+      "wave": "HVAC Wave 1",
+      "city": "Dallas",
+      "state": "TX",
+      "country": "US",
+      "website_url": "https://dfwhvac.com/",
+      "decision_maker": "Jonathan Grubb",
+      "email": "info@dfwhvac.com",
+      "phone": "(972) 777-2665",
+      "primary_color_hex": "#003153",
+      "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+      "proposed_setup_fee_usd": 750,
+      "proposed_retainer_usd": 149,
+      "status": "QUEUED_STEP_1",
+      "dossier_path": "pipeline/hvac_dallas_dfw-hvac/01_dossier.json",
+      "spec_path": "pipeline/hvac_dallas_dfw-hvac/02_spec.json",
+      "mvp_dir": "pipeline/hvac_dallas_dfw-hvac/03_mvp",
+      "outreach_dir": "pipeline/hvac_dallas_dfw-hvac/04_outreach",
+      "qa_audit_path": "pipeline/hvac_dallas_dfw-hvac/05_qa_audit.json",
+      "qa_report_path": "pipeline/hvac_dallas_dfw-hvac/05_qa_report.md",
+      "widget_bytes": 28681,
+      "qa_verdict": "APPROVED",
+      "qa_score": 100,
+      "cloudflare_project": "dfw-hvac-demo",
+      "live_preview_url": "https://dfw-hvac-demo.pages.dev",
+      "live_widget_url": "https://dfw-hvac-demo.pages.dev/widget.js",
+      "telemetry_enabled": true,
+      "scouted_at": "2026-11-26T00:37:18Z",
+      "architected_at": "2026-11-26T00:37:18Z",
+      "built_at": "2026-11-26T00:37:18Z",
+      "outreach_generated_at": "2026-11-26T00:37:18Z",
+      "audited_at": "2026-11-26T00:37:18Z",
+      "outreach_history": [],
+      "deployment_id": "db3a935e-7d52-4855-b221-703a878cee45",
+      "deployed_at": "2026-11-26T00:43:46Z"
+    },
+    {
+      "prospect_id": "hvac_dallas_reliant-ac",
+      "business_name": "Reliant Air Conditioning",
+      "niche": "hvac",
+      "vertical": "hvac",
+      "wave": "HVAC Wave 1",
+      "city": "Dallas",
+      "state": "TX",
+      "country": "US",
+      "website_url": "https://reliantairconditioning.com/",
+      "decision_maker": "Jeff Stewart",
+      "email": "service@reliantairconditioning.com",
+      "phone": "(214) 227-5946",
+      "primary_color_hex": "#AA0E14",
+      "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+      "proposed_setup_fee_usd": 750,
+      "proposed_retainer_usd": 149,
+      "status": "QUEUED_STEP_1",
+      "dossier_path": "pipeline/hvac_dallas_reliant-ac/01_dossier.json",
+      "spec_path": "pipeline/hvac_dallas_reliant-ac/02_spec.json",
+      "mvp_dir": "pipeline/hvac_dallas_reliant-ac/03_mvp",
+      "outreach_dir": "pipeline/hvac_dallas_reliant-ac/04_outreach",
+      "qa_audit_path": "pipeline/hvac_dallas_reliant-ac/05_qa_audit.json",
+      "qa_report_path": "pipeline/hvac_dallas_reliant-ac/05_qa_report.md",
+      "widget_bytes": 28700,
+      "qa_verdict": "APPROVED",
+      "qa_score": 100,
+      "cloudflare_project": "reliant-ac-hvac-demo",
+      "live_preview_url": "https://reliant-ac-hvac-demo.pages.dev",
+      "live_widget_url": "https://reliant-ac-hvac-demo.pages.dev/widget.js",
+      "telemetry_enabled": true,
+      "scouted_at": "2026-11-26T00:37:18Z",
+      "architected_at": "2026-11-26T00:37:18Z",
+      "built_at": "2026-11-26T00:37:18Z",
+      "outreach_generated_at": "2026-11-26T00:37:18Z",
+      "audited_at": "2026-11-26T00:37:18Z",
+      "outreach_history": [],
+      "deployment_id": "06cc148e-2c6e-4227-8b8a-11b0da59d092",
+      "deployed_at": "2026-11-26T00:43:46Z"
+    },
+    {
+      "prospect_id": "hvac_dallas_community-mechanical",
+      "business_name": "Community Mechanical",
+      "niche": "hvac",
+      "vertical": "hvac",
+      "wave": "HVAC Wave 1",
+      "city": "Dallas",
+      "state": "TX",
+      "country": "US",
+      "website_url": "https://communitydfw.com/",
+      "decision_maker": "Travis Gafford & Andrew Waggoner",
+      "email": "info@communitydfw.com",
+      "phone": "(469) 667-7290",
+      "primary_color_hex": "#1B3A6B",
+      "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+      "proposed_setup_fee_usd": 750,
+      "proposed_retainer_usd": 149,
+      "status": "QUEUED_STEP_1",
+      "dossier_path": "pipeline/hvac_dallas_community-mechanical/01_dossier.json",
+      "spec_path": "pipeline/hvac_dallas_community-mechanical/02_spec.json",
+      "mvp_dir": "pipeline/hvac_dallas_community-mechanical/03_mvp",
+      "outreach_dir": "pipeline/hvac_dallas_community-mechanical/04_outreach",
+      "qa_audit_path": "pipeline/hvac_dallas_community-mechanical/05_qa_audit.json",
+      "qa_report_path": "pipeline/hvac_dallas_community-mechanical/05_qa_report.md",
+      "widget_bytes": 28701,
+      "qa_verdict": "APPROVED",
+      "qa_score": 100,
+      "cloudflare_project": "community-mechanical-hvac-demo",
+      "live_preview_url": "https://community-mechanical-hvac-demo.pages.dev",
+      "live_widget_url": "https://community-mechanical-hvac-demo.pages.dev/widget.js",
+      "telemetry_enabled": true,
+      "scouted_at": "2026-11-26T00:37:18Z",
+      "architected_at": "2026-11-26T00:37:18Z",
+      "built_at": "2026-11-26T00:37:18Z",
+      "outreach_generated_at": "2026-11-26T00:37:18Z",
+      "audited_at": "2026-11-26T00:37:18Z",
+      "outreach_history": [],
+      "deployment_id": "0995917e-0d70-48cb-bc31-41132928a47e",
+      "deployed_at": "2026-11-26T00:43:47Z"
+    },
+    {
+      "prospect_id": "hvac_tampa_3h-ac",
+      "business_name": "3H AC of Tampa",
+      "niche": "hvac",
+      "vertical": "hvac",
+      "wave": "HVAC Wave 1",
+      "city": "Tampa",
+      "state": "FL",
+      "country": "US",
+      "website_url": "https://3hac.com/",
+      "decision_maker": "Sarah, Brian & Tom Hebert",
+      "email": "3hac@3hcontracting.com",
+      "phone": "(813) 979-4208",
+      "primary_color_hex": "#191926",
+      "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+      "proposed_setup_fee_usd": 750,
+      "proposed_retainer_usd": 149,
+      "status": "QUEUED_STEP_1",
+      "dossier_path": "pipeline/hvac_tampa_3h-ac/01_dossier.json",
+      "spec_path": "pipeline/hvac_tampa_3h-ac/02_spec.json",
+      "mvp_dir": "pipeline/hvac_tampa_3h-ac/03_mvp",
+      "outreach_dir": "pipeline/hvac_tampa_3h-ac/04_outreach",
+      "qa_audit_path": "pipeline/hvac_tampa_3h-ac/05_qa_audit.json",
+      "qa_report_path": "pipeline/hvac_tampa_3h-ac/05_qa_report.md",
+      "widget_bytes": 28687,
+      "qa_verdict": "APPROVED",
+      "qa_score": 100,
+      "cloudflare_project": "3h-ac-hvac-demo",
+      "live_preview_url": "https://3h-ac-hvac-demo.pages.dev",
+      "live_widget_url": "https://3h-ac-hvac-demo.pages.dev/widget.js",
+      "telemetry_enabled": true,
+      "scouted_at": "2026-11-26T00:37:18Z",
+      "architected_at": "2026-11-26T00:37:18Z",
+      "built_at": "2026-11-26T00:37:18Z",
+      "outreach_generated_at": "2026-11-26T00:37:18Z",
+      "audited_at": "2026-11-26T00:37:18Z",
+      "outreach_history": [],
+      "deployment_id": "f7002e18-fb1c-4729-a137-9548e04ed616",
+      "deployed_at": "2026-11-26T00:43:58Z"
+    },
+    {
+      "prospect_id": "hvac_tampa_ac-guy-tampa",
+      "business_name": "The A/C Guy of Tampa Bay Inc.",
+      "niche": "hvac",
+      "vertical": "hvac",
+      "wave": "HVAC Wave 1",
+      "city": "Tampa",
+      "state": "FL",
+      "country": "US",
+      "website_url": "https://acguyoftampa.com/",
+      "decision_maker": "Gregg & Tabetha Bowman",
+      "email": "office@acguyoftampa.com",
+      "phone": "(727) 286-3170",
+      "primary_color_hex": "#0D3B66",
+      "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+      "proposed_setup_fee_usd": 750,
+      "proposed_retainer_usd": 149,
+      "status": "QUEUED_STEP_1",
+      "dossier_path": "pipeline/hvac_tampa_ac-guy-tampa/01_dossier.json",
+      "spec_path": "pipeline/hvac_tampa_ac-guy-tampa/02_spec.json",
+      "mvp_dir": "pipeline/hvac_tampa_ac-guy-tampa/03_mvp",
+      "outreach_dir": "pipeline/hvac_tampa_ac-guy-tampa/04_outreach",
+      "qa_audit_path": "pipeline/hvac_tampa_ac-guy-tampa/05_qa_audit.json",
+      "qa_report_path": "pipeline/hvac_tampa_ac-guy-tampa/05_qa_report.md",
+      "widget_bytes": 28699,
+      "qa_verdict": "APPROVED",
+      "qa_score": 100,
+      "cloudflare_project": "ac-guy-tampa-hvac-demo",
+      "live_preview_url": "https://ac-guy-tampa-hvac-demo.pages.dev",
+      "live_widget_url": "https://ac-guy-tampa-hvac-demo.pages.dev/widget.js",
+      "telemetry_enabled": true,
+      "scouted_at": "2026-11-26T00:37:18Z",
+      "architected_at": "2026-11-26T00:37:18Z",
+      "built_at": "2026-11-26T00:37:18Z",
+      "outreach_generated_at": "2026-11-26T00:37:18Z",
+      "audited_at": "2026-11-26T00:37:18Z",
+      "outreach_history": [],
+      "deployment_id": "3cb69389-06a0-4710-a8e0-324035da82be",
+      "deployed_at": "2026-11-26T00:43:58Z"
+    },
+    {
+      "prospect_id": "hvac_orlando_ac-mechanix",
+      "business_name": "A/C Mechanix",
+      "niche": "hvac",
+      "vertical": "hvac",
+      "wave": "HVAC Wave 1",
+      "city": "Orlando",
+      "state": "FL",
+      "country": "US",
+      "website_url": "https://acmechanix.com/",
+      "decision_maker": "Brad Parish",
+      "email": "customerservice@acmechanix.com",
+      "phone": "(407) 831-8900",
+      "primary_color_hex": "#1E3A8A",
+      "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+      "proposed_setup_fee_usd": 750,
+      "proposed_retainer_usd": 149,
+      "status": "QUEUED_STEP_1",
+      "dossier_path": "pipeline/hvac_orlando_ac-mechanix/01_dossier.json",
+      "spec_path": "pipeline/hvac_orlando_ac-mechanix/02_spec.json",
+      "mvp_dir": "pipeline/hvac_orlando_ac-mechanix/03_mvp",
+      "outreach_dir": "pipeline/hvac_orlando_ac-mechanix/04_outreach",
+      "qa_audit_path": "pipeline/hvac_orlando_ac-mechanix/05_qa_audit.json",
+      "qa_report_path": "pipeline/hvac_orlando_ac-mechanix/05_qa_report.md",
+      "widget_bytes": 28694,
+      "qa_verdict": "APPROVED",
+      "qa_score": 100,
+      "cloudflare_project": "ac-mechanix-hvac-demo",
+      "live_preview_url": "https://ac-mechanix-hvac-demo.pages.dev",
+      "live_widget_url": "https://ac-mechanix-hvac-demo.pages.dev/widget.js",
+      "telemetry_enabled": true,
+      "scouted_at": "2026-11-26T00:37:18Z",
+      "architected_at": "2026-11-26T00:37:18Z",
+      "built_at": "2026-11-26T00:37:18Z",
+      "outreach_generated_at": "2026-11-26T00:37:18Z",
+      "audited_at": "2026-11-26T00:37:18Z",
+      "outreach_history": [],
+      "deployment_id": "2bca316f-1b74-4c2d-b1af-4f5919566476",
+      "deployed_at": "2026-11-26T00:43:59Z"
+    },
+    {
+      "prospect_id": "hvac_atlanta_bartlett-hvac",
+      "business_name": "Bartlett Heating & Cooling",
+      "niche": "hvac",
+      "vertical": "hvac",
+      "wave": "HVAC Wave 1",
+      "city": "Atlanta",
+      "state": "GA",
+      "country": "US",
+      "website_url": "https://callbartlett.com/",
+      "decision_maker": "Shannon Bartlett",
+      "email": "service@callbartlett.com",
+      "phone": "(770) 800-8951",
+      "primary_color_hex": "#032A6C",
+      "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+      "proposed_setup_fee_usd": 750,
+      "proposed_retainer_usd": 149,
+      "status": "QUEUED_STEP_1",
+      "dossier_path": "pipeline/hvac_atlanta_bartlett-hvac/01_dossier.json",
+      "spec_path": "pipeline/hvac_atlanta_bartlett-hvac/02_spec.json",
+      "mvp_dir": "pipeline/hvac_atlanta_bartlett-hvac/03_mvp",
+      "outreach_dir": "pipeline/hvac_atlanta_bartlett-hvac/04_outreach",
+      "qa_audit_path": "pipeline/hvac_atlanta_bartlett-hvac/05_qa_audit.json",
+      "qa_report_path": "pipeline/hvac_atlanta_bartlett-hvac/05_qa_report.md",
+      "widget_bytes": 28714,
+      "qa_verdict": "APPROVED",
+      "qa_score": 100,
+      "cloudflare_project": "bartlett-hvac-demo",
+      "live_preview_url": "https://bartlett-hvac-demo.pages.dev",
+      "live_widget_url": "https://bartlett-hvac-demo.pages.dev/widget.js",
+      "telemetry_enabled": true,
+      "scouted_at": "2026-11-26T00:37:18Z",
+      "architected_at": "2026-11-26T00:37:18Z",
+      "built_at": "2026-11-26T00:37:18Z",
+      "outreach_generated_at": "2026-11-26T00:37:18Z",
+      "audited_at": "2026-11-26T00:37:18Z",
+      "outreach_history": [],
+      "deployment_id": "269cae09-f758-4665-bccf-692f42802453",
+      "deployed_at": "2026-11-26T00:43:59Z"
+    },
+    {
+      "prospect_id": "hvac_atlanta_climatesmith",
+      "business_name": "ClimateSmith, LLC",
+      "niche": "hvac",
+      "vertical": "hvac",
+      "wave": "HVAC Wave 1",
+      "city": "Atlanta",
+      "state": "GA",
+      "country": "US",
+      "website_url": "https://alpharetta-hvac.com/",
+      "decision_maker": "James Smith",
+      "email": "contact@climatesmith.com",
+      "phone": "(770) 475-9555",
+      "primary_color_hex": "#1F2937",
+      "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+      "proposed_setup_fee_usd": 750,
+      "proposed_retainer_usd": 149,
+      "status": "QUEUED_STEP_1",
+      "dossier_path": "pipeline/hvac_atlanta_climatesmith/01_dossier.json",
+      "spec_path": "pipeline/hvac_atlanta_climatesmith/02_spec.json",
+      "mvp_dir": "pipeline/hvac_atlanta_climatesmith/03_mvp",
+      "outreach_dir": "pipeline/hvac_atlanta_climatesmith/04_outreach",
+      "qa_audit_path": "pipeline/hvac_atlanta_climatesmith/05_qa_audit.json",
+      "qa_report_path": "pipeline/hvac_atlanta_climatesmith/05_qa_report.md",
+      "widget_bytes": 28698,
+      "qa_verdict": "APPROVED",
+      "qa_score": 100,
+      "cloudflare_project": "climatesmith-hvac-demo",
+      "live_preview_url": "https://climatesmith-hvac-demo.pages.dev",
+      "live_widget_url": "https://climatesmith-hvac-demo.pages.dev/widget.js",
+      "telemetry_enabled": true,
+      "scouted_at": "2026-11-26T00:37:18Z",
+      "architected_at": "2026-11-26T00:37:18Z",
+      "built_at": "2026-11-26T00:37:18Z",
+      "outreach_generated_at": "2026-11-26T00:37:18Z",
+      "audited_at": "2026-11-26T00:37:18Z",
+      "outreach_history": [],
+      "deployment_id": "c711f714-1507-46b2-808e-4e966551c82c",
+      "deployed_at": "2026-11-26T00:44:00Z"
+    },
+    {
+      "prospect_id": "hvac_atlanta_all-airs",
+      "business_name": "All Airs Home Services",
+      "niche": "hvac",
+      "vertical": "hvac",
+      "wave": "HVAC Wave 1",
+      "city": "Atlanta",
+      "state": "GA",
+      "country": "US",
+      "website_url": "https://allairshomeservices.com/",
+      "decision_maker": "John Kenney",
+      "email": "leads@allairshomeservices.com",
+      "phone": "(770) 445-2700",
+      "primary_color_hex": "#072A4A",
+      "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+      "proposed_setup_fee_usd": 750,
+      "proposed_retainer_usd": 149,
+      "status": "QUEUED_STEP_1",
+      "dossier_path": "pipeline/hvac_atlanta_all-airs/01_dossier.json",
+      "spec_path": "pipeline/hvac_atlanta_all-airs/02_spec.json",
+      "mvp_dir": "pipeline/hvac_atlanta_all-airs/03_mvp",
+      "outreach_dir": "pipeline/hvac_atlanta_all-airs/04_outreach",
+      "qa_audit_path": "pipeline/hvac_atlanta_all-airs/05_qa_audit.json",
+      "qa_report_path": "pipeline/hvac_atlanta_all-airs/05_qa_report.md",
+      "widget_bytes": 28697,
+      "qa_verdict": "APPROVED",
+      "qa_score": 100,
+      "cloudflare_project": "all-airs-hvac-demo",
+      "live_preview_url": "https://all-airs-hvac-demo.pages.dev",
+      "live_widget_url": "https://all-airs-hvac-demo.pages.dev/widget.js",
+      "telemetry_enabled": true,
+      "scouted_at": "2026-11-26T00:37:18Z",
+      "architected_at": "2026-11-26T00:37:18Z",
+      "built_at": "2026-11-26T00:37:18Z",
+      "outreach_generated_at": "2026-11-26T00:37:18Z",
+      "audited_at": "2026-11-26T00:37:18Z",
+      "outreach_history": [],
+      "deployment_id": "153c4811-cfd1-4ff1-8273-6b36b5803a3a",
+      "deployed_at": "2026-11-26T00:44:01Z"
     }
   ],
   "last_updated": "2026-11-25T15:29:04Z"

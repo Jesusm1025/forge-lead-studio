@@ -1,0 +1,42 @@
+{
+  "prospect_id": "hvac_dallas_reliant-ac",
+  "scouted_at": "2026-11-26T00:37:18Z",
+  "niche": "hvac",
+  "business_name": "Reliant Air Conditioning",
+  "location": {
+    "city": "Dallas",
+    "state": "TX",
+    "country": "US"
+  },
+  "website_url": "https://reliantairconditioning.com/",
+  "contact_info": {
+    "decision_maker": "Jeff Stewart",
+    "role": "President",
+    "email": "service@reliantairconditioning.com",
+    "phone": "(214) 227-5946",
+    "contact_page_url": "https://reliantairconditioning.com/contact-us/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#AA0E14",
+    "secondary_color_hex": "#EDB210",
+    "brand_vibe": "Independent DFW family HVAC leader since 1983"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage has 0 embedded quote forms or instant HVAC estimators, creating mobile drop-off for Dallas homeowners researching turnkey AC + furnace replacement pricing after hours",
+      "Homeowners comparing 3–5 ton SEER2 replacement options on mobile have no instant financing preview before dialing (214) 227-5946"
+    ],
+    "seo_or_speed_leaks": [
+      "No interactive SEER2 & tonnage replacement estimator on reliantairconditioning.com to capture high-intent after-hours replacement traffic",
+      "High-intent system replacement shoppers bounce to aggregator directories when no rough ballpark is visible"
+    ],
+    "current_lead_capture_method": "Phone-first dispatch and off-page contact form with zero SEER2 ballpark estimator"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+    "pitch_hook_english": "Reliantairconditioning.com has zero embedded instant quote widget on the homepage — forcing DFW homeowners comparing system replacements to call blind without a ballpark or payment preview.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

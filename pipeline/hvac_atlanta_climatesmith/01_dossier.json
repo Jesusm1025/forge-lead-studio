@@ -1,0 +1,42 @@
+{
+  "prospect_id": "hvac_atlanta_climatesmith",
+  "scouted_at": "2026-11-26T00:37:18Z",
+  "niche": "hvac",
+  "business_name": "ClimateSmith, LLC",
+  "location": {
+    "city": "Atlanta",
+    "state": "GA",
+    "country": "US"
+  },
+  "website_url": "https://alpharetta-hvac.com/",
+  "contact_info": {
+    "decision_maker": "James Smith",
+    "role": "Founder & Owner",
+    "email": "contact@climatesmith.com",
+    "phone": "(770) 475-9555",
+    "contact_page_url": "https://alpharetta-hvac.com/contact-us/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#1F2937",
+    "secondary_color_hex": "#D32419",
+    "brand_vibe": "Owner-operated Alpharetta & North Atlanta HVAC craftsmen since 2009"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage contains 0 embedded forms or instant HVAC calculators, creating mobile drop-off for Alpharetta and Roswell homeowners shopping system replacements after hours",
+      "Homeowners comparing 3–5 ton SEER2 replacement options on mobile have no instant financing preview before dialing (770) 475-9555"
+    ],
+    "seo_or_speed_leaks": [
+      "No interactive SEER2 & tonnage replacement estimator on alpharetta-hvac.com to capture high-intent after-hours replacement traffic",
+      "High-intent system replacement shoppers bounce to aggregator directories when no rough ballpark is visible"
+    ],
+    "current_lead_capture_method": "Click-to-call phone line and off-page contact form with zero upfront ballpark pricing"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+    "pitch_hook_english": "Alpharetta-hvac.com has zero embedded instant quote tool on the homepage — leaving North Atlanta homeowners comparing high-SEER2 upgrades with no rough ballpark before calling.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

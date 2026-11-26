@@ -1,0 +1,42 @@
+{
+  "prospect_id": "hvac_tampa_ac-guy-tampa",
+  "scouted_at": "2026-11-26T00:37:18Z",
+  "niche": "hvac",
+  "business_name": "The A/C Guy of Tampa Bay Inc.",
+  "location": {
+    "city": "Tampa",
+    "state": "FL",
+    "country": "US"
+  },
+  "website_url": "https://acguyoftampa.com/",
+  "contact_info": {
+    "decision_maker": "Gregg & Tabetha Bowman",
+    "role": "President & Co-Owner",
+    "email": "office@acguyoftampa.com",
+    "phone": "(727) 286-3170",
+    "contact_page_url": "https://acguyoftampa.com/contact/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#0D3B66",
+    "secondary_color_hex": "#F97316",
+    "brand_vibe": "Family-owned Tampa Bay AC replacement & ductwork experts since 2009"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage contains 3 static forms totaling 21 input fields with zero instant tonnage sizing, SEER2 tier comparison, or monthly payment preview to warm up mobile shoppers",
+      "Homeowners comparing 3–5 ton SEER2 replacement options on mobile have no instant financing preview before dialing (727) 286-3170"
+    ],
+    "seo_or_speed_leaks": [
+      "No interactive SEER2 & tonnage replacement estimator on acguyoftampa.com to capture high-intent after-hours replacement traffic",
+      "High-intent system replacement shoppers bounce to aggregator directories when no rough ballpark is visible"
+    ],
+    "current_lead_capture_method": "Static multi-field homepage contact forms (21 inputs) + phone number with zero instant pricing"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+    "pitch_hook_english": "Acguyoftampa.com stacks 21 static form inputs across the homepage with zero instant Tampa Bay AC replacement ballpark or monthly financing estimate shown before asking for contact info.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

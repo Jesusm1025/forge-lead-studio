@@ -29,8 +29,14 @@
     "template_base": {
       "type": "string",
       "minLength": 3,
-      "description": "Reusable template folder name under c:/agencia/templates/ (Wave 1: 'roofing-quote-calc').",
-      "examples": ["roofing-quote-calc"]
+      "description": "Reusable template folder name under c:/agencia/templates/ (e.g., 'roofing-quote-calc', 'hvac-quote-calc').",
+      "examples": ["roofing-quote-calc", "hvac-quote-calc"]
+    },
+    "vertical": {
+      "type": "string",
+      "enum": ["roofing", "hvac"],
+      "default": "roofing",
+      "description": "Home-service vertical identifier."
     },
     "telemetry_endpoint": {
       "type": "string",
@@ -72,9 +78,6 @@
       "additionalProperties": false,
       "required": [
         "currency",
-        "base_rates_per_sqft",
-        "story_multipliers",
-        "pitch_multipliers",
         "financing_apr_percent",
         "financing_term_months"
       ],
@@ -116,6 +119,52 @@
             "low": { "type": "number", "exclusiveMinimum": 0 },
             "standard": { "type": "number", "exclusiveMinimum": 0 },
             "steep": { "type": "number", "exclusiveMinimum": 0 }
+          }
+        },
+        "base_system_prices": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ac_gas_furnace",
+            "heat_pump",
+            "ac_coil_only",
+            "ductless_minisplit"
+          ],
+          "properties": {
+            "ac_gas_furnace": { "$ref": "#/$defs/material_rate" },
+            "heat_pump": { "$ref": "#/$defs/material_rate" },
+            "ac_coil_only": { "$ref": "#/$defs/material_rate" },
+            "ductless_minisplit": { "$ref": "#/$defs/material_rate" }
+          }
+        },
+        "tonnage_multipliers": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["under_1500", "1500_2200", "2200_3000", "over_3000"],
+          "properties": {
+            "under_1500": { "type": "number", "exclusiveMinimum": 0 },
+            "1500_2200": { "type": "number", "exclusiveMinimum": 0 },
+            "2200_3000": { "type": "number", "exclusiveMinimum": 0 },
+            "over_3000": { "type": "number", "exclusiveMinimum": 0 }
+          }
+        },
+        "seer2_multipliers": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["standard_seer2", "high_seer2", "variable_seer2"],
+          "properties": {
+            "standard_seer2": { "type": "number", "exclusiveMinimum": 0 },
+            "high_seer2": { "type": "number", "exclusiveMinimum": 0 },
+            "variable_seer2": { "type": "number", "exclusiveMinimum": 0 }
+          }
+        },
+        "ductwork_adder": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["min", "max"],
+          "properties": {
+            "min": { "type": "number", "minimum": 0 },
+            "max": { "type": "number", "minimum": 0 }
           }
         },
         "financing_apr_percent": {

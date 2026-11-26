@@ -1,0 +1,42 @@
+{
+  "prospect_id": "hvac_orlando_ac-mechanix",
+  "scouted_at": "2026-11-26T00:37:18Z",
+  "niche": "hvac",
+  "business_name": "A/C Mechanix",
+  "location": {
+    "city": "Orlando",
+    "state": "FL",
+    "country": "US"
+  },
+  "website_url": "https://acmechanix.com/",
+  "contact_info": {
+    "decision_maker": "Brad Parish",
+    "role": "President",
+    "email": "customerservice@acmechanix.com",
+    "phone": "(407) 831-8900",
+    "contact_page_url": "https://acmechanix.com/contact-us/"
+  },
+  "brand_tokens": {
+    "primary_color_hex": "#1E3A8A",
+    "secondary_color_hex": "#38BDF8",
+    "brand_vibe": "Central Florida residential AC replacement & load-sizing pros since 1992"
+  },
+  "technical_audit": {
+    "has_instant_quote_tool": false,
+    "mobile_ux_issues": [
+      "Homepage contains 3 static forms with 23 input fields and zero interactive HVAC ballpark estimator, creating friction for Central Florida homeowners comparing system upgrades on mobile",
+      "Homeowners comparing 3–5 ton SEER2 replacement options on mobile have no instant financing preview before dialing (407) 831-8900"
+    ],
+    "seo_or_speed_leaks": [
+      "No interactive SEER2 & tonnage replacement estimator on acmechanix.com to capture high-intent after-hours replacement traffic",
+      "High-intent system replacement shoppers bounce to aggregator directories when no rough ballpark is visible"
+    ],
+    "current_lead_capture_method": "Static multi-field forms (23 total inputs) + phone line with no upfront system quote range"
+  },
+  "trojan_horse_angle": {
+    "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
+    "pitch_hook_english": "Acmechanix.com stacks 23 static form fields across the homepage with zero instant Orlando replacement ballpark or SEER2 financing range shown upfront.",
+    "proposed_setup_fee_usd": 750,
+    "proposed_retainer_usd": 149
+  }
+}

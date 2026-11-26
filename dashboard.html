@@ -735,6 +735,18 @@
     .wave-tag.w1b { background: rgba(16, 185, 129, 0.14); color: #6EE7B7; border-color: rgba(16, 185, 129, 0.3); }
     .wave-tag.w1c { background: rgba(245, 158, 11, 0.14); color: #FCD34D; border-color: rgba(245, 158, 11, 0.3); }
     .wave-tag.w1d { background: rgba(56, 189, 248, 0.14); color: #7DD3FC; border-color: rgba(56, 189, 248, 0.3); }
+    .wave-tag.whvac { background: rgba(14, 165, 233, 0.18); color: #38BDF8; border-color: rgba(14, 165, 233, 0.45); }
+    .vert-tag {
+      font-family: var(--mono);
+      font-size: 9.5px;
+      font-weight: 800;
+      padding: 1px 5px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .vert-tag.v-roofing { background: rgba(245, 158, 11, 0.12); color: #FDE68A; border: 1px solid rgba(245, 158, 11, 0.28); }
+    .vert-tag.v-hvac { background: rgba(14, 165, 233, 0.16); color: #7DD3FC; border: 1px solid rgba(14, 165, 233, 0.38); }
 
     .dm-name { font-weight: 700; color: #E2E8F0; }
     .dm-email {
@@ -765,6 +777,7 @@
     .st-REPLIED { background: var(--emerald-soft); color: #6EE7B7; border: 1px solid rgba(16, 185, 129, 0.45); }
     .st-CLOSED_WON, .st-CLOSED { background: var(--gold-soft); color: #FDE68A; border: 1px solid rgba(245, 158, 11, 0.5); }
     .st-QA_APPROVED { background: var(--purple-soft); color: #DDD6FE; border: 1px solid rgba(167, 139, 250, 0.4); }
+    .st-QUEUED_STEP_1 { background: rgba(251, 191, 36, 0.14); color: #FDE68A; border: 1px solid rgba(251, 191, 36, 0.42); }
     .st-BOUNCED_MX { background: var(--rose-soft); color: #FDA4AF; border: 1px solid rgba(244, 63, 94, 0.45); }
     .st-SCOUTED, .st-BUILT { background: rgba(148, 163, 184, 0.14); color: #CBD5E1; border: 1px solid rgba(148, 163, 184, 0.3); }
 
@@ -1257,6 +1270,9 @@
         </div>
 
         <div class="controls-bar">
+          <div class="filter-row" id="vertical-filters">
+            <span class="filter-label">Vertical</span>
+          </div>
           <div class="filter-row" id="wave-filters">
             <span class="filter-label">Wave</span>
           </div>
@@ -1309,6 +1325,7 @@
         kvOnline: false,
         adminKey: '',
         unlocked: false,
+        vertical: 'ALL',
         wave: 'ALL',
         status: 'ALL',
         query: '',
@@ -1335,9 +1352,16 @@
         return s;
       }
 
+      function inferVertical(p) {
+        const v = String(p.vertical || p.niche || '').toLowerCase();
+        if (v === 'hvac' || String(p.prospect_id || '').startsWith('hvac_')) return 'HVAC';
+        return 'Roofing';
+      }
+
       function inferWave(p) {
         if (p.wave) return p.wave;
         const pid = String(p.prospect_id || '');
+        if (/^hvac_/.test(pid)) return 'HVAC Wave 1';
         if (/^roofing_(austin|tampa)_/.test(pid)) return 'Wave 1';
         if (/^roofing_(dallas|houston|orlando)_/.test(pid)) return 'Wave 1B';
         if (/^roofing_(phoenix|atlanta|charlotte|denver)_/.test(pid)) return 'Wave 1C';
@@ -1345,10 +1369,11 @@
       }
 
       function waveTagClass(w) {
+        if (String(w).startsWith('HVAC')) return 'whvac';
         if (w === 'Wave 1') return 'w1';
         if (w === 'Wave 1B') return 'w1b';
         if (w === 'Wave 1C') return 'w1c';
-      if (w === 'Wave 1D') return 'w1d';
+        if (w === 'Wave 1D') return 'w1d';
         return '';
       }
 
@@ -1369,7 +1394,10 @@
           return { kind: 'muted', label: 'CLOSED WON', sub: 'Client onboarded', priority: 95, isNov25: false };
         }
         if (st === 'REPLIED') {
-          return { kind: 'urgent', label: 'REPLIED — ACT', sub: 'Open objection playbook', priority: 0, isNov25: false };
+          return { kind: 'urgent', label: 'REPLIED — ACT', sub: 'Open objection playbook', priority: 0, isDueSoon: false };
+        }
+        if (st === 'QUEUED_STEP_1') {
+          return { kind: 'urgent', label: 'QUEUED · Step 1', sub: 'Next AutoPilot run', priority: 3, isDueSoon: true, nextStep: 1, dueLabel: 'Next Run' };
         }
         const step = Math.max(Number(p.current_step || 0), Number(p.last_sent_step || 0));
         const sentAt = (step && p[`step_${step}_sent_at`]) || p.last_sent_at || (p.outreach_history && p.outreach_history.length ? p.outreach_history[p.outreach_history.length - 1].sent_at : null);
@@ -1497,7 +1525,7 @@
             num: 1, code: '01', name: '01 Scout',
             rgb: '45, 212, 191',
             active: scoutedAll > 0,
-            task: `${scoutedAll} verified roofers · Roofr/Roofle filtered`,
+            task: `${scoutedAll} verified contractors · Roofing & HVAC`,
             count: scoutedAll, unit: 'SCOUTED', filterStatus: 'ALL'
           }
         ];
@@ -1578,7 +1606,13 @@
       }
 
       function renderFilters(prospects) {
-        const waveOrder = ['ALL', 'Wave 1', 'Wave 1B', 'Wave 1C', 'Wave 1D'];
+        const verticals = ['ALL', 'Roofing', 'HVAC'];
+        $('vertical-filters').innerHTML = '<span class="filter-label">Vertical</span>' + verticals.map(v => {
+          const cnt = v === 'ALL' ? prospects.length : prospects.filter(p => inferVertical(p) === v).length;
+          return `<button type="button" class="pill-btn${state.vertical === v ? ' active' : ''}" data-vertical="${esc(v)}">${v === 'ALL' ? 'All' : esc(v)} <span class="pill-cnt">${cnt}</span></button>`;
+        }).join('');
+
+        const waveOrder = ['ALL', 'Wave 1', 'Wave 1B', 'Wave 1C', 'Wave 1D', 'HVAC Wave 1'];
         const extraWaves = [...new Set(prospects.map(inferWave))].filter(w => !waveOrder.includes(w));
         const waves = [...waveOrder, ...extraWaves];
 
@@ -1587,7 +1621,7 @@
           return `<button type="button" class="pill-btn${state.wave === w ? ' active' : ''}" data-wave="${esc(w)}">${w === 'ALL' ? 'All' : esc(w)} <span class="pill-cnt">${cnt}</span></button>`;
         }).join('');
 
-        const statuses = ['ALL', 'SENT', 'REPLIED', 'BOUNCED_MX', 'CLOSED_WON'];
+        const statuses = ['ALL', 'SENT', 'QUEUED_STEP_1', 'REPLIED', 'BOUNCED_MX', 'CLOSED_WON'];
         $('status-filters').innerHTML = '<span class="filter-label">Status</span>' + statuses.map(s => {
           const cnt = s === 'ALL' ? prospects.length : prospects.filter(p => normalizeStatus(p.status) === s).length;
           return `<button type="button" class="pill-btn${state.status === s ? ' active' : ''}" data-status="${esc(s)}">${esc(s)} <span class="pill-cnt">${cnt}</span></button>`;
@@ -1597,6 +1631,7 @@
       function renderTable(prospects) {
         const enriched = prospects.map(p => ({
           p,
+          vertical: inferVertical(p),
           wave: inferWave(p),
           st: normalizeStatus(p.status),
           fu: computeFollowUp(p),
@@ -1623,10 +1658,11 @@
 
         const q = state.query.trim().toLowerCase();
         const filtered = enriched.filter(x => {
+          if (state.vertical !== 'ALL' && x.vertical !== state.vertical) return false;
           if (state.wave !== 'ALL' && x.wave !== state.wave) return false;
           if (state.status !== 'ALL' && x.st !== state.status) return false;
           if (q) {
-            const hay = `${x.p.business_name} ${x.p.city} ${x.p.state} ${x.p.decision_maker} ${x.p.email} ${x.p.prospect_id} ${x.wave} ${x.st}`.toLowerCase();
+            const hay = `${x.p.business_name} ${x.p.city} ${x.p.state} ${x.p.decision_maker} ${x.p.email} ${x.p.prospect_id} ${x.vertical} ${x.wave} ${x.st}`.toLowerCase();
             if (!hay.includes(q)) return false;
           }
           return true;
@@ -1642,7 +1678,7 @@
           return;
         }
 
-        $('pipeline-tbody').innerHTML = filtered.map(({ p, wave, st, fu }) => {
+        $('pipeline-tbody').innerHTML = filtered.map(({ p, vertical, wave, st, fu }) => {
           const nextStep = fu.nextStep || 2;
           const cmd = `python c:/agencia/scripts/send_outreach.py ${p.prospect_id} --step ${nextStep} --live`;
           const rowCls = fu.kind === 'urgent' || fu.kind === 'overdue' ? 'due-soon' : (st === 'BOUNCED_MX' ? 'bounced-row' : '');
@@ -1683,6 +1719,7 @@
                   <div>
                     <div class="biz-name">${esc(p.business_name)}</div>
                     <div class="biz-meta">
+                      <span class="vert-tag v-${vertical.toLowerCase()}">${esc(vertical)}</span>
                       <span class="wave-tag ${waveTagClass(wave)}">${esc(wave)}</span>
                       <span>${esc(p.city)}, ${esc(p.state)}</span>
                       ${kb ? `<span>· ${kb}</span>` : ''}
@@ -1912,6 +1949,9 @@
 
       // Event delegation
       document.addEventListener('click', e => {
+        const vBtn = e.target.closest('[data-vertical]');
+        if (vBtn) { state.vertical = vBtn.dataset.vertical; renderAll(); return; }
+
         const wBtn = e.target.closest('[data-wave]');
         if (wBtn) { state.wave = wBtn.dataset.wave; renderAll(); return; }
 
