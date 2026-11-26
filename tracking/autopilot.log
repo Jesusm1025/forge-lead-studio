@@ -234,3 +234,65 @@
 [2026-11-26T16:37:43Z] [UPCOMING] Scheduled 2026-11-29 (3 prospects): Buddy's Roofing & Repairs, Inc. (Step 3), DRS Roofing (Step 3), Roof Royale (Step 3)
 [2026-11-26T16:37:43Z] [AGENT00] Niche verdicts: roofing=TESTING (S2+=3, eng=0.0%, rep=0.0%), hvac=TESTING (S2+=0, eng=0.0%, rep=0.0%)
 [2026-11-26T16:37:43Z] [DONE   ] AutoPilot complete | Mode=DRY-RUN (as-of 2026-11-26) | Dispatched=14 | Deferred=2 | Quota=14/15 | NicheAlerts=0
+[2026-11-26T22:12:40Z] [START  ] ================ FORGE LEAD STUDIO AUTOPILOT — LIVE AUTOPILOT ================
+[2026-11-26T22:12:40Z] [AUTH   ] Loaded sender credentials via env:SENDER_CREDENTIALS_JSON.
+[2026-11-26T22:12:40Z] [TELEMETRY] Roof Royale (roofing_austin_roof-royale): views=4 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-26T22:12:40Z] [TELEMETRY] HonestRoof.com (roofing_dallas_honestroof): views=5 (prev 1), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-26T22:12:40Z] [TELEMETRY] Advantage Roofing (roofing_houston_advantage-roofing): views=7 (prev 1), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-26T22:12:40Z] [TELEMETRY] DRS Roofing (roofing_orlando_drs-roofing): views=12 (prev 1), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-26T22:12:40Z] [TELEMETRY] Atlantic Roofing & Construction (roofing_orlando_atlantic-roofing): views=5 (prev 1), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-26T22:12:40Z] [TELEMETRY] First Light Home Services LLC (roofing_jacksonville_first-light-roofing): views=6 (prev 5), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-26T22:12:40Z] [TELEMETRY] H.E. Parmer Company (roofing_nashville_he-parmer): views=5 (prev 4), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-26T22:12:40Z] [TELEMETRY] Service Smith, L.L.C. (hvac_phoenix_service-smith): views=10 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-26T22:12:40Z] [TELEMETRY] Reliable Air LLC (hvac_phoenix_reliable-air): views=42 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-26T22:12:40Z] [TELEMETRY] Mark Daniels Air Conditioning & Heating (hvac_phoenix_mark-daniels-ac): views=6 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-26T22:12:40Z] [TELEMETRY] DFW HVAC (hvac_dallas_dfw-hvac): views=4 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-26T22:12:40Z] [TELEMETRY] Reliant Air Conditioning (hvac_dallas_reliant-ac): views=11 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-26T22:12:40Z] [TELEMETRY] Community Mechanical (hvac_dallas_community-mechanical): views=5 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-26T22:12:40Z] [TELEMETRY] 3H AC of Tampa (hvac_tampa_3h-ac): views=5 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-26T22:12:40Z] [TELEMETRY] The A/C Guy of Tampa Bay Inc. (hvac_tampa_ac-guy-tampa): views=43 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-26T22:12:40Z] [TELEMETRY] A/C Mechanix (hvac_orlando_ac-mechanix): views=11 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-26T22:12:40Z] [TELEMETRY] Bartlett Heating & Cooling (hvac_atlanta_bartlett-hvac): views=6 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-26T22:12:40Z] [TELEMETRY] ClimateSmith, LLC (hvac_atlanta_climatesmith): views=5 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-26T22:12:40Z] [TELEMETRY] All Airs Home Services (hvac_atlanta_all-airs): views=5 (prev 0), max_step=1/4, test_leads=0, prod_leads=0
+[2026-11-26T22:12:40Z] [CRM    ] Merged KV telemetry updates for 19 prospect(s) into /home/runner/work/forge-lead-studio/forge-lead-studio/tracking/crm_pipeline.json.
+[2026-11-26T22:12:40Z] [TEL-OK ] Worker KV stats pulled: 31 active keys | CRM updated: 19 | Hot demo views: 0
+[2026-11-26T22:12:40Z] [IMAP   ] Connecting to imap.gmail.com:993 as forgeleadstudio@gmail.com (lookback 14d since 12-Nov-2026)...
+[2026-11-26T22:12:41Z] [IMAP   ] Login OK. Found 11 inbox messages since 12-Nov-2026; inspecting 11 recent messages.
+[2026-11-26T22:12:41Z] [IMAP-OK] Scanned 11 messages | New Replies: 0 | Unsubscribes: 0 | Bounces: 0
+[2026-11-26T22:12:41Z] [QUEUE  ] Reference UTC Date: 2026-11-26 | Quota used: 0/15 | Due follow-ups: 4 | Queued Step 1: 12 | Upcoming: 26 | Skipped/Halted: 2
+[2026-11-26T22:12:41Z] [DISPATCH] Executing Step 2 LIVE -> Advantage Roofing <info@advantageroofingtx.com>...
+[2026-11-26T22:12:42Z] [SENT   ] roofing_houston_advantage-roofing Step 2: [SENT   ] Email Step 2 delivered to info@advantageroofingtx.com at 2026-11-26T22:12:42Z and recorded in /home/runner/work/forge-lead-studio/forge-lead-studio/tracking/crm_pipeline.json. | Quota now 1/15
+[2026-11-26T22:12:42Z] [DISPATCH] Executing Step 2 LIVE -> Atlantic Roofing & Construction <contact@atlanticroofusa.com>...
+[2026-11-26T22:12:43Z] [SENT   ] roofing_orlando_atlantic-roofing Step 2: [SENT   ] Email Step 2 delivered to contact@atlanticroofusa.com at 2026-11-26T22:12:43Z and recorded in /home/runner/work/forge-lead-studio/forge-lead-studio/tracking/crm_pipeline.json. | Quota now 2/15
+[2026-11-26T22:12:43Z] [DISPATCH] Executing Step 2 LIVE -> Davis Roofing Solutions <drew@davisroofingsolutions.com>...
+[2026-11-26T22:12:44Z] [SENT   ] roofing_dallas_davis-roofing-solutions Step 2: [SENT   ] Email Step 2 delivered to drew@davisroofingsolutions.com at 2026-11-26T22:12:44Z and recorded in /home/runner/work/forge-lead-studio/forge-lead-studio/tracking/crm_pipeline.json. | Quota now 3/15
+[2026-11-26T22:12:44Z] [DISPATCH] Executing Step 2 LIVE -> HonestRoof.com <info@honestroof.com>...
+[2026-11-26T22:12:45Z] [SENT   ] roofing_dallas_honestroof Step 2: [SENT   ] Email Step 2 delivered to info@honestroof.com at 2026-11-26T22:12:45Z and recorded in /home/runner/work/forge-lead-studio/forge-lead-studio/tracking/crm_pipeline.json. | Quota now 4/15
+[2026-11-26T22:12:45Z] [DISPATCH] Executing Step 1 LIVE -> All Airs Home Services <leads@allairshomeservices.com>...
+[2026-11-26T22:12:45Z] [SENT   ] hvac_atlanta_all-airs Step 1: [SENT   ] Email Step 1 delivered to leads@allairshomeservices.com at 2026-11-26T22:12:45Z and recorded in /home/runner/work/forge-lead-studio/forge-lead-studio/tracking/crm_pipeline.json. | Quota now 5/15
+[2026-11-26T22:12:45Z] [DISPATCH] Executing Step 1 LIVE -> Bartlett Heating & Cooling <service@callbartlett.com>...
+[2026-11-26T22:12:46Z] [SENT   ] hvac_atlanta_bartlett-hvac Step 1: [SENT   ] Email Step 1 delivered to service@callbartlett.com at 2026-11-26T22:12:46Z and recorded in /home/runner/work/forge-lead-studio/forge-lead-studio/tracking/crm_pipeline.json. | Quota now 6/15
+[2026-11-26T22:12:46Z] [DISPATCH] Executing Step 1 LIVE -> ClimateSmith, LLC <contact@climatesmith.com>...
+[2026-11-26T22:12:47Z] [SENT   ] hvac_atlanta_climatesmith Step 1: [SENT   ] Email Step 1 delivered to contact@climatesmith.com at 2026-11-26T22:12:47Z and recorded in /home/runner/work/forge-lead-studio/forge-lead-studio/tracking/crm_pipeline.json. | Quota now 7/15
+[2026-11-26T22:12:47Z] [DISPATCH] Executing Step 1 LIVE -> Community Mechanical <info@communitydfw.com>...
+[2026-11-26T22:12:48Z] [SENT   ] hvac_dallas_community-mechanical Step 1: [SENT   ] Email Step 1 delivered to info@communitydfw.com at 2026-11-26T22:12:48Z and recorded in /home/runner/work/forge-lead-studio/forge-lead-studio/tracking/crm_pipeline.json. | Quota now 8/15
+[2026-11-26T22:12:48Z] [DISPATCH] Executing Step 1 LIVE -> DFW HVAC <info@dfwhvac.com>...
+[2026-11-26T22:12:49Z] [SENT   ] hvac_dallas_dfw-hvac Step 1: [SENT   ] Email Step 1 delivered to info@dfwhvac.com at 2026-11-26T22:12:49Z and recorded in /home/runner/work/forge-lead-studio/forge-lead-studio/tracking/crm_pipeline.json. | Quota now 9/15
+[2026-11-26T22:12:49Z] [DISPATCH] Executing Step 1 LIVE -> Reliant Air Conditioning <service@reliantairconditioning.com>...
+[2026-11-26T22:12:50Z] [SENT   ] hvac_dallas_reliant-ac Step 1: [SENT   ] Email Step 1 delivered to service@reliantairconditioning.com at 2026-11-26T22:12:50Z and recorded in /home/runner/work/forge-lead-studio/forge-lead-studio/tracking/crm_pipeline.json. | Quota now 10/15
+[2026-11-26T22:12:50Z] [DISPATCH] Executing Step 1 LIVE -> A/C Mechanix <customerservice@acmechanix.com>...
+[2026-11-26T22:12:50Z] [SENT   ] hvac_orlando_ac-mechanix Step 1: [SENT   ] Email Step 1 delivered to customerservice@acmechanix.com at 2026-11-26T22:12:50Z and recorded in /home/runner/work/forge-lead-studio/forge-lead-studio/tracking/crm_pipeline.json. | Quota now 11/15
+[2026-11-26T22:12:50Z] [DISPATCH] Executing Step 1 LIVE -> Mark Daniels Air Conditioning & Heating <Service@markdanielsac.com>...
+[2026-11-26T22:12:51Z] [SENT   ] hvac_phoenix_mark-daniels-ac Step 1: [SENT   ] Email Step 1 delivered to Service@markdanielsac.com at 2026-11-26T22:12:51Z and recorded in /home/runner/work/forge-lead-studio/forge-lead-studio/tracking/crm_pipeline.json. | Quota now 12/15
+[2026-11-26T22:12:51Z] [DISPATCH] Executing Step 1 LIVE -> Reliable Air LLC <info@reliableairaz.com>...
+[2026-11-26T22:12:52Z] [SENT   ] hvac_phoenix_reliable-air Step 1: [SENT   ] Email Step 1 delivered to info@reliableairaz.com at 2026-11-26T22:12:52Z and recorded in /home/runner/work/forge-lead-studio/forge-lead-studio/tracking/crm_pipeline.json. | Quota now 13/15
+[2026-11-26T22:12:52Z] [DISPATCH] Executing Step 1 LIVE -> Service Smith, L.L.C. <admin@servicesmith.com>...
+[2026-11-26T22:12:53Z] [SENT   ] hvac_phoenix_service-smith Step 1: [SENT   ] Email Step 1 delivered to admin@servicesmith.com at 2026-11-26T22:12:53Z and recorded in /home/runner/work/forge-lead-studio/forge-lead-studio/tracking/crm_pipeline.json. | Quota now 14/15
+[2026-11-26T22:12:53Z] [QUOTA  ] Daily cap (14/15, Step 1 reserve=14) reached — deferring 3H AC of Tampa Step 1 to next UTC day.
+[2026-11-26T22:12:53Z] [QUOTA  ] Daily cap (14/15, Step 1 reserve=14) reached — deferring The A/C Guy of Tampa Bay Inc. Step 1 to next UTC day.
+[2026-11-26T22:12:53Z] [UPCOMING] Scheduled 2026-11-27 (12 prospects): Academy Roofing Inc. (Step 2), Advanced Roofing Solutions (Step 2), Allstate Roofing Inc. (Step 2), Ameristar Roofing & Restoration (Step 2), Atlanta Roofing & Restoration (Step 2), Evergreen Roofing Solutions (Step 2), Family Roofing (Step 2), Gryphon Roofing & Construction (Step 2), Horizon Roof Restoration (Step 2), Reset Roofing (Step 2), Right Way Roofing Inc. (Step 2), Wilson Brothers Roofing, Inc. (Step 2)
+[2026-11-26T22:12:53Z] [UPCOMING] Scheduled 2026-11-28 (11 prospects): Allegiance Roofing Services (Step 2), Decker Roofing Company LLC (Step 2), First Light Home Services LLC (Step 2), H.E. Parmer Company (Step 2), JM Melton Roofing (Step 2), Mr. GoodRoof (Step 2), Quality Roofing & Restoration (Step 2), Raleigh Residential Exteriors (Step 2), Rex Construction LLC (Step 2), Townsend Roofing & Construction Services, Inc. (Step 2), Twin Hammers Roofing & Contracting (Step 2)
+[2026-11-26T22:12:53Z] [UPCOMING] Scheduled 2026-11-29 (3 prospects): Buddy's Roofing & Repairs, Inc. (Step 3), DRS Roofing (Step 3), Roof Royale (Step 3)
+[2026-11-26T22:12:53Z] [AGENT00] Niche verdicts: roofing=TESTING (S2+=7, eng=0.0%, rep=0.0%), hvac=TESTING (S2+=0, eng=0.0%, rep=0.0%)
+[2026-11-26T22:12:53Z] [DONE   ] AutoPilot complete | Mode=LIVE AUTOPILOT | Dispatched=14 | Deferred=2 | Quota=14/15 | NicheAlerts=0

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-11-26T00:37:18Z",
+  "updated_at": "2026-11-26T22:12:53Z",
   "prospects": [
     {
       "prospect_id": "roofing_austin_austin-roofing-company",
@@ -109,9 +109,12 @@
       "last_sent_at": "2026-11-25T15:08:21Z",
       "last_sent_step": 2,
       "telemetry_enabled": true,
-      "demo_views": 0,
-      "max_step_reached": 0,
-      "vertical": "roofing"
+      "demo_views": 4,
+      "max_step_reached": 1,
+      "vertical": "roofing",
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-26T07:21:50.514Z"
     },
     {
       "prospect_id": "roofing_tampa_buddys-roofing",
@@ -215,16 +218,24 @@
           "to": "info@honestroof.com",
           "sent_at": "2026-11-23T00:16:21Z",
           "date_utc": "2026-11-23"
+        },
+        {
+          "step": 2,
+          "variant": "a",
+          "subject": "Your crimson-and-slate DFW roof estimator",
+          "to": "info@honestroof.com",
+          "sent_at": "2026-11-26T22:12:45Z",
+          "date_utc": "2026-11-26"
         }
       ],
-      "last_sent_at": "2026-11-23T00:16:21Z",
-      "last_sent_step": 1,
+      "last_sent_at": "2026-11-26T22:12:45Z",
+      "last_sent_step": 2,
       "telemetry_enabled": true,
-      "demo_views": 1,
+      "demo_views": 5,
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T21:23:17.135Z",
+      "last_viewed_at": "2026-11-26T08:22:18.239Z",
       "vertical": "roofing"
     },
     {
@@ -266,10 +277,18 @@
           "to": "drew@davisroofingsolutions.com",
           "sent_at": "2026-11-23T00:16:23Z",
           "date_utc": "2026-11-23"
+        },
+        {
+          "step": 2,
+          "variant": "a",
+          "subject": "Your blue-and-amber DFW roof calculator",
+          "to": "drew@davisroofingsolutions.com",
+          "sent_at": "2026-11-26T22:12:44Z",
+          "date_utc": "2026-11-26"
         }
       ],
-      "last_sent_at": "2026-11-23T00:16:23Z",
-      "last_sent_step": 1,
+      "last_sent_at": "2026-11-26T22:12:44Z",
+      "last_sent_step": 2,
       "telemetry_enabled": true,
       "demo_views": 1,
       "max_step_reached": 1,
@@ -317,16 +336,24 @@
           "to": "info@advantageroofingtx.com",
           "sent_at": "2026-11-23T00:16:25Z",
           "date_utc": "2026-11-23"
+        },
+        {
+          "step": 2,
+          "variant": "a",
+          "subject": "Your crimson-and-sandstone Houston roof calculator",
+          "to": "info@advantageroofingtx.com",
+          "sent_at": "2026-11-26T22:12:42Z",
+          "date_utc": "2026-11-26"
         }
       ],
-      "last_sent_at": "2026-11-23T00:16:25Z",
-      "last_sent_step": 1,
+      "last_sent_at": "2026-11-26T22:12:42Z",
+      "last_sent_step": 2,
       "telemetry_enabled": true,
-      "demo_views": 1,
+      "demo_views": 7,
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T20:55:20.211Z",
+      "last_viewed_at": "2026-11-26T08:18:24.558Z",
       "vertical": "roofing"
     },
     {
@@ -382,11 +409,11 @@
       "last_sent_at": "2026-11-25T23:25:00Z",
       "last_sent_step": 2,
       "telemetry_enabled": true,
-      "demo_views": 1,
+      "demo_views": 12,
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T09:36:07.059Z",
+      "last_viewed_at": "2026-11-26T16:09:23.509Z",
       "last_view_alerted_views": 1,
       "current_step": 2,
       "step_2_sent_at": "2026-11-25T23:25:00Z",
@@ -431,16 +458,24 @@
           "to": "contact@atlanticroofusa.com",
           "sent_at": "2026-11-23T00:16:28Z",
           "date_utc": "2026-11-23"
+        },
+        {
+          "step": 2,
+          "variant": "a",
+          "subject": "Your coastal-blue Orlando roof calculator",
+          "to": "contact@atlanticroofusa.com",
+          "sent_at": "2026-11-26T22:12:43Z",
+          "date_utc": "2026-11-26"
         }
       ],
-      "last_sent_at": "2026-11-23T00:16:28Z",
-      "last_sent_step": 1,
+      "last_sent_at": "2026-11-26T22:12:43Z",
+      "last_sent_step": 2,
       "telemetry_enabled": true,
-      "demo_views": 1,
+      "demo_views": 5,
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T20:10:12.405Z",
+      "last_viewed_at": "2026-11-26T08:21:52.628Z",
       "vertical": "roofing"
     },
     {
@@ -1236,11 +1271,11 @@
       ],
       "last_sent_at": "2026-11-25T23:20:23Z",
       "last_sent_step": 1,
-      "demo_views": 5,
+      "demo_views": 6,
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T18:25:53.115Z",
+      "last_viewed_at": "2026-11-26T15:54:13.938Z",
       "vertical": "roofing"
     },
     {
@@ -1662,11 +1697,11 @@
       ],
       "last_sent_at": "2026-11-25T23:20:42Z",
       "last_sent_step": 1,
-      "demo_views": 4,
+      "demo_views": 5,
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T18:44:16.370Z",
+      "last_viewed_at": "2026-11-26T01:12:34.874Z",
       "vertical": "roofing"
     },
     {
@@ -1686,7 +1721,7 @@
       "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
       "proposed_setup_fee_usd": 750,
       "proposed_retainer_usd": 149,
-      "status": "QUEUED_STEP_1",
+      "status": "SENT",
       "dossier_path": "pipeline/hvac_phoenix_service-smith/01_dossier.json",
       "spec_path": "pipeline/hvac_phoenix_service-smith/02_spec.json",
       "mvp_dir": "pipeline/hvac_phoenix_service-smith/03_mvp",
@@ -1705,9 +1740,25 @@
       "built_at": "2026-11-26T00:37:18Z",
       "outreach_generated_at": "2026-11-26T00:37:18Z",
       "audited_at": "2026-11-26T00:37:18Z",
-      "outreach_history": [],
+      "outreach_history": [
+        {
+          "step": 1,
+          "variant": "a",
+          "subject": "Quick HVAC build for Service Smith, L.L.C.",
+          "to": "admin@servicesmith.com",
+          "sent_at": "2026-11-26T22:12:53Z",
+          "date_utc": "2026-11-26"
+        }
+      ],
       "deployment_id": "c1408d74-54bd-4ba0-8838-3ecf17a3e749",
-      "deployed_at": "2026-11-26T00:43:44Z"
+      "deployed_at": "2026-11-26T00:43:44Z",
+      "demo_views": 10,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-26T11:52:02.252Z",
+      "last_sent_at": "2026-11-26T22:12:53Z",
+      "last_sent_step": 1
     },
     {
       "prospect_id": "hvac_phoenix_reliable-air",
@@ -1726,7 +1777,7 @@
       "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
       "proposed_setup_fee_usd": 750,
       "proposed_retainer_usd": 149,
-      "status": "QUEUED_STEP_1",
+      "status": "SENT",
       "dossier_path": "pipeline/hvac_phoenix_reliable-air/01_dossier.json",
       "spec_path": "pipeline/hvac_phoenix_reliable-air/02_spec.json",
       "mvp_dir": "pipeline/hvac_phoenix_reliable-air/03_mvp",
@@ -1745,9 +1796,25 @@
       "built_at": "2026-11-26T00:37:18Z",
       "outreach_generated_at": "2026-11-26T00:37:18Z",
       "audited_at": "2026-11-26T00:37:18Z",
-      "outreach_history": [],
+      "outreach_history": [
+        {
+          "step": 1,
+          "variant": "a",
+          "subject": "Quick HVAC build for Reliable Air LLC",
+          "to": "info@reliableairaz.com",
+          "sent_at": "2026-11-26T22:12:52Z",
+          "date_utc": "2026-11-26"
+        }
+      ],
       "deployment_id": "3f74c6fe-de2f-4cbf-bf18-021bbebf092f",
-      "deployed_at": "2026-11-26T00:43:44Z"
+      "deployed_at": "2026-11-26T00:43:44Z",
+      "demo_views": 42,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-26T21:51:16.020Z",
+      "last_sent_at": "2026-11-26T22:12:52Z",
+      "last_sent_step": 1
     },
     {
       "prospect_id": "hvac_phoenix_mark-daniels-ac",
@@ -1766,7 +1833,7 @@
       "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
       "proposed_setup_fee_usd": 750,
       "proposed_retainer_usd": 149,
-      "status": "QUEUED_STEP_1",
+      "status": "SENT",
       "dossier_path": "pipeline/hvac_phoenix_mark-daniels-ac/01_dossier.json",
       "spec_path": "pipeline/hvac_phoenix_mark-daniels-ac/02_spec.json",
       "mvp_dir": "pipeline/hvac_phoenix_mark-daniels-ac/03_mvp",
@@ -1785,9 +1852,25 @@
       "built_at": "2026-11-26T00:37:18Z",
       "outreach_generated_at": "2026-11-26T00:37:18Z",
       "audited_at": "2026-11-26T00:37:18Z",
-      "outreach_history": [],
+      "outreach_history": [
+        {
+          "step": 1,
+          "variant": "a",
+          "subject": "Quick HVAC build for Mark Daniels Air Conditioning & Heating",
+          "to": "Service@markdanielsac.com",
+          "sent_at": "2026-11-26T22:12:51Z",
+          "date_utc": "2026-11-26"
+        }
+      ],
       "deployment_id": "5e012aec-33da-4cd4-905c-d7f37d7e6996",
-      "deployed_at": "2026-11-26T00:43:45Z"
+      "deployed_at": "2026-11-26T00:43:45Z",
+      "demo_views": 6,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-26T06:10:00.223Z",
+      "last_sent_at": "2026-11-26T22:12:51Z",
+      "last_sent_step": 1
     },
     {
       "prospect_id": "hvac_dallas_dfw-hvac",
@@ -1806,7 +1889,7 @@
       "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
       "proposed_setup_fee_usd": 750,
       "proposed_retainer_usd": 149,
-      "status": "QUEUED_STEP_1",
+      "status": "SENT",
       "dossier_path": "pipeline/hvac_dallas_dfw-hvac/01_dossier.json",
       "spec_path": "pipeline/hvac_dallas_dfw-hvac/02_spec.json",
       "mvp_dir": "pipeline/hvac_dallas_dfw-hvac/03_mvp",
@@ -1825,9 +1908,25 @@
       "built_at": "2026-11-26T00:37:18Z",
       "outreach_generated_at": "2026-11-26T00:37:18Z",
       "audited_at": "2026-11-26T00:37:18Z",
-      "outreach_history": [],
+      "outreach_history": [
+        {
+          "step": 1,
+          "variant": "a",
+          "subject": "Quick HVAC build for DFW HVAC",
+          "to": "info@dfwhvac.com",
+          "sent_at": "2026-11-26T22:12:49Z",
+          "date_utc": "2026-11-26"
+        }
+      ],
       "deployment_id": "db3a935e-7d52-4855-b221-703a878cee45",
-      "deployed_at": "2026-11-26T00:43:46Z"
+      "deployed_at": "2026-11-26T00:43:46Z",
+      "demo_views": 4,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-26T02:23:58.771Z",
+      "last_sent_at": "2026-11-26T22:12:49Z",
+      "last_sent_step": 1
     },
     {
       "prospect_id": "hvac_dallas_reliant-ac",
@@ -1846,7 +1945,7 @@
       "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
       "proposed_setup_fee_usd": 750,
       "proposed_retainer_usd": 149,
-      "status": "QUEUED_STEP_1",
+      "status": "SENT",
       "dossier_path": "pipeline/hvac_dallas_reliant-ac/01_dossier.json",
       "spec_path": "pipeline/hvac_dallas_reliant-ac/02_spec.json",
       "mvp_dir": "pipeline/hvac_dallas_reliant-ac/03_mvp",
@@ -1865,9 +1964,25 @@
       "built_at": "2026-11-26T00:37:18Z",
       "outreach_generated_at": "2026-11-26T00:37:18Z",
       "audited_at": "2026-11-26T00:37:18Z",
-      "outreach_history": [],
+      "outreach_history": [
+        {
+          "step": 1,
+          "variant": "a",
+          "subject": "Quick HVAC build for Reliant Air Conditioning",
+          "to": "service@reliantairconditioning.com",
+          "sent_at": "2026-11-26T22:12:50Z",
+          "date_utc": "2026-11-26"
+        }
+      ],
       "deployment_id": "06cc148e-2c6e-4227-8b8a-11b0da59d092",
-      "deployed_at": "2026-11-26T00:43:46Z"
+      "deployed_at": "2026-11-26T00:43:46Z",
+      "demo_views": 11,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-26T09:28:17.131Z",
+      "last_sent_at": "2026-11-26T22:12:50Z",
+      "last_sent_step": 1
     },
     {
       "prospect_id": "hvac_dallas_community-mechanical",
@@ -1886,7 +2001,7 @@
       "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
       "proposed_setup_fee_usd": 750,
       "proposed_retainer_usd": 149,
-      "status": "QUEUED_STEP_1",
+      "status": "SENT",
       "dossier_path": "pipeline/hvac_dallas_community-mechanical/01_dossier.json",
       "spec_path": "pipeline/hvac_dallas_community-mechanical/02_spec.json",
       "mvp_dir": "pipeline/hvac_dallas_community-mechanical/03_mvp",
@@ -1905,9 +2020,25 @@
       "built_at": "2026-11-26T00:37:18Z",
       "outreach_generated_at": "2026-11-26T00:37:18Z",
       "audited_at": "2026-11-26T00:37:18Z",
-      "outreach_history": [],
+      "outreach_history": [
+        {
+          "step": 1,
+          "variant": "a",
+          "subject": "Quick HVAC build for Community Mechanical",
+          "to": "info@communitydfw.com",
+          "sent_at": "2026-11-26T22:12:48Z",
+          "date_utc": "2026-11-26"
+        }
+      ],
       "deployment_id": "0995917e-0d70-48cb-bc31-41132928a47e",
-      "deployed_at": "2026-11-26T00:43:47Z"
+      "deployed_at": "2026-11-26T00:43:47Z",
+      "demo_views": 5,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-26T02:28:10.473Z",
+      "last_sent_at": "2026-11-26T22:12:48Z",
+      "last_sent_step": 1
     },
     {
       "prospect_id": "hvac_tampa_3h-ac",
@@ -1947,7 +2078,12 @@
       "audited_at": "2026-11-26T00:37:18Z",
       "outreach_history": [],
       "deployment_id": "f7002e18-fb1c-4729-a137-9548e04ed616",
-      "deployed_at": "2026-11-26T00:43:58Z"
+      "deployed_at": "2026-11-26T00:43:58Z",
+      "demo_views": 5,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-26T01:56:52.632Z"
     },
     {
       "prospect_id": "hvac_tampa_ac-guy-tampa",
@@ -1987,7 +2123,12 @@
       "audited_at": "2026-11-26T00:37:18Z",
       "outreach_history": [],
       "deployment_id": "3cb69389-06a0-4710-a8e0-324035da82be",
-      "deployed_at": "2026-11-26T00:43:58Z"
+      "deployed_at": "2026-11-26T00:43:58Z",
+      "demo_views": 43,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-26T21:51:23.317Z"
     },
     {
       "prospect_id": "hvac_orlando_ac-mechanix",
@@ -2006,7 +2147,7 @@
       "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
       "proposed_setup_fee_usd": 750,
       "proposed_retainer_usd": 149,
-      "status": "QUEUED_STEP_1",
+      "status": "SENT",
       "dossier_path": "pipeline/hvac_orlando_ac-mechanix/01_dossier.json",
       "spec_path": "pipeline/hvac_orlando_ac-mechanix/02_spec.json",
       "mvp_dir": "pipeline/hvac_orlando_ac-mechanix/03_mvp",
@@ -2025,9 +2166,25 @@
       "built_at": "2026-11-26T00:37:18Z",
       "outreach_generated_at": "2026-11-26T00:37:18Z",
       "audited_at": "2026-11-26T00:37:18Z",
-      "outreach_history": [],
+      "outreach_history": [
+        {
+          "step": 1,
+          "variant": "a",
+          "subject": "Quick HVAC build for A/C Mechanix",
+          "to": "customerservice@acmechanix.com",
+          "sent_at": "2026-11-26T22:12:50Z",
+          "date_utc": "2026-11-26"
+        }
+      ],
       "deployment_id": "2bca316f-1b74-4c2d-b1af-4f5919566476",
-      "deployed_at": "2026-11-26T00:43:59Z"
+      "deployed_at": "2026-11-26T00:43:59Z",
+      "demo_views": 11,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-26T04:12:24.250Z",
+      "last_sent_at": "2026-11-26T22:12:50Z",
+      "last_sent_step": 1
     },
     {
       "prospect_id": "hvac_atlanta_bartlett-hvac",
@@ -2046,7 +2203,7 @@
       "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
       "proposed_setup_fee_usd": 750,
       "proposed_retainer_usd": 149,
-      "status": "QUEUED_STEP_1",
+      "status": "SENT",
       "dossier_path": "pipeline/hvac_atlanta_bartlett-hvac/01_dossier.json",
       "spec_path": "pipeline/hvac_atlanta_bartlett-hvac/02_spec.json",
       "mvp_dir": "pipeline/hvac_atlanta_bartlett-hvac/03_mvp",
@@ -2065,9 +2222,25 @@
       "built_at": "2026-11-26T00:37:18Z",
       "outreach_generated_at": "2026-11-26T00:37:18Z",
       "audited_at": "2026-11-26T00:37:18Z",
-      "outreach_history": [],
+      "outreach_history": [
+        {
+          "step": 1,
+          "variant": "a",
+          "subject": "Quick HVAC build for Bartlett Heating & Cooling",
+          "to": "service@callbartlett.com",
+          "sent_at": "2026-11-26T22:12:46Z",
+          "date_utc": "2026-11-26"
+        }
+      ],
       "deployment_id": "269cae09-f758-4665-bccf-692f42802453",
-      "deployed_at": "2026-11-26T00:43:59Z"
+      "deployed_at": "2026-11-26T00:43:59Z",
+      "demo_views": 6,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-26T09:28:14.204Z",
+      "last_sent_at": "2026-11-26T22:12:46Z",
+      "last_sent_step": 1
     },
     {
       "prospect_id": "hvac_atlanta_climatesmith",
@@ -2086,7 +2259,7 @@
       "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
       "proposed_setup_fee_usd": 750,
       "proposed_retainer_usd": 149,
-      "status": "QUEUED_STEP_1",
+      "status": "SENT",
       "dossier_path": "pipeline/hvac_atlanta_climatesmith/01_dossier.json",
       "spec_path": "pipeline/hvac_atlanta_climatesmith/02_spec.json",
       "mvp_dir": "pipeline/hvac_atlanta_climatesmith/03_mvp",
@@ -2105,9 +2278,25 @@
       "built_at": "2026-11-26T00:37:18Z",
       "outreach_generated_at": "2026-11-26T00:37:18Z",
       "audited_at": "2026-11-26T00:37:18Z",
-      "outreach_history": [],
+      "outreach_history": [
+        {
+          "step": 1,
+          "variant": "a",
+          "subject": "Quick HVAC build for ClimateSmith, LLC",
+          "to": "contact@climatesmith.com",
+          "sent_at": "2026-11-26T22:12:47Z",
+          "date_utc": "2026-11-26"
+        }
+      ],
       "deployment_id": "c711f714-1507-46b2-808e-4e966551c82c",
-      "deployed_at": "2026-11-26T00:44:00Z"
+      "deployed_at": "2026-11-26T00:44:00Z",
+      "demo_views": 5,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-26T04:11:41.525Z",
+      "last_sent_at": "2026-11-26T22:12:47Z",
+      "last_sent_step": 1
     },
     {
       "prospect_id": "hvac_atlanta_all-airs",
@@ -2126,7 +2315,7 @@
       "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
       "proposed_setup_fee_usd": 750,
       "proposed_retainer_usd": 149,
-      "status": "QUEUED_STEP_1",
+      "status": "SENT",
       "dossier_path": "pipeline/hvac_atlanta_all-airs/01_dossier.json",
       "spec_path": "pipeline/hvac_atlanta_all-airs/02_spec.json",
       "mvp_dir": "pipeline/hvac_atlanta_all-airs/03_mvp",
@@ -2145,9 +2334,25 @@
       "built_at": "2026-11-26T00:37:18Z",
       "outreach_generated_at": "2026-11-26T00:37:18Z",
       "audited_at": "2026-11-26T00:37:18Z",
-      "outreach_history": [],
+      "outreach_history": [
+        {
+          "step": 1,
+          "variant": "a",
+          "subject": "Quick HVAC build for All Airs Home Services",
+          "to": "leads@allairshomeservices.com",
+          "sent_at": "2026-11-26T22:12:45Z",
+          "date_utc": "2026-11-26"
+        }
+      ],
       "deployment_id": "153c4811-cfd1-4ff1-8273-6b36b5803a3a",
-      "deployed_at": "2026-11-26T00:44:01Z"
+      "deployed_at": "2026-11-26T00:44:01Z",
+      "demo_views": 5,
+      "max_step_reached": 1,
+      "test_leads": 0,
+      "prod_leads": 0,
+      "last_viewed_at": "2026-11-26T04:10:57.398Z",
+      "last_sent_at": "2026-11-26T22:12:45Z",
+      "last_sent_step": 1
     }
   ],
   "last_updated": "2026-11-25T15:29:04Z"
