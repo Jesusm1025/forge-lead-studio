@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-11-26T22:12:53Z",
+  "updated_at": "2026-11-27T21:52:41Z",
   "prospects": [
     {
       "prospect_id": "roofing_austin_austin-roofing-company",
@@ -109,12 +109,12 @@
       "last_sent_at": "2026-11-25T15:08:21Z",
       "last_sent_step": 2,
       "telemetry_enabled": true,
-      "demo_views": 4,
+      "demo_views": 6,
       "max_step_reached": 1,
       "vertical": "roofing",
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-26T07:21:50.514Z"
+      "last_viewed_at": "2026-11-27T21:48:12.488Z"
     },
     {
       "prospect_id": "roofing_tampa_buddys-roofing",
@@ -172,11 +172,11 @@
       "last_sent_at": "2026-11-25T15:08:18Z",
       "last_sent_step": 2,
       "telemetry_enabled": true,
-      "demo_views": 1,
+      "demo_views": 7,
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T17:01:16.999Z",
+      "last_viewed_at": "2026-11-27T21:38:54.865Z",
       "vertical": "roofing"
     },
     {
@@ -231,12 +231,15 @@
       "last_sent_at": "2026-11-26T22:12:45Z",
       "last_sent_step": 2,
       "telemetry_enabled": true,
-      "demo_views": 5,
-      "max_step_reached": 1,
+      "demo_views": 7,
+      "max_step_reached": 3,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-26T08:22:18.239Z",
-      "vertical": "roofing"
+      "last_viewed_at": "2026-11-27T21:36:02.208Z",
+      "vertical": "roofing",
+      "last_view_alerted_views": 7,
+      "last_alerted_step": 3,
+      "last_alerted_leads": 0
     },
     {
       "prospect_id": "roofing_dallas_davis-roofing-solutions",
@@ -290,11 +293,11 @@
       "last_sent_at": "2026-11-26T22:12:44Z",
       "last_sent_step": 2,
       "telemetry_enabled": true,
-      "demo_views": 1,
+      "demo_views": 5,
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T19:53:38.769Z",
+      "last_viewed_at": "2026-11-27T09:21:46.190Z",
       "vertical": "roofing"
     },
     {
@@ -349,11 +352,11 @@
       "last_sent_at": "2026-11-26T22:12:42Z",
       "last_sent_step": 2,
       "telemetry_enabled": true,
-      "demo_views": 7,
+      "demo_views": 8,
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-26T08:18:24.558Z",
+      "last_viewed_at": "2026-11-27T05:06:39.791Z",
       "vertical": "roofing"
     },
     {
@@ -409,11 +412,11 @@
       "last_sent_at": "2026-11-25T23:25:00Z",
       "last_sent_step": 2,
       "telemetry_enabled": true,
-      "demo_views": 12,
+      "demo_views": 16,
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-26T16:09:23.509Z",
+      "last_viewed_at": "2026-11-27T09:17:44.667Z",
       "last_view_alerted_views": 1,
       "current_step": 2,
       "step_2_sent_at": "2026-11-25T23:25:00Z",
@@ -471,11 +474,11 @@
       "last_sent_at": "2026-11-26T22:12:43Z",
       "last_sent_step": 2,
       "telemetry_enabled": true,
-      "demo_views": 5,
+      "demo_views": 7,
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-26T08:21:52.628Z",
+      "last_viewed_at": "2026-11-27T05:11:12.200Z",
       "vertical": "roofing"
     },
     {
@@ -521,10 +524,18 @@
           "to": "info@allstateroofingaz.com",
           "sent_at": "2026-11-24T18:46:54Z",
           "date_utc": "2026-11-24"
+        },
+        {
+          "step": 2,
+          "variant": "a",
+          "subject": "Your bronze-and-gold Phoenix roof calculator",
+          "to": "info@allstateroofingaz.com",
+          "sent_at": "2026-11-27T21:52:28Z",
+          "date_utc": "2026-11-27"
         }
       ],
-      "last_sent_at": "2026-11-24T18:46:54Z",
-      "last_sent_step": 1,
+      "last_sent_at": "2026-11-27T21:52:28Z",
+      "last_sent_step": 2,
       "vertical": "roofing"
     },
     {
@@ -570,10 +581,18 @@
           "to": "info@azroof.com",
           "sent_at": "2026-11-24T18:46:56Z",
           "date_utc": "2026-11-24"
+        },
+        {
+          "step": 2,
+          "variant": "a",
+          "subject": "Your navy-and-gold Phoenix roof calculator",
+          "to": "info@azroof.com",
+          "sent_at": "2026-11-27T21:52:37Z",
+          "date_utc": "2026-11-27"
         }
       ],
-      "last_sent_at": "2026-11-24T18:46:56Z",
-      "last_sent_step": 1,
+      "last_sent_at": "2026-11-27T21:52:37Z",
+      "last_sent_step": 2,
       "vertical": "roofing"
     },
     {
@@ -619,10 +638,18 @@
           "to": "hello@gogryphon.com",
           "sent_at": "2026-11-24T18:46:57Z",
           "date_utc": "2026-11-24"
+        },
+        {
+          "step": 2,
+          "variant": "a",
+          "subject": "Your navy-and-gold Phoenix roof calculator",
+          "to": "hello@gogryphon.com",
+          "sent_at": "2026-11-27T21:52:34Z",
+          "date_utc": "2026-11-27"
         }
       ],
-      "last_sent_at": "2026-11-24T18:46:57Z",
-      "last_sent_step": 1,
+      "last_sent_at": "2026-11-27T21:52:34Z",
+      "last_sent_step": 2,
       "vertical": "roofing"
     },
     {
@@ -668,10 +695,18 @@
           "to": "info@resetroofing.com",
           "sent_at": "2026-11-24T18:46:59Z",
           "date_utc": "2026-11-24"
+        },
+        {
+          "step": 2,
+          "variant": "a",
+          "subject": "Your navy-and-orange Atlanta roof calculator",
+          "to": "info@resetroofing.com",
+          "sent_at": "2026-11-27T21:52:36Z",
+          "date_utc": "2026-11-27"
         }
       ],
-      "last_sent_at": "2026-11-24T18:46:59Z",
-      "last_sent_step": 1,
+      "last_sent_at": "2026-11-27T21:52:36Z",
+      "last_sent_step": 2,
       "vertical": "roofing"
     },
     {
@@ -717,10 +752,18 @@
           "to": "brett@atlroofingandrestoration.com",
           "sent_at": "2026-11-24T18:47:01Z",
           "date_utc": "2026-11-24"
+        },
+        {
+          "step": 2,
+          "variant": "a",
+          "subject": "Your crimson-and-slate Atlanta roof calculator",
+          "to": "brett@atlroofingandrestoration.com",
+          "sent_at": "2026-11-27T21:52:31Z",
+          "date_utc": "2026-11-27"
         }
       ],
-      "last_sent_at": "2026-11-24T18:47:01Z",
-      "last_sent_step": 1,
+      "last_sent_at": "2026-11-27T21:52:31Z",
+      "last_sent_step": 2,
       "vertical": "roofing"
     },
     {
@@ -766,10 +809,18 @@
           "to": "info@ameristarpro.com",
           "sent_at": "2026-11-24T18:47:03Z",
           "date_utc": "2026-11-24"
+        },
+        {
+          "step": 2,
+          "variant": "a",
+          "subject": "Your navy-and-sky-blue Atlanta roof calculator",
+          "to": "info@ameristarpro.com",
+          "sent_at": "2026-11-27T21:52:29Z",
+          "date_utc": "2026-11-27"
         }
       ],
-      "last_sent_at": "2026-11-24T18:47:03Z",
-      "last_sent_step": 1,
+      "last_sent_at": "2026-11-27T21:52:29Z",
+      "last_sent_step": 2,
       "vertical": "roofing"
     },
     {
@@ -815,10 +866,18 @@
           "to": "matt@evergreenroofingcharlotte.com",
           "sent_at": "2026-11-24T18:47:04Z",
           "date_utc": "2026-11-24"
+        },
+        {
+          "step": 2,
+          "variant": "a",
+          "subject": "Your slate-and-evergreen Charlotte roof calculator",
+          "to": "matt@evergreenroofingcharlotte.com",
+          "sent_at": "2026-11-27T21:52:32Z",
+          "date_utc": "2026-11-27"
         }
       ],
-      "last_sent_at": "2026-11-24T18:47:04Z",
-      "last_sent_step": 1,
+      "last_sent_at": "2026-11-27T21:52:32Z",
+      "last_sent_step": 2,
       "vertical": "roofing"
     },
     {
@@ -864,10 +923,18 @@
           "to": "info@advancedroofingsolutionsclt.com",
           "sent_at": "2026-11-24T18:47:06Z",
           "date_utc": "2026-11-24"
+        },
+        {
+          "step": 2,
+          "variant": "a",
+          "subject": "Your blue-and-slate Charlotte roof calculator",
+          "to": "info@advancedroofingsolutionsclt.com",
+          "sent_at": "2026-11-27T21:52:27Z",
+          "date_utc": "2026-11-27"
         }
       ],
-      "last_sent_at": "2026-11-24T18:47:06Z",
-      "last_sent_step": 1,
+      "last_sent_at": "2026-11-27T21:52:27Z",
+      "last_sent_step": 2,
       "vertical": "roofing"
     },
     {
@@ -913,10 +980,18 @@
           "to": "info@horizonrr.com",
           "sent_at": "2026-11-24T18:47:08Z",
           "date_utc": "2026-11-24"
+        },
+        {
+          "step": 2,
+          "variant": "a",
+          "subject": "Your navy-and-copper Charlotte roof calculator",
+          "to": "info@horizonrr.com",
+          "sent_at": "2026-11-27T21:52:35Z",
+          "date_utc": "2026-11-27"
         }
       ],
-      "last_sent_at": "2026-11-24T18:47:08Z",
-      "last_sent_step": 1,
+      "last_sent_at": "2026-11-27T21:52:35Z",
+      "last_sent_step": 2,
       "vertical": "roofing"
     },
     {
@@ -962,10 +1037,18 @@
           "to": "estimates@academyroofinginc.com",
           "sent_at": "2026-11-24T18:47:09Z",
           "date_utc": "2026-11-24"
+        },
+        {
+          "step": 2,
+          "variant": "a",
+          "subject": "Your burgundy-and-slate Denver roof calculator",
+          "to": "estimates@academyroofinginc.com",
+          "sent_at": "2026-11-27T21:52:26Z",
+          "date_utc": "2026-11-27"
         }
       ],
-      "last_sent_at": "2026-11-24T18:47:09Z",
-      "last_sent_step": 1,
+      "last_sent_at": "2026-11-27T21:52:26Z",
+      "last_sent_step": 2,
       "vertical": "roofing"
     },
     {
@@ -1011,10 +1094,18 @@
           "to": "doug@wilsonbrothersroofing.com",
           "sent_at": "2026-11-24T18:47:11Z",
           "date_utc": "2026-11-24"
+        },
+        {
+          "step": 2,
+          "variant": "a",
+          "subject": "Your navy-and-crimson Denver roof calculator",
+          "to": "doug@wilsonbrothersroofing.com",
+          "sent_at": "2026-11-27T21:52:39Z",
+          "date_utc": "2026-11-27"
         }
       ],
-      "last_sent_at": "2026-11-24T18:47:11Z",
-      "last_sent_step": 1,
+      "last_sent_at": "2026-11-27T21:52:39Z",
+      "last_sent_step": 2,
       "vertical": "roofing"
     },
     {
@@ -1060,10 +1151,18 @@
           "to": "RoofingLady@gmail.com",
           "sent_at": "2026-11-24T18:47:13Z",
           "date_utc": "2026-11-24"
+        },
+        {
+          "step": 2,
+          "variant": "a",
+          "subject": "Your teal-and-gold Denver roof calculator",
+          "to": "RoofingLady@gmail.com",
+          "sent_at": "2026-11-27T21:52:33Z",
+          "date_utc": "2026-11-27"
         }
       ],
-      "last_sent_at": "2026-11-24T18:47:13Z",
-      "last_sent_step": 1,
+      "last_sent_at": "2026-11-27T21:52:33Z",
+      "last_sent_step": 2,
       "vertical": "roofing"
     },
     {
@@ -1591,11 +1690,11 @@
       ],
       "last_sent_at": "2026-11-25T23:20:38Z",
       "last_sent_step": 1,
-      "demo_views": 5,
+      "demo_views": 6,
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T20:02:44.394Z",
+      "last_viewed_at": "2026-11-27T00:16:36.164Z",
       "vertical": "roofing"
     },
     {
@@ -1644,11 +1743,11 @@
       ],
       "last_sent_at": "2026-11-25T23:20:40Z",
       "last_sent_step": 1,
-      "demo_views": 8,
+      "demo_views": 9,
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-25T22:50:55.522Z",
+      "last_viewed_at": "2026-11-26T22:53:57.510Z",
       "vertical": "roofing"
     },
     {
@@ -1697,11 +1796,11 @@
       ],
       "last_sent_at": "2026-11-25T23:20:42Z",
       "last_sent_step": 1,
-      "demo_views": 5,
+      "demo_views": 7,
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-26T01:12:34.874Z",
+      "last_viewed_at": "2026-11-27T18:47:58.256Z",
       "vertical": "roofing"
     },
     {
@@ -1808,11 +1907,11 @@
       ],
       "deployment_id": "3f74c6fe-de2f-4cbf-bf18-021bbebf092f",
       "deployed_at": "2026-11-26T00:43:44Z",
-      "demo_views": 42,
+      "demo_views": 65,
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-26T21:51:16.020Z",
+      "last_viewed_at": "2026-11-27T21:33:36.021Z",
       "last_sent_at": "2026-11-26T22:12:52Z",
       "last_sent_step": 1
     },
@@ -1864,11 +1963,11 @@
       ],
       "deployment_id": "5e012aec-33da-4cd4-905c-d7f37d7e6996",
       "deployed_at": "2026-11-26T00:43:45Z",
-      "demo_views": 6,
+      "demo_views": 7,
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-26T06:10:00.223Z",
+      "last_viewed_at": "2026-11-27T10:44:59.322Z",
       "last_sent_at": "2026-11-26T22:12:51Z",
       "last_sent_step": 1
     },
@@ -1889,7 +1988,7 @@
       "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
       "proposed_setup_fee_usd": 750,
       "proposed_retainer_usd": 149,
-      "status": "SENT",
+      "status": "BOUNCED_MX",
       "dossier_path": "pipeline/hvac_dallas_dfw-hvac/01_dossier.json",
       "spec_path": "pipeline/hvac_dallas_dfw-hvac/02_spec.json",
       "mvp_dir": "pipeline/hvac_dallas_dfw-hvac/03_mvp",
@@ -1926,7 +2025,9 @@
       "prod_leads": 0,
       "last_viewed_at": "2026-11-26T02:23:58.771Z",
       "last_sent_at": "2026-11-26T22:12:49Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "bounce_reason": "AutoPilot IMAP DSN detected: Delivery Status Notification (Failure)",
+      "bounce_checked_at": "2026-11-27T21:52:24Z"
     },
     {
       "prospect_id": "hvac_dallas_reliant-ac",
@@ -1945,7 +2046,7 @@
       "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
       "proposed_setup_fee_usd": 750,
       "proposed_retainer_usd": 149,
-      "status": "SENT",
+      "status": "BOUNCED_MX",
       "dossier_path": "pipeline/hvac_dallas_reliant-ac/01_dossier.json",
       "spec_path": "pipeline/hvac_dallas_reliant-ac/02_spec.json",
       "mvp_dir": "pipeline/hvac_dallas_reliant-ac/03_mvp",
@@ -1976,13 +2077,15 @@
       ],
       "deployment_id": "06cc148e-2c6e-4227-8b8a-11b0da59d092",
       "deployed_at": "2026-11-26T00:43:46Z",
-      "demo_views": 11,
+      "demo_views": 13,
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-26T09:28:17.131Z",
+      "last_viewed_at": "2026-11-27T13:37:56.958Z",
       "last_sent_at": "2026-11-26T22:12:50Z",
-      "last_sent_step": 1
+      "last_sent_step": 1,
+      "bounce_reason": "AutoPilot IMAP DSN detected: Delivery Status Notification (Failure)",
+      "bounce_checked_at": "2026-11-27T21:52:24Z"
     },
     {
       "prospect_id": "hvac_dallas_community-mechanical",
@@ -2057,7 +2160,7 @@
       "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
       "proposed_setup_fee_usd": 750,
       "proposed_retainer_usd": 149,
-      "status": "QUEUED_STEP_1",
+      "status": "SENT",
       "dossier_path": "pipeline/hvac_tampa_3h-ac/01_dossier.json",
       "spec_path": "pipeline/hvac_tampa_3h-ac/02_spec.json",
       "mvp_dir": "pipeline/hvac_tampa_3h-ac/03_mvp",
@@ -2076,14 +2179,25 @@
       "built_at": "2026-11-26T00:37:18Z",
       "outreach_generated_at": "2026-11-26T00:37:18Z",
       "audited_at": "2026-11-26T00:37:18Z",
-      "outreach_history": [],
+      "outreach_history": [
+        {
+          "step": 1,
+          "variant": "a",
+          "subject": "Quick HVAC build for 3H AC of Tampa",
+          "to": "3hac@3hcontracting.com",
+          "sent_at": "2026-11-27T21:52:40Z",
+          "date_utc": "2026-11-27"
+        }
+      ],
       "deployment_id": "f7002e18-fb1c-4729-a137-9548e04ed616",
       "deployed_at": "2026-11-26T00:43:58Z",
       "demo_views": 5,
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-26T01:56:52.632Z"
+      "last_viewed_at": "2026-11-26T01:56:52.632Z",
+      "last_sent_at": "2026-11-27T21:52:40Z",
+      "last_sent_step": 1
     },
     {
       "prospect_id": "hvac_tampa_ac-guy-tampa",
@@ -2102,7 +2216,7 @@
       "recommended_solution": "TYPE_B_HVAC_CALCULATOR",
       "proposed_setup_fee_usd": 750,
       "proposed_retainer_usd": 149,
-      "status": "QUEUED_STEP_1",
+      "status": "SENT",
       "dossier_path": "pipeline/hvac_tampa_ac-guy-tampa/01_dossier.json",
       "spec_path": "pipeline/hvac_tampa_ac-guy-tampa/02_spec.json",
       "mvp_dir": "pipeline/hvac_tampa_ac-guy-tampa/03_mvp",
@@ -2121,14 +2235,25 @@
       "built_at": "2026-11-26T00:37:18Z",
       "outreach_generated_at": "2026-11-26T00:37:18Z",
       "audited_at": "2026-11-26T00:37:18Z",
-      "outreach_history": [],
+      "outreach_history": [
+        {
+          "step": 1,
+          "variant": "a",
+          "subject": "Quick HVAC build for The A/C Guy of Tampa Bay Inc.",
+          "to": "office@acguyoftampa.com",
+          "sent_at": "2026-11-27T21:52:41Z",
+          "date_utc": "2026-11-27"
+        }
+      ],
       "deployment_id": "3cb69389-06a0-4710-a8e0-324035da82be",
       "deployed_at": "2026-11-26T00:43:58Z",
-      "demo_views": 43,
+      "demo_views": 68,
       "max_step_reached": 1,
       "test_leads": 0,
       "prod_leads": 0,
-      "last_viewed_at": "2026-11-26T21:51:23.317Z"
+      "last_viewed_at": "2026-11-27T21:33:40.747Z",
+      "last_sent_at": "2026-11-27T21:52:41Z",
+      "last_sent_step": 1
     },
     {
       "prospect_id": "hvac_orlando_ac-mechanix",

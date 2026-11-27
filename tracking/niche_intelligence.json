@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "agent": "00-niche-evaluator",
-  "evaluated_at": "2026-11-26T22:13:10Z",
+  "evaluated_at": "2026-11-27T21:52:41Z",
   "thresholds": {
     "scale_min_step2_delivered": 10,
     "scale_min_demo_engagement_rate": 0.08,
@@ -51,14 +51,14 @@
         "total_prospects": 32,
         "active_sent": 30,
         "queued_step_1": 0,
-        "step2_plus_delivered": 7,
-        "engaged_demos": 0,
-        "total_demo_views": 95,
+        "step2_plus_delivered": 19,
+        "engaged_demos": 1,
+        "total_demo_views": 120,
         "total_leads_captured": 0,
         "human_replies": 0,
         "bounces": 2,
         "unsubscribes": 0,
-        "demo_engagement_rate": 0.0,
+        "demo_engagement_rate": 0.0526,
         "reply_rate": 0.0,
         "bounce_rate": 0.0625,
         "active_pipeline_setup_usd": 22700,
@@ -68,10 +68,10 @@
       "recommendation": {
         "en": {
           "verdict_label": "TESTING — Gathering Signal",
-          "headline": "Hold Expansion (7/15 Step 2 Demos) & Optimize Copy/Calculator",
-          "summary": "Gathering statistically meaningful signal: 7/15 Step 2+ live demos delivered (0 interactive demos = 0.0%, 0 replies = 0.0%). Hold new wave expansion until 8 more Step 2 deliveries land.",
+          "headline": "Hold Expansion (19/15 Step 2 Demos) & Optimize Copy/Calculator",
+          "summary": "Gathering statistically meaningful signal: 19/15 Step 2+ live demos delivered (1 interactive demos = 5.3%, 0 replies = 0.0%). Hold new wave expansion until 0 more Step 2 deliveries land.",
           "next_moves": [
-            "Hold new scouting waves until Step 2+ deliveries reach 15 (3 away from SCALE gate at 10+).",
+            "Hold new scouting waves until Step 2+ deliveries reach 15 (0 away from SCALE gate at 10+).",
             "A/B test Step 2 subject lines referencing concrete metro ballpark pricing to lift demo click-through.",
             "Watch Cloudflare KV for Step 2–4 interactions; call any prospect hitting max_step >= 2 within 15 minutes.",
             "Pre-stage next target metros once validated: Kansas City, MO, Oklahoma City, OK, Columbus, OH."
@@ -95,10 +95,10 @@
         },
         "es": {
           "verdict_label": "EN PRUEBA — Recopilando Señal",
-          "headline": "Pausar Expansión (7/15 Demos Paso 2) y Afinar Copy/Calculadora",
-          "summary": "Recopilando señal estadística: 7/15 demos Paso 2+ entregados (0 demos interactivos = 0.0%, 0 respuestas = 0.0%). Espera 8 entregas Paso 2 adicionales antes de abrir una nueva ola.",
+          "headline": "Pausar Expansión (19/15 Demos Paso 2) y Afinar Copy/Calculadora",
+          "summary": "Recopilando señal estadística: 19/15 demos Paso 2+ entregados (1 demos interactivos = 5.3%, 0 respuestas = 0.0%). Espera 0 entregas Paso 2 adicionales antes de abrir una nueva ola.",
           "next_moves": [
-            "Esperar a alcanzar 15 entregas Paso 2+ antes de abrir otra ola (faltan 3 para evaluar ESCALAR en 10+).",
+            "Esperar a alcanzar 15 entregas Paso 2+ antes de abrir otra ola (faltan 0 para evaluar ESCALAR en 10+).",
             "Probar variantes de asunto en Paso 2 mencionando el rango local estimado para elevar clics al demo.",
             "Monitorear Cloudflare KV para interacciones en Pasos 2–4 y llamar en menos de 15 min a prospectos activos.",
             "Mercados pre-seleccionados al validar señal: Kansas City, MO, Oklahoma City, OK, Columbus, OH."
@@ -142,26 +142,26 @@
       "metrics": {
         "total_prospects": 12,
         "active_sent": 10,
-        "queued_step_1": 2,
+        "queued_step_1": 0,
         "step2_plus_delivered": 0,
         "engaged_demos": 0,
-        "total_demo_views": 153,
+        "total_demo_views": 204,
         "total_leads_captured": 0,
         "human_replies": 0,
-        "bounces": 0,
+        "bounces": 2,
         "unsubscribes": 0,
         "demo_engagement_rate": 0.0,
         "reply_rate": 0.0,
-        "bounce_rate": 0.0,
-        "active_pipeline_setup_usd": 9000,
-        "active_pipeline_mrr_usd": 1788,
-        "active_pipeline_y1_usd": 30456
+        "bounce_rate": 0.1667,
+        "active_pipeline_setup_usd": 7500,
+        "active_pipeline_mrr_usd": 1490,
+        "active_pipeline_y1_usd": 25380
       },
       "recommendation": {
         "en": {
           "verdict_label": "TESTING — Gathering Signal",
           "headline": "Hold Expansion (0/15 Step 2 Demos) & Optimize Copy/Calculator",
-          "summary": "2 prospects queued for Step 1 launch (0 Step 2 live demos delivered yet). Hold additional hvac scouting waves until 15+ prospects receive their live demo URL.",
+          "summary": "Gathering statistically meaningful signal: 0/15 Step 2+ live demos delivered (0 interactive demos = 0.0%, 0 replies = 0.0%). Hold new wave expansion until 15 more Step 2 deliveries land.",
           "next_moves": [
             "Hold new scouting waves until Step 2+ deliveries reach 15 (10 away from SCALE gate at 10+).",
             "A/B test Step 2 subject lines referencing concrete metro ballpark pricing to lift demo click-through.",
@@ -188,7 +188,7 @@
         "es": {
           "verdict_label": "EN PRUEBA — Recopilando Señal",
           "headline": "Pausar Expansión (0/15 Demos Paso 2) y Afinar Copy/Calculadora",
-          "summary": "2 prospectos en cola para el lanzamiento Paso 1 (0 demos Paso 2 entregados aún). Mantén en pausa nuevas olas de hvac hasta que 15+ prospectos reciban su demo en vivo.",
+          "summary": "Recopilando señal estadística: 0/15 demos Paso 2+ entregados (0 demos interactivos = 0.0%, 0 respuestas = 0.0%). Espera 15 entregas Paso 2 adicionales antes de abrir una nueva ola.",
           "next_moves": [
             "Esperar a alcanzar 15 entregas Paso 2+ antes de abrir otra ola (faltan 10 para evaluar ESCALAR en 10+).",
             "Probar variantes de asunto en Paso 2 mencionando el rango local estimado para elevar clics al demo.",
