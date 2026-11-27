@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "agent": "00-niche-evaluator",
-  "evaluated_at": "2026-11-27T21:52:41Z",
+  "evaluated_at": "2026-11-27T21:53:00Z",
   "thresholds": {
     "scale_min_step2_delivered": 10,
     "scale_min_demo_engagement_rate": 0.08,
